@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("PBL3")]
+[assembly: AssemblyTitle("PBL3_Source")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("PBL3")]
+[assembly: AssemblyProduct("PBL3_Source")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("533450a7-1412-47ed-8cfd-1801f5617d6d")]
+[assembly: Guid("7bbe9edf-0e6e-4f61-b1bb-8602eeac20da")]
 
 // Version information for an assembly consists of the following four values:
 //

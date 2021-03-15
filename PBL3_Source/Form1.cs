@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PBL3
+namespace PBL3_Source
 {
-    public partial class fLogin : Form
+    public partial class Form1 : Form
     {
-        public fLogin()
+        public Form1()
         {
             InitializeComponent();
         }
