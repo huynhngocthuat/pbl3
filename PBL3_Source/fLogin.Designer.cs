@@ -29,6 +29,7 @@ namespace PBL3_Source
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fLogin));
             this.panel1 = new System.Windows.Forms.Panel();
             this.bntExit = new System.Windows.Forms.Button();
             this.bntLogin = new System.Windows.Forms.Button();
@@ -82,7 +83,7 @@ namespace PBL3_Source
             // picIT
             // 
             this.picIT.Image = global::PBL3_Source.Properties.Resources.itf;
-            this.picIT.Location = new System.Drawing.Point(3, 40);
+            this.picIT.Location = new System.Drawing.Point(0, 40);
             this.picIT.Name = "picIT";
             this.picIT.Size = new System.Drawing.Size(178, 165);
             this.picIT.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -150,10 +151,12 @@ namespace PBL3_Source
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(625, 256);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng Nhập";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fLogin_FormClosing);
+            this.Load += new System.EventHandler(this.fLogin_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picIT)).EndInit();
             this.panel3.ResumeLayout(false);
