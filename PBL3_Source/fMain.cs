@@ -17,9 +17,20 @@ namespace PBL3_Source
             InitializeComponent();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void btn_login_Click(object sender, EventArgs e)
         {
+            fLogin f = new fLogin();
+            //this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
 
+        private void btn_create_account_Click(object sender, EventArgs e)
+        {
+            fSignUp f = new fSignUp();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
         }
     }
 }

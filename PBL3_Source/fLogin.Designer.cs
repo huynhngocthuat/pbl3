@@ -78,7 +78,6 @@ namespace PBL3_Source
             this.bntLogin.TabIndex = 4;
             this.bntLogin.Text = "Đăng nhập";
             this.bntLogin.UseVisualStyleBackColor = true;
-            this.bntLogin.Click += new System.EventHandler(this.bntLogin_Click);
             // 
             // picIT
             // 
@@ -89,7 +88,6 @@ namespace PBL3_Source
             this.picIT.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picIT.TabIndex = 3;
             this.picIT.TabStop = false;
-            this.picIT.Click += new System.EventHandler(this.picIT_Click);
             // 
             // panel3
             // 
@@ -107,7 +105,6 @@ namespace PBL3_Source
             this.txbPassWord.Size = new System.Drawing.Size(154, 22);
             this.txbPassWord.TabIndex = 1;
             this.txbPassWord.UseSystemPasswordChar = true;
-            this.txbPassWord.TextChanged += new System.EventHandler(this.txbPassWord_TextChanged);
             // 
             // label2
             // 
@@ -156,7 +153,6 @@ namespace PBL3_Source
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng Nhập";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fLogin_FormClosing);
-            this.Load += new System.EventHandler(this.fLogin_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picIT)).EndInit();
             this.panel3.ResumeLayout(false);

@@ -16,25 +16,6 @@ namespace PBL3_Source
         {
             InitializeComponent();
         }
-
-        private void txbPassWord_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void picIT_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bntLogin_Click(object sender, EventArgs e)
-        {
-            fMain f = new fMain();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
-        }
-
         private void bntExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -46,11 +27,6 @@ namespace PBL3_Source
             {
                 e.Cancel = true;
             }
-        }
-
-        private void fLogin_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -63,6 +63,16 @@ namespace PBL3_Source.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _5153106_Surface_Laptop_3_01 {
+            get {
+                object obj = ResourceManager.GetObject("5153106_Surface_Laptop_3_01", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _5153110_Surface_Laptop_3_05 {
             get {
                 object obj = ResourceManager.GetObject("5153110_Surface_Laptop_3_05", resourceCulture);

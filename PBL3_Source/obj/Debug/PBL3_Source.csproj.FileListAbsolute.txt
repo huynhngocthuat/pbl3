@@ -9,3 +9,4 @@ E:\PBL3\PBL3_Source\obj\Debug\PBL3_Source.csproj.CoreCompileInputs.cache
 E:\PBL3\PBL3_Source\obj\Debug\PBL3_Source.exe
 E:\PBL3\PBL3_Source\obj\Debug\PBL3_Source.pdb
 E:\PBL3\PBL3_Source\obj\Debug\PBL3_Source.fMain.resources
+E:\PBL3\PBL3_Source\obj\Debug\PBL3_Source.fSignUp.resources
