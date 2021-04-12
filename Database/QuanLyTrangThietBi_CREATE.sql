@@ -51,7 +51,7 @@ create table ROOM
 (
 	roomId varchar(10) primary key,
 	zoneId varchar(10) foreign key references ZONE (zoneId),
-	name nvarchar(50) not null, --F110
+	name nvarchar(50) not null, 
 	functionRoom nvarchar(100)
 )
 go
