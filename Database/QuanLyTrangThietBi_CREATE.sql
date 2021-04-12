@@ -56,7 +56,7 @@ create table REPORT
 	equipmentId nvarchar(50) foreign key references EQUIPMENT (equipmentId) not null,
 	statusId nvarchar(50) foreign key references STATUS (statusId) not null,
 	note ntext,
-	reportStatus int default 0, --0: chưa được nhận tin, 1: chưa xử lý, 2: đang xử lý, 3: đã xử lý, 4: báo cáo sai
+	reportStatus int default 0, --0: chưa được nhận tin, 1: chưa xử lý, 2: đã xử lý, 3: báo cáo sai
 	reportedDate datetime default getDate(),
 	isEdit bit default 1 --0: không được chỉnh sửa, 1: được phép chỉnh sửa
 )
@@ -68,7 +68,7 @@ create table RESPONSE
 	accountId int foreign key references ACCOUNT (accountId) not null,
 	reportId int foreign key references REPORT (reportId) not null,
 	message ntext not null,
-	responseType int not null, --0: đã nhận tin, 1: xác nhận xử lý, 2: đã xử lý, 3: thông tin của báo cáo sai
+	responseType int not null, --1: đã nhận tin, 2: đã xử lý, 3: thông tin của báo cáo sai
 	responsedDate datetime default getDate()
 )
 go
@@ -83,24 +83,19 @@ begin
 	declare @reportId int
 	declare @responseType int
 	select @responseId = responseId, @reportId = reportId, @responseType = responseType from inserted
-	if @responseType = 0
+	if @responseType = 1
 		begin
 			update REPORT set reportStatus = 1 where reportId = @reportId
 			update REPORT set isEdit = 0 where reportId = @reportId
 		end
-	else if @responseType = 1
+	else if @responseType = 2
 		begin
 			update REPORT set reportStatus = 2 where reportId = @reportId
 			update REPORT set isEdit = 0 where reportId = @reportId
 		end
-	else if @responseType = 2
-		begin
-			update REPORT set reportStatus = 3 where reportId = @reportId
-			update REPORT set isEdit = 0 where reportId = @reportId
-		end
 	else if @responseType = 3
 		begin
-			update REPORT set reportStatus = 4 where reportId = @reportId
+			update REPORT set reportStatus = 3 where reportId = @reportId
 			update REPORT set isEdit = 0 where reportId = @reportId
 		end
 	else
