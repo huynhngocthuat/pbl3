@@ -24,16 +24,13 @@ create table ZONE
 
 create table ROOM
 (
-<<<<<<< HEAD
 	roomId varchar(10) primary key,
 	zoneId varchar(10) foreign key references ZONE (zoneId),
 	name nvarchar(50) not null, 
 	functionRoom nvarchar(100)
-=======
 	roomId nvarchar(50) primary key, --F110
 	zoneId nvarchar(50) foreign key references ZONE (zoneId) on delete cascade on update cascade,
 	roomFunction nvarchar(100)
->>>>>>> 446db47268b86633b18b0589109f6a8805d475ea
 )
 go
 
