@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MVH_10Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ACCOUNT">
+    <Key>
+      <PropertyRef Name="accountId" />
+    </Key>
+    <Property Name="accountId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="username" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="password" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="role" Type="int" Nullable="false" />
+    <Property Name="fullName" Type="nvarchar" MaxLength="50" />
+    <Property Name="class" Type="varchar" MaxLength="50" />
+    <Property Name="faculty" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="EQUIPMENT">
+    <Key>
+      <PropertyRef Name="equipmentId" />
+    </Key>
+    <Property Name="equipmentId" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="roomId" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="equipmentName" Type="nvarchar" MaxLength="50" />
+    <Property Name="dateOfInstallation" Type="date" />
+    <Property Name="company" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="REPORT">
+    <Key>
+      <PropertyRef Name="reportId" />
+    </Key>
+    <Property Name="reportId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="accountId" Type="int" Nullable="false" />
+    <Property Name="roomId" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="equipmentId" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="statusId" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="note" Type="ntext" />
+    <Property Name="reportStatus" Type="int" />
+    <Property Name="reportedDate" Type="datetime" />
+    <Property Name="isEdit" Type="bit" />
+  </EntityType>
+  <EntityType Name="RESPONSE">
+    <Key>
+      <PropertyRef Name="responseId" />
+    </Key>
+    <Property Name="responseId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="accountId" Type="int" Nullable="false" />
+    <Property Name="reportId" Type="int" Nullable="false" />
+    <Property Name="message" Type="ntext" Nullable="false" />
+    <Property Name="responseType" Type="int" Nullable="false" />
+    <Property Name="responsedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ROOM">
+    <Key>
+      <PropertyRef Name="roomId" />
+    </Key>
+    <Property Name="roomId" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="zoneId" Type="nvarchar" MaxLength="50" />
+    <Property Name="roomFunction" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="STATUS">
+    <Key>
+      <PropertyRef Name="statusId" />
+    </Key>
+    <Property Name="statusId" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="equipmentId" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="equipmentStatus" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="ZONE">
+    <Key>
+      <PropertyRef Name="zoneId" />
+    </Key>
+    <Property Name="zoneId" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="zoneName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK__EQUIPMENT__roomI__3E52440B">
+    <End Role="ROOM" Type="Self.ROOM" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EQUIPMENT" Type="Self.EQUIPMENT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ROOM">
+        <PropertyRef Name="roomId" />
+      </Principal>
+      <Dependent Role="EQUIPMENT">
+        <PropertyRef Name="roomId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__REPORT__accountI__440B1D61">
+    <End Role="ACCOUNT" Type="Self.ACCOUNT" Multiplicity="1" />
+    <End Role="REPORT" Type="Self.REPORT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ACCOUNT">
+        <PropertyRef Name="accountId" />
+      </Principal>
+      <Dependent Role="REPORT">
+        <PropertyRef Name="accountId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__REPORT__equipmen__45F365D3">
+    <End Role="EQUIPMENT" Type="Self.EQUIPMENT" Multiplicity="1" />
+    <End Role="REPORT" Type="Self.REPORT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EQUIPMENT">
+        <PropertyRef Name="equipmentId" />
+      </Principal>
+      <Dependent Role="REPORT">
+        <PropertyRef Name="equipmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__REPORT__roomId__44FF419A">
+    <End Role="ROOM" Type="Self.ROOM" Multiplicity="1" />
+    <End Role="REPORT" Type="Self.REPORT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ROOM">
+        <PropertyRef Name="roomId" />
+      </Principal>
+      <Dependent Role="REPORT">
+        <PropertyRef Name="roomId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__REPORT__statusId__46E78A0C">
+    <End Role="STATUS" Type="Self.STATUS" Multiplicity="1" />
+    <End Role="REPORT" Type="Self.REPORT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="STATUS">
+        <PropertyRef Name="statusId" />
+      </Principal>
+      <Dependent Role="REPORT">
+        <PropertyRef Name="statusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__RESPONSE__accoun__4CA06362">
+    <End Role="ACCOUNT" Type="Self.ACCOUNT" Multiplicity="1" />
+    <End Role="RESPONSE" Type="Self.RESPONSE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ACCOUNT">
+        <PropertyRef Name="accountId" />
+      </Principal>
+      <Dependent Role="RESPONSE">
+        <PropertyRef Name="accountId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__RESPONSE__report__4D94879B">
+    <End Role="REPORT" Type="Self.REPORT" Multiplicity="1" />
+    <End Role="RESPONSE" Type="Self.RESPONSE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="REPORT">
+        <PropertyRef Name="reportId" />
+      </Principal>
+      <Dependent Role="RESPONSE">
+        <PropertyRef Name="reportId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ROOM__zoneId__3B75D760">
+    <End Role="ZONE" Type="Self.ZONE" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ROOM" Type="Self.ROOM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ZONE">
+        <PropertyRef Name="zoneId" />
+      </Principal>
+      <Dependent Role="ROOM">
+        <PropertyRef Name="zoneId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__STATUS__equipmen__412EB0B6">
+    <End Role="EQUIPMENT" Type="Self.EQUIPMENT" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="STATUS" Type="Self.STATUS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EQUIPMENT">
+        <PropertyRef Name="equipmentId" />
+      </Principal>
+      <Dependent Role="STATUS">
+        <PropertyRef Name="equipmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MVH_10ModelStoreContainer">
+    <EntitySet Name="ACCOUNT" EntityType="Self.ACCOUNT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EQUIPMENT" EntityType="Self.EQUIPMENT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="REPORT" EntityType="Self.REPORT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RESPONSE" EntityType="Self.RESPONSE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ROOM" EntityType="Self.ROOM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="STATUS" EntityType="Self.STATUS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ZONE" EntityType="Self.ZONE" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__EQUIPMENT__roomI__3E52440B" Association="Self.FK__EQUIPMENT__roomI__3E52440B">
+      <End Role="ROOM" EntitySet="ROOM" />
+      <End Role="EQUIPMENT" EntitySet="EQUIPMENT" />
+    </AssociationSet>
+    <AssociationSet Name="FK__REPORT__accountI__440B1D61" Association="Self.FK__REPORT__accountI__440B1D61">
+      <End Role="ACCOUNT" EntitySet="ACCOUNT" />
+      <End Role="REPORT" EntitySet="REPORT" />
+    </AssociationSet>
+    <AssociationSet Name="FK__REPORT__equipmen__45F365D3" Association="Self.FK__REPORT__equipmen__45F365D3">
+      <End Role="EQUIPMENT" EntitySet="EQUIPMENT" />
+      <End Role="REPORT" EntitySet="REPORT" />
+    </AssociationSet>
+    <AssociationSet Name="FK__REPORT__roomId__44FF419A" Association="Self.FK__REPORT__roomId__44FF419A">
+      <End Role="ROOM" EntitySet="ROOM" />
+      <End Role="REPORT" EntitySet="REPORT" />
+    </AssociationSet>
+    <AssociationSet Name="FK__REPORT__statusId__46E78A0C" Association="Self.FK__REPORT__statusId__46E78A0C">
+      <End Role="STATUS" EntitySet="STATUS" />
+      <End Role="REPORT" EntitySet="REPORT" />
+    </AssociationSet>
+    <AssociationSet Name="FK__RESPONSE__accoun__4CA06362" Association="Self.FK__RESPONSE__accoun__4CA06362">
+      <End Role="ACCOUNT" EntitySet="ACCOUNT" />
+      <End Role="RESPONSE" EntitySet="RESPONSE" />
+    </AssociationSet>
+    <AssociationSet Name="FK__RESPONSE__report__4D94879B" Association="Self.FK__RESPONSE__report__4D94879B">
+      <End Role="REPORT" EntitySet="REPORT" />
+      <End Role="RESPONSE" EntitySet="RESPONSE" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ROOM__zoneId__3B75D760" Association="Self.FK__ROOM__zoneId__3B75D760">
+      <End Role="ZONE" EntitySet="ZONE" />
+      <End Role="ROOM" EntitySet="ROOM" />
+    </AssociationSet>
+    <AssociationSet Name="FK__STATUS__equipmen__412EB0B6" Association="Self.FK__STATUS__equipmen__412EB0B6">
+      <End Role="EQUIPMENT" EntitySet="EQUIPMENT" />
+      <End Role="STATUS" EntitySet="STATUS" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

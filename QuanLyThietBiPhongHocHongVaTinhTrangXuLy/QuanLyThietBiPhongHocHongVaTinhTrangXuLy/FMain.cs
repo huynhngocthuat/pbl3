@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BUS;
+using DTL;
 
 namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
 {
@@ -14,6 +16,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
     {
         public FMain()
         {
+            
             InitializeComponent();
         }
 
@@ -21,6 +24,11 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         {
             FLogin f = new FLogin();
             f.ShowDialog();           
+        }
+
+        private void btnDulieu_Click(object sender, EventArgs e)
+        {
+            dataGridView_showReport.DataSource = BUS_MainData.Instance.BUS_ReportShow();
         }
     }
 }

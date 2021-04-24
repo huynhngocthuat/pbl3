@@ -1,0 +1,6 @@
+E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\bin\Debug\DTL.dll
+E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\bin\Debug\DTL.pdb
+E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\obj\Debug\DTL.csprojAssemblyReference.cache
+E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\obj\Debug\DTL.csproj.CoreCompileInputs.cache
+E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\obj\Debug\DTL.dll
+E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\obj\Debug\DTL.pdb

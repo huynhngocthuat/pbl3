@@ -1,0 +1,17 @@
+E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\BUS.dll.config
+E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\BUS.dll
+E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\BUS.pdb
+E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\DAL.dll
+E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\DTL.dll
+E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\EntityFramework.dll
+E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\DAL.pdb
+E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\DAL.dll.config
+E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\DTL.pdb
+E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\EntityFramework.xml
+E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\obj\Debug\BUS.csproj.CopyComplete
+E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\obj\Debug\BUS.dll
+E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\obj\Debug\BUS.pdb
+E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\EntityFramework.SqlServer.dll
+E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\EntityFramework.SqlServer.xml

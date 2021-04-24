@@ -30,12 +30,15 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnTaiKhoan = new System.Windows.Forms.Button();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txbGhichu = new System.Windows.Forms.TextBox();
             this.cbbTinhtrang = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbbKhu = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnDangxuat = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,10 +49,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.cbbPhonghoc = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.btnTaiKhoan = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -66,7 +66,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.groupBox1.Controls.Add(this.txbGhichu);
             this.groupBox1.Controls.Add(this.cbbTinhtrang);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cbbKhu);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.btnDangxuat);
             this.groupBox1.Controls.Add(this.label2);
@@ -83,6 +83,27 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách các lần bạn báo";
             // 
+            // btnTaiKhoan
+            // 
+            this.btnTaiKhoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnTaiKhoan.Location = new System.Drawing.Point(1329, 26);
+            this.btnTaiKhoan.Name = "btnTaiKhoan";
+            this.btnTaiKhoan.Size = new System.Drawing.Size(86, 27);
+            this.btnTaiKhoan.TabIndex = 15;
+            this.btnTaiKhoan.Text = "Tài khoản";
+            this.btnTaiKhoan.UseVisualStyleBackColor = false;
+            this.btnTaiKhoan.Click += new System.EventHandler(this.btnTaiKhoan_Click);
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(744, 72);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(102, 21);
+            this.checkBox3.TabIndex = 2;
+            this.checkBox3.Text = "Tin đã xử lý";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
@@ -92,6 +113,16 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.checkBox1.TabIndex = 1;
             this.checkBox1.Text = "Tin chưa nhận";
             this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(621, 71);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(117, 21);
+            this.checkBox2.TabIndex = 1;
+            this.checkBox2.Text = "Tin chưa xử lý";
+            this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
@@ -126,13 +157,13 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.label4.TabIndex = 11;
             this.label4.Text = "Tình trạng:";
             // 
-            // comboBox1
+            // cbbKhu
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(96, 25);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 10;
+            this.cbbKhu.FormattingEnabled = true;
+            this.cbbKhu.Location = new System.Drawing.Point(96, 25);
+            this.cbbKhu.Name = "cbbKhu";
+            this.cbbKhu.Size = new System.Drawing.Size(121, 24);
+            this.cbbKhu.TabIndex = 10;
             // 
             // label3
             // 
@@ -169,7 +200,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1502, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(1332, 150);
             this.dataGridView1.TabIndex = 6;
             // 
             // btnDulieu
@@ -181,6 +212,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnDulieu.TabIndex = 4;
             this.btnDulieu.Text = "Dữ liệu";
             this.btnDulieu.UseVisualStyleBackColor = false;
+            this.btnDulieu.Click += new System.EventHandler(this.btnDulieu_Click);
             // 
             // btnTaobaocao
             // 
@@ -227,26 +259,6 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Danh sách các lần sinh viên khác đã báo";
             // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(744, 72);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(102, 21);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "Tin đã xử lý";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(621, 71);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(117, 21);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Tin chưa xử lý";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -254,25 +266,14 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(1495, 302);
+            this.dataGridView2.Size = new System.Drawing.Size(1326, 224);
             this.dataGridView2.TabIndex = 0;
-            // 
-            // btnTaiKhoan
-            // 
-            this.btnTaiKhoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnTaiKhoan.Location = new System.Drawing.Point(1329, 26);
-            this.btnTaiKhoan.Name = "btnTaiKhoan";
-            this.btnTaiKhoan.Size = new System.Drawing.Size(86, 27);
-            this.btnTaiKhoan.TabIndex = 15;
-            this.btnTaiKhoan.Text = "Tài khoản";
-            this.btnTaiKhoan.UseVisualStyleBackColor = false;
-            this.btnTaiKhoan.Click += new System.EventHandler(this.btnTaiKhoan_Click);
             // 
             // FUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1548, 635);
+            this.ClientSize = new System.Drawing.Size(1357, 552);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FUser";
@@ -299,7 +300,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnDangxuat;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbbKhu;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txbGhichu;

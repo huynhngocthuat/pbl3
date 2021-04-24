@@ -30,21 +30,21 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnDangNhap = new System.Windows.Forms.Button();
+            this.dataGridView_showReport = new System.Windows.Forms.DataGridView();
+            this.btnDulieu = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.btnDulieu = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnDangNhap = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_showReport)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnDangNhap);
-            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.dataGridView_showReport);
             this.groupBox1.Controls.Add(this.btnDulieu);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.checkBox3);
@@ -56,6 +56,46 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách lượt báo thiết bị hỏng";
+            // 
+            // btnDangNhap
+            // 
+            this.btnDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnDangNhap.Location = new System.Drawing.Point(707, 46);
+            this.btnDangNhap.Name = "btnDangNhap";
+            this.btnDangNhap.Size = new System.Drawing.Size(93, 26);
+            this.btnDangNhap.TabIndex = 9;
+            this.btnDangNhap.Text = "Đăng nhập";
+            this.btnDangNhap.UseVisualStyleBackColor = false;
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
+            // 
+            // dataGridView_showReport
+            // 
+            this.dataGridView_showReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_showReport.Location = new System.Drawing.Point(6, 98);
+            this.dataGridView_showReport.Name = "dataGridView_showReport";
+            this.dataGridView_showReport.RowHeadersWidth = 51;
+            this.dataGridView_showReport.RowTemplate.Height = 24;
+            this.dataGridView_showReport.Size = new System.Drawing.Size(1246, 426);
+            this.dataGridView_showReport.TabIndex = 8;
+            // 
+            // btnDulieu
+            // 
+            this.btnDulieu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnDulieu.Location = new System.Drawing.Point(606, 44);
+            this.btnDulieu.Name = "btnDulieu";
+            this.btnDulieu.Size = new System.Drawing.Size(75, 28);
+            this.btnDulieu.TabIndex = 7;
+            this.btnDulieu.Text = "Dữ liệu";
+            this.btnDulieu.UseVisualStyleBackColor = false;
+            this.btnDulieu.Click += new System.EventHandler(this.btnDulieu_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(6, 46);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(227, 24);
+            this.comboBox1.TabIndex = 6;
             // 
             // checkBox3
             // 
@@ -72,9 +112,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(239, 49);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(121, 21);
+            this.checkBox1.Size = new System.Drawing.Size(70, 21);
             this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "Tin chưa nhận";
+            this.checkBox1.Text = "Tất cả";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // checkBox2
@@ -87,56 +127,17 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.checkBox2.Text = "Tin chưa xử lý";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(6, 46);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(227, 24);
-            this.comboBox1.TabIndex = 6;
-            // 
-            // btnDulieu
-            // 
-            this.btnDulieu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnDulieu.Location = new System.Drawing.Point(606, 44);
-            this.btnDulieu.Name = "btnDulieu";
-            this.btnDulieu.Size = new System.Drawing.Size(75, 28);
-            this.btnDulieu.TabIndex = 7;
-            this.btnDulieu.Text = "Dữ liệu";
-            this.btnDulieu.UseVisualStyleBackColor = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 87);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1442, 499);
-            this.dataGridView1.TabIndex = 8;
-            // 
-            // btnDangNhap
-            // 
-            this.btnDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnDangNhap.Location = new System.Drawing.Point(707, 46);
-            this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(93, 26);
-            this.btnDangNhap.TabIndex = 9;
-            this.btnDangNhap.Text = "Đăng nhập";
-            this.btnDangNhap.UseVisualStyleBackColor = false;
-            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
-            // 
             // FMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1478, 616);
+            this.ClientSize = new System.Drawing.Size(1294, 548);
             this.Controls.Add(this.groupBox1);
             this.Name = "FMain";
             this.Text = "FMain";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_showReport)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -148,7 +149,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView_showReport;
         private System.Windows.Forms.Button btnDulieu;
         private System.Windows.Forms.Button btnDangNhap;
     }
