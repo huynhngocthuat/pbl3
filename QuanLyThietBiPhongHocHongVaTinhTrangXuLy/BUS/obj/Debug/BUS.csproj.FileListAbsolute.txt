@@ -13,5 +13,3 @@ E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\obj\Debug\BUS.csproj.CoreCo
 E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\obj\Debug\BUS.csproj.CopyComplete
 E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\obj\Debug\BUS.dll
 E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\obj\Debug\BUS.pdb
-E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\EntityFramework.SqlServer.dll
-E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\EntityFramework.SqlServer.xml

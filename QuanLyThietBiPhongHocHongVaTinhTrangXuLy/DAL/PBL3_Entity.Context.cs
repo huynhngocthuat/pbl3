@@ -19,7 +19,7 @@ namespace DAL
             : base("name=MVH_10Entities")
         {
             // cai nay moi them de chay ?
-            var ensureDLLIsCopied = System.Data.Entity.SqlServer.SqlProviderServices.Instance;
+           // var ensureDLLIsCopied = System.Data.Entity.SqlServer.SqlProviderServices.Instance;
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
