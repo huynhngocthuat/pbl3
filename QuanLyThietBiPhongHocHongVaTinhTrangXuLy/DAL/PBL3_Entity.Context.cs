@@ -18,7 +18,6 @@ namespace DAL
         public MVH_10Entities()
             : base("name=MVH_10Entities")
         {
-            // cai nay moi them de chay ?
             var ensureDLLIsCopied = System.Data.Entity.SqlServer.SqlProviderServices.Instance;
         }
     

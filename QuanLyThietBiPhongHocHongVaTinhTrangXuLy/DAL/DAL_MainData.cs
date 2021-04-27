@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -60,6 +61,29 @@ namespace DAL
             var result = from c in db.ACCOUNTs select c;
             return result.ToList<ACCOUNT>();
         }
+        public void DAL_SETACCOUNT(ACCOUNT ac)
+        {
+            db.ACCOUNTs.Add(ac);
+            db.SaveChanges();
+        }
+        public ACCOUNT DAL_CheckAccount(string user, string password)
+        {
+            //var result = from c in db.ACCOUNTs where c.username == user && c.password == password select c;
+
+            //Phan biet chu hoa và thường (COLLATE SQL_Latin1_General_CP1_CS_AS)
+            var result = new ACCOUNT();
+            var query = "Select * from ACCOUNT where username COLLATE SQL_Latin1_General_CP1_CS_AS like @user AND password COLLATE SQL_Latin1_General_CP1_CS_AS like @password ";
+            var query1 = "Select * from ACCOUNT where username COLLATE SQL_Latin1_General_CP1_CS_AS like @user";
+            if (password == "")
+            {
+                 return result = db.ACCOUNTs.SqlQuery(query1, new SqlParameter("@user", user), new SqlParameter("@password", password)).SingleOrDefault();
+            }
+            else
+            {  
+                return result = db.ACCOUNTs.SqlQuery(query, new SqlParameter("@user", user), new SqlParameter("@password", password)).SingleOrDefault(); 
+            }            
+        }
+
         //SELECT REPORT.reportId, REPORT.roomId, MAX(RESPONSE.responseType) as 'responseType', responsedDate, MIN(CAST(message AS NVARCHAR(100))) as message, equipmentName, equipmentStatus, CAST(note AS NVARCHAR(100))[note], reportedDate
         //FROM REPORT
         //LEFT JOIN RESPONSE ON RESPONSE.reportId = REPORT.reportId
@@ -127,6 +151,16 @@ namespace DAL
             }
             return listReportShow;
         }
-        
+
+        public void DAL_UPDATEACC(ACCOUNT a2)
+        {
+            var sup = db.ACCOUNTs.Where(p => p.accountId == a2.accountId).FirstOrDefault();
+            sup.fullName = a2.fullName;
+            sup.faculty = a2.faculty;
+            sup.@class = a2.@class;
+            sup.password = a2.password;
+            db.SaveChanges();
+        }
+
     }
 }

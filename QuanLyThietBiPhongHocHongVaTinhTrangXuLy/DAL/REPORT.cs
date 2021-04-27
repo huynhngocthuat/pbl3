@@ -19,7 +19,7 @@ namespace DAL
         {
             this.RESPONSEs = new HashSet<RESPONSE>();
         }
-   
+    
         public int reportId { get; set; }
         public int accountId { get; set; }
         public string roomId { get; set; }
@@ -36,6 +36,5 @@ namespace DAL
         public virtual STATUS STATUS { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<RESPONSE> RESPONSEs { get; set; }
-
     }
 }
