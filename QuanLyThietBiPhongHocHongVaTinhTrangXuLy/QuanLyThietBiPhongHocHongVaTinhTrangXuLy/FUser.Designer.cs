@@ -78,15 +78,15 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(13, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1517, 275);
+            this.groupBox1.Size = new System.Drawing.Size(1342, 275);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Danh sách các lần bạn báo";
+            this.groupBox1.Text = "                        ";
             // 
             // btnTaiKhoan
             // 
             this.btnTaiKhoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnTaiKhoan.Location = new System.Drawing.Point(1329, 26);
+            this.btnTaiKhoan.Location = new System.Drawing.Point(1135, 26);
             this.btnTaiKhoan.Name = "btnTaiKhoan";
             this.btnTaiKhoan.Size = new System.Drawing.Size(86, 27);
             this.btnTaiKhoan.TabIndex = 15;
@@ -177,12 +177,13 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // btnDangxuat
             // 
             this.btnDangxuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnDangxuat.Location = new System.Drawing.Point(1421, 25);
+            this.btnDangxuat.Location = new System.Drawing.Point(1227, 25);
             this.btnDangxuat.Name = "btnDangxuat";
             this.btnDangxuat.Size = new System.Drawing.Size(90, 28);
             this.btnDangxuat.TabIndex = 8;
             this.btnDangxuat.Text = "Đăng xuất";
             this.btnDangxuat.UseVisualStyleBackColor = false;
+            this.btnDangxuat.Click += new System.EventHandler(this.btnDangxuat_Click);
             // 
             // label2
             // 
@@ -254,7 +255,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.groupBox2.Controls.Add(this.dataGridView2);
             this.groupBox2.Location = new System.Drawing.Point(12, 294);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1524, 329);
+            this.groupBox2.Size = new System.Drawing.Size(1343, 329);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Danh sách các lần sinh viên khác đã báo";
@@ -273,7 +274,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1357, 552);
+            this.ClientSize = new System.Drawing.Size(1364, 559);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FUser";

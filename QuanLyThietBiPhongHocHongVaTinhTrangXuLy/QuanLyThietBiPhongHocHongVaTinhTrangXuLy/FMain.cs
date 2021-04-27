@@ -23,6 +23,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             FLogin f = new FLogin();
+            //this.Hide();
             f.ShowDialog();           
         }
 

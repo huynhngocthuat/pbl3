@@ -14,6 +14,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
 {
     public partial class FUser : Form
     {
+        private ACCOUNT ac = new ACCOUNT();
         public FUser()
         {
             InitializeComponent();
@@ -35,15 +36,25 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                 cbbPhonghoc.Items.Add(item.roomId);
             }
         }
+        public void SetACFormUSER(ACCOUNT a)
+        {
+            ac = a;
+        }
         private void btnTaiKhoan_Click(object sender, EventArgs e)
         {
-            FAccount f = new FAccount();
+            FAccount f = new FAccount(ac);
+            f.GUI(ac);
             f.ShowDialog();
         }
 
         private void btnDulieu_Click(object sender, EventArgs e)
         {
             dataGridView2.DataSource = BUS_MainData.Instance.BUS_ReportShow();
+        }
+
+        private void btnDangxuat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

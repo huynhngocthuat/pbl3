@@ -30,6 +30,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnXem = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnPhanHoi = new System.Windows.Forms.Button();
             this.btnTaiKhoan = new System.Windows.Forms.Button();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
@@ -41,9 +44,6 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.label1 = new System.Windows.Forms.Label();
             this.btnShowDulieu = new System.Windows.Forms.Button();
             this.cbbGiangduong = new System.Windows.Forms.ComboBox();
-            this.btnPhanHoi = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.btnXem = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -71,6 +71,36 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách phòng học báo hỏng thiết bị";
+            // 
+            // btnXem
+            // 
+            this.btnXem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnXem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnXem.Location = new System.Drawing.Point(851, 72);
+            this.btnXem.Name = "btnXem";
+            this.btnXem.Size = new System.Drawing.Size(75, 24);
+            this.btnXem.TabIndex = 19;
+            this.btnXem.Text = "Xem";
+            this.btnXem.UseVisualStyleBackColor = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(599, 72);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(234, 24);
+            this.comboBox1.TabIndex = 18;
+            // 
+            // btnPhanHoi
+            // 
+            this.btnPhanHoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnPhanHoi.Location = new System.Drawing.Point(932, 27);
+            this.btnPhanHoi.Name = "btnPhanHoi";
+            this.btnPhanHoi.Size = new System.Drawing.Size(81, 27);
+            this.btnPhanHoi.TabIndex = 17;
+            this.btnPhanHoi.Text = "Phản hồi";
+            this.btnPhanHoi.UseVisualStyleBackColor = false;
+            this.btnPhanHoi.Click += new System.EventHandler(this.btnPhanHoi_Click);
             // 
             // btnTaiKhoan
             // 
@@ -132,6 +162,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnDangxuat.TabIndex = 7;
             this.btnDangxuat.Text = "Đăng xuất";
             this.btnDangxuat.UseVisualStyleBackColor = false;
+            this.btnDangxuat.Click += new System.EventHandler(this.btnDangxuat_Click);
             // 
             // dataGridView1
             // 
@@ -180,36 +211,6 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.cbbGiangduong.Name = "cbbGiangduong";
             this.cbbGiangduong.Size = new System.Drawing.Size(187, 24);
             this.cbbGiangduong.TabIndex = 0;
-            // 
-            // btnPhanHoi
-            // 
-            this.btnPhanHoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnPhanHoi.Location = new System.Drawing.Point(932, 27);
-            this.btnPhanHoi.Name = "btnPhanHoi";
-            this.btnPhanHoi.Size = new System.Drawing.Size(81, 27);
-            this.btnPhanHoi.TabIndex = 17;
-            this.btnPhanHoi.Text = "Phản hồi";
-            this.btnPhanHoi.UseVisualStyleBackColor = false;
-            this.btnPhanHoi.Click += new System.EventHandler(this.btnPhanHoi_Click);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(599, 72);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(234, 24);
-            this.comboBox1.TabIndex = 18;
-            // 
-            // btnXem
-            // 
-            this.btnXem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnXem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnXem.Location = new System.Drawing.Point(851, 72);
-            this.btnXem.Name = "btnXem";
-            this.btnXem.Size = new System.Drawing.Size(75, 24);
-            this.btnXem.TabIndex = 19;
-            this.btnXem.Text = "Xem";
-            this.btnXem.UseVisualStyleBackColor = false;
             // 
             // FAdmin
             // 
