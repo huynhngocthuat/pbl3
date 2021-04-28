@@ -56,5 +56,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         {
             this.Close();
         }
+
+        private void ckb_ChuaXuLy_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

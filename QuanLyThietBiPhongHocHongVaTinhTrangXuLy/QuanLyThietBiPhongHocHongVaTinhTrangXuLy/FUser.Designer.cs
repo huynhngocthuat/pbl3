@@ -31,9 +31,8 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnTaiKhoan = new System.Windows.Forms.Button();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.ckb_DaXuLy = new System.Windows.Forms.CheckBox();
+            this.ckb_ChuaXuLy = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txbGhichu = new System.Windows.Forms.TextBox();
             this.cbbTinhtrang = new System.Windows.Forms.ComboBox();
@@ -59,9 +58,8 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnTaiKhoan);
-            this.groupBox1.Controls.Add(this.checkBox3);
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.checkBox2);
+            this.groupBox1.Controls.Add(this.ckb_DaXuLy);
+            this.groupBox1.Controls.Add(this.ckb_ChuaXuLy);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.txbGhichu);
             this.groupBox1.Controls.Add(this.cbbTinhtrang);
@@ -94,35 +92,26 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnTaiKhoan.UseVisualStyleBackColor = false;
             this.btnTaiKhoan.Click += new System.EventHandler(this.btnTaiKhoan_Click);
             // 
-            // checkBox3
+            // ckb_DaXuLy
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(744, 72);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(102, 21);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "Tin đã xử lý";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.ckb_DaXuLy.AutoSize = true;
+            this.ckb_DaXuLy.Location = new System.Drawing.Point(735, 72);
+            this.ckb_DaXuLy.Name = "ckb_DaXuLy";
+            this.ckb_DaXuLy.Size = new System.Drawing.Size(102, 21);
+            this.ckb_DaXuLy.TabIndex = 2;
+            this.ckb_DaXuLy.Text = "Tin đã xử lý";
+            this.ckb_DaXuLy.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // ckb_ChuaXuLy
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(494, 71);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(121, 21);
-            this.checkBox1.TabIndex = 1;
-            this.checkBox1.Text = "Tin chưa nhận";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(621, 71);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(117, 21);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Tin chưa xử lý";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.ckb_ChuaXuLy.AutoSize = true;
+            this.ckb_ChuaXuLy.Location = new System.Drawing.Point(546, 72);
+            this.ckb_ChuaXuLy.Name = "ckb_ChuaXuLy";
+            this.ckb_ChuaXuLy.Size = new System.Drawing.Size(117, 21);
+            this.ckb_ChuaXuLy.TabIndex = 1;
+            this.ckb_ChuaXuLy.Text = "Tin chưa xử lý";
+            this.ckb_ChuaXuLy.UseVisualStyleBackColor = true;
+            this.ckb_ChuaXuLy.CheckedChanged += new System.EventHandler(this.ckb_ChuaXuLy_CheckedChanged);
             // 
             // label5
             // 
@@ -307,9 +296,8 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         private System.Windows.Forms.TextBox txbGhichu;
         private System.Windows.Forms.ComboBox cbbTinhtrang;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox ckb_DaXuLy;
+        private System.Windows.Forms.CheckBox ckb_ChuaXuLy;
         private System.Windows.Forms.Button btnTaiKhoan;
     }
 }

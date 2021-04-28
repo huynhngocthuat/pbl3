@@ -37,7 +37,6 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.btnDangxuat = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.cbbSongaydemnguoc = new System.Windows.Forms.ComboBox();
@@ -57,7 +56,6 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.groupBox1.Controls.Add(this.checkBox4);
             this.groupBox1.Controls.Add(this.checkBox3);
             this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.checkBox1);
             this.groupBox1.Controls.Add(this.btnDangxuat);
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Controls.Add(this.cbbSongaydemnguoc);
@@ -76,7 +74,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             this.btnXem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnXem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnXem.Location = new System.Drawing.Point(851, 72);
+            this.btnXem.Location = new System.Drawing.Point(996, 72);
             this.btnXem.Name = "btnXem";
             this.btnXem.Size = new System.Drawing.Size(75, 24);
             this.btnXem.TabIndex = 19;
@@ -86,7 +84,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(599, 72);
+            this.comboBox1.Location = new System.Drawing.Point(740, 72);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(234, 24);
             this.comboBox1.TabIndex = 18;
@@ -94,7 +92,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // btnPhanHoi
             // 
             this.btnPhanHoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnPhanHoi.Location = new System.Drawing.Point(932, 27);
+            this.btnPhanHoi.Location = new System.Drawing.Point(1098, 28);
             this.btnPhanHoi.Name = "btnPhanHoi";
             this.btnPhanHoi.Size = new System.Drawing.Size(81, 27);
             this.btnPhanHoi.TabIndex = 17;
@@ -105,7 +103,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // btnTaiKhoan
             // 
             this.btnTaiKhoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnTaiKhoan.Location = new System.Drawing.Point(1019, 27);
+            this.btnTaiKhoan.Location = new System.Drawing.Point(1209, 29);
             this.btnTaiKhoan.Name = "btnTaiKhoan";
             this.btnTaiKhoan.Size = new System.Drawing.Size(100, 27);
             this.btnTaiKhoan.TabIndex = 16;
@@ -116,7 +114,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(439, 72);
+            this.checkBox4.Location = new System.Drawing.Point(466, 36);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(115, 21);
             this.checkBox4.TabIndex = 11;
@@ -126,7 +124,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(299, 72);
+            this.checkBox3.Location = new System.Drawing.Point(329, 36);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(114, 21);
             this.checkBox3.TabIndex = 10;
@@ -136,27 +134,17 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(439, 31);
+            this.checkBox2.Location = new System.Drawing.Point(587, 35);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(131, 21);
             this.checkBox2.TabIndex = 9;
             this.checkBox2.Text = "Tin chưa xữ lý";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(299, 31);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(134, 21);
-            this.checkBox1.TabIndex = 8;
-            this.checkBox1.Text = "Tin chưa nhận";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
             // btnDangxuat
             // 
             this.btnDangxuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnDangxuat.Location = new System.Drawing.Point(1125, 26);
+            this.btnDangxuat.Location = new System.Drawing.Point(1340, 28);
             this.btnDangxuat.Name = "btnDangxuat";
             this.btnDangxuat.Size = new System.Drawing.Size(93, 27);
             this.btnDangxuat.TabIndex = 7;
@@ -177,7 +165,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // cbbSongaydemnguoc
             // 
             this.cbbSongaydemnguoc.FormattingEnabled = true;
-            this.cbbSongaydemnguoc.Location = new System.Drawing.Point(599, 28);
+            this.cbbSongaydemnguoc.Location = new System.Drawing.Point(740, 33);
             this.cbbSongaydemnguoc.Name = "cbbSongaydemnguoc";
             this.cbbSongaydemnguoc.Size = new System.Drawing.Size(234, 24);
             this.cbbSongaydemnguoc.TabIndex = 4;
@@ -197,7 +185,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnShowDulieu.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.btnShowDulieu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnShowDulieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShowDulieu.Location = new System.Drawing.Point(851, 26);
+            this.btnShowDulieu.Location = new System.Drawing.Point(996, 29);
             this.btnShowDulieu.Name = "btnShowDulieu";
             this.btnShowDulieu.Size = new System.Drawing.Size(75, 28);
             this.btnShowDulieu.TabIndex = 2;
@@ -239,7 +227,6 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button btnTaiKhoan;
         private System.Windows.Forms.Button btnPhanHoi;
         private System.Windows.Forms.Button btnXem;

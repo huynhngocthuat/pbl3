@@ -151,7 +151,21 @@ namespace DAL
             }
             return listReportShow;
         }
-
+        public List<int> listReportIDByZone(string zoneId)
+        {
+            List<REPORT> list = new List<REPORT>();
+            List<ROOM> z = db.ROOMs.Where(p => p.zoneId == zoneId).ToList();
+            foreach (ROOM item in z)
+            {
+                list.AddRange(item.REPORTs.ToList());
+            }
+            List<int> listID = new List<int>();
+            foreach (REPORT item in list)
+            {
+                listID.Add(item.reportId);
+            }
+            return listID;
+        }
         public void DAL_UPDATEACC(ACCOUNT a2)
         {
             var sup = db.ACCOUNTs.Where(p => p.accountId == a2.accountId).FirstOrDefault();
