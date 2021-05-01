@@ -25,7 +25,7 @@ namespace DAL
         {
             db = new MVH_10Entities();
         }
-        
+        #region data
         public List<REPORT> DAL_getReport()
         {
             var result = from c in db.REPORTs select c;
@@ -61,6 +61,8 @@ namespace DAL
             var result = from c in db.ACCOUNTs select c;
             return result.ToList<ACCOUNT>();
         }
+        #endregion
+        #region Flogin
         public void DAL_SETACCOUNT(ACCOUNT ac)
         {
             db.ACCOUNTs.Add(ac);
@@ -83,7 +85,18 @@ namespace DAL
                 return result = db.ACCOUNTs.SqlQuery(query, new SqlParameter("@user", user), new SqlParameter("@password", password)).SingleOrDefault(); 
             }            
         }
+        public void DAL_UPDATEACC(ACCOUNT a2)
+        {
+            var sup = db.ACCOUNTs.Where(p => p.accountId == a2.accountId).FirstOrDefault();
+            sup.fullName = a2.fullName;
+            sup.faculty = a2.faculty;
+            sup.@class = a2.@class;
+            sup.password = a2.password;
+            db.SaveChanges();
+        }
+        #endregion
 
+        #region FMain
         //SELECT REPORT.reportId, REPORT.roomId, MAX(RESPONSE.responseType) as 'responseType', responsedDate, MIN(CAST(message AS NVARCHAR(100))) as message, equipmentName, equipmentStatus, CAST(note AS NVARCHAR(100))[note], reportedDate
         //FROM REPORT
         //LEFT JOIN RESPONSE ON RESPONSE.reportId = REPORT.reportId
@@ -102,6 +115,7 @@ namespace DAL
                           select new
                           {
                               reportId = report.reportId,
+                              accontId = report.accountId,
                               roomId = report.roomId,
                               responseDate = (p2 == null) ? null : p2.responsedDate,
                               Type = (p2 == null) ? 0 : p2.responseType,
@@ -110,6 +124,7 @@ namespace DAL
                               equipmentStatus = status.equipmentStatus,
                               note = report.note,
                               reportDate = report.reportedDate,
+                              isEdit = report.isEdit
                           });
             // loc bo cac report bi trung
             var l2 = (from response in db.RESPONSEs
@@ -126,28 +141,31 @@ namespace DAL
                            select new
                            {
                                reportId = kq.reportId,
+                               accountId = kq.accontId,
                                roomId = kq.roomId,
                                responseDate = kq.responseDate,
                                responseMassage = kq.message,
                                equipmentName = kq.equipmentName,
                                equipmentStatus = kq.equipmentStatus,
                                reportMessage = kq.note,
-                               reportDate = kq.reportDate
+                               reportDate = kq.reportDate,
+                               isEdit = kq.isEdit
                            }).ToList();
             // Them tung report vao listReportShow
             foreach (var item in L_END)
             {
-                listReportShow.Add(new ReportShow
-                {
-                    STT = item.reportId,
-                    roomID = item.roomId,
-                    responsedDate = Convert.ToDateTime(item.responseDate),
-                    responseMessage = item.responseMassage,
-                    equipmentName = item.equipmentName,
-                    equipmentStatus = item.equipmentStatus,
-                    reportMessage = item.reportMessage,
-                    reportedDate = Convert.ToDateTime(item.reportDate)
-                });
+                ReportShow newReport = new ReportShow();
+                newReport.STT = item.reportId;
+                newReport.setAccountId(item.accountId);
+                newReport.roomID = item.roomId;
+                newReport.responsedDate = Convert.ToDateTime(item.responseDate);
+                newReport.responseMessage = item.responseMassage;
+                newReport.equipmentName = item.equipmentName;
+                newReport.equipmentStatus = item.equipmentStatus;
+                newReport.reportMessage = item.reportMessage;
+                newReport.reportedDate = Convert.ToDateTime(item.reportDate);
+                newReport.setIsEdit(Convert.ToBoolean(item.isEdit));
+                listReportShow.Add(newReport);
             }
             return listReportShow;
         }
@@ -166,15 +184,39 @@ namespace DAL
             }
             return listID;
         }
-        public void DAL_UPDATEACC(ACCOUNT a2)
+        #endregion
+        #region FReport
+        public void DAL_AddReport(int newAccountId, string newRoomId, string newEquimentId, string newStatusId, string newNote)
         {
-            var sup = db.ACCOUNTs.Where(p => p.accountId == a2.accountId).FirstOrDefault();
-            sup.fullName = a2.fullName;
-            sup.faculty = a2.faculty;
-            sup.@class = a2.@class;
-            sup.password = a2.password;
+            //lay maxId
+            int maxId = db.REPORTs.Select(p => p.reportId).Max();
+            // tao bao cao
+            REPORT report = new REPORT()
+            {
+                reportId = maxId + 1,
+                accountId = newAccountId,
+                roomId = newRoomId,
+                equipmentId = newEquimentId,
+                statusId = newStatusId,
+                note = newNote,
+                reportStatus = 0,
+                reportedDate = DateTime.Now,
+                isEdit = true
+            };
+            db.REPORTs.Add(report);
             db.SaveChanges();
         }
+        public void DAL_EditReport(int reportId, string newRoomId, string newEquipmentId, string newStatusId, string newNote)
+        {
+            REPORT report = db.REPORTs.Find(reportId);
+            report.roomId = newRoomId;
+            report.equipmentId = newEquipmentId;
+            report.statusId = newStatusId;
+            report.note = newNote;
+            report.reportedDate = DateTime.Now;
+            db.SaveChanges();
+        }
+        #endregion
 
     }
 }

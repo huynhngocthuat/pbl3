@@ -92,6 +92,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.dataGridView_showReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_showReport.Location = new System.Drawing.Point(6, 98);
             this.dataGridView_showReport.Name = "dataGridView_showReport";
+            this.dataGridView_showReport.ReadOnly = true;
             this.dataGridView_showReport.RowHeadersWidth = 51;
             this.dataGridView_showReport.RowTemplate.Height = 24;
             this.dataGridView_showReport.Size = new System.Drawing.Size(1246, 426);

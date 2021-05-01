@@ -140,6 +140,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.Controls.Add(this.txbPassWord);
             this.Controls.Add(this.txbUsername);
             this.Name = "FLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormLogin";
             this.ResumeLayout(false);
             this.PerformLayout();

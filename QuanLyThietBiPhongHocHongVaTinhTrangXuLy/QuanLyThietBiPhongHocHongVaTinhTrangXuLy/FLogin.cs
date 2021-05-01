@@ -44,7 +44,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                 }
                 else if (BUS_MainData.Instance.BUS_Checkaccount(user, password) == 0)
                 {
-                    FUser f = new FUser();
+                    FUser f = new FUser(user);
                     this.Dispose();
                     f.SetACFormUSER(BUS_MainData.Instance.BUS_GETACCOUNT());
                     f.ShowDialog();

@@ -29,144 +29,75 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnTaiKhoan = new System.Windows.Forms.Button();
-            this.ckb_DaXuLy = new System.Windows.Forms.CheckBox();
-            this.ckb_ChuaXuLy = new System.Windows.Forms.CheckBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txbGhichu = new System.Windows.Forms.TextBox();
-            this.cbbTinhtrang = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.cbbKhu = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnDangxuat = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnDulieu = new System.Windows.Forms.Button();
+            this.groupbox_alldata = new System.Windows.Forms.GroupBox();
+            this.dataGridView_AllData = new System.Windows.Forms.DataGridView();
             this.btnTaobaocao = new System.Windows.Forms.Button();
-            this.cbbThietbi = new System.Windows.Forms.ComboBox();
-            this.cbbPhonghoc = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.btnDulieu = new System.Windows.Forms.Button();
+            this.btnDangxuat = new System.Windows.Forms.Button();
+            this.btnTaiKhoan = new System.Windows.Forms.Button();
+            this.ckb_ChuaXuLy = new System.Windows.Forms.CheckBox();
+            this.ckb_DaXuLy = new System.Windows.Forms.CheckBox();
+            this.cbb_Zone = new System.Windows.Forms.ComboBox();
+            this.lb_GiangDuong = new System.Windows.Forms.Label();
+            this.cbb_Time = new System.Windows.Forms.ComboBox();
+            this.groupbox_UserData = new System.Windows.Forms.GroupBox();
+            this.dataGridView_UserData = new System.Windows.Forms.DataGridView();
+            this.groupbox_main = new System.Windows.Forms.GroupBox();
+            this.btn_EditReport = new System.Windows.Forms.Button();
+            this.groupbox_alldata.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_AllData)).BeginInit();
+            this.groupbox_UserData.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_UserData)).BeginInit();
+            this.groupbox_main.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // groupbox_alldata
             // 
-            this.groupBox1.Controls.Add(this.btnTaiKhoan);
-            this.groupBox1.Controls.Add(this.ckb_DaXuLy);
-            this.groupBox1.Controls.Add(this.ckb_ChuaXuLy);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.txbGhichu);
-            this.groupBox1.Controls.Add(this.cbbTinhtrang);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.cbbKhu);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.btnDangxuat);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Controls.Add(this.btnDulieu);
-            this.groupBox1.Controls.Add(this.btnTaobaocao);
-            this.groupBox1.Controls.Add(this.cbbThietbi);
-            this.groupBox1.Controls.Add(this.cbbPhonghoc);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(13, 13);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1342, 275);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "                        ";
+            this.groupbox_alldata.Controls.Add(this.dataGridView_AllData);
+            this.groupbox_alldata.Location = new System.Drawing.Point(12, 294);
+            this.groupbox_alldata.Name = "groupbox_alldata";
+            this.groupbox_alldata.Size = new System.Drawing.Size(1343, 253);
+            this.groupbox_alldata.TabIndex = 1;
+            this.groupbox_alldata.TabStop = false;
+            this.groupbox_alldata.Text = "Tất cả các báo cáo";
             // 
-            // btnTaiKhoan
+            // dataGridView_AllData
             // 
-            this.btnTaiKhoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnTaiKhoan.Location = new System.Drawing.Point(1135, 26);
-            this.btnTaiKhoan.Name = "btnTaiKhoan";
-            this.btnTaiKhoan.Size = new System.Drawing.Size(86, 27);
-            this.btnTaiKhoan.TabIndex = 15;
-            this.btnTaiKhoan.Text = "Tài khoản";
-            this.btnTaiKhoan.UseVisualStyleBackColor = false;
-            this.btnTaiKhoan.Click += new System.EventHandler(this.btnTaiKhoan_Click);
+            this.dataGridView_AllData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_AllData.Location = new System.Drawing.Point(7, 21);
+            this.dataGridView_AllData.Name = "dataGridView_AllData";
+            this.dataGridView_AllData.ReadOnly = true;
+            this.dataGridView_AllData.RowHeadersWidth = 51;
+            this.dataGridView_AllData.RowTemplate.Height = 24;
+            this.dataGridView_AllData.Size = new System.Drawing.Size(1326, 224);
+            this.dataGridView_AllData.TabIndex = 0;
             // 
-            // ckb_DaXuLy
+            // btnTaobaocao
             // 
-            this.ckb_DaXuLy.AutoSize = true;
-            this.ckb_DaXuLy.Location = new System.Drawing.Point(735, 72);
-            this.ckb_DaXuLy.Name = "ckb_DaXuLy";
-            this.ckb_DaXuLy.Size = new System.Drawing.Size(102, 21);
-            this.ckb_DaXuLy.TabIndex = 2;
-            this.ckb_DaXuLy.Text = "Tin đã xử lý";
-            this.ckb_DaXuLy.UseVisualStyleBackColor = true;
+            this.btnTaobaocao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnTaobaocao.Location = new System.Drawing.Point(1110, 48);
+            this.btnTaobaocao.Name = "btnTaobaocao";
+            this.btnTaobaocao.Size = new System.Drawing.Size(201, 28);
+            this.btnTaobaocao.TabIndex = 3;
+            this.btnTaobaocao.Text = "Tạo báo cáo mới";
+            this.btnTaobaocao.UseVisualStyleBackColor = false;
+            this.btnTaobaocao.Click += new System.EventHandler(this.btnTaobaocao_Click);
             // 
-            // ckb_ChuaXuLy
+            // btnDulieu
             // 
-            this.ckb_ChuaXuLy.AutoSize = true;
-            this.ckb_ChuaXuLy.Location = new System.Drawing.Point(546, 72);
-            this.ckb_ChuaXuLy.Name = "ckb_ChuaXuLy";
-            this.ckb_ChuaXuLy.Size = new System.Drawing.Size(117, 21);
-            this.ckb_ChuaXuLy.TabIndex = 1;
-            this.ckb_ChuaXuLy.Text = "Tin chưa xử lý";
-            this.ckb_ChuaXuLy.UseVisualStyleBackColor = true;
-            this.ckb_ChuaXuLy.CheckedChanged += new System.EventHandler(this.ckb_ChuaXuLy_CheckedChanged);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(241, 72);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 17);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Ghi chú:";
-            // 
-            // txbGhichu
-            // 
-            this.txbGhichu.Location = new System.Drawing.Point(327, 70);
-            this.txbGhichu.Name = "txbGhichu";
-            this.txbGhichu.Size = new System.Drawing.Size(141, 22);
-            this.txbGhichu.TabIndex = 13;
-            // 
-            // cbbTinhtrang
-            // 
-            this.cbbTinhtrang.FormattingEnabled = true;
-            this.cbbTinhtrang.Location = new System.Drawing.Point(96, 65);
-            this.cbbTinhtrang.Name = "cbbTinhtrang";
-            this.cbbTinhtrang.Size = new System.Drawing.Size(121, 24);
-            this.cbbTinhtrang.TabIndex = 12;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 72);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 17);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Tình trạng:";
-            // 
-            // cbbKhu
-            // 
-            this.cbbKhu.FormattingEnabled = true;
-            this.cbbKhu.Location = new System.Drawing.Point(96, 25);
-            this.cbbKhu.Name = "cbbKhu";
-            this.cbbKhu.Size = new System.Drawing.Size(121, 24);
-            this.cbbKhu.TabIndex = 10;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 28);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 17);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Khu:";
+            this.btnDulieu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnDulieu.Location = new System.Drawing.Point(975, 48);
+            this.btnDulieu.Name = "btnDulieu";
+            this.btnDulieu.Size = new System.Drawing.Size(89, 28);
+            this.btnDulieu.TabIndex = 4;
+            this.btnDulieu.Text = "Dữ liệu";
+            this.btnDulieu.UseVisualStyleBackColor = false;
+            this.btnDulieu.Click += new System.EventHandler(this.btnDulieu_Click);
             // 
             // btnDangxuat
             // 
             this.btnDangxuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnDangxuat.Location = new System.Drawing.Point(1227, 25);
+            this.btnDangxuat.Location = new System.Drawing.Point(1221, 85);
             this.btnDangxuat.Name = "btnDangxuat";
             this.btnDangxuat.Size = new System.Drawing.Size(90, 28);
             this.btnDangxuat.TabIndex = 8;
@@ -174,130 +105,151 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnDangxuat.UseVisualStyleBackColor = false;
             this.btnDangxuat.Click += new System.EventHandler(this.btnDangxuat_Click);
             // 
-            // label2
+            // btnTaiKhoan
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(491, 30);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 17);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Thiết bị:";
+            this.btnTaiKhoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnTaiKhoan.Location = new System.Drawing.Point(1110, 85);
+            this.btnTaiKhoan.Name = "btnTaiKhoan";
+            this.btnTaiKhoan.Size = new System.Drawing.Size(86, 27);
+            this.btnTaiKhoan.TabIndex = 15;
+            this.btnTaiKhoan.Text = "Tài khoản";
+            this.btnTaiKhoan.UseVisualStyleBackColor = false;
+            this.btnTaiKhoan.Click += new System.EventHandler(this.btnTaiKhoan_Click);
             // 
-            // dataGridView1
+            // ckb_ChuaXuLy
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 119);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1332, 150);
-            this.dataGridView1.TabIndex = 6;
+            this.ckb_ChuaXuLy.AutoSize = true;
+            this.ckb_ChuaXuLy.Location = new System.Drawing.Point(460, 55);
+            this.ckb_ChuaXuLy.Name = "ckb_ChuaXuLy";
+            this.ckb_ChuaXuLy.Size = new System.Drawing.Size(117, 21);
+            this.ckb_ChuaXuLy.TabIndex = 16;
+            this.ckb_ChuaXuLy.Text = "Tin chưa xử lý";
+            this.ckb_ChuaXuLy.UseVisualStyleBackColor = true;
             // 
-            // btnDulieu
+            // ckb_DaXuLy
             // 
-            this.btnDulieu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnDulieu.Location = new System.Drawing.Point(777, 25);
-            this.btnDulieu.Name = "btnDulieu";
-            this.btnDulieu.Size = new System.Drawing.Size(75, 28);
-            this.btnDulieu.TabIndex = 4;
-            this.btnDulieu.Text = "Dữ liệu";
-            this.btnDulieu.UseVisualStyleBackColor = false;
-            this.btnDulieu.Click += new System.EventHandler(this.btnDulieu_Click);
+            this.ckb_DaXuLy.AutoSize = true;
+            this.ckb_DaXuLy.Location = new System.Drawing.Point(608, 55);
+            this.ckb_DaXuLy.Name = "ckb_DaXuLy";
+            this.ckb_DaXuLy.Size = new System.Drawing.Size(102, 21);
+            this.ckb_DaXuLy.TabIndex = 17;
+            this.ckb_DaXuLy.Text = "Tin đã xử lý";
+            this.ckb_DaXuLy.UseVisualStyleBackColor = true;
             // 
-            // btnTaobaocao
+            // cbb_Zone
             // 
-            this.btnTaobaocao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnTaobaocao.Location = new System.Drawing.Point(696, 24);
-            this.btnTaobaocao.Name = "btnTaobaocao";
-            this.btnTaobaocao.Size = new System.Drawing.Size(75, 28);
-            this.btnTaobaocao.TabIndex = 3;
-            this.btnTaobaocao.Text = "Tạo báo cáo";
-            this.btnTaobaocao.UseVisualStyleBackColor = false;
+            this.cbb_Zone.FormattingEnabled = true;
+            this.cbb_Zone.IntegralHeight = false;
+            this.cbb_Zone.ItemHeight = 16;
+            this.cbb_Zone.Location = new System.Drawing.Point(170, 53);
+            this.cbb_Zone.Name = "cbb_Zone";
+            this.cbb_Zone.Size = new System.Drawing.Size(227, 24);
+            this.cbb_Zone.TabIndex = 18;
             // 
-            // cbbThietbi
+            // lb_GiangDuong
             // 
-            this.cbbThietbi.FormattingEnabled = true;
-            this.cbbThietbi.Location = new System.Drawing.Point(556, 26);
-            this.cbbThietbi.Name = "cbbThietbi";
-            this.cbbThietbi.Size = new System.Drawing.Size(134, 24);
-            this.cbbThietbi.TabIndex = 2;
+            this.lb_GiangDuong.AutoSize = true;
+            this.lb_GiangDuong.Location = new System.Drawing.Point(43, 59);
+            this.lb_GiangDuong.Name = "lb_GiangDuong";
+            this.lb_GiangDuong.Size = new System.Drawing.Size(94, 17);
+            this.lb_GiangDuong.TabIndex = 19;
+            this.lb_GiangDuong.Text = "Giảng đường:";
             // 
-            // cbbPhonghoc
+            // cbb_Time
             // 
-            this.cbbPhonghoc.FormattingEnabled = true;
-            this.cbbPhonghoc.Location = new System.Drawing.Point(327, 25);
-            this.cbbPhonghoc.Name = "cbbPhonghoc";
-            this.cbbPhonghoc.Size = new System.Drawing.Size(141, 24);
-            this.cbbPhonghoc.TabIndex = 1;
+            this.cbb_Time.FormattingEnabled = true;
+            this.cbb_Time.Location = new System.Drawing.Point(762, 52);
+            this.cbb_Time.Name = "cbb_Time";
+            this.cbb_Time.Size = new System.Drawing.Size(188, 24);
+            this.cbb_Time.TabIndex = 20;
             // 
-            // label1
+            // groupbox_UserData
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(241, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Phòng học:";
+            this.groupbox_UserData.Controls.Add(this.dataGridView_UserData);
+            this.groupbox_UserData.Location = new System.Drawing.Point(6, 128);
+            this.groupbox_UserData.Name = "groupbox_UserData";
+            this.groupbox_UserData.Size = new System.Drawing.Size(1336, 147);
+            this.groupbox_UserData.TabIndex = 21;
+            this.groupbox_UserData.TabStop = false;
+            this.groupbox_UserData.Text = "Những báo cáo trước của bạn";
             // 
-            // groupBox2
+            // dataGridView_UserData
             // 
-            this.groupBox2.Controls.Add(this.dataGridView2);
-            this.groupBox2.Location = new System.Drawing.Point(12, 294);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1343, 329);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Danh sách các lần sinh viên khác đã báo";
+            this.dataGridView_UserData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_UserData.Location = new System.Drawing.Point(0, 21);
+            this.dataGridView_UserData.Name = "dataGridView_UserData";
+            this.dataGridView_UserData.ReadOnly = true;
+            this.dataGridView_UserData.RowHeadersWidth = 51;
+            this.dataGridView_UserData.RowTemplate.Height = 24;
+            this.dataGridView_UserData.Size = new System.Drawing.Size(1326, 123);
+            this.dataGridView_UserData.TabIndex = 0;
             // 
-            // dataGridView2
+            // groupbox_main
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(7, 21);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(1326, 224);
-            this.dataGridView2.TabIndex = 0;
+            this.groupbox_main.Controls.Add(this.btn_EditReport);
+            this.groupbox_main.Controls.Add(this.groupbox_UserData);
+            this.groupbox_main.Controls.Add(this.cbb_Time);
+            this.groupbox_main.Controls.Add(this.lb_GiangDuong);
+            this.groupbox_main.Controls.Add(this.cbb_Zone);
+            this.groupbox_main.Controls.Add(this.ckb_DaXuLy);
+            this.groupbox_main.Controls.Add(this.ckb_ChuaXuLy);
+            this.groupbox_main.Controls.Add(this.btnTaiKhoan);
+            this.groupbox_main.Controls.Add(this.btnDangxuat);
+            this.groupbox_main.Controls.Add(this.btnDulieu);
+            this.groupbox_main.Controls.Add(this.btnTaobaocao);
+            this.groupbox_main.Location = new System.Drawing.Point(13, 13);
+            this.groupbox_main.Name = "groupbox_main";
+            this.groupbox_main.Size = new System.Drawing.Size(1342, 275);
+            this.groupbox_main.TabIndex = 0;
+            this.groupbox_main.TabStop = false;
+            this.groupbox_main.Text = "           Huỳnh Ngọc Thuật - 19TCLC_DT2";
+            // 
+            // btn_EditReport
+            // 
+            this.btn_EditReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_EditReport.Location = new System.Drawing.Point(1110, 14);
+            this.btn_EditReport.Name = "btn_EditReport";
+            this.btn_EditReport.Size = new System.Drawing.Size(201, 28);
+            this.btn_EditReport.TabIndex = 4;
+            this.btn_EditReport.Text = "Chỉnh sửa báo cáo";
+            this.btn_EditReport.UseVisualStyleBackColor = false;
+            this.btn_EditReport.Click += new System.EventHandler(this.btn_EditReport_Click);
             // 
             // FUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1364, 559);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupbox_alldata);
+            this.Controls.Add(this.groupbox_main);
             this.Name = "FUser";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FUeser";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.groupbox_alldata.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_AllData)).EndInit();
+            this.groupbox_UserData.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_UserData)).EndInit();
+            this.groupbox_main.ResumeLayout(false);
+            this.groupbox_main.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnDulieu;
+        private System.Windows.Forms.GroupBox groupbox_alldata;
+        private System.Windows.Forms.DataGridView dataGridView_AllData;
         private System.Windows.Forms.Button btnTaobaocao;
-        private System.Windows.Forms.ComboBox cbbThietbi;
-        private System.Windows.Forms.ComboBox cbbPhonghoc;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnDulieu;
         private System.Windows.Forms.Button btnDangxuat;
-        private System.Windows.Forms.ComboBox cbbKhu;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txbGhichu;
-        private System.Windows.Forms.ComboBox cbbTinhtrang;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.CheckBox ckb_DaXuLy;
-        private System.Windows.Forms.CheckBox ckb_ChuaXuLy;
         private System.Windows.Forms.Button btnTaiKhoan;
+        private System.Windows.Forms.CheckBox ckb_ChuaXuLy;
+        private System.Windows.Forms.CheckBox ckb_DaXuLy;
+        private System.Windows.Forms.ComboBox cbb_Zone;
+        private System.Windows.Forms.Label lb_GiangDuong;
+        private System.Windows.Forms.ComboBox cbb_Time;
+        private System.Windows.Forms.GroupBox groupbox_UserData;
+        private System.Windows.Forms.DataGridView dataGridView_UserData;
+        private System.Windows.Forms.GroupBox groupbox_main;
+        private System.Windows.Forms.Button btn_EditReport;
     }
 }

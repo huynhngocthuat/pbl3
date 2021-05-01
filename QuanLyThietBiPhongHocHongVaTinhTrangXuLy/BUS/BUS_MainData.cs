@@ -13,6 +13,7 @@ namespace BUS
     {
         ACCOUNT ac = new ACCOUNT();
         private static BUS_MainData _Instance;
+
         public static BUS_MainData Instance
         {
             get
@@ -23,10 +24,94 @@ namespace BUS
             }
             private set { _Instance = value; }
         }
+        #region data
         public List<ReportShow> BUS_ReportShow()
         {
             return DAL_MainData.Instance.DAL_ReportShow();
         }
+        public List<ZONE> BUS_ZONE()
+        {
+            return DAL_MainData.Instance.DAL_getZone();
+        }
+        public List<ROOM> BUS_ROOM()
+        {
+            return DAL_MainData.Instance.DAL_getRoom();
+        }
+        public List<ACCOUNT> BUS_ACCOUNT()
+        {
+            return DAL_MainData.Instance.DAL_getAccount();
+        }
+        public List<EQUIPMENT> BUS_EQUIPMENT()
+        {
+            return DAL_MainData.Instance.DAL_getEquipment();
+        }
+        public List<STATUS> BUS_STATUS()
+        {
+            return DAL_MainData.Instance.DAL_getStatus();
+        }
+        public List<REPORT> BUS_REPORT()
+        {
+            return DAL_MainData.Instance.DAL_getReport();
+        }
+        #endregion
+        #region FLogin
+        public int BUS_Checkaccount(string user, string passwword)
+        {
+            ac = DAL_MainData.Instance.DAL_CheckAccount(user, passwword);
+            if (ac != null)
+            {
+                if (ac.role == 1)
+                {
+                    return 1;
+                }
+                else if (ac.role == 0) return 0;
+            }
+            return -1;
+        }
+
+        public ACCOUNT BUS_GETACCOUNT()
+        {
+            return ac;
+        }
+
+        public void BUS_SETACCOUNT(ACCOUNT ac)
+        {
+            DAL_MainData.Instance.DAL_SETACCOUNT(ac);
+        }
+        public string BUS_Encrypt(string password)
+        {
+            string MaHoa = "";
+            byte[] temp = ASCIIEncoding.ASCII.GetBytes(password);
+            byte[] hash = new MD5CryptoServiceProvider().ComputeHash(temp);
+
+            // tạo một stringbuilder thực thi nhanh hơn và ít tốn bộ nhớ hơn cộng chuỗi String
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < hash.Length; i++)
+            {
+                sb.Append(hash[i].ToString("x"));
+            }
+            MaHoa = sb.ToString();
+            return MaHoa;
+        }
+        public void BUS_UPDATEACC(ACCOUNT a2)
+        {
+            DAL_MainData.Instance.DAL_UPDATEACC(a2);
+        }
+        public string getZoneIdByName(string zoneName)
+        {
+            foreach (ZONE item in BUS_ZONE())
+            {
+                if (zoneName == item.zoneName)
+                {
+                    return item.zoneId;
+                }
+            }
+            return "";
+        }
+        #endregion
+        #region FMain
+        // lay danh sach report theo Khu, Da Xu Ly?, Ngay
+        //BUS_MainData.Instance.BUS_ReportShow("",1,5)
         public List<ReportShow> BUS_ReportShow(string zoneId, int check, int date)
         {
             // zoneId -> "A",......
@@ -124,72 +209,173 @@ namespace BUS
                     list3 = list2;
                     break;
             }
+            // Thiet lap lai stt
+            for (int i = 0; i < list3.Count(); i++)
+            {
+                list3[i].STT = i + 1;
+            }
             return list3;
         }
-        public List<ZONE> BUS_ZONE()
+        #endregion
+
+        #region FUser
+        // lay danh sach bao cao cua mot user
+        public List<ReportShow> BUS_ReportShowByAccount(string userName)
         {
-            return DAL_MainData.Instance.DAL_getZone();
-        }
-        public List<ROOM> BUS_ROOM()
-        {
-            return DAL_MainData.Instance.DAL_getRoom();
-        }
-        public int BUS_Checkaccount(string user, string passwword)
-        {           
-            ac = DAL_MainData.Instance.DAL_CheckAccount(user, passwword);
-            if (ac != null)
+            List<ReportShow> list = new List<ReportShow>();
+            int accountId = 0;
+            // lay accountId bang username
+            foreach (var item in BUS_ACCOUNT())
             {
-                if (ac.role == 1)
+                if (item.username == userName)
                 {
-                    return 1;
+                    accountId = item.accountId;
                 }
-                else if (ac.role == 0) return 0;
             }
-            return -1;
-        }
-
-        public ACCOUNT BUS_GETACCOUNT()
-        {         
-            return ac;
-        }
-        public List<ACCOUNT> BUS_ACCOUNT()
-        {
-            return DAL_MainData.Instance.DAL_getAccount();
-        }
-
-        public void BUS_SETACCOUNT(ACCOUNT ac)
-        {
-            DAL_MainData.Instance.DAL_SETACCOUNT(ac);
-        }    
-        public string BUS_Encrypt(string password)
-        {
-            string MaHoa = "";
-            byte[] temp = ASCIIEncoding.ASCII.GetBytes(password);
-            byte[] hash = new MD5CryptoServiceProvider().ComputeHash(temp);
-
-            // tạo một stringbuilder thực thi nhanh hơn và ít tốn bộ nhớ hơn cộng chuỗi String
-           StringBuilder sb = new StringBuilder();
-           for(int i =0; i<hash.Length; i++)
+            // loc danh sach theo accountId
+            foreach (ReportShow item in BUS_ReportShow())
             {
-                sb.Append(hash[i].ToString("x"));
+                if (item.getAccountId() == accountId)
+                {
+                    list.Add(item);
+                }
             }
-            MaHoa = sb.ToString();
-            return MaHoa; 
+            return list;
         }
-        public void BUS_UPDATEACC(ACCOUNT a2)
+        public REPORT getReportBySTT(int STT, string userName)
         {
-            DAL_MainData.Instance.DAL_UPDATEACC(a2);
+            int reportId = BUS_MainData.Instance.getListReportId(userName)[STT - 1];
+            foreach (REPORT item in BUS_REPORT())
+            {
+                if (item.reportId == reportId)
+                {
+                    return item;
+                }
+            }
+            return null;
         }
-        public string getZoneIdByName(string zoneName)
+        #endregion
+        #region FReport
+        public List<int> getListReportId(string userName)
+        {
+            List<int> list = new List<int>();
+            foreach (var item in BUS_ReportShowByAccount(userName))
+            {
+                list.Add(item.STT);
+            }
+            return list;
+        }
+
+        // lay list phong theo ten khu
+        public List<ROOM> getRoomByZoneName(string zoneName)
         {
             foreach (ZONE item in BUS_ZONE())
             {
-                if (zoneName == item.zoneName)
+                if (item.zoneName == zoneName)
                 {
-                    return item.zoneId;
+                    return item.ROOMs.ToList<ROOM>();
                 }
             }
-            return "";
+            return null;
         }
+
+        // lay list thiet bi theo phong
+        public List<EQUIPMENT> getQuipmentByRoomId(string roomId)
+        {
+            foreach (ROOM item in BUS_ROOM())
+            {
+                if (item.roomId == roomId)
+                {
+                    return item.EQUIPMENTs.ToList<EQUIPMENT>();
+                }
+            }
+            return null;
+        }
+
+        // lay list tinh trang theo thiet bi
+        public List<STATUS> getStatusByEquipmentName(string equipmentName)
+        {
+            foreach (EQUIPMENT item in BUS_EQUIPMENT())
+            {
+                if (item.equipmentName == equipmentName)
+                {
+                    return item.STATUS.ToList<STATUS>();
+                }
+            }
+            return null;
+        }
+
+        // tao mot report moi
+        public void BUS_AddReport(string userName, string newRoomId, string equipmentName, string equipmentStatus, string newNote)
+        {
+            //int newAccountId, string newRoomId, string newEquimentId, string newStatusId, string newNote
+            int newAccountId = 0;
+            string newEquipmentId = null;
+            string newStatusId = null;
+            foreach (ACCOUNT item in BUS_ACCOUNT())
+            {
+                if (item.username == userName)
+                {
+                    newAccountId = item.accountId;
+                }
+            }
+            // search equipmentId, equipmentStatus
+            foreach (ROOM item in BUS_ROOM())
+            {
+                if (item.roomId == newRoomId)
+                {
+                    foreach (EQUIPMENT item1 in item.EQUIPMENTs.ToList<EQUIPMENT>())
+                    {
+                        if (item1.equipmentName == equipmentName)
+                        {
+                            newEquipmentId = item1.equipmentId;
+                            foreach (STATUS item2 in item1.STATUS.ToList<STATUS>())
+                            {
+                                if (item2.equipmentStatus == equipmentStatus)
+                                {
+                                    newStatusId = item2.statusId;
+                                    break;
+                                }
+                            }
+                            break;
+                        }
+                    }
+                    break;
+                }
+            }
+            DAL_MainData.Instance.DAL_AddReport(newAccountId, newRoomId, newEquipmentId, newStatusId, newNote);
+        }
+        public void BUS_EditReport(int reportId, string newRoomId, string equipmentName, string equipmentStatus, string newNote)
+        {
+            string newEquipmentId = null;
+            string newStatusId = null;
+            // search equipmentId, equipmentStatus
+            foreach (ROOM item in BUS_ROOM())
+            {
+                if (item.roomId == newRoomId)
+                {
+                    foreach (EQUIPMENT item1 in item.EQUIPMENTs.ToList<EQUIPMENT>())
+                    {
+                        if (item1.equipmentName == equipmentName)
+                        {
+                            newEquipmentId = item1.equipmentId;
+                            foreach (STATUS item2 in item1.STATUS.ToList<STATUS>())
+                            {
+                                if (item2.equipmentStatus == equipmentStatus)
+                                {
+                                    newStatusId = item2.statusId;
+                                    break;
+                                }
+                            }
+                            break;
+                        }
+                    }
+                    break;
+                }
+            }
+            DAL_MainData.Instance.DAL_EditReport(reportId, newRoomId, newEquipmentId, newStatusId, newNote);
+        }
+        #endregion
+
     }
 }
