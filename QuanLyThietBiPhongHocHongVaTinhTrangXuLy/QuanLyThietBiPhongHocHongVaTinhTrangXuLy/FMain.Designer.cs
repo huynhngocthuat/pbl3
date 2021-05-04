@@ -29,6 +29,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMain));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cbb_Time = new System.Windows.Forms.ComboBox();
             this.lb_GiangDuong = new System.Windows.Forms.Label();
@@ -52,9 +53,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.groupBox1.Controls.Add(this.cbb_Zone);
             this.groupBox1.Controls.Add(this.ckb_DaXuLy);
             this.groupBox1.Controls.Add(this.ckb_ChuaXuLy);
+            this.groupBox1.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1270, 537);
+            this.groupBox1.Size = new System.Drawing.Size(1209, 550);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách lượt báo thiết bị hỏng";
@@ -62,26 +64,28 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // cbb_Time
             // 
             this.cbb_Time.FormattingEnabled = true;
-            this.cbb_Time.Location = new System.Drawing.Point(753, 44);
+            this.cbb_Time.Location = new System.Drawing.Point(692, 44);
             this.cbb_Time.Name = "cbb_Time";
-            this.cbb_Time.Size = new System.Drawing.Size(176, 24);
+            this.cbb_Time.Size = new System.Drawing.Size(200, 30);
             this.cbb_Time.TabIndex = 11;
             // 
             // lb_GiangDuong
             // 
             this.lb_GiangDuong.AutoSize = true;
-            this.lb_GiangDuong.Location = new System.Drawing.Point(22, 51);
+            this.lb_GiangDuong.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
+            this.lb_GiangDuong.Location = new System.Drawing.Point(22, 47);
             this.lb_GiangDuong.Name = "lb_GiangDuong";
-            this.lb_GiangDuong.Size = new System.Drawing.Size(94, 17);
+            this.lb_GiangDuong.Size = new System.Drawing.Size(108, 22);
             this.lb_GiangDuong.TabIndex = 10;
             this.lb_GiangDuong.Text = "Giảng đường:";
             // 
             // btnDangNhap
             // 
-            this.btnDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnDangNhap.Location = new System.Drawing.Point(1087, 42);
+            this.btnDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.btnDangNhap.ForeColor = System.Drawing.Color.White;
+            this.btnDangNhap.Location = new System.Drawing.Point(1057, 41);
             this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(93, 26);
+            this.btnDangNhap.Size = new System.Drawing.Size(134, 38);
             this.btnDangNhap.TabIndex = 9;
             this.btnDangNhap.Text = "Đăng nhập";
             this.btnDangNhap.UseVisualStyleBackColor = false;
@@ -89,21 +93,25 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // dataGridView_showReport
             // 
+            this.dataGridView_showReport.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView_showReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_showReport.Location = new System.Drawing.Point(6, 98);
+            this.dataGridView_showReport.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.dataGridView_showReport.Location = new System.Drawing.Point(77, 105);
             this.dataGridView_showReport.Name = "dataGridView_showReport";
             this.dataGridView_showReport.ReadOnly = true;
+            this.dataGridView_showReport.RowHeadersVisible = false;
             this.dataGridView_showReport.RowHeadersWidth = 51;
             this.dataGridView_showReport.RowTemplate.Height = 24;
-            this.dataGridView_showReport.Size = new System.Drawing.Size(1246, 426);
+            this.dataGridView_showReport.Size = new System.Drawing.Size(1071, 427);
             this.dataGridView_showReport.TabIndex = 8;
             // 
             // btnDulieu
             // 
-            this.btnDulieu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnDulieu.Location = new System.Drawing.Point(973, 42);
+            this.btnDulieu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.btnDulieu.ForeColor = System.Drawing.Color.White;
+            this.btnDulieu.Location = new System.Drawing.Point(940, 41);
             this.btnDulieu.Name = "btnDulieu";
-            this.btnDulieu.Size = new System.Drawing.Size(75, 28);
+            this.btnDulieu.Size = new System.Drawing.Size(111, 38);
             this.btnDulieu.TabIndex = 7;
             this.btnDulieu.Text = "Dữ liệu";
             this.btnDulieu.UseVisualStyleBackColor = false;
@@ -113,18 +121,19 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             this.cbb_Zone.FormattingEnabled = true;
             this.cbb_Zone.IntegralHeight = false;
-            this.cbb_Zone.ItemHeight = 16;
-            this.cbb_Zone.Location = new System.Drawing.Point(149, 45);
+            this.cbb_Zone.ItemHeight = 22;
+            this.cbb_Zone.Location = new System.Drawing.Point(136, 43);
             this.cbb_Zone.Name = "cbb_Zone";
-            this.cbb_Zone.Size = new System.Drawing.Size(227, 24);
+            this.cbb_Zone.Size = new System.Drawing.Size(227, 30);
             this.cbb_Zone.TabIndex = 6;
             // 
             // ckb_DaXuLy
             // 
             this.ckb_DaXuLy.AutoSize = true;
-            this.ckb_DaXuLy.Location = new System.Drawing.Point(587, 47);
+            this.ckb_DaXuLy.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
+            this.ckb_DaXuLy.Location = new System.Drawing.Point(551, 47);
             this.ckb_DaXuLy.Name = "ckb_DaXuLy";
-            this.ckb_DaXuLy.Size = new System.Drawing.Size(102, 21);
+            this.ckb_DaXuLy.Size = new System.Drawing.Size(116, 26);
             this.ckb_DaXuLy.TabIndex = 5;
             this.ckb_DaXuLy.Text = "Tin đã xử lý";
             this.ckb_DaXuLy.UseVisualStyleBackColor = true;
@@ -132,9 +141,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // ckb_ChuaXuLy
             // 
             this.ckb_ChuaXuLy.AutoSize = true;
-            this.ckb_ChuaXuLy.Location = new System.Drawing.Point(439, 47);
+            this.ckb_ChuaXuLy.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
+            this.ckb_ChuaXuLy.Location = new System.Drawing.Point(401, 47);
             this.ckb_ChuaXuLy.Name = "ckb_ChuaXuLy";
-            this.ckb_ChuaXuLy.Size = new System.Drawing.Size(117, 21);
+            this.ckb_ChuaXuLy.Size = new System.Drawing.Size(134, 26);
             this.ckb_ChuaXuLy.TabIndex = 4;
             this.ckb_ChuaXuLy.Text = "Tin chưa xử lý";
             this.ckb_ChuaXuLy.UseVisualStyleBackColor = true;
@@ -143,8 +153,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1294, 548);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1238, 574);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FMain";
             this.Text = "FMain";
             this.groupBox1.ResumeLayout(false);

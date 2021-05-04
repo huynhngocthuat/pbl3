@@ -24,9 +24,8 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             FRegister f = new FRegister();
             f.ShowDialog();
         }
-
         private void btnDangNhap_Click(object sender, EventArgs e)
-        {            
+        {
             string user = txbUsername.Text;
             string password = txbPassWord.Text;
             if (user == "") { lbwarm.Text = "Vui lòng nhập tên tài khoản"; }
@@ -37,10 +36,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                 password = BUS_MainData.Instance.BUS_Encrypt(txbPassWord.Text);
                 if (BUS_MainData.Instance.BUS_Checkaccount(user, password) == 1)
                 {
-                    FAdmin f = new FAdmin();                   
+                    FAdmin f = new FAdmin();
                     this.Dispose();
-                    f.SetACFormADMIN(BUS_MainData.Instance.BUS_GETACCOUNT());                   
-                    f.ShowDialog();                 
+                    f.SetACFormADMIN(BUS_MainData.Instance.BUS_GETACCOUNT());
+                    f.ShowDialog();
                 }
                 else if (BUS_MainData.Instance.BUS_Checkaccount(user, password) == 0)
                 {
@@ -52,7 +51,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                 }
                 else { lbwarm.Text = "Sai tên đăng nhập hoặc mật khẩu!"; }
             }
-            }
+        }
 
         private void txbUsername_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -62,7 +61,6 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                 e.Handled = true;
             }    
         }
-       
     }
 }
 
