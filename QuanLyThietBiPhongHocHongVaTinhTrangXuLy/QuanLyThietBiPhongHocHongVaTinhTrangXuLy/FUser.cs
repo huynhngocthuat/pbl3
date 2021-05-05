@@ -23,7 +23,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             InitializeComponent();
             setCbbTime();
             setCbbZone();
-            setNameGroupBox();
+            setNameLabel();
         }
         #region mapping data 
         public void setCbbZone()
@@ -47,13 +47,13 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             });
         }
         // lay thong tin sinh vien dang dang nhap
-        public void setNameGroupBox()
+        public void setNameLabel()
         {
             foreach (var item in BUS_MainData.Instance.BUS_ACCOUNT())
             {
                 if (item.username == userName)
                 {
-                    groupbox_main.Text = item.fullName + " - " + item.@class;
+                    label4.Text = item.fullName + " - " + item.@class;
                 }
             }
         }
@@ -136,5 +136,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             }
 
         }
+
+
     }
 }

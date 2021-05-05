@@ -31,7 +31,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             {
                 btn_HuyBaoCao.Text = "Thoát";
                 btn_XacNhan.Text = "Lưu chỉnh sửa";
-                lb_Main.Text = "CHỈNH SỬA BÁO CÁO";
+                label6.Text = "CHỈNH SỬA BÁO CÁO";
                 setDataEdit();
             }
         }
@@ -49,7 +49,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             {
                 if (item.username == userName)
                 {
-                    groupBox_Main.Text = item.fullName + " - " + item.@class;
+                    label7.Text = item.fullName + " - " + item.@class;
                 }
             }
         }

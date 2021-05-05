@@ -102,7 +102,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.txtmkm2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.txtmkm2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtmkm2.Font = new System.Drawing.Font("#9Slide03 Maven Pro Medium", 12F);
-            this.txtmkm2.Location = new System.Drawing.Point(25, 569);
+            this.txtmkm2.Location = new System.Drawing.Point(25, 574);
             this.txtmkm2.MaxLength = 20;
             this.txtmkm2.Name = "txtmkm2";
             this.txtmkm2.PasswordChar = '•';
@@ -115,7 +115,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.txtmkmoi1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.txtmkmoi1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtmkmoi1.Font = new System.Drawing.Font("#9Slide03 Maven Pro Medium", 12F);
-            this.txtmkmoi1.Location = new System.Drawing.Point(25, 503);
+            this.txtmkmoi1.Location = new System.Drawing.Point(25, 508);
             this.txtmkmoi1.MaxLength = 20;
             this.txtmkmoi1.Name = "txtmkmoi1";
             this.txtmkmoi1.PasswordChar = '•';
@@ -128,7 +128,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.txtmkcu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.txtmkcu.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtmkcu.Font = new System.Drawing.Font("#9Slide03 Maven Pro Medium", 12F);
-            this.txtmkcu.Location = new System.Drawing.Point(25, 435);
+            this.txtmkcu.Location = new System.Drawing.Point(25, 440);
             this.txtmkcu.MaxLength = 20;
             this.txtmkcu.Name = "txtmkcu";
             this.txtmkcu.PasswordChar = '•';
@@ -141,7 +141,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("#9Slide03 Kaleko 105 Round Bold", 10.2F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label8.Location = new System.Drawing.Point(21, 546);
+            this.label8.Location = new System.Drawing.Point(21, 551);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(218, 20);
             this.label8.TabIndex = 3;
@@ -162,7 +162,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("#9Slide03 Kaleko 105 Round Bold", 10.2F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(21, 480);
+            this.label6.Location = new System.Drawing.Point(21, 485);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(128, 20);
             this.label6.TabIndex = 3;
@@ -183,7 +183,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("#9Slide03 Kaleko 105 Round Bold", 10.2F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(21, 412);
+            this.label5.Location = new System.Drawing.Point(21, 417);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(117, 20);
             this.label5.TabIndex = 2;
