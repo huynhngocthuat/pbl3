@@ -29,208 +29,231 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnXem = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.btnPhanHoi = new System.Windows.Forms.Button();
-            this.btnTaiKhoan = new System.Windows.Forms.Button();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.btnDangxuat = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.cbbSongaydemnguoc = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnShowDulieu = new System.Windows.Forms.Button();
-            this.cbbGiangduong = new System.Windows.Forms.ComboBox();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.grbAdmin = new System.Windows.Forms.GroupBox();
+            this.ckbResolved = new System.Windows.Forms.CheckBox();
+            this.ckbNotResolvedYet = new System.Windows.Forms.CheckBox();
+            this.dgvReport = new System.Windows.Forms.DataGridView();
+            this.cbbReportTime = new System.Windows.Forms.ComboBox();
+            this.lbZone = new System.Windows.Forms.Label();
+            this.cbbZone = new System.Windows.Forms.ComboBox();
+            this.lbFullName = new System.Windows.Forms.Label();
+            this.btnSignOut = new System.Windows.Forms.Button();
+            this.btnZoneManage = new System.Windows.Forms.Button();
+            this.btnRoomManage = new System.Windows.Forms.Button();
+            this.btnEquipmentManage = new System.Windows.Forms.Button();
+            this.btnStatusManage = new System.Windows.Forms.Button();
+            this.btnCreateResponse = new System.Windows.Forms.Button();
+            this.btnEditProfile = new System.Windows.Forms.Button();
+            this.btnShowData = new System.Windows.Forms.Button();
+            this.grbAdmin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReport)).BeginInit();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // grbAdmin
             // 
-            this.groupBox1.Controls.Add(this.btnXem);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.btnPhanHoi);
-            this.groupBox1.Controls.Add(this.btnTaiKhoan);
-            this.groupBox1.Controls.Add(this.checkBox4);
-            this.groupBox1.Controls.Add(this.checkBox3);
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.btnDangxuat);
-            this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Controls.Add(this.cbbSongaydemnguoc);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.btnShowDulieu);
-            this.groupBox1.Controls.Add(this.cbbGiangduong);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1465, 581);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Danh sách phòng học báo hỏng thiết bị";
+            this.grbAdmin.Controls.Add(this.btnShowData);
+            this.grbAdmin.Controls.Add(this.btnEditProfile);
+            this.grbAdmin.Controls.Add(this.btnCreateResponse);
+            this.grbAdmin.Controls.Add(this.btnStatusManage);
+            this.grbAdmin.Controls.Add(this.btnEquipmentManage);
+            this.grbAdmin.Controls.Add(this.btnRoomManage);
+            this.grbAdmin.Controls.Add(this.btnZoneManage);
+            this.grbAdmin.Controls.Add(this.btnSignOut);
+            this.grbAdmin.Controls.Add(this.lbFullName);
+            this.grbAdmin.Controls.Add(this.ckbResolved);
+            this.grbAdmin.Controls.Add(this.ckbNotResolvedYet);
+            this.grbAdmin.Controls.Add(this.dgvReport);
+            this.grbAdmin.Controls.Add(this.cbbReportTime);
+            this.grbAdmin.Controls.Add(this.lbZone);
+            this.grbAdmin.Controls.Add(this.cbbZone);
+            this.grbAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbAdmin.Location = new System.Drawing.Point(12, 12);
+            this.grbAdmin.Name = "grbAdmin";
+            this.grbAdmin.Size = new System.Drawing.Size(1150, 520);
+            this.grbAdmin.TabIndex = 0;
+            this.grbAdmin.TabStop = false;
+            this.grbAdmin.Text = "Thông tin báo hỏng trang thiết bị phòng học";
             // 
-            // btnXem
+            // ckbResolved
             // 
-            this.btnXem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnXem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnXem.Location = new System.Drawing.Point(996, 72);
-            this.btnXem.Name = "btnXem";
-            this.btnXem.Size = new System.Drawing.Size(75, 24);
-            this.btnXem.TabIndex = 19;
-            this.btnXem.Text = "Xem";
-            this.btnXem.UseVisualStyleBackColor = false;
+            this.ckbResolved.AutoSize = true;
+            this.ckbResolved.Location = new System.Drawing.Point(339, 48);
+            this.ckbResolved.Name = "ckbResolved";
+            this.ckbResolved.Size = new System.Drawing.Size(114, 21);
+            this.ckbResolved.TabIndex = 10;
+            this.ckbResolved.Text = "Tin đã xử lý";
+            this.ckbResolved.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // ckbNotResolvedYet
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(740, 72);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(234, 24);
-            this.comboBox1.TabIndex = 18;
+            this.ckbNotResolvedYet.AutoSize = true;
+            this.ckbNotResolvedYet.Location = new System.Drawing.Point(339, 21);
+            this.ckbNotResolvedYet.Name = "ckbNotResolvedYet";
+            this.ckbNotResolvedYet.Size = new System.Drawing.Size(131, 21);
+            this.ckbNotResolvedYet.TabIndex = 9;
+            this.ckbNotResolvedYet.Text = "Tin chưa xử lý";
+            this.ckbNotResolvedYet.UseVisualStyleBackColor = true;
             // 
-            // btnPhanHoi
+            // dgvReport
             // 
-            this.btnPhanHoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnPhanHoi.Location = new System.Drawing.Point(1098, 28);
-            this.btnPhanHoi.Name = "btnPhanHoi";
-            this.btnPhanHoi.Size = new System.Drawing.Size(81, 27);
-            this.btnPhanHoi.TabIndex = 17;
-            this.btnPhanHoi.Text = "Phản hồi";
-            this.btnPhanHoi.UseVisualStyleBackColor = false;
-            this.btnPhanHoi.Click += new System.EventHandler(this.btnPhanHoi_Click);
+            this.dgvReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvReport.Location = new System.Drawing.Point(20, 144);
+            this.dgvReport.Name = "dgvReport";
+            this.dgvReport.RowHeadersWidth = 51;
+            this.dgvReport.RowTemplate.Height = 24;
+            this.dgvReport.Size = new System.Drawing.Size(1100, 350);
+            this.dgvReport.TabIndex = 5;
             // 
-            // btnTaiKhoan
+            // cbbReportTime
             // 
-            this.btnTaiKhoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnTaiKhoan.Location = new System.Drawing.Point(1209, 29);
-            this.btnTaiKhoan.Name = "btnTaiKhoan";
-            this.btnTaiKhoan.Size = new System.Drawing.Size(100, 27);
-            this.btnTaiKhoan.TabIndex = 16;
-            this.btnTaiKhoan.Text = "Tài khoản";
-            this.btnTaiKhoan.UseVisualStyleBackColor = false;
-            this.btnTaiKhoan.Click += new System.EventHandler(this.btnTaiKhoan_Click);
+            this.cbbReportTime.FormattingEnabled = true;
+            this.cbbReportTime.Location = new System.Drawing.Point(476, 35);
+            this.cbbReportTime.Name = "cbbReportTime";
+            this.cbbReportTime.Size = new System.Drawing.Size(191, 24);
+            this.cbbReportTime.TabIndex = 4;
             // 
-            // checkBox4
+            // lbZone
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(466, 36);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(115, 21);
-            this.checkBox4.TabIndex = 11;
-            this.checkBox4.Text = "Báo cáo sai";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.lbZone.AutoSize = true;
+            this.lbZone.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbZone.Location = new System.Drawing.Point(17, 38);
+            this.lbZone.Name = "lbZone";
+            this.lbZone.Size = new System.Drawing.Size(94, 17);
+            this.lbZone.TabIndex = 3;
+            this.lbZone.Text = "Giảng đường:";
             // 
-            // checkBox3
+            // cbbZone
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(329, 36);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(114, 21);
-            this.checkBox3.TabIndex = 10;
-            this.checkBox3.Text = "Tin đã xử lý";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.cbbZone.FormattingEnabled = true;
+            this.cbbZone.Location = new System.Drawing.Point(117, 35);
+            this.cbbZone.Name = "cbbZone";
+            this.cbbZone.Size = new System.Drawing.Size(187, 24);
+            this.cbbZone.TabIndex = 0;
             // 
-            // checkBox2
+            // lbFullName
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(587, 35);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(131, 21);
-            this.checkBox2.TabIndex = 9;
-            this.checkBox2.Text = "Tin chưa xữ lý";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.lbFullName.AutoSize = true;
+            this.lbFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFullName.Location = new System.Drawing.Point(791, 35);
+            this.lbFullName.Name = "lbFullName";
+            this.lbFullName.Size = new System.Drawing.Size(90, 20);
+            this.lbFullName.TabIndex = 11;
+            this.lbFullName.Text = "Họ và tên";
+            this.lbFullName.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // btnDangxuat
+            // btnSignOut
             // 
-            this.btnDangxuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnDangxuat.Location = new System.Drawing.Point(1340, 28);
-            this.btnDangxuat.Name = "btnDangxuat";
-            this.btnDangxuat.Size = new System.Drawing.Size(93, 27);
-            this.btnDangxuat.TabIndex = 7;
-            this.btnDangxuat.Text = "Đăng xuất";
-            this.btnDangxuat.UseVisualStyleBackColor = false;
-            this.btnDangxuat.Click += new System.EventHandler(this.btnDangxuat_Click);
+            this.btnSignOut.Location = new System.Drawing.Point(1020, 31);
+            this.btnSignOut.Name = "btnSignOut";
+            this.btnSignOut.Size = new System.Drawing.Size(100, 30);
+            this.btnSignOut.TabIndex = 12;
+            this.btnSignOut.Text = "Đăng xuất";
+            this.btnSignOut.UseVisualStyleBackColor = true;
+            this.btnSignOut.Click += new System.EventHandler(this.btnSignOut_Click);
             // 
-            // dataGridView1
+            // btnZoneManage
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(9, 112);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1450, 463);
-            this.dataGridView1.TabIndex = 5;
+            this.btnZoneManage.Location = new System.Drawing.Point(20, 92);
+            this.btnZoneManage.Name = "btnZoneManage";
+            this.btnZoneManage.Size = new System.Drawing.Size(150, 30);
+            this.btnZoneManage.TabIndex = 13;
+            this.btnZoneManage.Text = "Quản lý khu";
+            this.btnZoneManage.UseVisualStyleBackColor = true;
+            this.btnZoneManage.Click += new System.EventHandler(this.btnManageZone_Click);
             // 
-            // cbbSongaydemnguoc
+            // btnRoomManage
             // 
-            this.cbbSongaydemnguoc.FormattingEnabled = true;
-            this.cbbSongaydemnguoc.Location = new System.Drawing.Point(740, 33);
-            this.cbbSongaydemnguoc.Name = "cbbSongaydemnguoc";
-            this.cbbSongaydemnguoc.Size = new System.Drawing.Size(234, 24);
-            this.cbbSongaydemnguoc.TabIndex = 4;
+            this.btnRoomManage.Location = new System.Drawing.Point(176, 92);
+            this.btnRoomManage.Name = "btnRoomManage";
+            this.btnRoomManage.Size = new System.Drawing.Size(150, 30);
+            this.btnRoomManage.TabIndex = 14;
+            this.btnRoomManage.Text = "Quản lý phòng";
+            this.btnRoomManage.UseVisualStyleBackColor = true;
+            this.btnRoomManage.Click += new System.EventHandler(this.btnManageRoom_Click);
             // 
-            // label1
+            // btnEquipmentManage
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 17);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Giảng đường:";
+            this.btnEquipmentManage.Location = new System.Drawing.Point(332, 92);
+            this.btnEquipmentManage.Name = "btnEquipmentManage";
+            this.btnEquipmentManage.Size = new System.Drawing.Size(200, 30);
+            this.btnEquipmentManage.TabIndex = 15;
+            this.btnEquipmentManage.Text = "Quản lý thiết bị phòng";
+            this.btnEquipmentManage.UseVisualStyleBackColor = true;
+            this.btnEquipmentManage.Click += new System.EventHandler(this.btnManageEquipment_Click);
             // 
-            // btnShowDulieu
+            // btnStatusManage
             // 
-            this.btnShowDulieu.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.btnShowDulieu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnShowDulieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShowDulieu.Location = new System.Drawing.Point(996, 29);
-            this.btnShowDulieu.Name = "btnShowDulieu";
-            this.btnShowDulieu.Size = new System.Drawing.Size(75, 28);
-            this.btnShowDulieu.TabIndex = 2;
-            this.btnShowDulieu.Text = "Dữ liệu";
-            this.btnShowDulieu.UseVisualStyleBackColor = false;
+            this.btnStatusManage.Location = new System.Drawing.Point(538, 92);
+            this.btnStatusManage.Name = "btnStatusManage";
+            this.btnStatusManage.Size = new System.Drawing.Size(200, 30);
+            this.btnStatusManage.TabIndex = 16;
+            this.btnStatusManage.Text = "Quản lý tình trạng TB";
+            this.btnStatusManage.UseVisualStyleBackColor = true;
+            this.btnStatusManage.Click += new System.EventHandler(this.btnManageStatus_Click);
             // 
-            // cbbGiangduong
+            // btnCreateResponse
             // 
-            this.cbbGiangduong.FormattingEnabled = true;
-            this.cbbGiangduong.Location = new System.Drawing.Point(106, 29);
-            this.cbbGiangduong.Name = "cbbGiangduong";
-            this.cbbGiangduong.Size = new System.Drawing.Size(187, 24);
-            this.cbbGiangduong.TabIndex = 0;
+            this.btnCreateResponse.Location = new System.Drawing.Point(764, 92);
+            this.btnCreateResponse.Name = "btnCreateResponse";
+            this.btnCreateResponse.Size = new System.Drawing.Size(150, 30);
+            this.btnCreateResponse.TabIndex = 17;
+            this.btnCreateResponse.Text = "Tạo phản hồi";
+            this.btnCreateResponse.UseVisualStyleBackColor = true;
+            this.btnCreateResponse.Click += new System.EventHandler(this.btnCreateResponse_Click);
+            // 
+            // btnEditProfile
+            // 
+            this.btnEditProfile.Location = new System.Drawing.Point(920, 92);
+            this.btnEditProfile.Name = "btnEditProfile";
+            this.btnEditProfile.Size = new System.Drawing.Size(200, 30);
+            this.btnEditProfile.TabIndex = 18;
+            this.btnEditProfile.Text = "Chỉnh sửa tài khoản";
+            this.btnEditProfile.UseVisualStyleBackColor = true;
+            this.btnEditProfile.Click += new System.EventHandler(this.btnEditProfile_Click);
+            // 
+            // btnShowData
+            // 
+            this.btnShowData.Location = new System.Drawing.Point(673, 31);
+            this.btnShowData.Name = "btnShowData";
+            this.btnShowData.Size = new System.Drawing.Size(100, 30);
+            this.btnShowData.TabIndex = 19;
+            this.btnShowData.Text = "Dữ liệu";
+            this.btnShowData.UseVisualStyleBackColor = true;
+            this.btnShowData.Click += new System.EventHandler(this.btnShowData_Click);
             // 
             // FAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1489, 605);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(1182, 553);
+            this.Controls.Add(this.grbAdmin);
             this.Name = "FAdmin";
-            this.Text = "Form1";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Text = "FAdmin";
+            this.grbAdmin.ResumeLayout(false);
+            this.grbAdmin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReport)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnShowDulieu;
-        private System.Windows.Forms.ComboBox cbbGiangduong;
-        private System.Windows.Forms.ComboBox cbbSongaydemnguoc;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btnDangxuat;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.Button btnTaiKhoan;
-        private System.Windows.Forms.Button btnPhanHoi;
-        private System.Windows.Forms.Button btnXem;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.GroupBox grbAdmin;
+        private System.Windows.Forms.ComboBox cbbZone;
+        private System.Windows.Forms.ComboBox cbbReportTime;
+        private System.Windows.Forms.Label lbZone;
+        private System.Windows.Forms.DataGridView dgvReport;
+        private System.Windows.Forms.CheckBox ckbResolved;
+        private System.Windows.Forms.CheckBox ckbNotResolvedYet;
+        private System.Windows.Forms.Button btnShowData;
+        private System.Windows.Forms.Button btnEditProfile;
+        private System.Windows.Forms.Button btnCreateResponse;
+        private System.Windows.Forms.Button btnStatusManage;
+        private System.Windows.Forms.Button btnEquipmentManage;
+        private System.Windows.Forms.Button btnRoomManage;
+        private System.Windows.Forms.Button btnZoneManage;
+        private System.Windows.Forms.Button btnSignOut;
+        private System.Windows.Forms.Label lbFullName;
     }
 }
 

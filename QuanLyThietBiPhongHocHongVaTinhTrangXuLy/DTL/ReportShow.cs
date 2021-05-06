@@ -12,6 +12,7 @@ namespace DTL
         private int accountId { get; set; }
         public string roomID { get; set; }
         public DateTime responsedDate { get; set; }
+        private int responseType { get; set; }
         public string responseMessage { get; set; }
         public string equipmentName  { get; set; }
         public string equipmentStatus { get; set; }
@@ -35,6 +36,14 @@ namespace DTL
         public void setIsEdit(bool isEdit)
         {
             this.isEdit = isEdit;
+        }
+        public int getResponseType()
+        {
+            return responseType;
+        }
+        public void setResponseType(int resType)
+        {
+            this.responseType = resType;
         }
     }
 }

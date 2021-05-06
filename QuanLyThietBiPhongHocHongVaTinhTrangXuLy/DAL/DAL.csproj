@@ -53,6 +53,7 @@
     <Compile Include="ACCOUNT.cs">
       <DependentUpon>PBL3_Entity.tt</DependentUpon>
     </Compile>
+    <Compile Include="DAL_AdminData.cs" />
     <Compile Include="DAL_MainData.cs" />
     <Compile Include="EQUIPMENT.cs">
       <DependentUpon>PBL3_Entity.tt</DependentUpon>
