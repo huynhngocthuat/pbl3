@@ -29,181 +29,247 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnLuu = new System.Windows.Forms.Button();
-            this.cbbLoaiPhanHoi = new System.Windows.Forms.ComboBox();
-            this.DatetimePhanHoi = new System.Windows.Forms.DateTimePicker();
-            this.txbMaBaoCao = new System.Windows.Forms.TextBox();
-            this.txbMaTaiKhoan = new System.Windows.Forms.TextBox();
-            this.txbMaPhanHoi = new System.Windows.Forms.TextBox();
-            this.ricktxbNoiDung = new System.Windows.Forms.RichTextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.grbCreateResponse = new System.Windows.Forms.GroupBox();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.rtbNote = new System.Windows.Forms.RichTextBox();
+            this.lbNote = new System.Windows.Forms.Label();
+            this.txbEquipmentStatus = new System.Windows.Forms.TextBox();
+            this.lbStatus = new System.Windows.Forms.Label();
+            this.txbEquipmentName = new System.Windows.Forms.TextBox();
+            this.lbEquipment = new System.Windows.Forms.Label();
+            this.txbRoomId = new System.Windows.Forms.TextBox();
+            this.lbRoomId = new System.Windows.Forms.Label();
+            this.btnCreate = new System.Windows.Forms.Button();
+            this.cbbResponseType = new System.Windows.Forms.ComboBox();
+            this.dtpReportedDate = new System.Windows.Forms.DateTimePicker();
+            this.txbReportId = new System.Windows.Forms.TextBox();
+            this.rtbResponseMessage = new System.Windows.Forms.RichTextBox();
+            this.lbResponseMessage = new System.Windows.Forms.Label();
+            this.lbReportedDate = new System.Windows.Forms.Label();
+            this.lbResponseType = new System.Windows.Forms.Label();
+            this.lbReportId = new System.Windows.Forms.Label();
+            this.grbCreateResponse.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // grbCreateResponse
             // 
-            this.groupBox1.Controls.Add(this.btnLuu);
-            this.groupBox1.Controls.Add(this.cbbLoaiPhanHoi);
-            this.groupBox1.Controls.Add(this.DatetimePhanHoi);
-            this.groupBox1.Controls.Add(this.txbMaBaoCao);
-            this.groupBox1.Controls.Add(this.txbMaTaiKhoan);
-            this.groupBox1.Controls.Add(this.txbMaPhanHoi);
-            this.groupBox1.Controls.Add(this.ricktxbNoiDung);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(728, 354);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Phản hồi";
+            this.grbCreateResponse.Controls.Add(this.btnCancel);
+            this.grbCreateResponse.Controls.Add(this.rtbNote);
+            this.grbCreateResponse.Controls.Add(this.lbNote);
+            this.grbCreateResponse.Controls.Add(this.txbEquipmentStatus);
+            this.grbCreateResponse.Controls.Add(this.lbStatus);
+            this.grbCreateResponse.Controls.Add(this.txbEquipmentName);
+            this.grbCreateResponse.Controls.Add(this.lbEquipment);
+            this.grbCreateResponse.Controls.Add(this.txbRoomId);
+            this.grbCreateResponse.Controls.Add(this.lbRoomId);
+            this.grbCreateResponse.Controls.Add(this.btnCreate);
+            this.grbCreateResponse.Controls.Add(this.cbbResponseType);
+            this.grbCreateResponse.Controls.Add(this.dtpReportedDate);
+            this.grbCreateResponse.Controls.Add(this.txbReportId);
+            this.grbCreateResponse.Controls.Add(this.rtbResponseMessage);
+            this.grbCreateResponse.Controls.Add(this.lbResponseMessage);
+            this.grbCreateResponse.Controls.Add(this.lbReportedDate);
+            this.grbCreateResponse.Controls.Add(this.lbResponseType);
+            this.grbCreateResponse.Controls.Add(this.lbReportId);
+            this.grbCreateResponse.Location = new System.Drawing.Point(12, 12);
+            this.grbCreateResponse.Name = "grbCreateResponse";
+            this.grbCreateResponse.Size = new System.Drawing.Size(650, 350);
+            this.grbCreateResponse.TabIndex = 0;
+            this.grbCreateResponse.TabStop = false;
+            this.grbCreateResponse.Text = "Tạo phản hồi";
             // 
-            // btnLuu
+            // btnCancel
             // 
-            this.btnLuu.Location = new System.Drawing.Point(612, 93);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(75, 23);
-            this.btnLuu.TabIndex = 13;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnCancel.Location = new System.Drawing.Point(527, 290);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(75, 30);
+            this.btnCancel.TabIndex = 24;
+            this.btnCancel.Text = "Hủy";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // cbbLoaiPhanHoi
+            // rtbNote
             // 
-            this.cbbLoaiPhanHoi.FormattingEnabled = true;
-            this.cbbLoaiPhanHoi.Location = new System.Drawing.Point(108, 93);
-            this.cbbLoaiPhanHoi.Name = "cbbLoaiPhanHoi";
-            this.cbbLoaiPhanHoi.Size = new System.Drawing.Size(121, 24);
-            this.cbbLoaiPhanHoi.TabIndex = 12;
+            this.rtbNote.Enabled = false;
+            this.rtbNote.Location = new System.Drawing.Point(111, 184);
+            this.rtbNote.Name = "rtbNote";
+            this.rtbNote.Size = new System.Drawing.Size(223, 100);
+            this.rtbNote.TabIndex = 23;
+            this.rtbNote.Text = "";
             // 
-            // DatetimePhanHoi
+            // lbNote
             // 
-            this.DatetimePhanHoi.Location = new System.Drawing.Point(355, 93);
-            this.DatetimePhanHoi.Name = "DatetimePhanHoi";
-            this.DatetimePhanHoi.Size = new System.Drawing.Size(223, 22);
-            this.DatetimePhanHoi.TabIndex = 11;
+            this.lbNote.AutoSize = true;
+            this.lbNote.Location = new System.Drawing.Point(19, 187);
+            this.lbNote.Name = "lbNote";
+            this.lbNote.Size = new System.Drawing.Size(61, 17);
+            this.lbNote.TabIndex = 22;
+            this.lbNote.Text = "Ghi chú:";
             // 
-            // txbMaBaoCao
+            // txbEquipmentStatus
             // 
-            this.txbMaBaoCao.Location = new System.Drawing.Point(594, 31);
-            this.txbMaBaoCao.Name = "txbMaBaoCao";
-            this.txbMaBaoCao.Size = new System.Drawing.Size(128, 22);
-            this.txbMaBaoCao.TabIndex = 10;
+            this.txbEquipmentStatus.Enabled = false;
+            this.txbEquipmentStatus.Location = new System.Drawing.Point(111, 146);
+            this.txbEquipmentStatus.Name = "txbEquipmentStatus";
+            this.txbEquipmentStatus.Size = new System.Drawing.Size(223, 22);
+            this.txbEquipmentStatus.TabIndex = 19;
             // 
-            // txbMaTaiKhoan
+            // lbStatus
             // 
-            this.txbMaTaiKhoan.Location = new System.Drawing.Point(350, 29);
-            this.txbMaTaiKhoan.Name = "txbMaTaiKhoan";
-            this.txbMaTaiKhoan.Size = new System.Drawing.Size(135, 22);
-            this.txbMaTaiKhoan.TabIndex = 9;
+            this.lbStatus.AutoSize = true;
+            this.lbStatus.Location = new System.Drawing.Point(19, 149);
+            this.lbStatus.Name = "lbStatus";
+            this.lbStatus.Size = new System.Drawing.Size(77, 17);
+            this.lbStatus.TabIndex = 18;
+            this.lbStatus.Text = "Tình trạng:";
             // 
-            // txbMaPhanHoi
+            // txbEquipmentName
             // 
-            this.txbMaPhanHoi.Location = new System.Drawing.Point(107, 31);
-            this.txbMaPhanHoi.Name = "txbMaPhanHoi";
-            this.txbMaPhanHoi.Size = new System.Drawing.Size(129, 22);
-            this.txbMaPhanHoi.TabIndex = 7;
+            this.txbEquipmentName.Enabled = false;
+            this.txbEquipmentName.Location = new System.Drawing.Point(111, 107);
+            this.txbEquipmentName.Name = "txbEquipmentName";
+            this.txbEquipmentName.Size = new System.Drawing.Size(223, 22);
+            this.txbEquipmentName.TabIndex = 17;
             // 
-            // ricktxbNoiDung
+            // lbEquipment
             // 
-            this.ricktxbNoiDung.Location = new System.Drawing.Point(78, 149);
-            this.ricktxbNoiDung.Name = "ricktxbNoiDung";
-            this.ricktxbNoiDung.Size = new System.Drawing.Size(644, 198);
-            this.ricktxbNoiDung.TabIndex = 6;
-            this.ricktxbNoiDung.Text = "";
+            this.lbEquipment.AutoSize = true;
+            this.lbEquipment.Location = new System.Drawing.Point(19, 110);
+            this.lbEquipment.Name = "lbEquipment";
+            this.lbEquipment.Size = new System.Drawing.Size(59, 17);
+            this.lbEquipment.TabIndex = 16;
+            this.lbEquipment.Text = "Thiết bị:";
             // 
-            // label6
+            // txbRoomId
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(7, 149);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 17);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Nội dung";
+            this.txbRoomId.Enabled = false;
+            this.txbRoomId.Location = new System.Drawing.Point(111, 71);
+            this.txbRoomId.Name = "txbRoomId";
+            this.txbRoomId.Size = new System.Drawing.Size(223, 22);
+            this.txbRoomId.TabIndex = 15;
             // 
-            // label5
+            // lbRoomId
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(255, 95);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 17);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Thời gian";
+            this.lbRoomId.AutoSize = true;
+            this.lbRoomId.Location = new System.Drawing.Point(19, 74);
+            this.lbRoomId.Name = "lbRoomId";
+            this.lbRoomId.Size = new System.Drawing.Size(53, 17);
+            this.lbRoomId.TabIndex = 14;
+            this.lbRoomId.Text = "Phòng:";
             // 
-            // label4
+            // btnCreate
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 93);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(94, 17);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Loại phản hồi";
+            this.btnCreate.Location = new System.Drawing.Point(379, 290);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.Size = new System.Drawing.Size(75, 30);
+            this.btnCreate.TabIndex = 13;
+            this.btnCreate.Text = "Tạo";
+            this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
-            // label3
+            // cbbResponseType
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(506, 34);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 17);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Mã báo cáo";
+            this.cbbResponseType.FormattingEnabled = true;
+            this.cbbResponseType.Location = new System.Drawing.Point(379, 71);
+            this.cbbResponseType.Name = "cbbResponseType";
+            this.cbbResponseType.Size = new System.Drawing.Size(223, 24);
+            this.cbbResponseType.TabIndex = 12;
+            this.cbbResponseType.SelectedIndexChanged += new System.EventHandler(this.cbbResponseType_SelectedIndexChanged);
             // 
-            // label2
+            // dtpReportedDate
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(255, 34);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Mã tài khoản";
+            this.dtpReportedDate.Enabled = false;
+            this.dtpReportedDate.Location = new System.Drawing.Point(111, 298);
+            this.dtpReportedDate.Name = "dtpReportedDate";
+            this.dtpReportedDate.Size = new System.Drawing.Size(223, 22);
+            this.dtpReportedDate.TabIndex = 11;
             // 
-            // label1
+            // txbReportId
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Mã phản hồi";
+            this.txbReportId.Enabled = false;
+            this.txbReportId.Location = new System.Drawing.Point(111, 33);
+            this.txbReportId.Name = "txbReportId";
+            this.txbReportId.Size = new System.Drawing.Size(223, 22);
+            this.txbReportId.TabIndex = 10;
+            // 
+            // rtbResponseMessage
+            // 
+            this.rtbResponseMessage.Location = new System.Drawing.Point(379, 146);
+            this.rtbResponseMessage.Name = "rtbResponseMessage";
+            this.rtbResponseMessage.Size = new System.Drawing.Size(223, 100);
+            this.rtbResponseMessage.TabIndex = 6;
+            this.rtbResponseMessage.Text = "";
+            // 
+            // lbResponseMessage
+            // 
+            this.lbResponseMessage.AutoSize = true;
+            this.lbResponseMessage.Location = new System.Drawing.Point(376, 112);
+            this.lbResponseMessage.Name = "lbResponseMessage";
+            this.lbResponseMessage.Size = new System.Drawing.Size(128, 17);
+            this.lbResponseMessage.TabIndex = 5;
+            this.lbResponseMessage.Text = "Nội dung phản hồi:";
+            // 
+            // lbReportedDate
+            // 
+            this.lbReportedDate.AutoSize = true;
+            this.lbReportedDate.Location = new System.Drawing.Point(19, 303);
+            this.lbReportedDate.Name = "lbReportedDate";
+            this.lbReportedDate.Size = new System.Drawing.Size(71, 17);
+            this.lbReportedDate.TabIndex = 4;
+            this.lbReportedDate.Text = "Thời gian:";
+            // 
+            // lbResponseType
+            // 
+            this.lbResponseType.AutoSize = true;
+            this.lbResponseType.Location = new System.Drawing.Point(376, 36);
+            this.lbResponseType.Name = "lbResponseType";
+            this.lbResponseType.Size = new System.Drawing.Size(98, 17);
+            this.lbResponseType.TabIndex = 3;
+            this.lbResponseType.Text = "Loại phản hồi:";
+            // 
+            // lbReportId
+            // 
+            this.lbReportId.AutoSize = true;
+            this.lbReportId.Location = new System.Drawing.Point(19, 36);
+            this.lbReportId.Name = "lbReportId";
+            this.lbReportId.Size = new System.Drawing.Size(86, 17);
+            this.lbReportId.TabIndex = 2;
+            this.lbReportId.Text = "Mã báo cáo:";
             // 
             // FResponse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(769, 426);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(682, 373);
+            this.Controls.Add(this.grbCreateResponse);
             this.Name = "FResponse";
             this.Text = "FResponse";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.grbCreateResponse.ResumeLayout(false);
+            this.grbCreateResponse.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox cbbLoaiPhanHoi;
-        private System.Windows.Forms.DateTimePicker DatetimePhanHoi;
-        private System.Windows.Forms.TextBox txbMaBaoCao;
-        private System.Windows.Forms.TextBox txbMaTaiKhoan;
-        private System.Windows.Forms.TextBox txbMaPhanHoi;
-        private System.Windows.Forms.RichTextBox ricktxbNoiDung;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.GroupBox grbCreateResponse;
+        private System.Windows.Forms.ComboBox cbbResponseType;
+        private System.Windows.Forms.DateTimePicker dtpReportedDate;
+        private System.Windows.Forms.TextBox txbReportId;
+        private System.Windows.Forms.RichTextBox rtbResponseMessage;
+        private System.Windows.Forms.Label lbResponseMessage;
+        private System.Windows.Forms.Label lbReportedDate;
+        private System.Windows.Forms.Label lbResponseType;
+        private System.Windows.Forms.Label lbReportId;
+        private System.Windows.Forms.Button btnCreate;
+        private System.Windows.Forms.RichTextBox rtbNote;
+        private System.Windows.Forms.Label lbNote;
+        private System.Windows.Forms.TextBox txbEquipmentStatus;
+        private System.Windows.Forms.Label lbStatus;
+        private System.Windows.Forms.TextBox txbEquipmentName;
+        private System.Windows.Forms.Label lbEquipment;
+        private System.Windows.Forms.TextBox txbRoomId;
+        private System.Windows.Forms.Label lbRoomId;
+        private System.Windows.Forms.Button btnCancel;
     }
 }
