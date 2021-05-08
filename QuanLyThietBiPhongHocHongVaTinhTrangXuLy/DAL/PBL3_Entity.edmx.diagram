@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="526b7ebcab9e40deb47286b3b4e37017" Name="Diagram1" ZoomLevel="61">
+        <EntityTypeShape EntityType="MVH_10Model.ACCOUNT" Width="1.5" PointX="5.25" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVH_10Model.EQUIPMENT" Width="1.5" PointX="13.625" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVH_10Model.REPORT" Width="1.5" PointX="7.875" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVH_10Model.RESPONSE" Width="1.5" PointX="11" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVH_10Model.ROOM" Width="1.5" PointX="13.875" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVH_10Model.STATUS" Width="1.5" PointX="10" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVH_10Model.sysdiagram" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVH_10Model.ZONE" Width="1.5" PointX="17.5" PointY="4.125" IsExpanded="true" />
+        <AssociationConnector Association="MVH_10Model.FK__REPORT__accountI__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="MVH_10Model.FK__RESPONSE__accoun__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="MVH_10Model.FK__EQUIPMENT__roomI__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="MVH_10Model.FK__REPORT__equipmen__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="MVH_10Model.FK__STATUS__equipmen__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="MVH_10Model.FK__REPORT__roomId__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="MVH_10Model.FK__REPORT__statusId__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="MVH_10Model.FK__RESPONSE__report__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="MVH_10Model.FK__ROOM__zoneId__3B75D760" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
