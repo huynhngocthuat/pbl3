@@ -73,7 +73,7 @@ namespace BUS
         {
             return ac;
         }
-
+ 
         public void BUS_SETACCOUNT(ACCOUNT ac)
         {
             DAL_MainData.Instance.DAL_SETACCOUNT(ac);
@@ -97,6 +97,84 @@ namespace BUS
         {
             DAL_MainData.Instance.DAL_UPDATEACC(a2);
         }
+
+        public List<AccountShow> BUS_AccountShow()
+        {
+            #region cach1
+            /* List<AccountShow> accs = new List<AccountShow>();
+
+            List<ACCOUNT> ac = BUS_ACCOUNT();
+            foreach (var item in ac)
+            {
+                AccountShow a = new AccountShow();
+                //a.setaccountID(item.accountId);
+                a.fullName = item.fullName;
+                a.@class = item.@class;
+                a.faculty = item.faculty;
+                //a.setpass(item.password);
+                a.username = item.username;
+                //if (item.role == 1)
+                //{ a.role = "Admin"; }
+                //else { a.role = "User"; }
+                accs.Add(a);
+            }
+            return accs.ToList();
+            */
+            #endregion 
+
+            return DAL_MainData.Instance.DAL_GetAccountShow();
+        }
+        #region deleteAccountBUS
+        /*public void BUS_DeleteAccount(List<String> lusername)
+        {
+            DAL_MainData.Instance.DAL_DeleteAccount(lusername);
+        }*/
+        #endregion
+        public List<AccountShow> BUS_Search(string fullname)
+        {
+            List<AccountShow> l = new List<AccountShow>();
+          
+            foreach(var item in BUS_AccountShow())
+            {
+                if(item.fullName.ToLower().Contains(fullname.ToLower()) == true)
+                {
+                    l.Add(item);
+                }    
+            }    
+            return l;
+        }
+        public List<AccountShow> BUS_Sort(string cbbitem)
+        {
+            string item = cbbitem;
+            switch (item)
+            {
+                case "Họ và tên":
+                    {
+                        return BUS_AccountShow().OrderBy(o => o.fullName).ToList();                       
+                    }
+                case "Khoa":
+                    {
+                        return BUS_AccountShow().OrderBy(o => o.faculty).ToList();                       
+                    }
+                case "Lớp":
+                    {
+                        return BUS_AccountShow().OrderBy(o => o.@class).ToList();                       
+                    }
+                case "Username":
+                    {
+                        return BUS_AccountShow().OrderBy(o => o.username).ToList();                      
+                    }
+                case "Role":
+                    {
+                        return BUS_AccountShow().OrderBy(o => o.Role).ToList();                        
+                    }
+                default:
+                    {
+                        return BUS_AccountShow();
+                    }
+            }
+        }
+        #endregion
         public string getZoneIdByName(string zoneName)
         {
             foreach (ZONE item in BUS_ZONE())
@@ -108,7 +186,7 @@ namespace BUS
             }
             return "";
         }
-        #endregion
+        
         #region FMain
         // lay danh sach report theo Khu, Da Xu Ly?, Ngay
         //BUS_MainData.Instance.BUS_ReportShow("",1,5)

@@ -49,6 +49,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_AllData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_UserData)).BeginInit();
             this.panel1.SuspendLayout();
@@ -102,9 +103,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnDangxuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btnDangxuat.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
             this.btnDangxuat.ForeColor = System.Drawing.Color.White;
-            this.btnDangxuat.Location = new System.Drawing.Point(1336, 5);
+            this.btnDangxuat.Location = new System.Drawing.Point(1325, 9);
             this.btnDangxuat.Name = "btnDangxuat";
-            this.btnDangxuat.Size = new System.Drawing.Size(111, 37);
+            this.btnDangxuat.Size = new System.Drawing.Size(111, 35);
             this.btnDangxuat.TabIndex = 8;
             this.btnDangxuat.Text = "Đăng xuất";
             this.btnDangxuat.UseVisualStyleBackColor = false;
@@ -115,9 +116,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnTaiKhoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btnTaiKhoan.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
             this.btnTaiKhoan.ForeColor = System.Drawing.Color.White;
-            this.btnTaiKhoan.Location = new System.Drawing.Point(1225, 5);
+            this.btnTaiKhoan.Location = new System.Drawing.Point(1214, 9);
             this.btnTaiKhoan.Name = "btnTaiKhoan";
-            this.btnTaiKhoan.Size = new System.Drawing.Size(105, 37);
+            this.btnTaiKhoan.Size = new System.Drawing.Size(105, 35);
             this.btnTaiKhoan.TabIndex = 15;
             this.btnTaiKhoan.Text = "Tài khoản";
             this.btnTaiKhoan.UseVisualStyleBackColor = false;
@@ -127,7 +128,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             this.ckb_ChuaXuLy.AutoSize = true;
             this.ckb_ChuaXuLy.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.ckb_ChuaXuLy.Location = new System.Drawing.Point(511, 16);
+            this.ckb_ChuaXuLy.Location = new System.Drawing.Point(507, 14);
             this.ckb_ChuaXuLy.Name = "ckb_ChuaXuLy";
             this.ckb_ChuaXuLy.Size = new System.Drawing.Size(134, 26);
             this.ckb_ChuaXuLy.TabIndex = 16;
@@ -138,7 +139,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             this.ckb_DaXuLy.AutoSize = true;
             this.ckb_DaXuLy.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.ckb_DaXuLy.Location = new System.Drawing.Point(684, 16);
+            this.ckb_DaXuLy.Location = new System.Drawing.Point(684, 14);
             this.ckb_DaXuLy.Name = "ckb_DaXuLy";
             this.ckb_DaXuLy.Size = new System.Drawing.Size(116, 26);
             this.ckb_DaXuLy.TabIndex = 17;
@@ -168,7 +169,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // cbb_Time
             // 
             this.cbb_Time.FormattingEnabled = true;
-            this.cbb_Time.Location = new System.Drawing.Point(849, 13);
+            this.cbb_Time.Location = new System.Drawing.Point(855, 15);
             this.cbb_Time.Name = "cbb_Time";
             this.cbb_Time.Size = new System.Drawing.Size(188, 24);
             this.cbb_Time.TabIndex = 20;
@@ -205,28 +206,32 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.label2.Location = new System.Drawing.Point(596, 102);
+            this.label2.Location = new System.Drawing.Point(590, 107);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(231, 22);
+            this.label2.Size = new System.Drawing.Size(233, 24);
             this.label2.TabIndex = 23;
             this.label2.Text = "Những báo cáo trước của bạn";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
             this.label3.Location = new System.Drawing.Point(635, 421);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(146, 22);
+            this.label3.Size = new System.Drawing.Size(148, 24);
             this.label3.TabIndex = 24;
             this.label3.Text = "Tất cả các báo cáo";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.label4.Location = new System.Drawing.Point(614, 9);
+            this.label4.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(614, 4);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(237, 22);
             this.label4.TabIndex = 26;
@@ -234,7 +239,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(174)))), ((int)(((byte)(232)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.label3);
@@ -243,9 +250,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.panel1.Controls.Add(this.btnTaobaocao);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.btn_EditReport);
-            this.panel1.Location = new System.Drawing.Point(12, 22);
+            this.panel1.Location = new System.Drawing.Point(12, 27);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1463, 749);
+            this.panel1.Size = new System.Drawing.Size(1463, 744);
             this.panel1.TabIndex = 27;
             // 
             // panel4
@@ -266,7 +273,8 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(174)))), ((int)(((byte)(232)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(254)))));
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.btnDulieu);
             this.panel2.Controls.Add(this.cbb_Time);
             this.panel2.Controls.Add(this.ckb_ChuaXuLy);
@@ -275,10 +283,18 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.panel2.Controls.Add(this.btnTaiKhoan);
             this.panel2.Controls.Add(this.ckb_DaXuLy);
             this.panel2.Controls.Add(this.btnDangxuat);
-            this.panel2.Location = new System.Drawing.Point(13, 34);
+            this.panel2.Location = new System.Drawing.Point(13, 28);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1462, 49);
+            this.panel2.Size = new System.Drawing.Size(1462, 54);
             this.panel2.TabIndex = 28;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Black;
+            this.panel5.Location = new System.Drawing.Point(-1, 53);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1463, 3);
+            this.panel5.TabIndex = 28;
             // 
             // FUser
             // 
@@ -324,5 +340,6 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel5;
     }
 }

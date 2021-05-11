@@ -100,3 +100,4 @@ C:\Users\Asus\Desktop\PBL##\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLy
 C:\Users\Asus\Desktop\PBL##\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\Asus\Desktop\PBL##\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.exe
 C:\Users\Asus\Desktop\PBL##\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.pdb
+C:\Users\Asus\Desktop\PBL3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.FAccountManagement.resources
