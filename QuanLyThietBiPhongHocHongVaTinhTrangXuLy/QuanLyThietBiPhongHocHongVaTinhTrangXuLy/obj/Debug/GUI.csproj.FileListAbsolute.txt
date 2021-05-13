@@ -134,3 +134,4 @@ C:\Users\z\Desktop\PBL3\pbl3cnpm\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\Q
 C:\Users\z\Desktop\PBL3\pbl3cnpm\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\z\Desktop\PBL3\pbl3cnpm\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.exe
 C:\Users\z\Desktop\PBL3\pbl3cnpm\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.pdb
+E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.FAccountManagement.resources

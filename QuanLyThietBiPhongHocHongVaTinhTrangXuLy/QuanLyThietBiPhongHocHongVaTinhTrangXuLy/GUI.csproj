@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FAccountManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAccountManagement.Designer.cs">
+      <DependentUpon>FAccountManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="FEquipment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +126,9 @@
     <Compile Include="FZone.Designer.cs">
       <DependentUpon>FZone.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FAccountManagement.resx">
+      <DependentUpon>FAccountManagement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FEquipment.resx">
       <DependentUpon>FEquipment.cs</DependentUpon>
     </EmbeddedResource>

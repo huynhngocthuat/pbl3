@@ -29,7 +29,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMain));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FReport));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.ckb_ChuaXuLy = new System.Windows.Forms.CheckBox();
             this.ckb_DaXuLy = new System.Windows.Forms.CheckBox();

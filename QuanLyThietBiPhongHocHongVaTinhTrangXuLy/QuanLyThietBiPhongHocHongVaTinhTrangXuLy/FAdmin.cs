@@ -76,7 +76,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                 int reportStatus = DAL_AdminData.Instance.DAL_GetReportStatusByReportId(reportId);
                 bool isDenied = BUS_AdminData.Instance.BUS_CheckIfResolvedReport(reportId);
 
-                if(!isDenied)
+                if (!isDenied)
                 {
                     FResponse fResponse = new FResponse(ac, reportId, roomId, equipmentName, equipmentStatus, note, reportDate);
                     fResponse.ShowDialog();
@@ -86,12 +86,12 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                     if (reportStatus == 3) MessageBox.Show("Báo cáo đã được phản hồi là sai!");
                     else MessageBox.Show("Báo cáo đã được xử lý!");
                 }
-                
+
             }
             else
             {
                 MessageBox.Show("Vui lòng chọn một báo cáo để phản hồi!");
-            }    
+            }
         }
 
         private void btnSignOut_Click(object sender, EventArgs e)

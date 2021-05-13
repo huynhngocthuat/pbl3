@@ -68,6 +68,19 @@ namespace DAL
             db.ACCOUNTs.Add(ac);
             db.SaveChanges();
         }
+        public List<AccountShow> DAL_GetAccountShow()
+        {           
+            var la = (from c in db.ACCOUNTs select 
+                      new AccountShow{
+                                       AccountId = c.accountId,
+                                       username = c.username, 
+                                       Role = c.role.ToString(), 
+                                       fullName = c.fullName, 
+                                       faculty = c.faculty, 
+                                       @class = c. @class 
+                      }).ToList();
+            return la.ToList<AccountShow>();
+        }
         public ACCOUNT DAL_CheckAccount(string user, string password)
         {
             //var result = from c in db.ACCOUNTs where c.username == user && c.password == password select c;
@@ -92,8 +105,21 @@ namespace DAL
             sup.faculty = a2.faculty;
             sup.@class = a2.@class;
             sup.password = a2.password;
+            sup.role = a2.role;
             db.SaveChanges();
         }
+
+
+        //public void DAL_DeleteAccount(List<String> lusername)
+        //{
+        //    foreach(string i in lusername)
+        //    {
+        //        var sup = db.ACCOUNTs.Where(p => p.username == i).FirstOrDefault();
+        //        db.ACCOUNTs.Remove(sup);
+        //        db.SaveChanges();
+        //    }    
+            
+        //}
         #endregion
 
         #region FMain
