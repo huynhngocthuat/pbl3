@@ -29,220 +29,156 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FEquipment));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnTinhtrang = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txb_Search = new System.Windows.Forms.TextBox();
+            this.btnXemtinhtrang = new System.Windows.Forms.Button();
+            this.dataGridView_Equipment = new System.Windows.Forms.DataGridView();
             this.cbbSort = new System.Windows.Forms.ComboBox();
             this.btnSort = new System.Windows.Forms.Button();
             this.btnDel = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnShow = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lb_search = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Equipment)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnTinhtrang);
-            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.groupBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox1.BackgroundImage")));
+            this.groupBox1.Controls.Add(this.lb_search);
+            this.groupBox1.Controls.Add(this.txb_Search);
+            this.groupBox1.Controls.Add(this.btnXemtinhtrang);
+            this.groupBox1.Controls.Add(this.dataGridView_Equipment);
             this.groupBox1.Controls.Add(this.cbbSort);
             this.groupBox1.Controls.Add(this.btnSort);
             this.groupBox1.Controls.Add(this.btnDel);
             this.groupBox1.Controls.Add(this.btnEdit);
             this.groupBox1.Controls.Add(this.btnAdd);
             this.groupBox1.Controls.Add(this.btnShow);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(13, 13);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.Maroon;
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(826, 425);
-            this.groupBox1.TabIndex = 0;
+            this.groupBox1.Size = new System.Drawing.Size(770, 425);
+            this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách trang thiết bị";
             // 
-            // btnTinhtrang
+            // txb_Search
             // 
-            this.btnTinhtrang.Location = new System.Drawing.Point(592, 82);
-            this.btnTinhtrang.Name = "btnTinhtrang";
-            this.btnTinhtrang.Size = new System.Drawing.Size(90, 26);
-            this.btnTinhtrang.TabIndex = 23;
-            this.btnTinhtrang.Text = "Tình trạng";
-            this.btnTinhtrang.UseVisualStyleBackColor = true;
+            this.txb_Search.Location = new System.Drawing.Point(592, 68);
+            this.txb_Search.Name = "txb_Search";
+            this.txb_Search.Size = new System.Drawing.Size(169, 22);
+            this.txb_Search.TabIndex = 26;
             // 
-            // dataGridView1
+            // btnXemtinhtrang
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(10, 181);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(810, 238);
-            this.dataGridView1.TabIndex = 22;
+            this.btnXemtinhtrang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnXemtinhtrang.Location = new System.Drawing.Point(23, 54);
+            this.btnXemtinhtrang.Name = "btnXemtinhtrang";
+            this.btnXemtinhtrang.Size = new System.Drawing.Size(212, 33);
+            this.btnXemtinhtrang.TabIndex = 24;
+            this.btnXemtinhtrang.Text = "Xem tình trạng";
+            this.btnXemtinhtrang.UseVisualStyleBackColor = false;
+            this.btnXemtinhtrang.Click += new System.EventHandler(this.btnXemtinhtrang_Click);
+            // 
+            // dataGridView_Equipment
+            // 
+            this.dataGridView_Equipment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_Equipment.Location = new System.Drawing.Point(10, 181);
+            this.dataGridView_Equipment.Name = "dataGridView_Equipment";
+            this.dataGridView_Equipment.RowHeadersWidth = 51;
+            this.dataGridView_Equipment.RowTemplate.Height = 24;
+            this.dataGridView_Equipment.Size = new System.Drawing.Size(751, 238);
+            this.dataGridView_Equipment.TabIndex = 22;
             // 
             // cbbSort
             // 
             this.cbbSort.FormattingEnabled = true;
-            this.cbbSort.Location = new System.Drawing.Point(651, 137);
+            this.cbbSort.Location = new System.Drawing.Point(592, 138);
             this.cbbSort.Name = "cbbSort";
             this.cbbSort.Size = new System.Drawing.Size(169, 24);
             this.cbbSort.TabIndex = 21;
             // 
             // btnSort
             // 
-            this.btnSort.Location = new System.Drawing.Point(555, 137);
+            this.btnSort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnSort.Location = new System.Drawing.Point(476, 139);
             this.btnSort.Name = "btnSort";
-            this.btnSort.Size = new System.Drawing.Size(75, 23);
+            this.btnSort.Size = new System.Drawing.Size(97, 23);
             this.btnSort.TabIndex = 20;
-            this.btnSort.Text = "Sort";
-            this.btnSort.UseVisualStyleBackColor = true;
+            this.btnSort.Text = "Sắp xếp";
+            this.btnSort.UseVisualStyleBackColor = false;
+            this.btnSort.Click += new System.EventHandler(this.btnSort_Click);
             // 
             // btnDel
             // 
-            this.btnDel.Location = new System.Drawing.Point(416, 137);
+            this.btnDel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnDel.Location = new System.Drawing.Point(361, 138);
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(75, 23);
             this.btnDel.TabIndex = 19;
-            this.btnDel.Text = "Del";
-            this.btnDel.UseVisualStyleBackColor = true;
+            this.btnDel.Text = "Xóa";
+            this.btnDel.UseVisualStyleBackColor = false;
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(278, 137);
+            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnEdit.Location = new System.Drawing.Point(246, 137);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(75, 23);
             this.btnEdit.TabIndex = 18;
-            this.btnEdit.Text = "Edit";
-            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Text = "Sửa";
+            this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(139, 137);
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnAdd.Location = new System.Drawing.Point(124, 137);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 17;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Text = "Thêm";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnShow
             // 
+            this.btnShow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnShow.Location = new System.Drawing.Point(10, 137);
             this.btnShow.Name = "btnShow";
             this.btnShow.Size = new System.Drawing.Size(75, 23);
             this.btnShow.TabIndex = 16;
-            this.btnShow.Text = "Show";
-            this.btnShow.UseVisualStyleBackColor = true;
+            this.btnShow.Text = "Xem";
+            this.btnShow.UseVisualStyleBackColor = false;
+            this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
             // 
-            // dateTimePicker1
+            // lb_search
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(92, 85);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(222, 22);
-            this.dateTimePicker1.TabIndex = 11;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(413, 38);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(152, 24);
-            this.comboBox1.TabIndex = 10;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(416, 82);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(152, 22);
-            this.textBox5.TabIndex = 9;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(668, 41);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(152, 22);
-            this.textBox3.TabIndex = 7;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(92, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(222, 22);
-            this.textBox1.TabIndex = 5;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(334, 85);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 17);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Công ty";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 90);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 17);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Ngày đặt";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(589, 41);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 17);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Mã thiết bị";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(334, 41);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Phòng học";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Tên thiết bị";
+            this.lb_search.AutoSize = true;
+            this.lb_search.Location = new System.Drawing.Point(451, 68);
+            this.lb_search.Name = "lb_search";
+            this.lb_search.Size = new System.Drawing.Size(122, 17);
+            this.lb_search.TabIndex = 27;
+            this.lb_search.Text = "Nhập mã phòng";
             // 
             // FEquipment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(851, 450);
+            this.ClientSize = new System.Drawing.Size(791, 447);
             this.Controls.Add(this.groupBox1);
             this.Name = "FEquipment";
             this.Text = "FEquitment";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Equipment)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -250,23 +186,15 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnXemtinhtrang;
+        private System.Windows.Forms.DataGridView dataGridView_Equipment;
         private System.Windows.Forms.ComboBox cbbSort;
         private System.Windows.Forms.Button btnSort;
         private System.Windows.Forms.Button btnDel;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnShow;
-        private System.Windows.Forms.Button btnTinhtrang;
+        private System.Windows.Forms.TextBox txb_Search;
+        private System.Windows.Forms.Label lb_search;
     }
 }

@@ -7,7 +7,7 @@ using DTL;
 
 namespace DAL
 {
-    class DAL_ZoneData
+    public class DAL_ZoneData
     {
         private MVH_10Entities db;
         private static DAL_ZoneData _Instance;
@@ -93,11 +93,8 @@ namespace DAL
         }
         public ZONE DAL_getZoneByIZone(string zoneid)
         {
-            ZONE rm = new ZONE();
-            var sup = db.ZONEs.Where(p => p.zoneId == zoneid).SingleOrDefault();
-            rm.zoneId = sup.zoneId;
-            rm.zoneName = sup.zoneName;
-            return rm;
+            ZONE sup = db.ZONEs.Where(p => p.zoneId == zoneid).SingleOrDefault();
+            return sup;
         }
     }
 }

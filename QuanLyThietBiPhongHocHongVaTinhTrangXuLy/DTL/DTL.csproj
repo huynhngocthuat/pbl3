@@ -42,8 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountShow.cs" />
+    <Compile Include="EquipmentShow.cs" />
     <Compile Include="ReportShow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoomShow.cs" />
+    <Compile Include="StatusShow.cs" />
+    <Compile Include="ZoneShow.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FStatusEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FStatusEdit.Designer.cs">
+      <DependentUpon>FStatusEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FEquipmentEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FEquipmentEdit.Designer.cs">
+      <DependentUpon>FEquipmentEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="FAccountManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +138,24 @@
     <Compile Include="FZone.Designer.cs">
       <DependentUpon>FZone.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRoomEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRoomEdit.Designer.cs">
+      <DependentUpon>FRoomEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FZoneEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FZoneEdit.Designer.cs">
+      <DependentUpon>FZoneEdit.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FStatusEdit.resx">
+      <DependentUpon>FStatusEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FEquipmentEdit.resx">
+      <DependentUpon>FEquipmentEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FAccountManagement.resx">
       <DependentUpon>FAccountManagement.cs</DependentUpon>
     </EmbeddedResource>
@@ -153,6 +183,9 @@
     <EmbeddedResource Include="FResponse.resx">
       <DependentUpon>FResponse.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRoomEdit.resx">
+      <DependentUpon>FRoomEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FStatus.resx">
       <DependentUpon>FStatus.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRoom.resx">
       <DependentUpon>FRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FZoneEdit.resx">
+      <DependentUpon>FZoneEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace DTL
 {
-    class RoomShow
+    public class RoomShow
     {
+        [System.ComponentModel.DisplayName("Tên Phòng")]
         public string roomID { get; set; }
+        [System.ComponentModel.DisplayName("Tên Khu")]
         public string zoneID { get; set; }
+        [System.ComponentModel.DisplayName("Chức Năng")]
         public string roomFunciton { get; set; }
     }
 }

@@ -109,7 +109,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
 
         private void btnManageRoom_Click(object sender, EventArgs e)
         {
-            FRoom fRoom = new FRoom();
+            FRoom fRoom = new FRoom("");
             fRoom.ShowDialog();
         }
 
@@ -117,12 +117,6 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         {
             FEquipment fEquipment = new FEquipment();
             fEquipment.ShowDialog();
-        }
-
-        private void btnManageStatus_Click(object sender, EventArgs e)
-        {
-            FStatus fStatus = new FStatus();
-            fStatus.ShowDialog();
         }
 
         private void btnShowData_Click(object sender, EventArgs e)
@@ -141,6 +135,12 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             }
             indexDate = cbbReportTime.SelectedIndex;
             dgvReport.DataSource = BUS_AdminData.Instance.BUS_ShowReportList(zoneId, check, indexDate);
+        }
+
+        private void btn_Account_Click(object sender, EventArgs e)
+        {
+            FAccountManagement f = new FAccountManagement();
+            f.ShowDialog();
         }
     }
 }

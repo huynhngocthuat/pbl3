@@ -25,6 +25,7 @@ namespace DAL
         {
             db = new MVH_10Entities();
         }
+        
         #region GetData
         public List<ZONE> DAL_GetALlZones()
         {

@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace DTL
 {
-    class ZoneShow
+    public class ZoneShow
     {
+        [System.ComponentModel.DisplayName("ID Khu")]
         public string zoneID { get; set; }
+        [System.ComponentModel.DisplayName("Tên Khu")]
         public string zoneName { get; set; }
     }
 }
