@@ -22,3 +22,9 @@ C:\Users\z\Desktop\PBL3\pbl3cnpm\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\D
 C:\Users\z\Desktop\PBL3\pbl3cnpm\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\obj\Debug\DTL.dll
 C:\Users\z\Desktop\PBL3\pbl3cnpm\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\obj\Debug\DTL.pdb
 E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\obj\Debug\DTL.csprojAssemblyReference.cache
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\bin\Debug\DTL.dll
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\bin\Debug\DTL.pdb
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\obj\Debug\DTL.csprojAssemblyReference.cache
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\obj\Debug\DTL.csproj.CoreCompileInputs.cache
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\obj\Debug\DTL.dll
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\obj\Debug\DTL.pdb

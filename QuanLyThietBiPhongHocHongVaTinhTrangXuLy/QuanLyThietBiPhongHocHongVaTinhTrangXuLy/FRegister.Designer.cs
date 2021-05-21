@@ -58,7 +58,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.txtMK2.Name = "txtMK2";
             this.txtMK2.PasswordChar = '•';
             this.txtMK2.Size = new System.Drawing.Size(265, 26);
-            this.txtMK2.TabIndex = 19;
+            this.txtMK2.TabIndex = 5;
             // 
             // txtlop
             // 
@@ -68,7 +68,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.txtlop.Location = new System.Drawing.Point(38, 431);
             this.txtlop.Name = "txtlop";
             this.txtlop.Size = new System.Drawing.Size(265, 26);
-            this.txtlop.TabIndex = 16;
+            this.txtlop.TabIndex = 2;
             // 
             // btnDangKy
             // 
@@ -80,7 +80,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnDangKy.Location = new System.Drawing.Point(83, 712);
             this.btnDangKy.Name = "btnDangKy";
             this.btnDangKy.Size = new System.Drawing.Size(174, 36);
-            this.btnDangKy.TabIndex = 20;
+            this.btnDangKy.TabIndex = 6;
             this.btnDangKy.Text = "Đăng ký";
             this.btnDangKy.UseVisualStyleBackColor = false;
             this.btnDangKy.Click += new System.EventHandler(this.btnDangKy_Click);
@@ -95,7 +95,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.txtMK1.Name = "txtMK1";
             this.txtMK1.PasswordChar = '•';
             this.txtMK1.Size = new System.Drawing.Size(265, 26);
-            this.txtMK1.TabIndex = 18;
+            this.txtMK1.TabIndex = 4;
             // 
             // txthoten
             // 
@@ -105,7 +105,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.txthoten.Location = new System.Drawing.Point(38, 292);
             this.txthoten.Name = "txthoten";
             this.txthoten.Size = new System.Drawing.Size(265, 26);
-            this.txthoten.TabIndex = 10;
+            this.txthoten.TabIndex = 0;
             // 
             // txtTK
             // 
@@ -116,7 +116,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.txtTK.MaxLength = 20;
             this.txtTK.Name = "txtTK";
             this.txtTK.Size = new System.Drawing.Size(265, 26);
-            this.txtTK.TabIndex = 17;
+            this.txtTK.TabIndex = 3;
             // 
             // label1
             // 
@@ -137,7 +137,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.txtkhoa.Location = new System.Drawing.Point(38, 363);
             this.txtkhoa.Name = "txtkhoa";
             this.txtkhoa.Size = new System.Drawing.Size(265, 26);
-            this.txtkhoa.TabIndex = 13;
+            this.txtkhoa.TabIndex = 1;
             // 
             // label2
             // 

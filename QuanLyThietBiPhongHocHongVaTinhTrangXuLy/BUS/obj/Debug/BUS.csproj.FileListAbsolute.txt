@@ -66,3 +66,20 @@ C:\Users\z\Desktop\PBL3\pbl3cnpm\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\B
 C:\Users\z\Desktop\PBL3\pbl3cnpm\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\obj\Debug\BUS.csproj.CopyComplete
 C:\Users\z\Desktop\PBL3\pbl3cnpm\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\obj\Debug\BUS.dll
 C:\Users\z\Desktop\PBL3\pbl3cnpm\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\obj\Debug\BUS.pdb
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\BUS.dll.config
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\BUS.dll
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\BUS.pdb
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\DAL.dll
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\DTL.dll
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\EntityFramework.dll
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\DAL.pdb
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\DAL.dll.config
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\DTL.pdb
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\EntityFramework.xml
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\obj\Debug\BUS.dll
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\obj\Debug\BUS.pdb

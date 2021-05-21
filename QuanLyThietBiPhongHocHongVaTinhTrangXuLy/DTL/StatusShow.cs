@@ -8,11 +8,11 @@ namespace DTL
 {
     public class StatusShow
     {
-        [System.ComponentModel.DisplayName("ID Trạng Thái")]
+        [System.ComponentModel.DisplayName("Mã tình trạng")]
         public string statusID { get; set; }
-        [System.ComponentModel.DisplayName("ID Thiết Bị")]
+        [System.ComponentModel.DisplayName("Mã thiết bị")]
         public string equipmentID { get; set; }
-        [System.ComponentModel.DisplayName("Tên Trạng Thái")]
+        [System.ComponentModel.DisplayName("Tình trạng")]
         public string equipmentStatus { get; set; }
     }
 }

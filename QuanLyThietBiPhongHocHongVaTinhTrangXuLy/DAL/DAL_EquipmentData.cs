@@ -122,5 +122,32 @@ namespace DAL
             newList = oldList.OrderBy(z => z.roomId).ToList();
             return newList;
         }
+        public List<EquipmentShow> DAL_ShowEquipmentByRoomId(string roomId)
+        {
+            List<EquipmentShow> listEquipmentShow = new List<EquipmentShow>();
+            var l1 = (from equipment in db.EQUIPMENTs
+                      where equipment.roomId == roomId
+                      select new
+                      {
+                          equipmentID = equipment.equipmentId,
+                          roomID = equipment.roomId,
+                          equipmentName = equipment.equipmentName,
+                          dateOfInstallation = equipment.dateOfInstallation,
+                          company = equipment.company
+                      });
+            foreach (var item in l1)
+            {
+                listEquipmentShow.Add(new EquipmentShow
+                {
+                    equipmentID = item.equipmentID,
+                    roomID = item.roomID,
+                    equipmentName = item.equipmentName,
+                    dateOfInstallation = item.dateOfInstallation.Value,
+                    company = item.company
+
+                });
+            }
+            return listEquipmentShow;
+        }
     }
 }

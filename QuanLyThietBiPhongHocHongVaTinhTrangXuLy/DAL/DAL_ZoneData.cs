@@ -77,11 +77,11 @@ namespace DAL
             sup.zoneName = zn2.zoneName;
             db.SaveChanges();
         }
-        public List<ZONE> DAL_SortZoneById()
+        public List<ZoneShow> DAL_SortZoneById()
         {
-            List<ZONE> oldZoneList = DAL_MainData.Instance.DAL_getZone();
-            List<ZONE> newZoneList = new List<ZONE>();
-            newZoneList = oldZoneList.OrderBy(z => z.zoneId).ToList();
+            List<ZoneShow> oldZoneList = DAL_ZoneData.Instance.DAL_ZoneShow();
+            List<ZoneShow> newZoneList = new List<ZoneShow>();
+            newZoneList = oldZoneList.OrderBy(z => z.zoneID).ToList();
             return newZoneList;
         }
         public List<ZONE> DAL_SortZoneByName()

@@ -139,3 +139,42 @@ E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinh
 E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.FEquipmentEdit.resources
 E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.FRoomEdit.resources
 E:\PBL3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.FZoneEdit.resources
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\bin\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.exe.config
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\bin\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.exe
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\bin\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.pdb
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\bin\Debug\BUS.dll
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\bin\Debug\DAL.dll
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\bin\Debug\DTL.dll
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\bin\Debug\EntityFramework.dll
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\bin\Debug\BUS.pdb
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\bin\Debug\BUS.dll.config
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\bin\Debug\DAL.pdb
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\bin\Debug\DAL.dll.config
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\bin\Debug\DTL.pdb
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\bin\Debug\EntityFramework.xml
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.FStatusEdit.resources
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.FAccountManagement.resources
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.FEquipment.resources
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.FAccount.resources
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.FAdmin.resources
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.FLogin.resources
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.FMain.resources
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.FRegister.resources
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.FReport.resources
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.FResponse.resources
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.FRoomEdit.resources
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.FStatus.resources
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.FUser.resources
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.FRoom.resources
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.FZoneEdit.resources
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.Properties.Resources.resources
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.FZone.resources
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.exe
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.pdb
+C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\obj\Debug\QuanLyThietBiPhongHocHongVaTinhTrangXuLy.FEquipmentDetail.resources

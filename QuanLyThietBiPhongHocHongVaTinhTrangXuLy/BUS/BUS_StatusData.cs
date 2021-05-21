@@ -57,9 +57,9 @@ namespace BUS
         {
             return DAL_StatusData.Instance.DAL_CHECKSTATUS(st);
         }
-        public List<StatusShow> BUS_StatusShowForIDEquipment(string equipmentid)
+        public List<StatusShow> BUS_StatusShowForIDEquipment(string equipmentId)
         {
-            return DAL_StatusData.Instance.DAL_StatusShowForIDEquipment(equipmentid);
+            return DAL_StatusData.Instance.DAL_StatusShowForIDEquipment(equipmentId);
         }
     }
 }

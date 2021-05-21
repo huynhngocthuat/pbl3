@@ -46,7 +46,7 @@ namespace DAL
                     return (int)report.reportStatus;
                 }
             }
-            return 0;
+            return -1;
         }
         public List<ReportShow> DAL_ShowAllReports()
         {
@@ -156,7 +156,7 @@ namespace DAL
         #region CheckData
         public bool DAL_CheckReportStatus(int reportId, int responseType)
         {
-            //reportStatus defalt = 0: chưa được nhận tin, 1: chưa xử lý, 2: đã xử lý, 3: thông tin sai
+            //reportStatus default = 0: chưa được nhận tin, 1: chưa xử lý, 2: đã xử lý, 3: thông tin sai
             //responseType = 1: đã nhận tin, 2: đã xử lý, 3: thông tin báo cáo sai
             REPORT report = db.REPORTs.Where(p => p.reportId == reportId).Single();
 

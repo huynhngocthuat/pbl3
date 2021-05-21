@@ -103,5 +103,18 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             ShowSearch(cbbTimkiem.Text);
         }
 
+        private void btnShowEquipments_Click(object sender, EventArgs e)
+        {
+            if (dataGridView_RoomShow.SelectedRows.Count == 1)
+            {
+                string roomId = dataGridView_RoomShow.CurrentRow.Cells["roomID"].Value.ToString();
+                FEquipment f = new FEquipment(roomId);
+                f.Show();
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn một phòng!");
+            }
+        }
     }
 }

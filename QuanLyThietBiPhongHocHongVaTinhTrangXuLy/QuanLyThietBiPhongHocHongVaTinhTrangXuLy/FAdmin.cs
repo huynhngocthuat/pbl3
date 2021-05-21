@@ -84,7 +84,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                 else
                 {
                     if (reportStatus == 3) MessageBox.Show("Báo cáo đã được phản hồi là sai!");
-                    else MessageBox.Show("Báo cáo đã được xử lý!");
+                    else if (reportStatus == 2) MessageBox.Show("Báo cáo đã được xử lý!");
                 }
 
             }
