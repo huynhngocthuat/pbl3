@@ -19,6 +19,19 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             InitializeComponent();
             setCBBSort();
         }
+        public FEquipment(string roomId)
+        {
+            InitializeComponent();
+            setCBBSort();
+            if (roomId != "")
+            {
+                dataGridView_Equipment.DataSource = BUS_EquipmentData.Instance.BUS_ShowEquipmentByRoomId(roomId);
+            }
+            else
+            {
+                dataGridView_Equipment.DataSource = BUS_EquipmentData.Instance.BUS_EquipmentShow();
+            }
+        }
         private void setCBBSort()
         {
             cbbSort.Items.AddRange(new string[]
@@ -41,8 +54,8 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            FEquipmentEdit f = new FEquipmentEdit(txb_Search.Text, "", "Add");
-            f.refresh += new FEquipmentEdit.refreshData(Show);
+            FEquipmentDetail f = new FEquipmentDetail(txb_Search.Text, "", "Add");
+            f.refresh += new FEquipmentDetail.refreshData(Show);
             f.Show();
         }
 
@@ -57,8 +70,8 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         private void btnEdit_Click(object sender, EventArgs e)
         {
             string equipmentid = dataGridView_Equipment.CurrentRow.Cells["equipmentID"].Value.ToString();
-            FEquipmentEdit f = new FEquipmentEdit(txb_Search.Text,equipmentid, "Edit");
-            f.refresh += new FEquipmentEdit.refreshData(Show);
+            FEquipmentDetail f = new FEquipmentDetail(txb_Search.Text,equipmentid, "Edit");
+            f.refresh += new FEquipmentDetail.refreshData(Show);
             f.Show();
         }
 
@@ -98,9 +111,13 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             }
             else
             {
-                MessageBox.Show("Chưa chọn thiết bị :>");
+                MessageBox.Show("Vui lòng chọn một thiết bị!");
             }
         }
 
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

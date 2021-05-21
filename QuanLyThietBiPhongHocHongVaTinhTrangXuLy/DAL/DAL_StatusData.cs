@@ -111,17 +111,17 @@ namespace DAL
             newList = oldList.OrderBy(z => z.equipmentStatus).ToList();
             return newList;
         }
-        public List<StatusShow> DAL_StatusShowForIDEquipment(string equipmentid)
+        public List<StatusShow> DAL_StatusShowForIDEquipment(string equipmentId)
         {
             List<StatusShow> listStatusShow = new List<StatusShow>();
             var l1 = (from status in db.STATUS
-                      where status.equipmentId == equipmentid
+                      where status.equipmentId == equipmentId
 
                       select new
                       {
                           statusID = status.statusId,
                           equipmentID = status.equipmentId,
-                          equipmentStatus = status.equipmentStatus,
+                          equipmentStatus = status.equipmentStatus
                       });
             foreach (var item in l1)
             {
@@ -130,7 +130,6 @@ namespace DAL
                     statusID = item.statusID,
                     equipmentID = item.equipmentID,
                     equipmentStatus = item.equipmentStatus
-
                 });
             }
             return listStatusShow;

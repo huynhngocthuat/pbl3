@@ -41,45 +41,48 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // btnCancel
             // 
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel.Location = new System.Drawing.Point(164, 196);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 21;
+            this.btnCancel.TabIndex = 4;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnOK
             // 
+            this.btnOK.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOK.Location = new System.Drawing.Point(56, 196);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 23);
-            this.btnOK.TabIndex = 20;
+            this.btnOK.TabIndex = 3;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // cbbKhuphong
             // 
+            this.cbbKhuphong.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbbKhuphong.FormattingEnabled = true;
             this.cbbKhuphong.Location = new System.Drawing.Point(119, 137);
             this.cbbKhuphong.Name = "cbbKhuphong";
             this.cbbKhuphong.Size = new System.Drawing.Size(150, 24);
-            this.cbbKhuphong.TabIndex = 19;
+            this.cbbKhuphong.TabIndex = 2;
             // 
             // txbMaphong
             // 
             this.txbMaphong.Location = new System.Drawing.Point(119, 24);
             this.txbMaphong.Name = "txbMaphong";
             this.txbMaphong.Size = new System.Drawing.Size(150, 22);
-            this.txbMaphong.TabIndex = 18;
+            this.txbMaphong.TabIndex = 0;
             // 
             // txbTenphong
             // 
             this.txbTenphong.Location = new System.Drawing.Point(119, 84);
             this.txbTenphong.Name = "txbTenphong";
             this.txbTenphong.Size = new System.Drawing.Size(150, 22);
-            this.txbTenphong.TabIndex = 17;
+            this.txbTenphong.TabIndex = 1;
             // 
             // label3
             // 

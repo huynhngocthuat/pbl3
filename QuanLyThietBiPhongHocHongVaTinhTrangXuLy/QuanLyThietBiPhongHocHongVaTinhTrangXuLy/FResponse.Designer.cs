@@ -80,10 +80,11 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // btnCancel
             // 
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel.Location = new System.Drawing.Point(527, 290);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 30);
-            this.btnCancel.TabIndex = 24;
+            this.btnCancel.TabIndex = 3;
             this.btnCancel.Text = "Hủy";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -94,7 +95,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.rtbNote.Location = new System.Drawing.Point(111, 184);
             this.rtbNote.Name = "rtbNote";
             this.rtbNote.Size = new System.Drawing.Size(223, 100);
-            this.rtbNote.TabIndex = 23;
+            this.rtbNote.TabIndex = 50;
             this.rtbNote.Text = "";
             // 
             // lbNote
@@ -112,7 +113,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.txbEquipmentStatus.Location = new System.Drawing.Point(111, 146);
             this.txbEquipmentStatus.Name = "txbEquipmentStatus";
             this.txbEquipmentStatus.Size = new System.Drawing.Size(223, 22);
-            this.txbEquipmentStatus.TabIndex = 19;
+            this.txbEquipmentStatus.TabIndex = 50;
             // 
             // lbStatus
             // 
@@ -129,7 +130,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.txbEquipmentName.Location = new System.Drawing.Point(111, 107);
             this.txbEquipmentName.Name = "txbEquipmentName";
             this.txbEquipmentName.Size = new System.Drawing.Size(223, 22);
-            this.txbEquipmentName.TabIndex = 17;
+            this.txbEquipmentName.TabIndex = 50;
             // 
             // lbEquipment
             // 
@@ -146,7 +147,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.txbRoomId.Location = new System.Drawing.Point(111, 71);
             this.txbRoomId.Name = "txbRoomId";
             this.txbRoomId.Size = new System.Drawing.Size(223, 22);
-            this.txbRoomId.TabIndex = 15;
+            this.txbRoomId.TabIndex = 50;
             // 
             // lbRoomId
             // 
@@ -159,21 +160,23 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // btnCreate
             // 
+            this.btnCreate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCreate.Location = new System.Drawing.Point(379, 290);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(75, 30);
-            this.btnCreate.TabIndex = 13;
+            this.btnCreate.TabIndex = 2;
             this.btnCreate.Text = "Tạo";
             this.btnCreate.UseVisualStyleBackColor = true;
             this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // cbbResponseType
             // 
+            this.cbbResponseType.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbbResponseType.FormattingEnabled = true;
             this.cbbResponseType.Location = new System.Drawing.Point(379, 71);
             this.cbbResponseType.Name = "cbbResponseType";
             this.cbbResponseType.Size = new System.Drawing.Size(223, 24);
-            this.cbbResponseType.TabIndex = 12;
+            this.cbbResponseType.TabIndex = 0;
             this.cbbResponseType.SelectedIndexChanged += new System.EventHandler(this.cbbResponseType_SelectedIndexChanged);
             // 
             // dtpReportedDate
@@ -182,7 +185,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.dtpReportedDate.Location = new System.Drawing.Point(111, 298);
             this.dtpReportedDate.Name = "dtpReportedDate";
             this.dtpReportedDate.Size = new System.Drawing.Size(223, 22);
-            this.dtpReportedDate.TabIndex = 11;
+            this.dtpReportedDate.TabIndex = 50;
             // 
             // txbReportId
             // 
@@ -190,14 +193,14 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.txbReportId.Location = new System.Drawing.Point(111, 33);
             this.txbReportId.Name = "txbReportId";
             this.txbReportId.Size = new System.Drawing.Size(223, 22);
-            this.txbReportId.TabIndex = 10;
+            this.txbReportId.TabIndex = 50;
             // 
             // rtbResponseMessage
             // 
             this.rtbResponseMessage.Location = new System.Drawing.Point(379, 146);
             this.rtbResponseMessage.Name = "rtbResponseMessage";
             this.rtbResponseMessage.Size = new System.Drawing.Size(223, 100);
-            this.rtbResponseMessage.TabIndex = 6;
+            this.rtbResponseMessage.TabIndex = 1;
             this.rtbResponseMessage.Text = "";
             // 
             // lbResponseMessage

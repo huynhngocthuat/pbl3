@@ -41,20 +41,22 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // btnCancel
             // 
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel.Location = new System.Drawing.Point(179, 173);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 45;
+            this.btnCancel.TabIndex = 4;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnOK
             // 
+            this.btnOK.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOK.Location = new System.Drawing.Point(71, 173);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 23);
-            this.btnOK.TabIndex = 44;
+            this.btnOK.TabIndex = 3;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
@@ -64,7 +66,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.txtTinhTrang.Location = new System.Drawing.Point(134, 115);
             this.txtTinhTrang.Name = "txtTinhTrang";
             this.txtTinhTrang.Size = new System.Drawing.Size(169, 22);
-            this.txtTinhTrang.TabIndex = 43;
+            this.txtTinhTrang.TabIndex = 2;
             // 
             // label4
             // 
@@ -81,7 +83,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.txtMaTinhTrang.Location = new System.Drawing.Point(134, 59);
             this.txtMaTinhTrang.Name = "txtMaTinhTrang";
             this.txtMaTinhTrang.Size = new System.Drawing.Size(169, 22);
-            this.txtMaTinhTrang.TabIndex = 40;
+            this.txtMaTinhTrang.TabIndex = 1;
             // 
             // label2
             // 
@@ -108,7 +110,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.txb_MathietBi.Location = new System.Drawing.Point(134, 12);
             this.txb_MathietBi.Name = "txb_MathietBi";
             this.txb_MathietBi.Size = new System.Drawing.Size(169, 22);
-            this.txb_MathietBi.TabIndex = 46;
+            this.txb_MathietBi.TabIndex = 0;
             // 
             // FStatusEdit
             // 

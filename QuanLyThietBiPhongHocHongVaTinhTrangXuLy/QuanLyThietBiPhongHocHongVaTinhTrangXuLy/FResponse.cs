@@ -63,21 +63,21 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         }
         private void btnCreate_Click(object sender, EventArgs e)
         {
-            if (cbbResponseType.SelectedIndex != 0 && rtbResponseMessage != null)
+            if (cbbResponseType.SelectedIndex == -1 || rtbResponseMessage == null)
+            {
+                MessageBox.Show("Vui lòng chọn loại phản hồi và điền vào lời nhắn phản hồi!");
+            }
+            else
             {
                 RESPONSE response = new RESPONSE();
                 response.accountId = a.accountId;
                 response.reportId = reportId;
                 response.message = rtbResponseMessage.Text;
-                response.responseType = cbbResponseType.SelectedIndex;
+                response.responseType = cbbResponseType.SelectedIndex + 1;
                 response.responsedDate = DateTime.Now;
                 BUS_AdminData.Instance.BUS_SetResponse(response);
                 MessageBox.Show("Tạo phản hồi thành công!");
                 this.Close();
-            }
-            else
-            {
-                MessageBox.Show("Vui lòng chọn loại phản hồi và điền vào lời nhắn phản hồi!");
             }
         }
 
@@ -102,6 +102,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                 {
                     cbbResponseType.SelectedIndex = 1;
                     MessageBox.Show("Báo cáo đã được nhận!");
+                }
+                else
+                {
+                    MessageBox.Show("Lỗi!");
                 }
             }
         }

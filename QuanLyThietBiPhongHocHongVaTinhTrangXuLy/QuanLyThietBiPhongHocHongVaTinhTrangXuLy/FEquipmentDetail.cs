@@ -12,14 +12,14 @@ using BUS;
 using DTL;
 namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
 {
-    public partial class FEquipmentEdit : Form
+    public partial class FEquipmentDetail : Form
     {
         public delegate void refreshData(string text);
         public refreshData refresh;
         private string equipmentid;
         private string option;
         private string Text1;
-        public FEquipmentEdit(string Text, string equipmentid, string option)
+        public FEquipmentDetail(string Text, string equipmentid, string option)
         {
             this.equipmentid = equipmentid;
             this.option = option;
@@ -67,7 +67,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                 rm.dateOfInstallation = dateTimePicker_Ngaydat.Value;
                 if (BUS_EquipmentData.Instance.BUS_CHECKEQUIPMENT(rm) == 0)
                 {
-                    MessageBox.Show("ID thiết bị đã bị trùng! Vui lòng thay đổi");
+                    MessageBox.Show("Mã thiết bị đã bị trùng! Vui lòng thay đổi");
                 }
                 else
                 {
@@ -88,7 +88,6 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                 MessageBox.Show("Cập nhập thành công!");
             }
             refresh(Text1);
-            this.Dispose();
         }
 
     }

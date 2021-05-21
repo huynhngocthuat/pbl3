@@ -8,9 +8,9 @@ namespace DTL
 {
     public class ZoneShow
     {
-        [System.ComponentModel.DisplayName("ID Khu")]
+        [System.ComponentModel.DisplayName("Mã khu")]
         public string zoneID { get; set; }
-        [System.ComponentModel.DisplayName("Tên Khu")]
+        [System.ComponentModel.DisplayName("Tên khu")]
         public string zoneName { get; set; }
     }
 }

@@ -16,19 +16,13 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         public FZone()
         {
             InitializeComponent();
-            setCBBSort();
-        }
-        private void setCBBSort()
-        {
-            cbbSort.Items.AddRange(new string[]
-                {
-                    "zoneId",
-                    "zoneName"
-                });
+            setCbbSort();
         }
         public void ShowZone()
         {
             dataGridView_ShowZone.DataSource = BUS_ZoneData.Instance.BUS_ZoneShow();
+            dataGridView_ShowZone.Columns[0].Width = 120;
+            dataGridView_ShowZone.Columns[1].Width = 250;
         }
         private void btnXem_Click(object sender, EventArgs e)
         {
@@ -73,21 +67,38 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             }
         }
 
+        public void setCbbSort()
+        {
+            cbbSort.Text = "Chọn thuộc tính";
+            cbbSort.Items.AddRange(new string[]
+            {
+                "Mã khu",
+                "Tên khu"
+            });
+        }
 
         private void btnSapXep_Click(object sender, EventArgs e)
         {
             List<ZONE> zoneList = new List<ZONE>();
-            switch (cbbSort.SelectedItem.ToString())
+            if (cbbSort.SelectedIndex == -1) MessageBox.Show("Vui lòng chọn thuộc tính muốn sắp xếp!");
+            else
             {
-                case "zoneId":
-                    dataGridView_ShowZone.DataSource = BUS_ZoneData.Instance.BUS_SortZoneById();
-                    break;
-                case "zoneName":
-                    dataGridView_ShowZone.DataSource = BUS_ZoneData.Instance.BUS_SortZoneByName();
-                    break;
-                default:
-                    dataGridView_ShowZone.DataSource = BUS_ZoneData.Instance.BUS_SortZoneById();
-                    break;
+                switch (cbbSort.SelectedItem.ToString())
+                {
+                    case "Mã khu":
+                        dataGridView_ShowZone.DataSource = BUS_ZoneData.Instance.BUS_SortZoneById();
+                        dataGridView_ShowZone.Columns[0].Width = 120;
+                        dataGridView_ShowZone.Columns[1].Width = 250;
+                        break;
+                    case "Tên khu":
+                        dataGridView_ShowZone.DataSource = BUS_ZoneData.Instance.BUS_SortZoneByName();
+                        dataGridView_ShowZone.Columns[0].Width = 120;
+                        dataGridView_ShowZone.Columns[1].Width = 250;
+                        break;
+                    default:
+                        dataGridView_ShowZone.DataSource = BUS_ZoneData.Instance.BUS_SortZoneById();
+                        break;
+                }
             }
         }
 
@@ -95,15 +106,19 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         {
             if(dataGridView_ShowZone.SelectedRows.Count == 1)
             {
-                string zoneid = dataGridView_ShowZone.CurrentRow.Cells["zoneID"].Value.ToString();
-                FRoom f = new FRoom(zoneid);
+                string zoneId = dataGridView_ShowZone.CurrentRow.Cells["zoneID"].Value.ToString();
+                FRoom f = new FRoom(zoneId);
                 f.Show();
             }
             else
             {
-                MessageBox.Show("Vui lòng chọn 1 khu vực :>");
+                MessageBox.Show("Vui lòng chọn một khu vực!");
             }
         }
 
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

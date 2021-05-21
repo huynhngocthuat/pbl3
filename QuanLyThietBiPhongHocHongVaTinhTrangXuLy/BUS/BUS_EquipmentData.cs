@@ -80,5 +80,13 @@ namespace BUS
         {
             return DAL_EquipmentData.Instance.DAL_CHECKEQUIPMENT(eq);
         }
+        public List<EquipmentShow> BUS_ShowEquipmentByRoomId(string roomId)
+        {
+            return DAL_EquipmentData.Instance.DAL_ShowEquipmentByRoomId(roomId);
+        }
+        public List<EquipmentShow> BUS_EquipmentShow()
+        {
+            return DAL_EquipmentData.Instance.DAL_EquipmentShow();
+        }
     }
 }

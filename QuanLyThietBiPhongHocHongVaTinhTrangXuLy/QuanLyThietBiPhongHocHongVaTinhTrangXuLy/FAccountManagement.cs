@@ -120,9 +120,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                                     SetDgv();
                                     checkBox1.Checked = false;
                                 }
-                                else { MessageBox.Show("Xác nhận sai mật khẩu"); }
+                                else { MessageBox.Show("Xác nhận sai mật khẩu!"); }
                             }
-                            else { MessageBox.Show("Mật khẩu phải trên 8 kí tự"); }
+                            else { MessageBox.Show("Mật khẩu phải từ 8 kí tự trở lên!"); }
                         }
                         else
                         {
@@ -131,7 +131,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                                 && newac.password == a.password && a.@class == newac.@class
                                 && newac.role == a.role)
                             {
-                                MessageBox.Show("Bạn chưa sửa thông tin gì");
+                                MessageBox.Show("Bạn chưa sửa thông tin gì!");
                             }
                             else
                             {
@@ -178,6 +178,11 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         }
 
         private void btShow_Click(object sender, EventArgs e)
+        {
+            SetDgv();
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
         {
             SetDgv();
         }

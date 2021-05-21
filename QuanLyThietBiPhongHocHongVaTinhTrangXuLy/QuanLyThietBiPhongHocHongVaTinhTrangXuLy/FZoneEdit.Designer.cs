@@ -42,14 +42,14 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.txtMakhu.Location = new System.Drawing.Point(126, 33);
             this.txtMakhu.Name = "txtMakhu";
             this.txtMakhu.Size = new System.Drawing.Size(144, 22);
-            this.txtMakhu.TabIndex = 35;
+            this.txtMakhu.TabIndex = 0;
             // 
             // txtTenkhu
             // 
             this.txtTenkhu.Location = new System.Drawing.Point(126, 84);
             this.txtTenkhu.Name = "txtTenkhu";
             this.txtTenkhu.Size = new System.Drawing.Size(144, 22);
-            this.txtTenkhu.TabIndex = 34;
+            this.txtTenkhu.TabIndex = 1;
             // 
             // label2
             // 
@@ -73,20 +73,22 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // btnCancel
             // 
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel.Location = new System.Drawing.Point(169, 143);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 31;
+            this.btnCancel.TabIndex = 3;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnOK
             // 
+            this.btnOK.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOK.Location = new System.Drawing.Point(72, 143);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 23);
-            this.btnOK.TabIndex = 30;
+            this.btnOK.TabIndex = 2;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);

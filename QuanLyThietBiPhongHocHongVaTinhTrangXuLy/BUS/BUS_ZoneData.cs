@@ -36,7 +36,7 @@ namespace BUS
         {
             DAL_ZoneData.Instance.DAL_UPDATEZONE(zn2, zoneid);
         }
-        public List<ZONE> BUS_SortZoneById()
+        public List<ZoneShow> BUS_SortZoneById()
         {
             return DAL_ZoneData.Instance.DAL_SortZoneById();
         }

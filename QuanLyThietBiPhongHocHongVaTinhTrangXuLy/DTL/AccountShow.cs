@@ -9,7 +9,7 @@ namespace DTL
     public class AccountShow
     {
         private int accountId;
-        [System.ComponentModel.DisplayName("Số Tài Khoản")]
+        [System.ComponentModel.DisplayName("Mã tài khoản")]
         public int AccountId
         {
             private get
@@ -21,7 +21,7 @@ namespace DTL
                 accountId = value;
             }
         }
-        [System.ComponentModel.DisplayName("Tên Đăng Nhập")]
+        [System.ComponentModel.DisplayName("Tên đăng nhập")]
         public string username { get; set; }
         //private string password { get; set; }
         private string role;
@@ -38,7 +38,7 @@ namespace DTL
                 }    
             } 
         }
-        [System.ComponentModel.DisplayName("Tên Đầy Đủ")]
+        [System.ComponentModel.DisplayName("Họ và tên")]
         public string fullName { get; set; }
         [System.ComponentModel.DisplayName("Khoa")]
         public string faculty { get; set; }
