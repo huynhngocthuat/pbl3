@@ -18,6 +18,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         {
             InitializeComponent();
             setCBBSort();
+            Show("");
         }
         public FEquipment(string roomId)
         {

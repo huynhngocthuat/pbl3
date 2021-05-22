@@ -71,9 +71,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.grbCreateResponse.Controls.Add(this.lbReportedDate);
             this.grbCreateResponse.Controls.Add(this.lbResponseType);
             this.grbCreateResponse.Controls.Add(this.lbReportId);
-            this.grbCreateResponse.Location = new System.Drawing.Point(12, 12);
+            this.grbCreateResponse.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grbCreateResponse.Location = new System.Drawing.Point(0, 0);
             this.grbCreateResponse.Name = "grbCreateResponse";
-            this.grbCreateResponse.Size = new System.Drawing.Size(650, 350);
+            this.grbCreateResponse.Size = new System.Drawing.Size(1467, 580);
             this.grbCreateResponse.TabIndex = 0;
             this.grbCreateResponse.TabStop = false;
             this.grbCreateResponse.Text = "Tạo phản hồi";
@@ -243,7 +244,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(682, 373);
+            this.ClientSize = new System.Drawing.Size(1467, 580);
             this.Controls.Add(this.grbCreateResponse);
             this.Name = "FResponse";
             this.Text = "FResponse";

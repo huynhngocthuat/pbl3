@@ -25,6 +25,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             txtmk2.Enabled = false;
             txtusername.Enabled = false;
         }
+      
         private void SetDgv()
         {
             dataGridView1.DataSource = BUS_MainData.Instance.BUS_AccountShow();

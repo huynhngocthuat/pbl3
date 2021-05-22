@@ -25,9 +25,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         public void ShowStatus()
         {
             dataGridView_StatusShow.DataSource = BUS_StatusData.Instance.BUS_StatusShowForIDEquipment(equipmentid);
-            dataGridView_StatusShow.Columns[0].Width = 180;
-            dataGridView_StatusShow.Columns[1].Width = 110;
-            dataGridView_StatusShow.Columns[2].Width = 250;
+            //dataGridView_StatusShow.Columns[0].Width = 180;
+            //dataGridView_StatusShow.Columns[1].Width = 110;
+            //dataGridView_StatusShow.Columns[2].Width = 250;
         }
         private void btnShow_Click(object sender, EventArgs e)
         {

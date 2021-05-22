@@ -15,6 +15,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
     public partial class FAdmin : Form
     {
         private ACCOUNT ac = new ACCOUNT();
+        public Form CurrentForm;
         public FAdmin()
         {
             InitializeComponent();
@@ -54,12 +55,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             lbFullName.Text = ac.fullName;
         }
 
-        private void btnEditProfile_Click(object sender, EventArgs e)
-        {
-            FAccount fAccount = new FAccount(ac);
-            fAccount.GUI(ac);
-            fAccount.ShowDialog();
-        }
+        
 
         private void btnCreateResponse_Click(object sender, EventArgs e)
         {
@@ -77,9 +73,8 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                 bool isDenied = BUS_AdminData.Instance.BUS_CheckIfResolvedReport(reportId);
 
                 if (!isDenied)
-                {
-                    FResponse fResponse = new FResponse(ac, reportId, roomId, equipmentName, equipmentStatus, note, reportDate);
-                    fResponse.ShowDialog();
+                {                   
+                    OpenChildForm(new FResponse(ac, reportId, roomId, equipmentName, equipmentStatus, note, reportDate));
                 }
                 else
                 {
@@ -97,28 +92,34 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         private void btnSignOut_Click(object sender, EventArgs e)
         {
             this.Close();
-            FMain fMain = new FMain();
-            fMain.ShowDialog();
+            //FMain fMain = new FMain();
+            //fMain.ShowDialog();
         }
 
         private void btnManageZone_Click(object sender, EventArgs e)
         {
-            FZone fZone = new FZone();
-            fZone.ShowDialog();
+            OpenChildForm(new FZone());
         }
 
         private void btnManageRoom_Click(object sender, EventArgs e)
         {
-            FRoom fRoom = new FRoom("");
-            fRoom.ShowDialog();
+            OpenChildForm(new FRoom(""));
         }
 
         private void btnManageEquipment_Click(object sender, EventArgs e)
         {
-            FEquipment fEquipment = new FEquipment();
-            fEquipment.ShowDialog();
+            OpenChildForm(new FEquipment());
         }
-
+        private void btn_Account_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FAccountManagement());
+        }
+        private void btnEditProfile_Click(object sender, EventArgs e)
+        {
+            FAccount fAccount = new FAccount(ac);
+            fAccount.GUI(ac);
+            fAccount.ShowDialog();
+        }
         private void btnShowData_Click(object sender, EventArgs e)
         {
             dgvReport.DataSource = BUS_AdminData.Instance.BUS_ShowAllReports();
@@ -137,10 +138,26 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             dgvReport.DataSource = BUS_AdminData.Instance.BUS_ShowReportList(zoneId, check, indexDate);
         }
 
-        private void btn_Account_Click(object sender, EventArgs e)
+        private void OpenChildForm(Form ChildForm)
         {
-            FAccountManagement f = new FAccountManagement();
-            f.ShowDialog();
+            if(CurrentForm != null)
+            {
+                CurrentForm.Close();
+            }
+            CurrentForm = ChildForm;
+            ChildForm.FormBorderStyle = FormBorderStyle.None;
+            ChildForm.TopLevel = false;
+            ChildForm.Dock = DockStyle.Fill;
+            pnDesktop.Controls.Add(ChildForm);
+            pnDesktop.Tag = ChildForm;
+            ChildForm.BringToFront();
+            ChildForm.Show();
+        }
+
+        private void bttHome_Click(object sender, EventArgs e)
+        {
+            if(CurrentForm != null)
+            CurrentForm.Dispose();           
         }
     }
 }

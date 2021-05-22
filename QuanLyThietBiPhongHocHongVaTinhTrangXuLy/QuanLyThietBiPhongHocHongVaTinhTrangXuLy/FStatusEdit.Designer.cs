@@ -29,6 +29,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FStatusEdit));
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnOK = new System.Windows.Forms.Button();
             this.txtTinhTrang = new System.Windows.Forms.TextBox();
@@ -41,57 +42,69 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // btnCancel
             // 
+            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancel.Location = new System.Drawing.Point(179, 173);
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8F);
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.Location = new System.Drawing.Point(193, 173);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(98, 36);
             this.btnCancel.TabIndex = 4;
             this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnOK
             // 
+            this.btnOK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btnOK.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnOK.Location = new System.Drawing.Point(71, 173);
+            this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOK.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8F);
+            this.btnOK.ForeColor = System.Drawing.Color.White;
+            this.btnOK.Location = new System.Drawing.Point(58, 173);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.Size = new System.Drawing.Size(98, 36);
             this.btnOK.TabIndex = 3;
             this.btnOK.Text = "OK";
-            this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.UseVisualStyleBackColor = false;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // txtTinhTrang
             // 
-            this.txtTinhTrang.Location = new System.Drawing.Point(134, 115);
+            this.txtTinhTrang.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8F);
+            this.txtTinhTrang.Location = new System.Drawing.Point(145, 115);
             this.txtTinhTrang.Name = "txtTinhTrang";
-            this.txtTinhTrang.Size = new System.Drawing.Size(169, 22);
+            this.txtTinhTrang.Size = new System.Drawing.Size(169, 28);
             this.txtTinhTrang.TabIndex = 2;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(28, 118);
+            this.label4.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8F);
+            this.label4.Location = new System.Drawing.Point(23, 118);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 17);
+            this.label4.Size = new System.Drawing.Size(88, 22);
             this.label4.TabIndex = 42;
             this.label4.Text = "Tình trạng";
             // 
             // txtMaTinhTrang
             // 
-            this.txtMaTinhTrang.Location = new System.Drawing.Point(134, 59);
+            this.txtMaTinhTrang.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8F);
+            this.txtMaTinhTrang.Location = new System.Drawing.Point(145, 59);
             this.txtMaTinhTrang.Name = "txtMaTinhTrang";
-            this.txtMaTinhTrang.Size = new System.Drawing.Size(169, 22);
+            this.txtMaTinhTrang.Size = new System.Drawing.Size(169, 28);
             this.txtMaTinhTrang.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(28, 15);
+            this.label2.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8F);
+            this.label2.Location = new System.Drawing.Point(23, 15);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 17);
+            this.label2.Size = new System.Drawing.Size(90, 22);
             this.label2.TabIndex = 39;
             this.label2.Text = "Mã thiết bị";
             // 
@@ -99,23 +112,27 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(28, 62);
+            this.label1.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8F);
+            this.label1.Location = new System.Drawing.Point(23, 62);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 17);
+            this.label1.Size = new System.Drawing.Size(112, 22);
             this.label1.TabIndex = 38;
             this.label1.Text = "Mã tình trạng";
             // 
             // txb_MathietBi
             // 
-            this.txb_MathietBi.Location = new System.Drawing.Point(134, 12);
+            this.txb_MathietBi.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8F);
+            this.txb_MathietBi.Location = new System.Drawing.Point(145, 12);
             this.txb_MathietBi.Name = "txb_MathietBi";
-            this.txb_MathietBi.Size = new System.Drawing.Size(169, 22);
+            this.txb_MathietBi.Size = new System.Drawing.Size(169, 28);
             this.txb_MathietBi.TabIndex = 0;
             // 
             // FStatusEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::QuanLyThietBiPhongHocHongVaTinhTrangXuLy.Properties.Resources.nền;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(343, 221);
             this.Controls.Add(this.txb_MathietBi);
             this.Controls.Add(this.btnCancel);
@@ -125,6 +142,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.Controls.Add(this.txtMaTinhTrang);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FStatusEdit";
             this.Text = "EStatusEdit";
             this.ResumeLayout(false);

@@ -29,7 +29,6 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRoom));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnShowEquipments = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
@@ -48,7 +47,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // groupBox1
             // 
-            this.groupBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox1.BackgroundImage")));
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(254)))));
+            this.groupBox1.BackgroundImage = global::QuanLyThietBiPhongHocHongVaTinhTrangXuLy.Properties.Resources.nền;
+            this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.groupBox1.Controls.Add(this.btnShowEquipments);
             this.groupBox1.Controls.Add(this.btnBack);
             this.groupBox1.Controls.Add(this.cbbTimkiem);
@@ -60,22 +61,25 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.groupBox1.Controls.Add(this.btnEdit);
             this.groupBox1.Controls.Add(this.btnAdd);
             this.groupBox1.Controls.Add(this.btnShow);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.Maroon;
-            this.groupBox1.Location = new System.Drawing.Point(12, 13);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox1.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 10F);
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(850, 420);
+            this.groupBox1.Size = new System.Drawing.Size(1246, 580);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách các phòng";
             // 
             // btnShowEquipments
             // 
-            this.btnShowEquipments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnShowEquipments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btnShowEquipments.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnShowEquipments.Location = new System.Drawing.Point(670, 94);
+            this.btnShowEquipments.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShowEquipments.ForeColor = System.Drawing.Color.White;
+            this.btnShowEquipments.Location = new System.Drawing.Point(1043, 151);
             this.btnShowEquipments.Name = "btnShowEquipments";
-            this.btnShowEquipments.Size = new System.Drawing.Size(150, 30);
+            this.btnShowEquipments.Size = new System.Drawing.Size(161, 35);
             this.btnShowEquipments.TabIndex = 9;
             this.btnShowEquipments.Text = "Xem thiết bị";
             this.btnShowEquipments.UseVisualStyleBackColor = false;
@@ -83,11 +87,13 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // btnBack
             // 
-            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBack.Location = new System.Drawing.Point(720, 48);
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Location = new System.Drawing.Point(1112, 103);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(100, 30);
+            this.btnBack.Size = new System.Drawing.Size(109, 35);
             this.btnBack.TabIndex = 4;
             this.btnBack.Text = "Trờ về";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -95,19 +101,22 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // cbbTimkiem
             // 
             this.cbbTimkiem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbbTimkiem.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.2F);
             this.cbbTimkiem.FormattingEnabled = true;
-            this.cbbTimkiem.Location = new System.Drawing.Point(393, 50);
+            this.cbbTimkiem.Location = new System.Drawing.Point(708, 102);
             this.cbbTimkiem.Name = "cbbTimkiem";
-            this.cbbTimkiem.Size = new System.Drawing.Size(185, 28);
+            this.cbbTimkiem.Size = new System.Drawing.Size(254, 30);
             this.cbbTimkiem.TabIndex = 2;
             // 
             // btnTimKiem
             // 
-            this.btnTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btnTimKiem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTimKiem.Location = new System.Drawing.Point(584, 48);
+            this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimKiem.ForeColor = System.Drawing.Color.White;
+            this.btnTimKiem.Location = new System.Drawing.Point(986, 103);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(100, 30);
+            this.btnTimKiem.Size = new System.Drawing.Size(120, 35);
             this.btnTimKiem.TabIndex = 3;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = false;
@@ -115,30 +124,39 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // dataGridView_RoomShow
             // 
+            this.dataGridView_RoomShow.AllowUserToResizeRows = false;
+            this.dataGridView_RoomShow.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView_RoomShow.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView_RoomShow.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_RoomShow.Location = new System.Drawing.Point(20, 156);
+            this.dataGridView_RoomShow.Location = new System.Drawing.Point(37, 213);
             this.dataGridView_RoomShow.Name = "dataGridView_RoomShow";
+            this.dataGridView_RoomShow.ReadOnly = true;
+            this.dataGridView_RoomShow.RowHeadersVisible = false;
             this.dataGridView_RoomShow.RowHeadersWidth = 51;
             this.dataGridView_RoomShow.RowTemplate.Height = 24;
-            this.dataGridView_RoomShow.Size = new System.Drawing.Size(800, 250);
+            this.dataGridView_RoomShow.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView_RoomShow.Size = new System.Drawing.Size(1175, 320);
             this.dataGridView_RoomShow.TabIndex = 50;
             // 
             // cbbSort
             // 
             this.cbbSort.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbbSort.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.2F);
             this.cbbSort.FormattingEnabled = true;
-            this.cbbSort.Location = new System.Drawing.Point(20, 50);
+            this.cbbSort.Location = new System.Drawing.Point(66, 104);
             this.cbbSort.Name = "cbbSort";
-            this.cbbSort.Size = new System.Drawing.Size(233, 28);
+            this.cbbSort.Size = new System.Drawing.Size(233, 30);
             this.cbbSort.TabIndex = 0;
             // 
             // btnSort
             // 
-            this.btnSort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnSort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btnSort.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSort.Location = new System.Drawing.Point(259, 48);
+            this.btnSort.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSort.ForeColor = System.Drawing.Color.White;
+            this.btnSort.Location = new System.Drawing.Point(305, 102);
             this.btnSort.Name = "btnSort";
-            this.btnSort.Size = new System.Drawing.Size(100, 30);
+            this.btnSort.Size = new System.Drawing.Size(100, 35);
             this.btnSort.TabIndex = 1;
             this.btnSort.Text = "Dữ liệu";
             this.btnSort.UseVisualStyleBackColor = false;
@@ -146,11 +164,13 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // btnDel
             // 
-            this.btnDel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnDel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btnDel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDel.Location = new System.Drawing.Point(338, 94);
+            this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDel.ForeColor = System.Drawing.Color.White;
+            this.btnDel.Location = new System.Drawing.Point(384, 151);
             this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(100, 30);
+            this.btnDel.Size = new System.Drawing.Size(100, 35);
             this.btnDel.TabIndex = 8;
             this.btnDel.Text = "Xóa";
             this.btnDel.UseVisualStyleBackColor = false;
@@ -158,11 +178,13 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // btnEdit
             // 
-            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEdit.Location = new System.Drawing.Point(232, 94);
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEdit.ForeColor = System.Drawing.Color.White;
+            this.btnEdit.Location = new System.Drawing.Point(278, 151);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(100, 30);
+            this.btnEdit.Size = new System.Drawing.Size(100, 35);
             this.btnEdit.TabIndex = 7;
             this.btnEdit.Text = "Sửa";
             this.btnEdit.UseVisualStyleBackColor = false;
@@ -170,11 +192,13 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // btnAdd
             // 
-            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAdd.Location = new System.Drawing.Point(126, 94);
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Location = new System.Drawing.Point(172, 151);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(100, 30);
+            this.btnAdd.Size = new System.Drawing.Size(100, 35);
             this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -182,11 +206,13 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // btnShow
             // 
-            this.btnShow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnShow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btnShow.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnShow.Location = new System.Drawing.Point(20, 94);
+            this.btnShow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShow.ForeColor = System.Drawing.Color.White;
+            this.btnShow.Location = new System.Drawing.Point(66, 151);
             this.btnShow.Name = "btnShow";
-            this.btnShow.Size = new System.Drawing.Size(100, 30);
+            this.btnShow.Size = new System.Drawing.Size(100, 35);
             this.btnShow.TabIndex = 5;
             this.btnShow.Text = "Xem";
             this.btnShow.UseVisualStyleBackColor = false;
@@ -196,7 +222,8 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(882, 453);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1246, 580);
             this.Controls.Add(this.groupBox1);
             this.Name = "FRoom";
             this.Text = "FRoom";

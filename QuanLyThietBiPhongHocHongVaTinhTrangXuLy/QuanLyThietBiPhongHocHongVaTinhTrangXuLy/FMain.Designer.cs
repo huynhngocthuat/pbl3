@@ -45,6 +45,8 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // groupBox1
             // 
+            this.groupBox1.BackgroundImage = global::QuanLyThietBiPhongHocHongVaTinhTrangXuLy.Properties.Resources.nền;
+            this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupBox1.Controls.Add(this.cbb_Time);
             this.groupBox1.Controls.Add(this.lb_GiangDuong);
             this.groupBox1.Controls.Add(this.btnDangNhap);
@@ -53,10 +55,11 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.groupBox1.Controls.Add(this.cbb_Zone);
             this.groupBox1.Controls.Add(this.ckb_DaXuLy);
             this.groupBox1.Controls.Add(this.ckb_ChuaXuLy);
-            this.groupBox1.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox1.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1263, 550);
+            this.groupBox1.Size = new System.Drawing.Size(1285, 574);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách lượt báo thiết bị hỏng";
@@ -64,8 +67,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // cbb_Time
             // 
             this.cbb_Time.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbb_Time.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.2F);
             this.cbb_Time.FormattingEnabled = true;
-            this.cbb_Time.Location = new System.Drawing.Point(725, 44);
+            this.cbb_Time.Location = new System.Drawing.Point(759, 71);
             this.cbb_Time.Name = "cbb_Time";
             this.cbb_Time.Size = new System.Drawing.Size(200, 30);
             this.cbb_Time.TabIndex = 3;
@@ -73,10 +77,11 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // lb_GiangDuong
             // 
             this.lb_GiangDuong.AutoSize = true;
-            this.lb_GiangDuong.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.lb_GiangDuong.Location = new System.Drawing.Point(22, 47);
+            this.lb_GiangDuong.BackColor = System.Drawing.Color.Transparent;
+            this.lb_GiangDuong.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
+            this.lb_GiangDuong.Location = new System.Drawing.Point(37, 74);
             this.lb_GiangDuong.Name = "lb_GiangDuong";
-            this.lb_GiangDuong.Size = new System.Drawing.Size(108, 22);
+            this.lb_GiangDuong.Size = new System.Drawing.Size(117, 25);
             this.lb_GiangDuong.TabIndex = 10;
             this.lb_GiangDuong.Text = "Giảng đường:";
             // 
@@ -85,7 +90,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btnDangNhap.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDangNhap.ForeColor = System.Drawing.Color.White;
-            this.btnDangNhap.Location = new System.Drawing.Point(1102, 41);
+            this.btnDangNhap.Location = new System.Drawing.Point(1118, 67);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(134, 38);
             this.btnDangNhap.TabIndex = 5;
@@ -99,7 +104,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.dataGridView_showReport.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView_showReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_showReport.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.dataGridView_showReport.Location = new System.Drawing.Point(9, 105);
+            this.dataGridView_showReport.Location = new System.Drawing.Point(24, 129);
             this.dataGridView_showReport.Name = "dataGridView_showReport";
             this.dataGridView_showReport.ReadOnly = true;
             this.dataGridView_showReport.RowHeadersVisible = false;
@@ -114,7 +119,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnDulieu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btnDulieu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDulieu.ForeColor = System.Drawing.Color.White;
-            this.btnDulieu.Location = new System.Drawing.Point(972, 41);
+            this.btnDulieu.Location = new System.Drawing.Point(989, 67);
             this.btnDulieu.Name = "btnDulieu";
             this.btnDulieu.Size = new System.Drawing.Size(111, 38);
             this.btnDulieu.TabIndex = 4;
@@ -125,10 +130,11 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // cbb_Zone
             // 
             this.cbb_Zone.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbb_Zone.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.2F);
             this.cbb_Zone.FormattingEnabled = true;
             this.cbb_Zone.IntegralHeight = false;
             this.cbb_Zone.ItemHeight = 22;
-            this.cbb_Zone.Location = new System.Drawing.Point(136, 43);
+            this.cbb_Zone.Location = new System.Drawing.Point(173, 71);
             this.cbb_Zone.Name = "cbb_Zone";
             this.cbb_Zone.Size = new System.Drawing.Size(227, 30);
             this.cbb_Zone.TabIndex = 0;
@@ -136,26 +142,28 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // ckb_DaXuLy
             // 
             this.ckb_DaXuLy.AutoSize = true;
+            this.ckb_DaXuLy.BackColor = System.Drawing.Color.Transparent;
             this.ckb_DaXuLy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ckb_DaXuLy.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.ckb_DaXuLy.Location = new System.Drawing.Point(589, 47);
+            this.ckb_DaXuLy.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
+            this.ckb_DaXuLy.Location = new System.Drawing.Point(611, 72);
             this.ckb_DaXuLy.Name = "ckb_DaXuLy";
-            this.ckb_DaXuLy.Size = new System.Drawing.Size(116, 26);
+            this.ckb_DaXuLy.Size = new System.Drawing.Size(123, 29);
             this.ckb_DaXuLy.TabIndex = 2;
             this.ckb_DaXuLy.Text = "Tin đã xử lý";
-            this.ckb_DaXuLy.UseVisualStyleBackColor = true;
+            this.ckb_DaXuLy.UseVisualStyleBackColor = false;
             // 
             // ckb_ChuaXuLy
             // 
             this.ckb_ChuaXuLy.AutoSize = true;
+            this.ckb_ChuaXuLy.BackColor = System.Drawing.Color.Transparent;
             this.ckb_ChuaXuLy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ckb_ChuaXuLy.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.ckb_ChuaXuLy.Location = new System.Drawing.Point(429, 47);
+            this.ckb_ChuaXuLy.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
+            this.ckb_ChuaXuLy.Location = new System.Drawing.Point(440, 72);
             this.ckb_ChuaXuLy.Name = "ckb_ChuaXuLy";
-            this.ckb_ChuaXuLy.Size = new System.Drawing.Size(134, 26);
+            this.ckb_ChuaXuLy.Size = new System.Drawing.Size(141, 29);
             this.ckb_ChuaXuLy.TabIndex = 1;
             this.ckb_ChuaXuLy.Text = "Tin chưa xử lý";
-            this.ckb_ChuaXuLy.UseVisualStyleBackColor = true;
+            this.ckb_ChuaXuLy.UseVisualStyleBackColor = false;
             // 
             // FMain
             // 

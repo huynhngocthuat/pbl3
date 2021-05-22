@@ -17,12 +17,11 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         {
             InitializeComponent();
             setCbbSort();
+            ShowZone();
         }
         public void ShowZone()
         {
             dataGridView_ShowZone.DataSource = BUS_ZoneData.Instance.BUS_ZoneShow();
-            dataGridView_ShowZone.Columns[0].Width = 120;
-            dataGridView_ShowZone.Columns[1].Width = 250;
         }
         private void btnXem_Click(object sender, EventArgs e)
         {

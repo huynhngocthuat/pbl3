@@ -29,7 +29,6 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FZone));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnBack = new System.Windows.Forms.Button();
             this.btnXemphong = new System.Windows.Forms.Button();
@@ -46,7 +45,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // groupBox1
             // 
-            this.groupBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox1.BackgroundImage")));
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(254)))));
+            this.groupBox1.BackgroundImage = global::QuanLyThietBiPhongHocHongVaTinhTrangXuLy.Properties.Resources.nền;
+            this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.groupBox1.Controls.Add(this.btnBack);
             this.groupBox1.Controls.Add(this.btnXemphong);
             this.groupBox1.Controls.Add(this.dataGridView_ShowZone);
@@ -56,23 +57,26 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.groupBox1.Controls.Add(this.btnSua);
             this.groupBox1.Controls.Add(this.btnThem);
             this.groupBox1.Controls.Add(this.btnXem);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.Maroon;
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox1.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(650, 420);
+            this.groupBox1.Size = new System.Drawing.Size(1246, 580);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách các khu";
             // 
             // btnBack
             // 
-            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBack.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Location = new System.Drawing.Point(525, 39);
+            this.btnBack.ForeColor = System.Drawing.Color.Transparent;
+            this.btnBack.Location = new System.Drawing.Point(1114, 77);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(100, 30);
+            this.btnBack.Size = new System.Drawing.Size(111, 37);
             this.btnBack.TabIndex = 4;
             this.btnBack.Text = "Trở về";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -80,12 +84,14 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // btnXemphong
             // 
-            this.btnXemphong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnXemphong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btnXemphong.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnXemphong.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnXemphong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXemphong.Location = new System.Drawing.Point(475, 83);
+            this.btnXemphong.ForeColor = System.Drawing.Color.Transparent;
+            this.btnXemphong.Location = new System.Drawing.Point(930, 77);
             this.btnXemphong.Name = "btnXemphong";
-            this.btnXemphong.Size = new System.Drawing.Size(150, 30);
+            this.btnXemphong.Size = new System.Drawing.Size(162, 37);
             this.btnXemphong.TabIndex = 7;
             this.btnXemphong.Text = "Xem phòng";
             this.btnXemphong.UseVisualStyleBackColor = false;
@@ -93,32 +99,41 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // dataGridView_ShowZone
             // 
+            this.dataGridView_ShowZone.AllowUserToResizeRows = false;
+            this.dataGridView_ShowZone.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView_ShowZone.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView_ShowZone.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_ShowZone.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dataGridView_ShowZone.Location = new System.Drawing.Point(25, 120);
+            this.dataGridView_ShowZone.GridColor = System.Drawing.SystemColors.Control;
+            this.dataGridView_ShowZone.Location = new System.Drawing.Point(12, 154);
             this.dataGridView_ShowZone.Name = "dataGridView_ShowZone";
+            this.dataGridView_ShowZone.RowHeadersVisible = false;
             this.dataGridView_ShowZone.RowHeadersWidth = 51;
             this.dataGridView_ShowZone.RowTemplate.Height = 24;
-            this.dataGridView_ShowZone.Size = new System.Drawing.Size(600, 280);
+            this.dataGridView_ShowZone.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView_ShowZone.Size = new System.Drawing.Size(1222, 378);
             this.dataGridView_ShowZone.TabIndex = 50;
             // 
             // cbbSort
             // 
             this.cbbSort.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbbSort.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.2F);
             this.cbbSort.FormattingEnabled = true;
-            this.cbbSort.Location = new System.Drawing.Point(25, 85);
+            this.cbbSort.Location = new System.Drawing.Point(534, 79);
             this.cbbSort.Name = "cbbSort";
-            this.cbbSort.Size = new System.Drawing.Size(217, 28);
+            this.cbbSort.Size = new System.Drawing.Size(217, 30);
             this.cbbSort.TabIndex = 5;
             // 
             // btnSapXep
             // 
-            this.btnSapXep.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnSapXep.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btnSapXep.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSapXep.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnSapXep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSapXep.Location = new System.Drawing.Point(263, 83);
+            this.btnSapXep.ForeColor = System.Drawing.Color.Transparent;
+            this.btnSapXep.Location = new System.Drawing.Point(772, 77);
             this.btnSapXep.Name = "btnSapXep";
-            this.btnSapXep.Size = new System.Drawing.Size(100, 30);
+            this.btnSapXep.Size = new System.Drawing.Size(104, 37);
             this.btnSapXep.TabIndex = 6;
             this.btnSapXep.Text = "Dữ liệu";
             this.btnSapXep.UseVisualStyleBackColor = false;
@@ -126,12 +141,14 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // btnXoa
             // 
-            this.btnXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnXoa.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoa.Location = new System.Drawing.Point(383, 39);
+            this.btnXoa.ForeColor = System.Drawing.Color.Transparent;
+            this.btnXoa.Location = new System.Drawing.Point(390, 77);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(100, 30);
+            this.btnXoa.Size = new System.Drawing.Size(104, 37);
             this.btnXoa.TabIndex = 3;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
@@ -139,12 +156,14 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // btnSua
             // 
-            this.btnSua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnSua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btnSua.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSua.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSua.Location = new System.Drawing.Point(263, 39);
+            this.btnSua.ForeColor = System.Drawing.Color.Transparent;
+            this.btnSua.Location = new System.Drawing.Point(270, 77);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(100, 30);
+            this.btnSua.Size = new System.Drawing.Size(104, 37);
             this.btnSua.TabIndex = 2;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = false;
@@ -152,12 +171,14 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // btnThem
             // 
-            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThem.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThem.Location = new System.Drawing.Point(142, 39);
+            this.btnThem.ForeColor = System.Drawing.Color.Transparent;
+            this.btnThem.Location = new System.Drawing.Point(149, 77);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(100, 30);
+            this.btnThem.Size = new System.Drawing.Size(104, 37);
             this.btnThem.TabIndex = 1;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
@@ -165,12 +186,14 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // btnXem
             // 
-            this.btnXem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnXem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btnXem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnXem.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnXem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXem.Location = new System.Drawing.Point(25, 39);
+            this.btnXem.ForeColor = System.Drawing.Color.Transparent;
+            this.btnXem.Location = new System.Drawing.Point(32, 77);
             this.btnXem.Name = "btnXem";
-            this.btnXem.Size = new System.Drawing.Size(100, 30);
+            this.btnXem.Size = new System.Drawing.Size(111, 37);
             this.btnXem.TabIndex = 0;
             this.btnXem.Text = "Xem";
             this.btnXem.UseVisualStyleBackColor = false;
@@ -180,7 +203,8 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(682, 453);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1246, 580);
             this.Controls.Add(this.groupBox1);
             this.Name = "FZone";
             this.Text = "FZone";
