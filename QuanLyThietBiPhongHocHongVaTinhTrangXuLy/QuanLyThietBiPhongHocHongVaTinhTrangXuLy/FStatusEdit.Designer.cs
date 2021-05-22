@@ -51,7 +51,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(98, 36);
             this.btnCancel.TabIndex = 4;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "Hủy";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 

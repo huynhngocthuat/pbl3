@@ -45,6 +45,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btHuy = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,6 +74,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // btnDangKy
             // 
             this.btnDangKy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.btnDangKy.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDangKy.FlatAppearance.BorderSize = 0;
             this.btnDangKy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDangKy.Font = new System.Drawing.Font("#9Slide03 AllRoundGothic", 12F);
@@ -215,16 +217,33 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
             // 
+            // btHuy
+            // 
+            this.btHuy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.btHuy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btHuy.FlatAppearance.BorderSize = 0;
+            this.btHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btHuy.Font = new System.Drawing.Font("#9Slide03 AllRoundGothic", 12F);
+            this.btHuy.ForeColor = System.Drawing.Color.White;
+            this.btHuy.Location = new System.Drawing.Point(83, 754);
+            this.btHuy.Name = "btHuy";
+            this.btHuy.Size = new System.Drawing.Size(174, 36);
+            this.btHuy.TabIndex = 6;
+            this.btHuy.Text = "Hủy";
+            this.btHuy.UseVisualStyleBackColor = false;
+            this.btHuy.Click += new System.EventHandler(this.btHuy_Click);
+            // 
             // FRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(339, 783);
+            this.ClientSize = new System.Drawing.Size(339, 826);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtMK2);
             this.Controls.Add(this.txtlop);
+            this.Controls.Add(this.btHuy);
             this.Controls.Add(this.btnDangKy);
             this.Controls.Add(this.txtMK1);
             this.Controls.Add(this.txthoten);
@@ -262,5 +281,6 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btHuy;
     }
 }

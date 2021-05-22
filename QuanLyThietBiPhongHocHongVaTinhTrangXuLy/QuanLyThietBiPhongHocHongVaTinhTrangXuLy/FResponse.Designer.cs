@@ -53,6 +53,8 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // grbCreateResponse
             // 
+            this.grbCreateResponse.BackgroundImage = global::QuanLyThietBiPhongHocHongVaTinhTrangXuLy.Properties.Resources.nền;
+            this.grbCreateResponse.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.grbCreateResponse.Controls.Add(this.btnCancel);
             this.grbCreateResponse.Controls.Add(this.rtbNote);
             this.grbCreateResponse.Controls.Add(this.lbNote);
@@ -72,171 +74,188 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.grbCreateResponse.Controls.Add(this.lbResponseType);
             this.grbCreateResponse.Controls.Add(this.lbReportId);
             this.grbCreateResponse.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grbCreateResponse.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
             this.grbCreateResponse.Location = new System.Drawing.Point(0, 0);
             this.grbCreateResponse.Name = "grbCreateResponse";
-            this.grbCreateResponse.Size = new System.Drawing.Size(1467, 580);
+            this.grbCreateResponse.Size = new System.Drawing.Size(1232, 548);
             this.grbCreateResponse.TabIndex = 0;
             this.grbCreateResponse.TabStop = false;
             this.grbCreateResponse.Text = "Tạo phản hồi";
             // 
             // btnCancel
             // 
+            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancel.Location = new System.Drawing.Point(527, 290);
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.Location = new System.Drawing.Point(641, 498);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 30);
+            this.btnCancel.Size = new System.Drawing.Size(98, 38);
             this.btnCancel.TabIndex = 3;
             this.btnCancel.Text = "Hủy";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // rtbNote
             // 
+            this.rtbNote.BackColor = System.Drawing.Color.White;
+            this.rtbNote.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtbNote.Enabled = false;
-            this.rtbNote.Location = new System.Drawing.Point(111, 184);
+            this.rtbNote.Location = new System.Drawing.Point(238, 305);
             this.rtbNote.Name = "rtbNote";
-            this.rtbNote.Size = new System.Drawing.Size(223, 100);
+            this.rtbNote.Size = new System.Drawing.Size(312, 100);
             this.rtbNote.TabIndex = 50;
             this.rtbNote.Text = "";
             // 
             // lbNote
             // 
             this.lbNote.AutoSize = true;
-            this.lbNote.Location = new System.Drawing.Point(19, 187);
+            this.lbNote.BackColor = System.Drawing.Color.Transparent;
+            this.lbNote.Location = new System.Drawing.Point(102, 305);
             this.lbNote.Name = "lbNote";
-            this.lbNote.Size = new System.Drawing.Size(61, 17);
+            this.lbNote.Size = new System.Drawing.Size(75, 25);
             this.lbNote.TabIndex = 22;
             this.lbNote.Text = "Ghi chú:";
             // 
             // txbEquipmentStatus
             // 
             this.txbEquipmentStatus.Enabled = false;
-            this.txbEquipmentStatus.Location = new System.Drawing.Point(111, 146);
+            this.txbEquipmentStatus.Location = new System.Drawing.Point(238, 242);
             this.txbEquipmentStatus.Name = "txbEquipmentStatus";
-            this.txbEquipmentStatus.Size = new System.Drawing.Size(223, 22);
+            this.txbEquipmentStatus.Size = new System.Drawing.Size(312, 31);
             this.txbEquipmentStatus.TabIndex = 50;
             // 
             // lbStatus
             // 
             this.lbStatus.AutoSize = true;
-            this.lbStatus.Location = new System.Drawing.Point(19, 149);
+            this.lbStatus.BackColor = System.Drawing.Color.Transparent;
+            this.lbStatus.Location = new System.Drawing.Point(102, 245);
             this.lbStatus.Name = "lbStatus";
-            this.lbStatus.Size = new System.Drawing.Size(77, 17);
+            this.lbStatus.Size = new System.Drawing.Size(97, 25);
             this.lbStatus.TabIndex = 18;
             this.lbStatus.Text = "Tình trạng:";
             // 
             // txbEquipmentName
             // 
             this.txbEquipmentName.Enabled = false;
-            this.txbEquipmentName.Location = new System.Drawing.Point(111, 107);
+            this.txbEquipmentName.Location = new System.Drawing.Point(238, 186);
             this.txbEquipmentName.Name = "txbEquipmentName";
-            this.txbEquipmentName.Size = new System.Drawing.Size(223, 22);
+            this.txbEquipmentName.Size = new System.Drawing.Size(312, 31);
             this.txbEquipmentName.TabIndex = 50;
             // 
             // lbEquipment
             // 
             this.lbEquipment.AutoSize = true;
-            this.lbEquipment.Location = new System.Drawing.Point(19, 110);
+            this.lbEquipment.BackColor = System.Drawing.Color.Transparent;
+            this.lbEquipment.Location = new System.Drawing.Point(102, 189);
             this.lbEquipment.Name = "lbEquipment";
-            this.lbEquipment.Size = new System.Drawing.Size(59, 17);
+            this.lbEquipment.Size = new System.Drawing.Size(75, 25);
             this.lbEquipment.TabIndex = 16;
             this.lbEquipment.Text = "Thiết bị:";
             // 
             // txbRoomId
             // 
             this.txbRoomId.Enabled = false;
-            this.txbRoomId.Location = new System.Drawing.Point(111, 71);
+            this.txbRoomId.Location = new System.Drawing.Point(238, 129);
             this.txbRoomId.Name = "txbRoomId";
-            this.txbRoomId.Size = new System.Drawing.Size(223, 22);
+            this.txbRoomId.Size = new System.Drawing.Size(312, 31);
             this.txbRoomId.TabIndex = 50;
             // 
             // lbRoomId
             // 
             this.lbRoomId.AutoSize = true;
-            this.lbRoomId.Location = new System.Drawing.Point(19, 74);
+            this.lbRoomId.BackColor = System.Drawing.Color.Transparent;
+            this.lbRoomId.Location = new System.Drawing.Point(102, 132);
             this.lbRoomId.Name = "lbRoomId";
-            this.lbRoomId.Size = new System.Drawing.Size(53, 17);
+            this.lbRoomId.Size = new System.Drawing.Size(64, 25);
             this.lbRoomId.TabIndex = 14;
             this.lbRoomId.Text = "Phòng:";
             // 
             // btnCreate
             // 
+            this.btnCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btnCreate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCreate.Location = new System.Drawing.Point(379, 290);
+            this.btnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCreate.ForeColor = System.Drawing.Color.White;
+            this.btnCreate.Location = new System.Drawing.Point(493, 498);
             this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(75, 30);
+            this.btnCreate.Size = new System.Drawing.Size(98, 38);
             this.btnCreate.TabIndex = 2;
             this.btnCreate.Text = "Tạo";
-            this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.UseVisualStyleBackColor = false;
             this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // cbbResponseType
             // 
             this.cbbResponseType.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbbResponseType.FormattingEnabled = true;
-            this.cbbResponseType.Location = new System.Drawing.Point(379, 71);
+            this.cbbResponseType.Location = new System.Drawing.Point(737, 111);
             this.cbbResponseType.Name = "cbbResponseType";
-            this.cbbResponseType.Size = new System.Drawing.Size(223, 24);
+            this.cbbResponseType.Size = new System.Drawing.Size(209, 33);
             this.cbbResponseType.TabIndex = 0;
             this.cbbResponseType.SelectedIndexChanged += new System.EventHandler(this.cbbResponseType_SelectedIndexChanged);
             // 
             // dtpReportedDate
             // 
             this.dtpReportedDate.Enabled = false;
-            this.dtpReportedDate.Location = new System.Drawing.Point(111, 298);
+            this.dtpReportedDate.Location = new System.Drawing.Point(238, 431);
             this.dtpReportedDate.Name = "dtpReportedDate";
-            this.dtpReportedDate.Size = new System.Drawing.Size(223, 22);
+            this.dtpReportedDate.Size = new System.Drawing.Size(312, 31);
             this.dtpReportedDate.TabIndex = 50;
             // 
             // txbReportId
             // 
             this.txbReportId.Enabled = false;
-            this.txbReportId.Location = new System.Drawing.Point(111, 33);
+            this.txbReportId.Location = new System.Drawing.Point(238, 76);
             this.txbReportId.Name = "txbReportId";
-            this.txbReportId.Size = new System.Drawing.Size(223, 22);
+            this.txbReportId.Size = new System.Drawing.Size(312, 31);
             this.txbReportId.TabIndex = 50;
             // 
             // rtbResponseMessage
             // 
-            this.rtbResponseMessage.Location = new System.Drawing.Point(379, 146);
+            this.rtbResponseMessage.Location = new System.Drawing.Point(739, 189);
             this.rtbResponseMessage.Name = "rtbResponseMessage";
-            this.rtbResponseMessage.Size = new System.Drawing.Size(223, 100);
+            this.rtbResponseMessage.Size = new System.Drawing.Size(399, 273);
             this.rtbResponseMessage.TabIndex = 1;
             this.rtbResponseMessage.Text = "";
             // 
             // lbResponseMessage
             // 
             this.lbResponseMessage.AutoSize = true;
-            this.lbResponseMessage.Location = new System.Drawing.Point(376, 112);
+            this.lbResponseMessage.BackColor = System.Drawing.Color.Transparent;
+            this.lbResponseMessage.Location = new System.Drawing.Point(736, 155);
             this.lbResponseMessage.Name = "lbResponseMessage";
-            this.lbResponseMessage.Size = new System.Drawing.Size(128, 17);
+            this.lbResponseMessage.Size = new System.Drawing.Size(161, 25);
             this.lbResponseMessage.TabIndex = 5;
             this.lbResponseMessage.Text = "Nội dung phản hồi:";
             // 
             // lbReportedDate
             // 
             this.lbReportedDate.AutoSize = true;
-            this.lbReportedDate.Location = new System.Drawing.Point(19, 303);
+            this.lbReportedDate.BackColor = System.Drawing.Color.Transparent;
+            this.lbReportedDate.Location = new System.Drawing.Point(102, 431);
             this.lbReportedDate.Name = "lbReportedDate";
-            this.lbReportedDate.Size = new System.Drawing.Size(71, 17);
+            this.lbReportedDate.Size = new System.Drawing.Size(89, 25);
             this.lbReportedDate.TabIndex = 4;
             this.lbReportedDate.Text = "Thời gian:";
             // 
             // lbResponseType
             // 
             this.lbResponseType.AutoSize = true;
-            this.lbResponseType.Location = new System.Drawing.Point(376, 36);
+            this.lbResponseType.BackColor = System.Drawing.Color.Transparent;
+            this.lbResponseType.Location = new System.Drawing.Point(734, 76);
             this.lbResponseType.Name = "lbResponseType";
-            this.lbResponseType.Size = new System.Drawing.Size(98, 17);
+            this.lbResponseType.Size = new System.Drawing.Size(124, 25);
             this.lbResponseType.TabIndex = 3;
             this.lbResponseType.Text = "Loại phản hồi:";
             // 
             // lbReportId
             // 
             this.lbReportId.AutoSize = true;
-            this.lbReportId.Location = new System.Drawing.Point(19, 36);
+            this.lbReportId.BackColor = System.Drawing.Color.Transparent;
+            this.lbReportId.Location = new System.Drawing.Point(102, 79);
             this.lbReportId.Name = "lbReportId";
-            this.lbReportId.Size = new System.Drawing.Size(86, 17);
+            this.lbReportId.Size = new System.Drawing.Size(108, 25);
             this.lbReportId.TabIndex = 2;
             this.lbReportId.Text = "Mã báo cáo:";
             // 
@@ -244,7 +263,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1467, 580);
+            this.ClientSize = new System.Drawing.Size(1232, 548);
             this.Controls.Add(this.grbCreateResponse);
             this.Name = "FResponse";
             this.Text = "FResponse";

@@ -116,5 +116,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                 MessageBox.Show("Vui lòng chọn một phòng!");
             }
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

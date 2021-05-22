@@ -61,6 +61,11 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                 e.Handled = true;
             }    
         }
+
+        private void btHuy_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
 
