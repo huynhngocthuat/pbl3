@@ -55,14 +55,13 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             lbFullName.Text = ac.fullName;
         }
 
-        
-
         private void btnCreateResponse_Click(object sender, EventArgs e)
         {
             if (dgvReport.SelectedRows.Count == 1)
             {
                 DataGridViewRow dataGridViewRow = dgvReport.CurrentRow;
-                int reportId = Convert.ToInt32(dataGridViewRow.Cells["STT"].Value);
+                List<int> reportIdList = BUS_AdminData.Instance.BUS_GetReportIdList();
+                int reportId = reportIdList[Convert.ToInt32(dataGridViewRow.Cells["STT"].Value) - 1];
                 string roomId = dataGridViewRow.Cells["roomId"].Value.ToString();
                 string equipmentName = dataGridViewRow.Cells["equipmentName"].Value.ToString();
                 string equipmentStatus = dataGridViewRow.Cells["equipmentStatus"].Value.ToString();

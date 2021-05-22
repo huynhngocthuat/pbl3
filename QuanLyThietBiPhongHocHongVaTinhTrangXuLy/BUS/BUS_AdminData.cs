@@ -167,5 +167,14 @@ namespace BUS
         {
             return DAL_AdminData.Instance.DAL_GetReportStatusByReportId(reportId);
         }
+        public List<int> BUS_GetReportIdList()
+        {
+            List<int> reportIdList = new List<int>();
+            foreach (REPORT item in DAL_AdminData.Instance.DAL_GetALlReports())
+            {
+                reportIdList.Add(item.reportId);
+            }
+            return reportIdList;
+        }
     }
 }
