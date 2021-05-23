@@ -28,3 +28,9 @@ C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy
 C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\obj\Debug\DTL.csproj.CoreCompileInputs.cache
 C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\obj\Debug\DTL.dll
 C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\obj\Debug\DTL.pdb
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\bin\Debug\DTL.dll
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\bin\Debug\DTL.pdb
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\obj\Debug\DTL.csprojAssemblyReference.cache
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\obj\Debug\DTL.csproj.CoreCompileInputs.cache
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\obj\Debug\DTL.dll
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\obj\Debug\DTL.pdb

@@ -78,28 +78,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
 
         private void btnSort_Click(object sender, EventArgs e)
         {
-            List<EQUIPMENT> equipmentList = new List<EQUIPMENT>();
-            switch (cbbSort.SelectedItem.ToString())
-            {
-                case "equipmetId":
-                    dataGridView_Equipment.DataSource = BUS_EquipmentData.Instance.BUS_SortEquipmentByIdEquipment();
-                    break;
-                case "equipmentName":
-                    dataGridView_Equipment.DataSource = BUS_EquipmentData.Instance.BUS_SortEquipmentByName();
-                    break;
-                case "roomId":
-                    dataGridView_Equipment.DataSource = BUS_EquipmentData.Instance.BUS_SortEquipmentByIdRoom();
-                    break;
-                case "dateOfInstallation":
-                    dataGridView_Equipment.DataSource = BUS_EquipmentData.Instance.BUS_SortEquipmentByDate();
-                    break;
-                case "company":
-                    dataGridView_Equipment.DataSource = BUS_EquipmentData.Instance.BUS_SortEquipmentByCompany();
-                    break;
-                default:
-                    dataGridView_Equipment.DataSource = BUS_EquipmentData.Instance.BUS_SortEquipmentByIdEquipment();
-                    break;
-            }
+            dataGridView_Equipment.DataSource = BUS_EquipmentData.Instance.BUS_Sort(cbbSort.SelectedItem.ToString());
         }
 
         private void btnXemtinhtrang_Click(object sender, EventArgs e)

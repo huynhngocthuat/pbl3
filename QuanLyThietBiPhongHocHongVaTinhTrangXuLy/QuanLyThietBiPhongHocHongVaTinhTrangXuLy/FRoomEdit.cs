@@ -37,6 +37,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                 txbMaphong.Text = s.roomId;
                 cbbKhuphong.Text = s.zoneId;
                 this.zoneid = s.zoneId;
+                txbMaphong.Enabled = false;
             }
             
         }

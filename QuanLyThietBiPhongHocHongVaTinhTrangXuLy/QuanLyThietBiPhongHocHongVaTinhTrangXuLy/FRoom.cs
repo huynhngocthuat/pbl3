@@ -80,23 +80,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
 
         private void btnSort_Click(object sender, EventArgs e)
         {
-            List<ROOM> roomList = new List<ROOM>();
-            switch (cbbSort.SelectedItem.ToString())
-            {
-                case "roomId":
-                    dataGridView_RoomShow.DataSource = BUS_RoomData.Instance.BUS_SortRoomByIdRoom();
-                    break;
-                case "zoneId":
-                    dataGridView_RoomShow.DataSource = BUS_RoomData.Instance.BUS_SortRoomByIdZone();
-                    break;
-                case "roomFunction":
-                    dataGridView_RoomShow.DataSource = BUS_RoomData.Instance.BUS_SortRoomByRoomFuntion();
-                    break;
-                default:
-                    dataGridView_RoomShow.DataSource = BUS_RoomData.Instance.BUS_SortRoomByIdRoom();
-                    break;
-
-            }
+            dataGridView_RoomShow.DataSource = BUS_RoomData.Instance.BUS_Sort(cbbSort.SelectedItem.ToString());
         }
         private void btnTimKiem_Click(object sender, EventArgs e)
         {

@@ -68,3 +68,17 @@ C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy
 C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DAL\obj\Debug\DAL.dll
 C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DAL\obj\Debug\DAL.pdb
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DAL\bin\Debug\DAL.dll.config
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DAL\bin\Debug\DAL.dll
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DAL\bin\Debug\DAL.pdb
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DAL\bin\Debug\DTL.dll
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DAL\bin\Debug\DTL.pdb
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DAL\obj\Debug\DAL.dll
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DAL\obj\Debug\DAL.pdb

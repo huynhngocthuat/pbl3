@@ -33,6 +33,41 @@ namespace BUS
             }
             return list;
         }
+        public List<EquipmentShow> BUS_GetEquipmentShow()
+        {
+            return DAL_EquipmentData.Instance.DAL_GetEquipmentShow();
+        }
+        public List<EquipmentShow> BUS_Sort(string cbbitem)
+        {
+            string item = cbbitem;
+            switch (item)
+            {
+                case "equipmetId":
+                    {
+                        return BUS_GetEquipmentShow().OrderBy(o => o.equipmentID).ToList();
+                    }
+                case "equipmentName":
+                    {
+                        return BUS_GetEquipmentShow().OrderBy(o => o.equipmentName).ToList();
+                    }
+                case "roomId":
+                    {
+                        return BUS_GetEquipmentShow().OrderBy(o => o.roomID).ToList();
+                    }
+                case "dateOfInstallation":
+                    {
+                        return BUS_GetEquipmentShow().OrderBy(o => o.dateOfInstallation).ToList();
+                    }
+                case "company":
+                    {
+                        return BUS_GetEquipmentShow().OrderBy(o => o.company).ToList();
+                    }
+                default:
+                    {
+                        return BUS_GetEquipmentShow();
+                    }
+            }
+        }
         public void BUS_SETEQUIPMENT(EQUIPMENT eq)
         {
             DAL_EquipmentData.Instance.DAL_SETEQUIPMENT(eq);
@@ -55,26 +90,6 @@ namespace BUS
                 }
             }
             return null;
-        }
-        public List<EQUIPMENT> BUS_SortEquipmentByIdEquipment()
-        {
-            return DAL_EquipmentData.Instance.DAL_SortEquipmentByIdEquipment();
-        }
-        public List<EQUIPMENT> BUS_SortEquipmentByName()
-        {
-            return DAL_EquipmentData.Instance.DAL_SortEquipmentByName();
-        }
-        public List<EQUIPMENT> BUS_SortEquipmentByDate()
-        {
-            return DAL_EquipmentData.Instance.DAL_SortEquipmentByDate();
-        }
-        public List<EQUIPMENT> BUS_SortEquipmentByCompany()
-        {
-            return DAL_EquipmentData.Instance.DAL_SortEquipmentByCompany();
-        }
-        public List<EQUIPMENT> BUS_SortEquipmentByIdRoom()
-        {
-            return DAL_EquipmentData.Instance.DAL_SortEquipmentByIdRoom();
         }
         public int BUS_CHECKEQUIPMENT(EQUIPMENT eq)
         {

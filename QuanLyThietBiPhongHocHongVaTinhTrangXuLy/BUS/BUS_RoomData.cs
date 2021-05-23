@@ -24,9 +24,22 @@ namespace BUS
         {
             return DAL_RoomData.Instance.DAL_RoomShow();
         }
+        public List<RoomShow> BUS_GetRoomShow()
+        {
+            return DAL_RoomData.Instance.DAL_GetRoomShow();
+        }
         public List<RoomShow> BUS_RoomShowForIDZone(string zoneid)
         {
-            return DAL_RoomData.Instance.DAL_RoomShowForIDZone(zoneid);
+            List<RoomShow> l = new List<RoomShow>();
+
+            foreach (var item in BUS_RoomShow())
+            {
+                if (item.zoneID.ToLower().Contains(zoneid.ToLower()) == true)
+                {
+                    l.Add(item);
+                }
+            }
+            return l;
         }
         public void BUS_SETROOM(ROOM rm)
         {
@@ -42,23 +55,41 @@ namespace BUS
         }
         public ROOM BUS_getRoomByIDRoom(string roomid)
         {
-            return DAL_RoomData.Instance.DAL_getRoomByIDRoom(roomid);
-        }
-        public List<ROOM> BUS_SortRoomByIdRoom()
-        {
-            return DAL_RoomData.Instance.DAL_SortRoomByIdRoom();
-        }
-        public List<ROOM> BUS_SortRoomByIdZone()
-        {
-            return DAL_RoomData.Instance.DAL_SortRoomByIdZone();
-        }
-        public List<ROOM> BUS_SortRoomByRoomFuntion()
-        {
-            return DAL_RoomData.Instance.DAL_SortRoomByRoomFuntion();
+            foreach (ROOM item in BUS_MainData.Instance.BUS_ROOM())
+            {
+                if (item.roomId == roomid)
+                {
+                    return item;
+                }
+            }
+            return null;
         }
         public int BUS_CHECKROOM(ROOM rm)
         {
             return DAL_RoomData.Instance.DAL_CHECKROOM(rm);
+        }
+        public List<RoomShow> BUS_Sort(string cbbitem)
+        {
+            string item = cbbitem;
+            switch (item)
+            {
+                case "roomId":
+                    {
+                        return BUS_GetRoomShow().OrderBy(o => o.roomID).ToList();
+                    }
+                case "zoneId":
+                    {
+                        return BUS_GetRoomShow().OrderBy(o => o.zoneID).ToList();
+                    }
+                case "roomFunction":
+                    {
+                        return BUS_GetRoomShow().OrderBy(o => o.roomFunciton).ToList();
+                    }
+                default:
+                    {
+                        return BUS_GetRoomShow();
+                    }
+            }
         }
     }
 }

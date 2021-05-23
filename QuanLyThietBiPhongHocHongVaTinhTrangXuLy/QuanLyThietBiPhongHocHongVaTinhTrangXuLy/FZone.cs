@@ -78,27 +78,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
 
         private void btnSapXep_Click(object sender, EventArgs e)
         {
-            List<ZONE> zoneList = new List<ZONE>();
-            if (cbbSort.SelectedIndex == -1) MessageBox.Show("Vui lòng chọn thuộc tính muốn sắp xếp!");
-            else
-            {
-                switch (cbbSort.SelectedItem.ToString())
-                {
-                    case "Mã khu":
-                        dataGridView_ShowZone.DataSource = BUS_ZoneData.Instance.BUS_SortZoneById();
-                        dataGridView_ShowZone.Columns[0].Width = 120;
-                        dataGridView_ShowZone.Columns[1].Width = 250;
-                        break;
-                    case "Tên khu":
-                        dataGridView_ShowZone.DataSource = BUS_ZoneData.Instance.BUS_SortZoneByName();
-                        dataGridView_ShowZone.Columns[0].Width = 120;
-                        dataGridView_ShowZone.Columns[1].Width = 250;
-                        break;
-                    default:
-                        dataGridView_ShowZone.DataSource = BUS_ZoneData.Instance.BUS_SortZoneById();
-                        break;
-                }
-            }
+            dataGridView_ShowZone.DataSource = BUS_ZoneData.Instance.BUS_Sort(cbbSort.SelectedItem.ToString());
         }
 
         private void btnXemphong_Click(object sender, EventArgs e)

@@ -52,6 +52,19 @@ namespace DAL
             }
             return listEquipmentShow;
         }
+        public List<EquipmentShow> DAL_GetEquipmentShow()
+        {           
+            var la = (from c in db.EQUIPMENTs select 
+                      new EquipmentShow
+                      {
+                          equipmentID = c.equipmentId,
+                          roomID = c.roomId,
+                          equipmentName = c.equipmentName,
+                          dateOfInstallation = c.dateOfInstallation.Value,
+                          company = c.company
+                      }).ToList();
+            return la.ToList<EquipmentShow>();
+        }
         public void DAL_SETEQUIPMENT(EQUIPMENT eq)
         {
             db.EQUIPMENTs.Add(eq);
@@ -86,41 +99,6 @@ namespace DAL
             sup.company = eq2.company;
             sup.dateOfInstallation = eq2.dateOfInstallation;
             db.SaveChanges();
-        }
-        public List<EQUIPMENT> DAL_SortEquipmentByIdEquipment()
-        {
-            List<EQUIPMENT> oldList = DAL_MainData.Instance.DAL_getEquipment();
-            List<EQUIPMENT> newList = new List<EQUIPMENT>();
-            newList = oldList.OrderBy(z => z.equipmentId).ToList();
-            return newList;
-        }
-        public List<EQUIPMENT> DAL_SortEquipmentByName()
-        {
-            List<EQUIPMENT> oldList = DAL_MainData.Instance.DAL_getEquipment();
-            List<EQUIPMENT> newList = new List<EQUIPMENT>();
-            newList = oldList.OrderBy(z => z.equipmentName).ToList();
-            return newList;
-        }
-        public List<EQUIPMENT> DAL_SortEquipmentByDate()
-        {
-            List<EQUIPMENT> oldList = DAL_MainData.Instance.DAL_getEquipment();
-            List<EQUIPMENT> newList = new List<EQUIPMENT>();
-            newList = oldList.OrderBy(z => z.dateOfInstallation).ToList();
-            return newList;
-        }
-        public List<EQUIPMENT> DAL_SortEquipmentByCompany()
-        {
-            List<EQUIPMENT> oldList = DAL_MainData.Instance.DAL_getEquipment();
-            List<EQUIPMENT> newList = new List<EQUIPMENT>();
-            newList = oldList.OrderBy(z => z.company).ToList();
-            return newList;
-        }
-        public List<EQUIPMENT> DAL_SortEquipmentByIdRoom()
-        {
-            List<EQUIPMENT> oldList = DAL_MainData.Instance.DAL_getEquipment();
-            List<EQUIPMENT> newList = new List<EQUIPMENT>();
-            newList = oldList.OrderBy(z => z.roomId).ToList();
-            return newList;
         }
         public List<EquipmentShow> DAL_ShowEquipmentByRoomId(string roomId)
         {

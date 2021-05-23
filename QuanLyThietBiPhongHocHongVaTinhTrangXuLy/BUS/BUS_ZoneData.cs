@@ -24,6 +24,29 @@ namespace BUS
         {
             return DAL_ZoneData.Instance.DAL_ZoneShow();
         }
+        public List<ZoneShow> BUS_GetZoneShow()
+        {
+            return DAL_ZoneData.Instance.DAL_GetZoneShow();
+        }
+        public List<ZoneShow> BUS_Sort(string cbbitem)
+        {
+            string item = cbbitem;
+            switch (item)
+            {
+                case "Mã khu":
+                    {
+                        return BUS_GetZoneShow().OrderBy(o => o.zoneID).ToList();
+                    }
+                case "Tên khu":
+                    {
+                        return BUS_GetZoneShow().OrderBy(o => o.zoneName).ToList();
+                    }
+                default:
+                    {
+                        return BUS_GetZoneShow();
+                    }
+            }
+        }
         public void BUS_SETZONE(ZONE zn)
         {
             DAL_ZoneData.Instance.DAL_SETZONE(zn);
@@ -36,21 +59,20 @@ namespace BUS
         {
             DAL_ZoneData.Instance.DAL_UPDATEZONE(zn2, zoneid);
         }
-        public List<ZoneShow> BUS_SortZoneById()
-        {
-            return DAL_ZoneData.Instance.DAL_SortZoneById();
-        }
-        public List<ZONE> BUS_SortZoneByName()
-        {
-            return DAL_ZoneData.Instance.DAL_SortZoneByName();
-        }
         public int BUS_CHECKZONE(ZONE zn)
         {
             return DAL_ZoneData.Instance.DAL_CHECKZONE(zn);
         }
         public ZONE BUS_getZoneByIDZone(string zoneid)
         {
-            return DAL_ZoneData.Instance.DAL_getZoneByIZone(zoneid);
+            foreach (ZONE item in BUS_MainData.Instance.BUS_ZONE())
+            {
+                if (item.zoneId == zoneid)
+                {
+                    return item;
+                }
+            }
+            return null;
         }
     }
 }

@@ -83,3 +83,20 @@ C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy
 C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\obj\Debug\BUS.csproj.CopyComplete
 C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\obj\Debug\BUS.dll
 C:\Users\z\Desktop\ \PBL3\newpbl3\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\obj\Debug\BUS.pdb
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\BUS.dll.config
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\BUS.dll
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\BUS.pdb
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\DAL.dll
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\DTL.dll
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\EntityFramework.dll
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\DAL.pdb
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\DAL.dll.config
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\DTL.pdb
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\EntityFramework.xml
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\obj\Debug\BUS.dll
+C:\Users\Welcome\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\BUS\obj\Debug\BUS.pdb

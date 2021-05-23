@@ -46,6 +46,15 @@ namespace DAL
             }
             return listZoneShow;
         }
+        public List<ZoneShow> DAL_GetZoneShow()
+        {           
+            var la = (from c in db.ZONEs select 
+                      new ZoneShow{
+                               zoneID = c.zoneId,
+                               zoneName = c.zoneName
+                      }).ToList();
+            return la.ToList<ZoneShow>();
+        }
         public void DAL_SETZONE(ZONE zn)
         {
             db.ZONEs.Add(zn);
@@ -77,24 +86,6 @@ namespace DAL
             sup.zoneName = zn2.zoneName;
             db.SaveChanges();
         }
-        public List<ZoneShow> DAL_SortZoneById()
-        {
-            List<ZoneShow> oldZoneList = DAL_ZoneData.Instance.DAL_ZoneShow();
-            List<ZoneShow> newZoneList = new List<ZoneShow>();
-            newZoneList = oldZoneList.OrderBy(z => z.zoneID).ToList();
-            return newZoneList;
-        }
-        public List<ZONE> DAL_SortZoneByName()
-        {
-            List<ZONE> oldZoneList = DAL_MainData.Instance.DAL_getZone();
-            List<ZONE> newZoneList = new List<ZONE>();
-            newZoneList = oldZoneList.OrderBy(z => z.zoneName).ToList();
-            return newZoneList;
-        }
-        public ZONE DAL_getZoneByIZone(string zoneid)
-        {
-            ZONE sup = db.ZONEs.Where(p => p.zoneId == zoneid).SingleOrDefault();
-            return sup;
-        }
+
     }
 }

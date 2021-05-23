@@ -38,20 +38,14 @@ namespace BUS
         }
         public STATUS BUS_getStatusByIDStatus(string statusid)
         {
-            return DAL_StatusData.Instance.DAL_getStatusByIDStatus(statusid);
-        }
-        public List<STATUS> BUS_SortZoneByIdStatus()
-        {
-            return DAL_StatusData.Instance.DAL_SortZoneByIdStatus();
-
-        }
-        public List<STATUS> BUS_SortZoneByIdEquipment()
-        {
-            return DAL_StatusData.Instance.DAL_SortZoneByIdEquipment();
-        }
-        public List<STATUS> BUS_SortZoneByEquipmentStatus()
-        {
-            return DAL_StatusData.Instance.DAL_SortZoneByEquipmentStatus();
+            foreach (STATUS item in BUS_MainData.Instance.BUS_STATUS())
+            {
+                if (item.statusId == statusid)
+                {
+                    return item;
+                }
+            }
+            return null;
         }
         public int BUS_CHECKSTATUS(STATUS st)
         {
@@ -59,7 +53,16 @@ namespace BUS
         }
         public List<StatusShow> BUS_StatusShowForIDEquipment(string equipmentId)
         {
-            return DAL_StatusData.Instance.DAL_StatusShowForIDEquipment(equipmentId);
+            List<StatusShow> l = new List<StatusShow>();
+
+            foreach (var item in BUS_StatusShow())
+            {
+                if (item.equipmentID.ToLower().Contains(equipmentId.ToLower()) == true)
+                {
+                    l.Add(item);
+                }
+            }
+            return l;
         }
     }
 }

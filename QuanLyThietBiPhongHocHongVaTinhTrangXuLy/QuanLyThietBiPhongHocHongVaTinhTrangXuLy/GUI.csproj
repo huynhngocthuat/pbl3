@@ -46,12 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FStatusEdit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FStatusEdit.Designer.cs">
-      <DependentUpon>FStatusEdit.cs</DependentUpon>
-    </Compile>
     <Compile Include="FEquipmentDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +112,12 @@
     <Compile Include="FStatus.Designer.cs">
       <DependentUpon>FStatus.cs</DependentUpon>
     </Compile>
+    <Compile Include="FStatusEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FStatusEdit.Designer.cs">
+      <DependentUpon>FStatusEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="FUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,9 +150,6 @@
     <Compile Include="FZoneEdit.Designer.cs">
       <DependentUpon>FZoneEdit.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FStatusEdit.resx">
-      <DependentUpon>FStatusEdit.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FEquipmentDetail.resx">
       <DependentUpon>FEquipmentDetail.cs</DependentUpon>
     </EmbeddedResource>
@@ -188,6 +185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FStatus.resx">
       <DependentUpon>FStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FStatusEdit.resx">
+      <DependentUpon>FStatusEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FUser.resx">
       <DependentUpon>FUser.cs</DependentUpon>
