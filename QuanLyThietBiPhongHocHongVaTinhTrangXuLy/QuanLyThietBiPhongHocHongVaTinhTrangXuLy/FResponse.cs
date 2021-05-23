@@ -63,7 +63,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         }
         private void btnCreate_Click(object sender, EventArgs e)
         {
-            if (cbbResponseType.SelectedIndex == -1 || rtbResponseMessage == null)
+            if (cbbResponseType.SelectedIndex == -1 || rtbResponseMessage.Text.Length == 0)
             {
                 MessageBox.Show("Vui lòng chọn loại phản hồi và điền vào lời nhắn phản hồi!");
             }
