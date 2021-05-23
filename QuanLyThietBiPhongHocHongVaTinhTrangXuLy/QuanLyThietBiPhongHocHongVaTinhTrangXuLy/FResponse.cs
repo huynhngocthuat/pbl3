@@ -22,13 +22,21 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         private string note;
         private string reportDate;
 
+        private string zoneId;
+        private int check;
+        private int indexDate;
+
+        public delegate void MyDel(string zoneId, int check, int indexDate);
+        public MyDel del;
+        
         public FResponse(ACCOUNT ac)
         {
             a = ac;
             InitializeComponent();
             setCbbResponseType();
         }
-        public FResponse(ACCOUNT ac, int reportId, string roomId, string equipmentName, string equipmentStatus, string note, string reportDate)
+        public FResponse(ACCOUNT ac, int reportId, string roomId, string equipmentName, string equipmentStatus,
+                        string note, string reportDate, string zoneId, int check, int indexDate)
         {
             a = ac;
             InitializeComponent();
@@ -39,8 +47,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.equipmentStatus = equipmentStatus;
             this.note = note;
             this.reportDate = reportDate;
+            this.zoneId = zoneId;
+            this.check = check;
+            this.indexDate = indexDate;
             LoadResponseForm();
-
         }
         public void LoadResponseForm()
         {
@@ -77,6 +87,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                 response.responsedDate = DateTime.Now;
                 BUS_AdminData.Instance.BUS_SetResponse(response);
                 MessageBox.Show("Tạo phản hồi thành công!");
+                del(zoneId, check, indexDate);
                 this.Close();
             }
         }
