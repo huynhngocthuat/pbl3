@@ -29,7 +29,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMain));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FReport));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cbb_Time = new System.Windows.Forms.ComboBox();
             this.lb_GiangDuong = new System.Windows.Forms.Label();
