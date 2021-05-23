@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FEquipmentDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FEquipmentDetail.Designer.cs">
+      <DependentUpon>FEquipmentDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="FAccountManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,12 @@
     <Compile Include="FStatus.Designer.cs">
       <DependentUpon>FStatus.cs</DependentUpon>
     </Compile>
+    <Compile Include="FStatusEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FStatusEdit.Designer.cs">
+      <DependentUpon>FStatusEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="FUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +138,21 @@
     <Compile Include="FZone.Designer.cs">
       <DependentUpon>FZone.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRoomEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRoomEdit.Designer.cs">
+      <DependentUpon>FRoomEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FZoneEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FZoneEdit.Designer.cs">
+      <DependentUpon>FZoneEdit.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FEquipmentDetail.resx">
+      <DependentUpon>FEquipmentDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FAccountManagement.resx">
       <DependentUpon>FAccountManagement.cs</DependentUpon>
     </EmbeddedResource>
@@ -153,14 +180,23 @@
     <EmbeddedResource Include="FResponse.resx">
       <DependentUpon>FResponse.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRoomEdit.resx">
+      <DependentUpon>FRoomEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FStatus.resx">
       <DependentUpon>FStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FStatusEdit.resx">
+      <DependentUpon>FStatusEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FUser.resx">
       <DependentUpon>FUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRoom.resx">
       <DependentUpon>FRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FZoneEdit.resx">
+      <DependentUpon>FZoneEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -170,6 +206,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="FZone.resx">
       <DependentUpon>FZone.cs</DependentUpon>
@@ -201,6 +238,9 @@
       <Project>{a48fb2b3-9aed-4293-8299-950452fec885}</Project>
       <Name>DTL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nền.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

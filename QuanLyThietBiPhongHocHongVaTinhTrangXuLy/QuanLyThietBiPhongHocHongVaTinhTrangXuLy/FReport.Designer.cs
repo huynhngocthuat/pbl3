@@ -44,9 +44,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btn_HuyBaoCao = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -69,16 +69,17 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.txbGhichu.Location = new System.Drawing.Point(468, 326);
             this.txbGhichu.Name = "txbGhichu";
             this.txbGhichu.Size = new System.Drawing.Size(221, 27);
-            this.txbGhichu.TabIndex = 21;
+            this.txbGhichu.TabIndex = 5;
             // 
             // cbbTinhtrang
             // 
+            this.cbbTinhtrang.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbbTinhtrang.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 10F);
             this.cbbTinhtrang.FormattingEnabled = true;
             this.cbbTinhtrang.Location = new System.Drawing.Point(474, 269);
             this.cbbTinhtrang.Name = "cbbTinhtrang";
             this.cbbTinhtrang.Size = new System.Drawing.Size(205, 35);
-            this.cbbTinhtrang.TabIndex = 20;
+            this.cbbTinhtrang.TabIndex = 3;
             // 
             // label4
             // 
@@ -92,6 +93,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // cbbKhu
             // 
+            this.cbbKhu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbbKhu.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 10F);
             this.cbbKhu.FormattingEnabled = true;
             this.cbbKhu.IntegralHeight = false;
@@ -99,7 +101,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.cbbKhu.Location = new System.Drawing.Point(474, 108);
             this.cbbKhu.Name = "cbbKhu";
             this.cbbKhu.Size = new System.Drawing.Size(205, 35);
-            this.cbbKhu.TabIndex = 18;
+            this.cbbKhu.TabIndex = 0;
             this.cbbKhu.SelectedIndexChanged += new System.EventHandler(this.cbbKhu_SelectedIndexChanged);
             // 
             // label3
@@ -114,6 +116,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // cbbPhonghoc
             // 
+            this.cbbPhonghoc.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbbPhonghoc.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 10F);
             this.cbbPhonghoc.FormattingEnabled = true;
             this.cbbPhonghoc.IntegralHeight = false;
@@ -146,6 +149,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // cbbThietbi
             // 
+            this.cbbThietbi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbbThietbi.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 10F);
             this.cbbThietbi.FormattingEnabled = true;
             this.cbbThietbi.IntegralHeight = false;
@@ -164,7 +168,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btn_XacNhan.Location = new System.Drawing.Point(275, 451);
             this.btn_XacNhan.Name = "btn_XacNhan";
             this.btn_XacNhan.Size = new System.Drawing.Size(166, 39);
-            this.btn_XacNhan.TabIndex = 26;
+            this.btn_XacNhan.TabIndex = 6;
             this.btn_XacNhan.Text = "Xác nhận báo cáo";
             this.btn_XacNhan.UseVisualStyleBackColor = true;
             this.btn_XacNhan.Click += new System.EventHandler(this.btn_XacNhan_Click);
@@ -184,15 +188,16 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // label6
             // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
+            this.label6.AllowDrop = true;
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.Font = new System.Drawing.Font("#9Slide03 Kaleko 105 Round Bold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.label6.Location = new System.Drawing.Point(239, 30);
+            this.label6.Location = new System.Drawing.Point(-1, 30);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(238, 38);
+            this.label6.Size = new System.Drawing.Size(739, 38);
             this.label6.TabIndex = 28;
             this.label6.Text = "Tạo Báo Cáo";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
             // 
@@ -218,15 +223,13 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.panel1.Size = new System.Drawing.Size(719, 511);
             this.panel1.TabIndex = 29;
             // 
-            // label7
+            // panel2
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.label7.Location = new System.Drawing.Point(272, 13);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(237, 22);
-            this.label7.TabIndex = 29;
-            this.label7.Text = "Huỳnh Thị Thuật - 19TCLC_DT2";
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Location = new System.Drawing.Point(478, 353);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 1);
+            this.panel2.TabIndex = 30;
             // 
             // pictureBox1
             // 
@@ -238,13 +241,15 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.pictureBox1.TabIndex = 29;
             this.pictureBox1.TabStop = false;
             // 
-            // panel2
+            // label7
             // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Location = new System.Drawing.Point(478, 353);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 1);
-            this.panel2.TabIndex = 30;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
+            this.label7.Location = new System.Drawing.Point(272, 13);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(237, 22);
+            this.label7.TabIndex = 29;
+            this.label7.Text = "Huỳnh Thị Thuật - 19TCLC_DT2";
             // 
             // FReport
             // 

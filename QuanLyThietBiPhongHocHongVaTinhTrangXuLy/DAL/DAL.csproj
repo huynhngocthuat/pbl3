@@ -54,7 +54,11 @@
       <DependentUpon>PBL3_Entity.tt</DependentUpon>
     </Compile>
     <Compile Include="DAL_AdminData.cs" />
+    <Compile Include="DAL_EquipmentData.cs" />
     <Compile Include="DAL_MainData.cs" />
+    <Compile Include="DAL_RoomData.cs" />
+    <Compile Include="DAL_StatusData.cs" />
+    <Compile Include="DAL_ZoneData.cs" />
     <Compile Include="EQUIPMENT.cs">
       <DependentUpon>PBL3_Entity.tt</DependentUpon>
     </Compile>

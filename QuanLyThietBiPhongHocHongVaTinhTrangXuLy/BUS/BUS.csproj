@@ -42,7 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS_AdminData.cs" />
+    <Compile Include="BUS_EquipmentData.cs" />
     <Compile Include="BUS_MainData.cs" />
+    <Compile Include="BUS_RoomData.cs" />
+    <Compile Include="BUS_StatusData.cs" />
+    <Compile Include="BUS_ZoneData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

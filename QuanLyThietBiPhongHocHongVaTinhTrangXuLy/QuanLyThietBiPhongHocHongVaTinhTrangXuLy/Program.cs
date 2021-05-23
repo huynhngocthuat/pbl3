@@ -14,7 +14,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FAccountManagement());
+            Application.Run(new FEquipment());
         }
     }
 }

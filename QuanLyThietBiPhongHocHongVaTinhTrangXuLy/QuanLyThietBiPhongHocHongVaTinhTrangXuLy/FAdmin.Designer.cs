@@ -29,261 +29,364 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnXem = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.btnPhanHoi = new System.Windows.Forms.Button();
-            this.btnTaiKhoan = new System.Windows.Forms.Button();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.btnDangxuat = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.cbbSongaydemnguoc = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnShowDulieu = new System.Windows.Forms.Button();
-            this.cbbGiangduong = new System.Windows.Forms.ComboBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FAdmin));
+            this.btn_Account = new System.Windows.Forms.Button();
+            this.btnEditProfile = new System.Windows.Forms.Button();
+            this.btnEquipmentManage = new System.Windows.Forms.Button();
+            this.btnRoomManage = new System.Windows.Forms.Button();
+            this.btnZoneManage = new System.Windows.Forms.Button();
+            this.pnbutton = new System.Windows.Forms.Panel();
+            this.bttHome = new System.Windows.Forms.Button();
+            this.pnDesktop = new System.Windows.Forms.Panel();
+            this.grbAdmin = new System.Windows.Forms.GroupBox();
+            this.btnShowData = new System.Windows.Forms.Button();
+            this.btnCreateResponse = new System.Windows.Forms.Button();
+            this.btnSignOut = new System.Windows.Forms.Button();
+            this.lbFullName = new System.Windows.Forms.Label();
+            this.ckbResolved = new System.Windows.Forms.CheckBox();
+            this.ckbNotResolvedYet = new System.Windows.Forms.CheckBox();
+            this.dgvReport = new System.Windows.Forms.DataGridView();
+            this.cbbReportTime = new System.Windows.Forms.ComboBox();
+            this.lbZone = new System.Windows.Forms.Label();
+            this.cbbZone = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pnbutton.SuspendLayout();
+            this.pnDesktop.SuspendLayout();
+            this.grbAdmin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReport)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnXem
+            // btn_Account
             // 
-            this.btnXem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.btnXem.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.btnXem.ForeColor = System.Drawing.Color.White;
-            this.btnXem.Location = new System.Drawing.Point(979, 48);
-            this.btnXem.Name = "btnXem";
-            this.btnXem.Size = new System.Drawing.Size(85, 34);
-            this.btnXem.TabIndex = 19;
-            this.btnXem.Text = "Xem";
-            this.btnXem.UseVisualStyleBackColor = false;
+            this.btn_Account.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Account.FlatAppearance.BorderSize = 0;
+            this.btn_Account.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Account.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
+            this.btn_Account.ForeColor = System.Drawing.Color.White;
+            this.btn_Account.Location = new System.Drawing.Point(0, 427);
+            this.btn_Account.Name = "btn_Account";
+            this.btn_Account.Size = new System.Drawing.Size(221, 75);
+            this.btn_Account.TabIndex = 9;
+            this.btn_Account.Text = "Quản lý tài khoản";
+            this.btn_Account.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Account.UseVisualStyleBackColor = true;
+            this.btn_Account.Click += new System.EventHandler(this.btn_Account_Click);
             // 
-            // comboBox1
+            // btnEditProfile
             // 
-            this.comboBox1.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(731, 48);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(234, 30);
-            this.comboBox1.TabIndex = 18;
+            this.btnEditProfile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditProfile.FlatAppearance.BorderSize = 0;
+            this.btnEditProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditProfile.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
+            this.btnEditProfile.ForeColor = System.Drawing.Color.White;
+            this.btnEditProfile.Location = new System.Drawing.Point(0, 508);
+            this.btnEditProfile.Name = "btnEditProfile";
+            this.btnEditProfile.Size = new System.Drawing.Size(221, 75);
+            this.btnEditProfile.TabIndex = 11;
+            this.btnEditProfile.Text = "Chỉnh sửa tài khoản";
+            this.btnEditProfile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditProfile.UseVisualStyleBackColor = true;
+            this.btnEditProfile.Click += new System.EventHandler(this.btnEditProfile_Click);
             // 
-            // btnPhanHoi
+            // btnEquipmentManage
             // 
-            this.btnPhanHoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.btnPhanHoi.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.btnPhanHoi.ForeColor = System.Drawing.Color.White;
-            this.btnPhanHoi.Location = new System.Drawing.Point(1098, 26);
-            this.btnPhanHoi.Name = "btnPhanHoi";
-            this.btnPhanHoi.Size = new System.Drawing.Size(107, 36);
-            this.btnPhanHoi.TabIndex = 17;
-            this.btnPhanHoi.Text = "Phản hồi";
-            this.btnPhanHoi.UseVisualStyleBackColor = false;
-            this.btnPhanHoi.Click += new System.EventHandler(this.btnPhanHoi_Click);
+            this.btnEquipmentManage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEquipmentManage.FlatAppearance.BorderSize = 0;
+            this.btnEquipmentManage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEquipmentManage.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
+            this.btnEquipmentManage.ForeColor = System.Drawing.Color.White;
+            this.btnEquipmentManage.Location = new System.Drawing.Point(0, 347);
+            this.btnEquipmentManage.Name = "btnEquipmentManage";
+            this.btnEquipmentManage.Size = new System.Drawing.Size(221, 75);
+            this.btnEquipmentManage.TabIndex = 8;
+            this.btnEquipmentManage.Text = "Quản lý thiết bị phòng";
+            this.btnEquipmentManage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEquipmentManage.UseVisualStyleBackColor = true;
+            this.btnEquipmentManage.Click += new System.EventHandler(this.btnManageEquipment_Click);
             // 
-            // btnTaiKhoan
+            // btnRoomManage
             // 
-            this.btnTaiKhoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.btnTaiKhoan.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.btnTaiKhoan.ForeColor = System.Drawing.Color.White;
-            this.btnTaiKhoan.Location = new System.Drawing.Point(1247, 26);
-            this.btnTaiKhoan.Name = "btnTaiKhoan";
-            this.btnTaiKhoan.Size = new System.Drawing.Size(105, 36);
-            this.btnTaiKhoan.TabIndex = 16;
-            this.btnTaiKhoan.Text = "Tài khoản";
-            this.btnTaiKhoan.UseVisualStyleBackColor = false;
-            this.btnTaiKhoan.Click += new System.EventHandler(this.btnTaiKhoan_Click);
+            this.btnRoomManage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRoomManage.FlatAppearance.BorderSize = 0;
+            this.btnRoomManage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRoomManage.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
+            this.btnRoomManage.ForeColor = System.Drawing.Color.White;
+            this.btnRoomManage.Location = new System.Drawing.Point(0, 263);
+            this.btnRoomManage.Name = "btnRoomManage";
+            this.btnRoomManage.Size = new System.Drawing.Size(221, 75);
+            this.btnRoomManage.TabIndex = 7;
+            this.btnRoomManage.Text = "Quản lý phòng";
+            this.btnRoomManage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRoomManage.UseVisualStyleBackColor = true;
+            this.btnRoomManage.Click += new System.EventHandler(this.btnManageRoom_Click);
             // 
-            // checkBox4
+            // btnZoneManage
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.checkBox4.Location = new System.Drawing.Point(441, 31);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(115, 26);
-            this.checkBox4.TabIndex = 11;
-            this.checkBox4.Text = "Báo cáo sai";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.btnZoneManage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.btnZoneManage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnZoneManage.FlatAppearance.BorderSize = 0;
+            this.btnZoneManage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnZoneManage.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
+            this.btnZoneManage.ForeColor = System.Drawing.Color.White;
+            this.btnZoneManage.Location = new System.Drawing.Point(0, 182);
+            this.btnZoneManage.Name = "btnZoneManage";
+            this.btnZoneManage.Size = new System.Drawing.Size(221, 75);
+            this.btnZoneManage.TabIndex = 6;
+            this.btnZoneManage.Text = "Quản lý khu";
+            this.btnZoneManage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnZoneManage.UseVisualStyleBackColor = false;
+            this.btnZoneManage.Click += new System.EventHandler(this.btnManageZone_Click);
             // 
-            // checkBox3
+            // pnbutton
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.checkBox3.Location = new System.Drawing.Point(319, 32);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(116, 26);
-            this.checkBox3.TabIndex = 10;
-            this.checkBox3.Text = "Tin đã xử lý";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.pnbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.pnbutton.Controls.Add(this.pictureBox1);
+            this.pnbutton.Controls.Add(this.bttHome);
+            this.pnbutton.Controls.Add(this.btn_Account);
+            this.pnbutton.Controls.Add(this.btnRoomManage);
+            this.pnbutton.Controls.Add(this.btnEquipmentManage);
+            this.pnbutton.Controls.Add(this.btnEditProfile);
+            this.pnbutton.Controls.Add(this.btnZoneManage);
+            this.pnbutton.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnbutton.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
+            this.pnbutton.ForeColor = System.Drawing.Color.Black;
+            this.pnbutton.Location = new System.Drawing.Point(0, 0);
+            this.pnbutton.Name = "pnbutton";
+            this.pnbutton.Size = new System.Drawing.Size(221, 595);
+            this.pnbutton.TabIndex = 0;
             // 
-            // checkBox2
+            // bttHome
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.checkBox2.Location = new System.Drawing.Point(571, 31);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(134, 26);
-            this.checkBox2.TabIndex = 9;
-            this.checkBox2.Text = "Tin chưa xử lý";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.bttHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bttHome.FlatAppearance.BorderSize = 0;
+            this.bttHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttHome.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
+            this.bttHome.ForeColor = System.Drawing.Color.White;
+            this.bttHome.Location = new System.Drawing.Point(0, 135);
+            this.bttHome.Name = "bttHome";
+            this.bttHome.Size = new System.Drawing.Size(221, 56);
+            this.bttHome.TabIndex = 12;
+            this.bttHome.Text = "Trang chủ";
+            this.bttHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bttHome.UseVisualStyleBackColor = true;
+            this.bttHome.Click += new System.EventHandler(this.bttHome_Click);
             // 
-            // btnDangxuat
+            // pnDesktop
             // 
-            this.btnDangxuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.btnDangxuat.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.btnDangxuat.ForeColor = System.Drawing.Color.White;
-            this.btnDangxuat.Location = new System.Drawing.Point(1358, 26);
-            this.btnDangxuat.Name = "btnDangxuat";
-            this.btnDangxuat.Size = new System.Drawing.Size(111, 36);
-            this.btnDangxuat.TabIndex = 7;
-            this.btnDangxuat.Text = "Đăng xuất";
-            this.btnDangxuat.UseVisualStyleBackColor = false;
-            this.btnDangxuat.Click += new System.EventHandler(this.btnDangxuat_Click);
+            this.pnDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(254)))));
+            this.pnDesktop.Controls.Add(this.grbAdmin);
+            this.pnDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnDesktop.Location = new System.Drawing.Point(221, 0);
+            this.pnDesktop.Name = "pnDesktop";
+            this.pnDesktop.Size = new System.Drawing.Size(1250, 595);
+            this.pnDesktop.TabIndex = 1;
             // 
-            // dataGridView1
+            // grbAdmin
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(5, 100);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1463, 463);
-            this.dataGridView1.TabIndex = 5;
+            this.grbAdmin.BackColor = System.Drawing.Color.White;
+            this.grbAdmin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("grbAdmin.BackgroundImage")));
+            this.grbAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.grbAdmin.Controls.Add(this.btnShowData);
+            this.grbAdmin.Controls.Add(this.btnCreateResponse);
+            this.grbAdmin.Controls.Add(this.btnSignOut);
+            this.grbAdmin.Controls.Add(this.lbFullName);
+            this.grbAdmin.Controls.Add(this.ckbResolved);
+            this.grbAdmin.Controls.Add(this.ckbNotResolvedYet);
+            this.grbAdmin.Controls.Add(this.dgvReport);
+            this.grbAdmin.Controls.Add(this.cbbReportTime);
+            this.grbAdmin.Controls.Add(this.lbZone);
+            this.grbAdmin.Controls.Add(this.cbbZone);
+            this.grbAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grbAdmin.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
+            this.grbAdmin.Location = new System.Drawing.Point(0, 0);
+            this.grbAdmin.Name = "grbAdmin";
+            this.grbAdmin.Size = new System.Drawing.Size(1250, 595);
+            this.grbAdmin.TabIndex = 0;
+            this.grbAdmin.TabStop = false;
+            this.grbAdmin.Text = "Thông tin báo hỏng trang thiết bị phòng học";
             // 
-            // cbbSongaydemnguoc
+            // btnShowData
             // 
-            this.cbbSongaydemnguoc.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.cbbSongaydemnguoc.FormattingEnabled = true;
-            this.cbbSongaydemnguoc.Location = new System.Drawing.Point(731, 9);
-            this.cbbSongaydemnguoc.Name = "cbbSongaydemnguoc";
-            this.cbbSongaydemnguoc.Size = new System.Drawing.Size(234, 30);
-            this.cbbSongaydemnguoc.TabIndex = 4;
+            this.btnShowData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.btnShowData.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnShowData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShowData.ForeColor = System.Drawing.Color.White;
+            this.btnShowData.Location = new System.Drawing.Point(832, 77);
+            this.btnShowData.Name = "btnShowData";
+            this.btnShowData.Size = new System.Drawing.Size(99, 40);
+            this.btnShowData.TabIndex = 4;
+            this.btnShowData.Text = "Dữ liệu";
+            this.btnShowData.UseVisualStyleBackColor = false;
+            this.btnShowData.Click += new System.EventHandler(this.btnShowData_Click);
             // 
-            // label1
+            // btnCreateResponse
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.label1.Location = new System.Drawing.Point(3, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 22);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Giảng đường:";
+            this.btnCreateResponse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.btnCreateResponse.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCreateResponse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCreateResponse.ForeColor = System.Drawing.Color.White;
+            this.btnCreateResponse.Location = new System.Drawing.Point(966, 77);
+            this.btnCreateResponse.Name = "btnCreateResponse";
+            this.btnCreateResponse.Size = new System.Drawing.Size(151, 40);
+            this.btnCreateResponse.TabIndex = 10;
+            this.btnCreateResponse.Text = "Tạo phản hồi";
+            this.btnCreateResponse.UseVisualStyleBackColor = false;
+            this.btnCreateResponse.Click += new System.EventHandler(this.btnCreateResponse_Click);
             // 
-            // btnShowDulieu
+            // btnSignOut
             // 
-            this.btnShowDulieu.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.btnShowDulieu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.btnShowDulieu.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.btnShowDulieu.ForeColor = System.Drawing.Color.White;
-            this.btnShowDulieu.Location = new System.Drawing.Point(979, 5);
-            this.btnShowDulieu.Name = "btnShowDulieu";
-            this.btnShowDulieu.Size = new System.Drawing.Size(85, 37);
-            this.btnShowDulieu.TabIndex = 2;
-            this.btnShowDulieu.Text = "Dữ liệu";
-            this.btnShowDulieu.UseVisualStyleBackColor = false;
+            this.btnSignOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.btnSignOut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSignOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSignOut.ForeColor = System.Drawing.Color.White;
+            this.btnSignOut.Location = new System.Drawing.Point(1080, 19);
+            this.btnSignOut.Name = "btnSignOut";
+            this.btnSignOut.Size = new System.Drawing.Size(140, 37);
+            this.btnSignOut.TabIndex = 5;
+            this.btnSignOut.Text = "Đăng xuất";
+            this.btnSignOut.UseVisualStyleBackColor = false;
+            this.btnSignOut.Click += new System.EventHandler(this.btnSignOut_Click);
             // 
-            // cbbGiangduong
+            // lbFullName
             // 
-            this.cbbGiangduong.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.cbbGiangduong.FormattingEnabled = true;
-            this.cbbGiangduong.Location = new System.Drawing.Point(117, 29);
-            this.cbbGiangduong.Name = "cbbGiangduong";
-            this.cbbGiangduong.Size = new System.Drawing.Size(187, 30);
-            this.cbbGiangduong.TabIndex = 0;
+            this.lbFullName.AutoSize = true;
+            this.lbFullName.BackColor = System.Drawing.Color.Transparent;
+            this.lbFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFullName.Location = new System.Drawing.Point(869, 31);
+            this.lbFullName.Name = "lbFullName";
+            this.lbFullName.Size = new System.Drawing.Size(90, 20);
+            this.lbFullName.TabIndex = 11;
+            this.lbFullName.Text = "Họ và tên";
+            this.lbFullName.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // panel1
+            // ckbResolved
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(174)))), ((int)(((byte)(232)))));
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Location = new System.Drawing.Point(8, 32);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1474, 580);
-            this.panel1.TabIndex = 20;
+            this.ckbResolved.AutoSize = true;
+            this.ckbResolved.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ckbResolved.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.ckbResolved.Location = new System.Drawing.Point(411, 97);
+            this.ckbResolved.Name = "ckbResolved";
+            this.ckbResolved.Size = new System.Drawing.Size(132, 30);
+            this.ckbResolved.TabIndex = 2;
+            this.ckbResolved.Text = "Tin đã xử lý";
+            this.ckbResolved.UseVisualStyleBackColor = true;
             // 
-            // panel2
+            // ckbNotResolvedYet
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(254)))));
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.cbbSongaydemnguoc);
-            this.panel2.Controls.Add(this.btnShowDulieu);
-            this.panel2.Controls.Add(this.btnDangxuat);
-            this.panel2.Controls.Add(this.btnTaiKhoan);
-            this.panel2.Controls.Add(this.checkBox4);
-            this.panel2.Controls.Add(this.cbbGiangduong);
-            this.panel2.Controls.Add(this.btnXem);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.btnPhanHoi);
-            this.panel2.Controls.Add(this.comboBox1);
-            this.panel2.Controls.Add(this.checkBox3);
-            this.panel2.Controls.Add(this.checkBox2);
-            this.panel2.Location = new System.Drawing.Point(-1, -1);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1474, 89);
-            this.panel2.TabIndex = 29;
+            this.ckbNotResolvedYet.AutoSize = true;
+            this.ckbNotResolvedYet.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ckbNotResolvedYet.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.ckbNotResolvedYet.Location = new System.Drawing.Point(411, 65);
+            this.ckbNotResolvedYet.Name = "ckbNotResolvedYet";
+            this.ckbNotResolvedYet.Size = new System.Drawing.Size(150, 30);
+            this.ckbNotResolvedYet.TabIndex = 1;
+            this.ckbNotResolvedYet.Text = "Tin chưa xử lý";
+            this.ckbNotResolvedYet.UseVisualStyleBackColor = true;
             // 
-            // panel5
+            // dgvReport
             // 
-            this.panel5.BackColor = System.Drawing.Color.Black;
-            this.panel5.Location = new System.Drawing.Point(-3, 87);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1475, 3);
-            this.panel5.TabIndex = 30;
+            this.dgvReport.AllowUserToResizeRows = false;
+            this.dgvReport.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvReport.BackgroundColor = System.Drawing.Color.White;
+            this.dgvReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvReport.Location = new System.Drawing.Point(20, 144);
+            this.dgvReport.Name = "dgvReport";
+            this.dgvReport.ReadOnly = true;
+            this.dgvReport.RowHeadersVisible = false;
+            this.dgvReport.RowHeadersWidth = 51;
+            this.dgvReport.RowTemplate.Height = 24;
+            this.dgvReport.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvReport.Size = new System.Drawing.Size(1200, 424);
+            this.dgvReport.TabIndex = 50;
             // 
-            // label2
+            // cbbReportTime
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.label2.Location = new System.Drawing.Point(618, 5);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(303, 22);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "Danh sách phòng học báo hỏng thiết bị";
+            this.cbbReportTime.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbbReportTime.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.2F);
+            this.cbbReportTime.FormattingEnabled = true;
+            this.cbbReportTime.Location = new System.Drawing.Point(617, 80);
+            this.cbbReportTime.Name = "cbbReportTime";
+            this.cbbReportTime.Size = new System.Drawing.Size(191, 30);
+            this.cbbReportTime.TabIndex = 3;
+            // 
+            // lbZone
+            // 
+            this.lbZone.AutoSize = true;
+            this.lbZone.BackColor = System.Drawing.Color.Transparent;
+            this.lbZone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbZone.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 10F);
+            this.lbZone.Location = new System.Drawing.Point(52, 83);
+            this.lbZone.Name = "lbZone";
+            this.lbZone.Size = new System.Drawing.Size(130, 27);
+            this.lbZone.TabIndex = 3;
+            this.lbZone.Text = "Giảng đường:";
+            // 
+            // cbbZone
+            // 
+            this.cbbZone.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbbZone.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.2F);
+            this.cbbZone.FormattingEnabled = true;
+            this.cbbZone.Location = new System.Drawing.Point(205, 80);
+            this.cbbZone.Name = "cbbZone";
+            this.cbbZone.Size = new System.Drawing.Size(187, 30);
+            this.cbbZone.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(191, 126);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
             // 
             // FAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1489, 638);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(1471, 595);
+            this.Controls.Add(this.pnDesktop);
+            this.Controls.Add(this.pnbutton);
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FAdmin";
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "FAdmin";
+            this.pnbutton.ResumeLayout(false);
+            this.pnDesktop.ResumeLayout(false);
+            this.grbAdmin.ResumeLayout(false);
+            this.grbAdmin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReport)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button btnShowDulieu;
-        private System.Windows.Forms.ComboBox cbbGiangduong;
-        private System.Windows.Forms.ComboBox cbbSongaydemnguoc;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btnDangxuat;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.Button btnTaiKhoan;
-        private System.Windows.Forms.Button btnPhanHoi;
-        private System.Windows.Forms.Button btnXem;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel5;
+
+        private System.Windows.Forms.GroupBox grbAdmin;
+        private System.Windows.Forms.ComboBox cbbZone;
+        private System.Windows.Forms.ComboBox cbbReportTime;
+        private System.Windows.Forms.Label lbZone;
+        private System.Windows.Forms.DataGridView dgvReport;
+        private System.Windows.Forms.CheckBox ckbResolved;
+        private System.Windows.Forms.CheckBox ckbNotResolvedYet;
+        private System.Windows.Forms.Button btnShowData;
+        private System.Windows.Forms.Button btnEditProfile;
+        private System.Windows.Forms.Button btnCreateResponse;
+        private System.Windows.Forms.Button btnEquipmentManage;
+        private System.Windows.Forms.Button btnRoomManage;
+        private System.Windows.Forms.Button btnZoneManage;
+        private System.Windows.Forms.Button btnSignOut;
+        private System.Windows.Forms.Label lbFullName;
+        private System.Windows.Forms.Button btn_Account;
+        private System.Windows.Forms.Panel pnbutton;
+        private System.Windows.Forms.Panel pnDesktop;
+        private System.Windows.Forms.Button bttHome;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

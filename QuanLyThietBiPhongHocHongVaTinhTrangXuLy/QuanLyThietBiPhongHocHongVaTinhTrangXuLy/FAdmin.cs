@@ -15,6 +15,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
     public partial class FAdmin : Form
     {
         private ACCOUNT ac = new ACCOUNT();
+        public Form CurrentForm;
         public FAdmin()
         {
             InitializeComponent();
@@ -54,19 +55,13 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             lbFullName.Text = ac.fullName;
         }
 
-        private void btnEditProfile_Click(object sender, EventArgs e)
-        {
-            FAccount fAccount = new FAccount(ac);
-            fAccount.GUI(ac);
-            fAccount.ShowDialog();
-        }
-
         private void btnCreateResponse_Click(object sender, EventArgs e)
         {
             if (dgvReport.SelectedRows.Count == 1)
             {
                 DataGridViewRow dataGridViewRow = dgvReport.CurrentRow;
-                int reportId = Convert.ToInt32(dataGridViewRow.Cells["STT"].Value);
+                List<int> reportIdList = BUS_AdminData.Instance.BUS_GetReportIdList();
+                int reportId = reportIdList[Convert.ToInt32(dataGridViewRow.Cells["STT"].Value) - 1];
                 string roomId = dataGridViewRow.Cells["roomId"].Value.ToString();
                 string equipmentName = dataGridViewRow.Cells["equipmentName"].Value.ToString();
                 string equipmentStatus = dataGridViewRow.Cells["equipmentStatus"].Value.ToString();
@@ -76,55 +71,54 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                 int reportStatus = DAL_AdminData.Instance.DAL_GetReportStatusByReportId(reportId);
                 bool isDenied = BUS_AdminData.Instance.BUS_CheckIfResolvedReport(reportId);
 
-                if(!isDenied)
-                {
-                    FResponse fResponse = new FResponse(ac, reportId, roomId, equipmentName, equipmentStatus, note, reportDate);
-                    fResponse.ShowDialog();
+                if (!isDenied)
+                {                   
+                    OpenChildForm(new FResponse(ac, reportId, roomId, equipmentName, equipmentStatus, note, reportDate));
                 }
                 else
                 {
                     if (reportStatus == 3) MessageBox.Show("Báo cáo đã được phản hồi là sai!");
-                    else MessageBox.Show("Báo cáo đã được xử lý!");
+                    else if (reportStatus == 2) MessageBox.Show("Báo cáo đã được xử lý!");
                 }
-                
+
             }
             else
             {
                 MessageBox.Show("Vui lòng chọn một báo cáo để phản hồi!");
-            }    
+            }
         }
 
         private void btnSignOut_Click(object sender, EventArgs e)
         {
             this.Close();
-            FMain fMain = new FMain();
-            fMain.ShowDialog();
+            //FMain fMain = new FMain();
+            //fMain.ShowDialog();
         }
 
         private void btnManageZone_Click(object sender, EventArgs e)
         {
-            FZone fZone = new FZone();
-            fZone.ShowDialog();
+            OpenChildForm(new FZone());
         }
 
         private void btnManageRoom_Click(object sender, EventArgs e)
         {
-            FRoom fRoom = new FRoom();
-            fRoom.ShowDialog();
+            OpenChildForm(new FRoom(""));
         }
 
         private void btnManageEquipment_Click(object sender, EventArgs e)
         {
-            FEquipment fEquipment = new FEquipment();
-            fEquipment.ShowDialog();
+            OpenChildForm(new FEquipment());
         }
-
-        private void btnManageStatus_Click(object sender, EventArgs e)
+        private void btn_Account_Click(object sender, EventArgs e)
         {
-            FStatus fStatus = new FStatus();
-            fStatus.ShowDialog();
+            OpenChildForm(new FAccountManagement());
         }
-
+        private void btnEditProfile_Click(object sender, EventArgs e)
+        {
+            FAccount fAccount = new FAccount(ac);
+            fAccount.GUI(ac);
+            fAccount.ShowDialog();
+        }
         private void btnShowData_Click(object sender, EventArgs e)
         {
             dgvReport.DataSource = BUS_AdminData.Instance.BUS_ShowAllReports();
@@ -141,6 +135,28 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             }
             indexDate = cbbReportTime.SelectedIndex;
             dgvReport.DataSource = BUS_AdminData.Instance.BUS_ShowReportList(zoneId, check, indexDate);
+        }
+
+        private void OpenChildForm(Form ChildForm)
+        {
+            if(CurrentForm != null)
+            {
+                CurrentForm.Close();
+            }
+            CurrentForm = ChildForm;
+            ChildForm.FormBorderStyle = FormBorderStyle.None;
+            ChildForm.TopLevel = false;
+            ChildForm.Dock = DockStyle.Fill;
+            pnDesktop.Controls.Add(ChildForm);
+            pnDesktop.Tag = ChildForm;
+            ChildForm.BringToFront();
+            ChildForm.Show();
+        }
+
+        private void bttHome_Click(object sender, EventArgs e)
+        {
+            if(CurrentForm != null)
+            CurrentForm.Dispose();           
         }
     }
 }
