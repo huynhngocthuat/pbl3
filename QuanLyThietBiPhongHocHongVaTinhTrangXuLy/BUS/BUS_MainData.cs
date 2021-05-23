@@ -287,7 +287,7 @@ namespace BUS
                     list3 = list2;
                     break;
             }
-            // Thiet lap lai stt
+            //Thiet lap lai stt
             for (int i = 0; i < list3.Count(); i++)
             {
                 list3[i].STT = i + 1;

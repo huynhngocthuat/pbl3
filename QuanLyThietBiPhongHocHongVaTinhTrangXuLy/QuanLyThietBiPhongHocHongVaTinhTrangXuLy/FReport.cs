@@ -126,13 +126,13 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                 cbbTinhtrang.Items.Add(status.equipmentStatus);
             }
         }
-        public void addReport()
+        public int addReport()
         {
             // kiem tra xem report do da ton tai hay chua
             int checkReport = -1;
             foreach (var item in BUS_MainData.Instance.BUS_ReportShow("", 2, 5)) // xem trong nhung report chua duoc response
             {
-                if (item.equipmentName == cbbThietbi.Text && item.responseMessage == null)
+                if (item.equipmentName == cbbThietbi.Text && item.responseMessage == null && item.roomID == cbbPhonghoc.Text)
                 {
                     checkReport = 1;
                 }
@@ -140,14 +140,17 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             if (cbbPhonghoc.Text == "" || cbbThietbi.Text == "" || cbbTinhtrang.Text == "" || cbbKhu.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin !!!");
+                return 0;
             }
             else if (checkReport == 1)
             {
                 MessageBox.Show("Thiết bị bạn chọn đã được báo cáo");
+                return 0;
             }
             else
             {
                 BUS_MainData.Instance.BUS_AddReport(userName, cbbPhonghoc.Text, cbbThietbi.Text, cbbTinhtrang.Text, txbGhichu.Text);
+                return 1;
             }
         }
         public void editReport()
@@ -156,16 +159,20 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         }
         private void btn_XacNhan_Click(object sender, EventArgs e)
         {
+            int check = 0;
             if(option == "Edit")
             {
                 editReport();
             }
             else
             {
-                addReport();
+                check = addReport();
             }
             d("", 1, 5);
-            this.Dispose();
+            if (check == 1)
+            {
+                this.Dispose();
+            }
             //this.Close();
         }
     }
