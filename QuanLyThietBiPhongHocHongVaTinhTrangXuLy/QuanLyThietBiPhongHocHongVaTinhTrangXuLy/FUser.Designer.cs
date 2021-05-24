@@ -78,11 +78,11 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnTaobaocao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btnTaobaocao.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTaobaocao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTaobaocao.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
+            this.btnTaobaocao.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
             this.btnTaobaocao.ForeColor = System.Drawing.Color.White;
             this.btnTaobaocao.Location = new System.Drawing.Point(1224, 90);
             this.btnTaobaocao.Name = "btnTaobaocao";
-            this.btnTaobaocao.Size = new System.Drawing.Size(222, 37);
+            this.btnTaobaocao.Size = new System.Drawing.Size(222, 35);
             this.btnTaobaocao.TabIndex = 8;
             this.btnTaobaocao.Text = "Tạo báo cáo mới";
             this.btnTaobaocao.UseVisualStyleBackColor = false;
@@ -93,11 +93,11 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnDulieu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btnDulieu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDulieu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDulieu.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
+            this.btnDulieu.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
             this.btnDulieu.ForeColor = System.Drawing.Color.White;
-            this.btnDulieu.Location = new System.Drawing.Point(1065, 7);
+            this.btnDulieu.Location = new System.Drawing.Point(1062, 9);
             this.btnDulieu.Name = "btnDulieu";
-            this.btnDulieu.Size = new System.Drawing.Size(89, 37);
+            this.btnDulieu.Size = new System.Drawing.Size(89, 35);
             this.btnDulieu.TabIndex = 4;
             this.btnDulieu.Text = "Dữ liệu";
             this.btnDulieu.UseVisualStyleBackColor = false;
@@ -110,9 +110,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnDangxuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDangxuat.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
             this.btnDangxuat.ForeColor = System.Drawing.Color.White;
-            this.btnDangxuat.Location = new System.Drawing.Point(1325, 7);
+            this.btnDangxuat.Location = new System.Drawing.Point(1325, 9);
             this.btnDangxuat.Name = "btnDangxuat";
-            this.btnDangxuat.Size = new System.Drawing.Size(111, 37);
+            this.btnDangxuat.Size = new System.Drawing.Size(111, 35);
             this.btnDangxuat.TabIndex = 6;
             this.btnDangxuat.Text = "Đăng xuất";
             this.btnDangxuat.UseVisualStyleBackColor = false;
@@ -125,9 +125,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnTaiKhoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTaiKhoan.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
             this.btnTaiKhoan.ForeColor = System.Drawing.Color.White;
-            this.btnTaiKhoan.Location = new System.Drawing.Point(1214, 7);
+            this.btnTaiKhoan.Location = new System.Drawing.Point(1214, 9);
             this.btnTaiKhoan.Name = "btnTaiKhoan";
-            this.btnTaiKhoan.Size = new System.Drawing.Size(105, 37);
+            this.btnTaiKhoan.Size = new System.Drawing.Size(105, 35);
             this.btnTaiKhoan.TabIndex = 5;
             this.btnTaiKhoan.Text = "Tài khoản";
             this.btnTaiKhoan.UseVisualStyleBackColor = false;
@@ -137,10 +137,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             this.ckb_ChuaXuLy.AutoSize = true;
             this.ckb_ChuaXuLy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ckb_ChuaXuLy.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
-            this.ckb_ChuaXuLy.Location = new System.Drawing.Point(509, 12);
+            this.ckb_ChuaXuLy.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
+            this.ckb_ChuaXuLy.Location = new System.Drawing.Point(507, 14);
             this.ckb_ChuaXuLy.Name = "ckb_ChuaXuLy";
-            this.ckb_ChuaXuLy.Size = new System.Drawing.Size(141, 29);
+            this.ckb_ChuaXuLy.Size = new System.Drawing.Size(134, 26);
             this.ckb_ChuaXuLy.TabIndex = 1;
             this.ckb_ChuaXuLy.Text = "Tin chưa xử lý";
             this.ckb_ChuaXuLy.UseVisualStyleBackColor = true;
@@ -149,10 +149,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             this.ckb_DaXuLy.AutoSize = true;
             this.ckb_DaXuLy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ckb_DaXuLy.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
+            this.ckb_DaXuLy.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
             this.ckb_DaXuLy.Location = new System.Drawing.Point(684, 14);
             this.ckb_DaXuLy.Name = "ckb_DaXuLy";
-            this.ckb_DaXuLy.Size = new System.Drawing.Size(123, 29);
+            this.ckb_DaXuLy.Size = new System.Drawing.Size(116, 26);
             this.ckb_DaXuLy.TabIndex = 2;
             this.ckb_DaXuLy.Text = "Tin đã xử lý";
             this.ckb_DaXuLy.UseVisualStyleBackColor = true;
@@ -164,7 +164,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.cbb_Zone.FormattingEnabled = true;
             this.cbb_Zone.IntegralHeight = false;
             this.cbb_Zone.ItemHeight = 22;
-            this.cbb_Zone.Location = new System.Drawing.Point(226, 10);
+            this.cbb_Zone.Location = new System.Drawing.Point(228, 14);
             this.cbb_Zone.Name = "cbb_Zone";
             this.cbb_Zone.Size = new System.Drawing.Size(227, 30);
             this.cbb_Zone.TabIndex = 0;
@@ -172,10 +172,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // lb_GiangDuong
             // 
             this.lb_GiangDuong.AutoSize = true;
-            this.lb_GiangDuong.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
-            this.lb_GiangDuong.Location = new System.Drawing.Point(103, 13);
+            this.lb_GiangDuong.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
+            this.lb_GiangDuong.Location = new System.Drawing.Point(103, 15);
             this.lb_GiangDuong.Name = "lb_GiangDuong";
-            this.lb_GiangDuong.Size = new System.Drawing.Size(117, 25);
+            this.lb_GiangDuong.Size = new System.Drawing.Size(108, 22);
             this.lb_GiangDuong.TabIndex = 19;
             this.lb_GiangDuong.Text = "Giảng đường:";
             // 
@@ -184,9 +184,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.cbb_Time.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbb_Time.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.2F);
             this.cbb_Time.FormattingEnabled = true;
-            this.cbb_Time.Location = new System.Drawing.Point(841, 10);
+            this.cbb_Time.Location = new System.Drawing.Point(855, 15);
             this.cbb_Time.Name = "cbb_Time";
-            this.cbb_Time.Size = new System.Drawing.Size(204, 30);
+            this.cbb_Time.Size = new System.Drawing.Size(188, 30);
             this.cbb_Time.TabIndex = 3;
             // 
             // dataGridView_UserData
@@ -211,11 +211,11 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btn_EditReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btn_EditReport.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_EditReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_EditReport.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
+            this.btn_EditReport.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
             this.btn_EditReport.ForeColor = System.Drawing.Color.White;
             this.btn_EditReport.Location = new System.Drawing.Point(996, 90);
             this.btn_EditReport.Name = "btn_EditReport";
-            this.btn_EditReport.Size = new System.Drawing.Size(222, 37);
+            this.btn_EditReport.Size = new System.Drawing.Size(222, 35);
             this.btn_EditReport.TabIndex = 7;
             this.btn_EditReport.Text = "Chỉnh sửa báo cáo";
             this.btn_EditReport.UseVisualStyleBackColor = false;
@@ -226,10 +226,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
+            this.label2.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
             this.label2.Location = new System.Drawing.Point(590, 107);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(248, 27);
+            this.label2.Size = new System.Drawing.Size(233, 24);
             this.label2.TabIndex = 23;
             this.label2.Text = "Những báo cáo trước của bạn";
             // 
@@ -238,10 +238,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
+            this.label3.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
             this.label3.Location = new System.Drawing.Point(635, 421);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(163, 27);
+            this.label3.Size = new System.Drawing.Size(148, 24);
             this.label3.TabIndex = 24;
             this.label3.Text = "Tất cả các báo cáo";
             // 
