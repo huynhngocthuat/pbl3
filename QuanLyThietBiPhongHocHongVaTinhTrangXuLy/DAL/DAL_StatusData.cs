@@ -48,12 +48,12 @@ namespace DAL
             }
             return listStatusShow;
         }
-        public void DAL_SETSTATUS(STATUS rm)
+        public void DAL_SetStatus(STATUS rm)
         {
             db.STATUS.Add(rm);
             db.SaveChanges();
         }
-        public int DAL_CHECKSTATUS(STATUS st)
+        public int DAL_CheckStatus(STATUS st)
         {
             int a = 1;
             foreach (var i in db.STATUS)
@@ -66,13 +66,13 @@ namespace DAL
             }
             return a;
         }
-        public void DAL_DELETESTATUS(string statusid)
+        public void DAL_DeleteStatus(string statusid)
         {
             STATUS rm = db.STATUS.Where(p => p.statusId == statusid).SingleOrDefault();
             db.STATUS.Remove(rm);
             db.SaveChanges();
         }
-        public void DAL_UPDATESTATUS(STATUS rm2, string statusid)
+        public void DAL_UpdateStatus(STATUS rm2, string statusid)
         {
             var sup = db.STATUS.Where(p => p.statusId == statusid).SingleOrDefault();
             sup.statusId = rm2.statusId;

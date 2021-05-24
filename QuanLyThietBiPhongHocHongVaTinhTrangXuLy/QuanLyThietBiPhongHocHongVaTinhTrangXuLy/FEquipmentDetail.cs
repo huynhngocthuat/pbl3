@@ -29,6 +29,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             {
                 setEQUIPMENT();
                 txtMaThietBi.Enabled = false;
+                this.Text = "Chỉnh sửa thiết bị";
             }
             setCbbRoom();
         }
@@ -87,6 +88,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                 BUS_EquipmentData.Instance.BUS_UPDATEEQUIPMENT(rm2, equipmentid);
                 MessageBox.Show("Cập nhập thành công!");
             }
+            this.Dispose();
             refresh(Text1);
         }
 

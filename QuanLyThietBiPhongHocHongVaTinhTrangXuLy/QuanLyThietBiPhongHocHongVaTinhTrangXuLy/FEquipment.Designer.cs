@@ -65,7 +65,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.groupBox1.Controls.Add(this.btnAdd);
             this.groupBox1.Controls.Add(this.btnShow);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
@@ -80,9 +80,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.ForeColor = System.Drawing.Color.Transparent;
-            this.btnBack.Location = new System.Drawing.Point(954, 69);
+            this.btnBack.Location = new System.Drawing.Point(1004, 69);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(107, 35);
+            this.btnBack.Size = new System.Drawing.Size(136, 35);
             this.btnBack.TabIndex = 3;
             this.btnBack.Text = "Trở về";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -94,7 +94,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(150, 127);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 25);
+            this.label1.Size = new System.Drawing.Size(116, 18);
             this.label1.TabIndex = 28;
             this.label1.Text = "Chọn thuộc tính:";
             // 
@@ -104,15 +104,16 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.lb_search.BackColor = System.Drawing.Color.Transparent;
             this.lb_search.Location = new System.Drawing.Point(150, 74);
             this.lb_search.Name = "lb_search";
-            this.lb_search.Size = new System.Drawing.Size(141, 25);
+            this.lb_search.Size = new System.Drawing.Size(117, 18);
             this.lb_search.TabIndex = 27;
             this.lb_search.Text = "Nhập mã phòng:";
             // 
             // txb_Search
             // 
-            this.txb_Search.Location = new System.Drawing.Point(331, 71);
+            this.txb_Search.Location = new System.Drawing.Point(331, 69);
+            this.txb_Search.Multiline = true;
             this.txb_Search.Name = "txb_Search";
-            this.txb_Search.Size = new System.Drawing.Size(169, 31);
+            this.txb_Search.Size = new System.Drawing.Size(169, 35);
             this.txb_Search.TabIndex = 0;
             // 
             // btnXemtinhtrang
@@ -123,9 +124,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnXemtinhtrang.ForeColor = System.Drawing.Color.Transparent;
             this.btnXemtinhtrang.Location = new System.Drawing.Point(777, 69);
             this.btnXemtinhtrang.Name = "btnXemtinhtrang";
-            this.btnXemtinhtrang.Size = new System.Drawing.Size(170, 35);
+            this.btnXemtinhtrang.Size = new System.Drawing.Size(183, 35);
             this.btnXemtinhtrang.TabIndex = 2;
-            this.btnXemtinhtrang.Text = "Xem tình trạng";
+            this.btnXemtinhtrang.Text = "Xem các tình trạng";
             this.btnXemtinhtrang.UseVisualStyleBackColor = false;
             this.btnXemtinhtrang.Click += new System.EventHandler(this.btnXemtinhtrang_Click);
             // 
@@ -152,7 +153,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.cbbSort.FormattingEnabled = true;
             this.cbbSort.Location = new System.Drawing.Point(331, 124);
             this.cbbSort.Name = "cbbSort";
-            this.cbbSort.Size = new System.Drawing.Size(169, 33);
+            this.cbbSort.Size = new System.Drawing.Size(169, 26);
             this.cbbSort.TabIndex = 4;
             // 
             // btnSort
@@ -176,9 +177,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnDel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDel.ForeColor = System.Drawing.Color.Transparent;
-            this.btnDel.Location = new System.Drawing.Point(991, 122);
+            this.btnDel.Location = new System.Drawing.Point(1037, 122);
             this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(70, 35);
+            this.btnDel.Size = new System.Drawing.Size(103, 35);
             this.btnDel.TabIndex = 8;
             this.btnDel.Text = "Xóa";
             this.btnDel.UseVisualStyleBackColor = false;
@@ -190,9 +191,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.ForeColor = System.Drawing.Color.Transparent;
-            this.btnEdit.Location = new System.Drawing.Point(889, 122);
+            this.btnEdit.Location = new System.Drawing.Point(908, 122);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(70, 35);
+            this.btnEdit.Size = new System.Drawing.Size(106, 35);
             this.btnEdit.TabIndex = 7;
             this.btnEdit.Text = "Sửa";
             this.btnEdit.UseVisualStyleBackColor = false;
@@ -206,7 +207,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnAdd.ForeColor = System.Drawing.Color.Transparent;
             this.btnAdd.Location = new System.Drawing.Point(777, 122);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(80, 35);
+            this.btnAdd.Size = new System.Drawing.Size(110, 35);
             this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = false;

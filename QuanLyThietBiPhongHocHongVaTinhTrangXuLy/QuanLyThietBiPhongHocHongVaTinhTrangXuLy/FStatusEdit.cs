@@ -32,7 +32,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                 txb_MathietBi.Enabled = false;
             }
             txb_MathietBi.Text = equipmentid;
-            //txb_MathietBi.Enabled = false;
+            txb_MathietBi.Enabled = false;
         }
 
         private void setSTATUS()

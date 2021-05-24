@@ -46,21 +46,12 @@ namespace DAL
             }
             return listZoneShow;
         }
-        public List<ZoneShow> DAL_GetZoneShow()
-        {           
-            var la = (from c in db.ZONEs select 
-                      new ZoneShow{
-                               zoneID = c.zoneId,
-                               zoneName = c.zoneName
-                      }).ToList();
-            return la.ToList<ZoneShow>();
-        }
-        public void DAL_SETZONE(ZONE zn)
+        public void DAL_SetZone(ZONE zn)
         {
             db.ZONEs.Add(zn);
             db.SaveChanges();
         }
-        public int DAL_CHECKZONE(ZONE zn)
+        public int DAL_CheckZone(ZONE zn)
         {
             int a = 1;
             foreach (var i in db.ZONEs)
@@ -73,13 +64,13 @@ namespace DAL
             }
             return a;
         }
-        public void DAL_DELETEZONE(string zoneid)
+        public void DAL_DeleleZone(string zoneid)
         {
             ZONE zn = db.ZONEs.Where(p => p.zoneId == zoneid).SingleOrDefault();
             db.ZONEs.Remove(zn);
             db.SaveChanges();
         }
-        public void DAL_UPDATEZONE(ZONE zn2, string zoneid)
+        public void DAL_UpdateZone(ZONE zn2, string zoneid)
         {
             var sup = db.ZONEs.Where(p => p.zoneId == zoneid).SingleOrDefault();
             sup.zoneId = zn2.zoneId;

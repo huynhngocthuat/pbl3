@@ -163,14 +163,15 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             if(option == "Edit")
             {
                 editReport();
+                check = 1;
             }
             else
             {
                 check = addReport();
             }
-            d("", 1, 5);
             if (check == 1)
             {
+                d("", 1, 5);
                 this.Dispose();
             }
             //this.Close();

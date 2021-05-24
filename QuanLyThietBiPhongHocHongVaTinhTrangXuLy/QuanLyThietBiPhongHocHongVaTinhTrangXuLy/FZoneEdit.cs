@@ -26,13 +26,14 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         }
         private void setZONE()
         {
-            if(zoneid != "")
+            if(option == "Edit")
             {
                 ZONE s = new ZONE();
                 s = BUS_ZoneData.Instance.BUS_getZoneByIDZone(zoneid);
                 txtMakhu.Text = s.zoneId;
                 txtTenkhu.Text = s.zoneName;
                 txtMakhu.Enabled = false;
+                this.Text = "Chỉnh sửa khu vực";
             }        
         }
         private void btnOK_Click(object sender, EventArgs e)

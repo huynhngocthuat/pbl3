@@ -26,15 +26,15 @@ namespace BUS
         }
         public void BUS_SETSTATUS(STATUS rm)
         {
-            DAL_StatusData.Instance.DAL_SETSTATUS(rm);
+            DAL_StatusData.Instance.DAL_SetStatus(rm);
         }
         public void BUS_DELETESTATUS(string statusid)
         {
-            DAL_StatusData.Instance.DAL_DELETESTATUS(statusid);
+            DAL_StatusData.Instance.DAL_DeleteStatus(statusid);
         }
         public void BUS_UPDATESTATUS(STATUS rm2, string statusid)
         {
-            DAL_StatusData.Instance.DAL_UPDATESTATUS(rm2, statusid);
+            DAL_StatusData.Instance.DAL_UpdateStatus(rm2, statusid);
         }
         public STATUS BUS_getStatusByIDStatus(string statusid)
         {
@@ -49,7 +49,7 @@ namespace BUS
         }
         public int BUS_CHECKSTATUS(STATUS st)
         {
-            return DAL_StatusData.Instance.DAL_CHECKSTATUS(st);
+            return DAL_StatusData.Instance.DAL_CheckStatus(st);
         }
         public List<StatusShow> BUS_StatusShowForIDEquipment(string equipmentId)
         {

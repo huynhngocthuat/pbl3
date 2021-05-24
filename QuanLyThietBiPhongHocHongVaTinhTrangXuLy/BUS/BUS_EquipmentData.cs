@@ -70,15 +70,15 @@ namespace BUS
         }
         public void BUS_SETEQUIPMENT(EQUIPMENT eq)
         {
-            DAL_EquipmentData.Instance.DAL_SETEQUIPMENT(eq);
+            DAL_EquipmentData.Instance.DAL_SetEquipment(eq);
         }
         public void BUS_DELETEEQUIPMENT(string equipmentid)
         {
-            DAL_EquipmentData.Instance.DAL_DELETEEQUIPMENT(equipmentid);
+            DAL_EquipmentData.Instance.DAL_DeleteEquipment(equipmentid);
         }
         public void BUS_UPDATEEQUIPMENT(EQUIPMENT eq2, string equipmentid)
         {
-            DAL_EquipmentData.Instance.DAL_UPDATEEQUIPMENT(eq2, equipmentid);
+            DAL_EquipmentData.Instance.DAL_UpdateEquipment(eq2, equipmentid);
         }
         public EquipmentShow BUS_getEquipmentByIDEquipment(string equipmentid)
         {
@@ -93,7 +93,7 @@ namespace BUS
         }
         public int BUS_CHECKEQUIPMENT(EQUIPMENT eq)
         {
-            return DAL_EquipmentData.Instance.DAL_CHECKEQUIPMENT(eq);
+            return DAL_EquipmentData.Instance.DAL_CheckEquipment(eq);
         }
         public List<EquipmentShow> BUS_ShowEquipmentByRoomId(string roomId)
         {

@@ -62,7 +62,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.groupBox1.Controls.Add(this.btnAdd);
             this.groupBox1.Controls.Add(this.btnShow);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 10F);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
@@ -77,9 +77,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnShowEquipments.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnShowEquipments.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnShowEquipments.ForeColor = System.Drawing.Color.White;
-            this.btnShowEquipments.Location = new System.Drawing.Point(1043, 151);
+            this.btnShowEquipments.Location = new System.Drawing.Point(884, 99);
             this.btnShowEquipments.Name = "btnShowEquipments";
-            this.btnShowEquipments.Size = new System.Drawing.Size(161, 35);
+            this.btnShowEquipments.Size = new System.Drawing.Size(174, 35);
             this.btnShowEquipments.TabIndex = 9;
             this.btnShowEquipments.Text = "Xem thiết bị";
             this.btnShowEquipments.UseVisualStyleBackColor = false;
@@ -91,9 +91,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.ForeColor = System.Drawing.Color.White;
-            this.btnBack.Location = new System.Drawing.Point(1112, 103);
+            this.btnBack.Location = new System.Drawing.Point(1064, 99);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(109, 35);
+            this.btnBack.Size = new System.Drawing.Size(148, 35);
             this.btnBack.TabIndex = 4;
             this.btnBack.Text = "Trở về";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -102,11 +102,11 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // cbbTimkiem
             // 
             this.cbbTimkiem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cbbTimkiem.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.2F);
+            this.cbbTimkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.2F);
             this.cbbTimkiem.FormattingEnabled = true;
-            this.cbbTimkiem.Location = new System.Drawing.Point(708, 102);
+            this.cbbTimkiem.Location = new System.Drawing.Point(506, 99);
             this.cbbTimkiem.Name = "cbbTimkiem";
-            this.cbbTimkiem.Size = new System.Drawing.Size(254, 30);
+            this.cbbTimkiem.Size = new System.Drawing.Size(183, 25);
             this.cbbTimkiem.TabIndex = 2;
             // 
             // btnTimKiem
@@ -115,7 +115,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnTimKiem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
-            this.btnTimKiem.Location = new System.Drawing.Point(986, 103);
+            this.btnTimKiem.Location = new System.Drawing.Point(695, 93);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(120, 35);
             this.btnTimKiem.TabIndex = 3;
@@ -129,24 +129,24 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.dataGridView_RoomShow.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView_RoomShow.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView_RoomShow.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_RoomShow.Location = new System.Drawing.Point(37, 213);
+            this.dataGridView_RoomShow.Location = new System.Drawing.Point(37, 190);
             this.dataGridView_RoomShow.Name = "dataGridView_RoomShow";
             this.dataGridView_RoomShow.ReadOnly = true;
             this.dataGridView_RoomShow.RowHeadersVisible = false;
             this.dataGridView_RoomShow.RowHeadersWidth = 51;
             this.dataGridView_RoomShow.RowTemplate.Height = 24;
             this.dataGridView_RoomShow.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView_RoomShow.Size = new System.Drawing.Size(1175, 320);
+            this.dataGridView_RoomShow.Size = new System.Drawing.Size(1175, 350);
             this.dataGridView_RoomShow.TabIndex = 50;
             // 
             // cbbSort
             // 
             this.cbbSort.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cbbSort.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.2F);
+            this.cbbSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.2F);
             this.cbbSort.FormattingEnabled = true;
-            this.cbbSort.Location = new System.Drawing.Point(66, 104);
+            this.cbbSort.Location = new System.Drawing.Point(57, 72);
             this.cbbSort.Name = "cbbSort";
-            this.cbbSort.Size = new System.Drawing.Size(233, 30);
+            this.cbbSort.Size = new System.Drawing.Size(233, 25);
             this.cbbSort.TabIndex = 0;
             // 
             // btnSort
@@ -155,9 +155,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnSort.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSort.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSort.ForeColor = System.Drawing.Color.White;
-            this.btnSort.Location = new System.Drawing.Point(305, 102);
+            this.btnSort.Location = new System.Drawing.Point(296, 70);
             this.btnSort.Name = "btnSort";
-            this.btnSort.Size = new System.Drawing.Size(100, 35);
+            this.btnSort.Size = new System.Drawing.Size(179, 35);
             this.btnSort.TabIndex = 1;
             this.btnSort.Text = "Dữ liệu";
             this.btnSort.UseVisualStyleBackColor = false;
@@ -169,7 +169,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnDel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDel.ForeColor = System.Drawing.Color.White;
-            this.btnDel.Location = new System.Drawing.Point(384, 151);
+            this.btnDel.Location = new System.Drawing.Point(375, 119);
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(100, 35);
             this.btnDel.TabIndex = 8;
@@ -183,7 +183,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.ForeColor = System.Drawing.Color.White;
-            this.btnEdit.Location = new System.Drawing.Point(278, 151);
+            this.btnEdit.Location = new System.Drawing.Point(269, 119);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(100, 35);
             this.btnEdit.TabIndex = 7;
@@ -197,7 +197,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(172, 151);
+            this.btnAdd.Location = new System.Drawing.Point(163, 119);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(100, 35);
             this.btnAdd.TabIndex = 6;
@@ -211,7 +211,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnShow.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnShow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnShow.ForeColor = System.Drawing.Color.White;
-            this.btnShow.Location = new System.Drawing.Point(66, 151);
+            this.btnShow.Location = new System.Drawing.Point(57, 119);
             this.btnShow.Name = "btnShow";
             this.btnShow.Size = new System.Drawing.Size(100, 35);
             this.btnShow.TabIndex = 5;

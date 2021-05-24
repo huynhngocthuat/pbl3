@@ -63,6 +63,36 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _121490051_2714867598761654_8697977074935812614_n {
+            get {
+                object obj = ResourceManager.GetObject("121490051_2714867598761654_8697977074935812614_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IMG_0154 {
+            get {
+                object obj = ResourceManager.GetObject("IMG_0154", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap itf {
+            get {
+                object obj = ResourceManager.GetObject("itf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap nền {
             get {
                 object obj = ResourceManager.GetObject("nền", resourceCulture);

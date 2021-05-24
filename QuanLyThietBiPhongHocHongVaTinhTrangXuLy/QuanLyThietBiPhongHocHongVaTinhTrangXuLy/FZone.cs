@@ -16,7 +16,6 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         public FZone()
         {
             InitializeComponent();
-            setCbbSort();
             ShowZone();
         }
         public void ShowZone()
@@ -64,21 +63,6 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             {
                 MessageBox.Show("Vui long chọn khu vực :>");
             }
-        }
-
-        public void setCbbSort()
-        {
-            cbbSort.Text = "Chọn thuộc tính";
-            cbbSort.Items.AddRange(new string[]
-            {
-                "Mã khu",
-                "Tên khu"
-            });
-        }
-
-        private void btnSapXep_Click(object sender, EventArgs e)
-        {
-            dataGridView_ShowZone.DataSource = BUS_ZoneData.Instance.BUS_Sort(cbbSort.SelectedItem.ToString());
         }
 
         private void btnXemphong_Click(object sender, EventArgs e)

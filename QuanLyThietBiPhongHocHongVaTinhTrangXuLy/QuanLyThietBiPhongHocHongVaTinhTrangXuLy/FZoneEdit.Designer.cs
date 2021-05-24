@@ -40,28 +40,28 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // txtMakhu
             // 
-            this.txtMakhu.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
-            this.txtMakhu.Location = new System.Drawing.Point(126, 33);
+            this.txtMakhu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.txtMakhu.Location = new System.Drawing.Point(251, 65);
             this.txtMakhu.Name = "txtMakhu";
-            this.txtMakhu.Size = new System.Drawing.Size(174, 31);
+            this.txtMakhu.Size = new System.Drawing.Size(174, 24);
             this.txtMakhu.TabIndex = 0;
             // 
             // txtTenkhu
             // 
-            this.txtTenkhu.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
-            this.txtTenkhu.Location = new System.Drawing.Point(126, 84);
+            this.txtTenkhu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.txtTenkhu.Location = new System.Drawing.Point(251, 116);
             this.txtTenkhu.Name = "txtTenkhu";
-            this.txtTenkhu.Size = new System.Drawing.Size(174, 31);
+            this.txtTenkhu.Size = new System.Drawing.Size(174, 24);
             this.txtTenkhu.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
-            this.label2.Location = new System.Drawing.Point(36, 36);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.label2.Location = new System.Drawing.Point(161, 68);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 25);
+            this.label2.Size = new System.Drawing.Size(57, 18);
             this.label2.TabIndex = 33;
             this.label2.Text = "Mã khu";
             // 
@@ -69,10 +69,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
-            this.label1.Location = new System.Drawing.Point(36, 84);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.label1.Location = new System.Drawing.Point(161, 116);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 25);
+            this.label1.Size = new System.Drawing.Size(61, 18);
             this.label1.TabIndex = 32;
             this.label1.Text = "Tên khu";
             // 
@@ -81,9 +81,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(191, 143);
+            this.btnCancel.Location = new System.Drawing.Point(316, 175);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(101, 38);
             this.btnCancel.TabIndex = 3;
@@ -96,9 +96,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnOK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btnOK.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOK.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
+            this.btnOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btnOK.ForeColor = System.Drawing.Color.White;
-            this.btnOK.Location = new System.Drawing.Point(72, 143);
+            this.btnOK.Location = new System.Drawing.Point(197, 175);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(101, 38);
             this.btnOK.TabIndex = 2;
@@ -112,7 +112,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::QuanLyThietBiPhongHocHongVaTinhTrangXuLy.Properties.Resources.nền;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(362, 220);
+            this.ClientSize = new System.Drawing.Size(630, 281);
             this.Controls.Add(this.txtMakhu);
             this.Controls.Add(this.txtTenkhu);
             this.Controls.Add(this.label2);
@@ -121,7 +121,8 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.Controls.Add(this.btnOK);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FZoneEdit";
-            this.Text = "ZoneEdit";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Thêm khu vực";
             this.ResumeLayout(false);
             this.PerformLayout();
 

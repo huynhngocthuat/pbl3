@@ -65,12 +65,12 @@ namespace DAL
                       }).ToList();
             return la.ToList<EquipmentShow>();
         }
-        public void DAL_SETEQUIPMENT(EQUIPMENT eq)
+        public void DAL_SetEquipment(EQUIPMENT eq)
         {
             db.EQUIPMENTs.Add(eq);
             db.SaveChanges();
         }
-        public int DAL_CHECKEQUIPMENT(EQUIPMENT eq)
+        public int DAL_CheckEquipment(EQUIPMENT eq)
         {
             int a = 1;
             foreach (var i in db.EQUIPMENTs)
@@ -84,13 +84,13 @@ namespace DAL
             return a;
         }
 
-        public void DAL_DELETEEQUIPMENT(string equipmentid)
+        public void DAL_DeleteEquipment(string equipmentid)
         {
             EQUIPMENT eq = db.EQUIPMENTs.Where(p => p.equipmentId == equipmentid).SingleOrDefault();
             db.EQUIPMENTs.Remove(eq);
             db.SaveChanges();
         }
-        public void DAL_UPDATEEQUIPMENT(EQUIPMENT eq2, string equipmentid)
+        public void DAL_UpdateEquipment(EQUIPMENT eq2, string equipmentid)
         {
             var sup = db.EQUIPMENTs.Where(p => p.equipmentId == equipmentid).SingleOrDefault();
             sup.roomId = eq2.roomId;

@@ -21,7 +21,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             cbbTimkiem.Text = zoneid;
             if (zoneid != "")
             {
-                dataGridView_RoomShow.DataSource = BUS_RoomData.Instance.BUS_RoomShowForIDZone(zoneid);
+                dataGridView_RoomShow.DataSource = BUS_RoomData.Instance.BUS_RoomShowByIDZone(zoneid);
             }
             else
             {
@@ -47,7 +47,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         }
         public void ShowSearch(string zoneId)
         {
-            dataGridView_RoomShow.DataSource = BUS_RoomData.Instance.BUS_RoomShowForIDZone(zoneId);
+            dataGridView_RoomShow.DataSource = BUS_RoomData.Instance.BUS_RoomShowByIDZone(zoneId);
         }
         private void btnShow_Click(object sender, EventArgs e)
         {

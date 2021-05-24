@@ -29,7 +29,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FReport));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMain));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cbb_Time = new System.Windows.Forms.ComboBox();
             this.lb_GiangDuong = new System.Windows.Forms.Label();
@@ -56,7 +56,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.groupBox1.Controls.Add(this.ckb_DaXuLy);
             this.groupBox1.Controls.Add(this.ckb_ChuaXuLy);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1285, 574);
@@ -67,21 +67,21 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // cbb_Time
             // 
             this.cbb_Time.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cbb_Time.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.2F);
+            this.cbb_Time.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.2F);
             this.cbb_Time.FormattingEnabled = true;
             this.cbb_Time.Location = new System.Drawing.Point(759, 71);
             this.cbb_Time.Name = "cbb_Time";
-            this.cbb_Time.Size = new System.Drawing.Size(200, 30);
+            this.cbb_Time.Size = new System.Drawing.Size(200, 25);
             this.cbb_Time.TabIndex = 3;
             // 
             // lb_GiangDuong
             // 
             this.lb_GiangDuong.AutoSize = true;
             this.lb_GiangDuong.BackColor = System.Drawing.Color.Transparent;
-            this.lb_GiangDuong.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
+            this.lb_GiangDuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lb_GiangDuong.Location = new System.Drawing.Point(37, 74);
             this.lb_GiangDuong.Name = "lb_GiangDuong";
-            this.lb_GiangDuong.Size = new System.Drawing.Size(117, 25);
+            this.lb_GiangDuong.Size = new System.Drawing.Size(96, 18);
             this.lb_GiangDuong.TabIndex = 10;
             this.lb_GiangDuong.Text = "Giảng đường:";
             // 
@@ -130,13 +130,13 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // cbb_Zone
             // 
             this.cbb_Zone.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cbb_Zone.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.2F);
+            this.cbb_Zone.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.2F);
             this.cbb_Zone.FormattingEnabled = true;
             this.cbb_Zone.IntegralHeight = false;
-            this.cbb_Zone.ItemHeight = 22;
+            this.cbb_Zone.ItemHeight = 17;
             this.cbb_Zone.Location = new System.Drawing.Point(173, 71);
             this.cbb_Zone.Name = "cbb_Zone";
-            this.cbb_Zone.Size = new System.Drawing.Size(227, 30);
+            this.cbb_Zone.Size = new System.Drawing.Size(227, 25);
             this.cbb_Zone.TabIndex = 0;
             // 
             // ckb_DaXuLy
@@ -144,10 +144,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.ckb_DaXuLy.AutoSize = true;
             this.ckb_DaXuLy.BackColor = System.Drawing.Color.Transparent;
             this.ckb_DaXuLy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ckb_DaXuLy.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
+            this.ckb_DaXuLy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.ckb_DaXuLy.Location = new System.Drawing.Point(611, 72);
             this.ckb_DaXuLy.Name = "ckb_DaXuLy";
-            this.ckb_DaXuLy.Size = new System.Drawing.Size(123, 29);
+            this.ckb_DaXuLy.Size = new System.Drawing.Size(103, 22);
             this.ckb_DaXuLy.TabIndex = 2;
             this.ckb_DaXuLy.Text = "Tin đã xử lý";
             this.ckb_DaXuLy.UseVisualStyleBackColor = false;
@@ -157,10 +157,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.ckb_ChuaXuLy.AutoSize = true;
             this.ckb_ChuaXuLy.BackColor = System.Drawing.Color.Transparent;
             this.ckb_ChuaXuLy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ckb_ChuaXuLy.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
+            this.ckb_ChuaXuLy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.ckb_ChuaXuLy.Location = new System.Drawing.Point(440, 72);
             this.ckb_ChuaXuLy.Name = "ckb_ChuaXuLy";
-            this.ckb_ChuaXuLy.Size = new System.Drawing.Size(141, 29);
+            this.ckb_ChuaXuLy.Size = new System.Drawing.Size(119, 22);
             this.ckb_ChuaXuLy.TabIndex = 1;
             this.ckb_ChuaXuLy.Text = "Tin chưa xử lý";
             this.ckb_ChuaXuLy.UseVisualStyleBackColor = false;
@@ -174,6 +174,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FMain";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

@@ -28,30 +28,31 @@ namespace BUS
         {
             return DAL_RoomData.Instance.DAL_GetRoomShow();
         }
-        public List<RoomShow> BUS_RoomShowForIDZone(string zoneid)
+        public List<RoomShow> BUS_RoomShowByIDZone(string zoneid)
         {
-            List<RoomShow> l = new List<RoomShow>();
-
-            foreach (var item in BUS_RoomShow())
+            List<RoomShow> list = new List<RoomShow>();
+            foreach (ROOM item in DAL_RoomData.Instance.getRoomByIDZone(zoneid))
             {
-                if (item.zoneID.ToLower().Contains(zoneid.ToLower()) == true)
+                list.Add(new RoomShow
                 {
-                    l.Add(item);
-                }
+                    zoneID = item.zoneId,
+                    roomID = item.roomId,
+                    roomFunciton = item.roomFunction
+                });
             }
-            return l;
+            return list;
         }
         public void BUS_SETROOM(ROOM rm)
         {
-            DAL_RoomData.Instance.DAL_SETROOM(rm);
+            DAL_RoomData.Instance.DAL_SetRoom(rm);
         }
         public void BUS_DELETEROOM(string roomid)
         {
-            DAL_RoomData.Instance.DAL_DELETEROOM(roomid);
+            DAL_RoomData.Instance.DAL_DeleteRoom(roomid);
         }
         public void BUS_UPDATEROOM(ROOM rm2, string roomid)
         {
-            DAL_RoomData.Instance.DAL_UPDATEROOM(rm2, roomid);
+            DAL_RoomData.Instance.DAL_UpdateRoom(rm2, roomid);
         }
         public ROOM BUS_getRoomByIDRoom(string roomid)
         {
@@ -66,7 +67,7 @@ namespace BUS
         }
         public int BUS_CHECKROOM(ROOM rm)
         {
-            return DAL_RoomData.Instance.DAL_CHECKROOM(rm);
+            return DAL_RoomData.Instance.DAL_CheckRoom(rm);
         }
         public List<RoomShow> BUS_Sort(string cbbitem)
         {

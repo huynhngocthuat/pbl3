@@ -38,10 +38,15 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                 cbbKhuphong.Text = s.zoneId;
                 this.zoneid = s.zoneId;
                 txbMaphong.Enabled = false;
+                this.Text = "Chỉnh sửa phòng";
             }
             
         }
 
+        public void setCbbZone()
+        {
+
+        }
 
         private void btnOK_Click(object sender, EventArgs e)
         {
