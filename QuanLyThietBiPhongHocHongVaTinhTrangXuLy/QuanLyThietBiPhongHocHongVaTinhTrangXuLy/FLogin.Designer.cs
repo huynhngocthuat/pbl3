@@ -207,10 +207,8 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.Controls.Add(this.btnDangNhap);
             this.Controls.Add(this.txbPassWord);
             this.Controls.Add(this.txbUsername);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.MaximizeBox = false;
             this.Name = "FLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormLogin";

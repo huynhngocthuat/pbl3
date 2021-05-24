@@ -29,7 +29,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMain));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FReport));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cbb_Time = new System.Windows.Forms.ComboBox();
             this.lb_GiangDuong = new System.Windows.Forms.Label();
@@ -172,11 +172,8 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1285, 574);
             this.Controls.Add(this.groupBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
             this.Name = "FMain";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FMain";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

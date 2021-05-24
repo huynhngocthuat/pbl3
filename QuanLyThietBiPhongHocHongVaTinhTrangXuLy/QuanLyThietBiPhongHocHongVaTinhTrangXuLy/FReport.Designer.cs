@@ -259,9 +259,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.ClientSize = new System.Drawing.Size(755, 547);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
             this.Name = "FReport";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FReport";

@@ -34,7 +34,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         {
             FStatusEdit f = new FStatusEdit(equipmentid, "", "Add");
             f.refresh += new FStatusEdit.refreshData(ShowStatus);
-            f.ShowDialog();
+            f.Show();
 
         }
         private void btnEdit_Click(object sender, EventArgs e)
@@ -42,7 +42,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             string statusid = dataGridView_StatusShow.CurrentRow.Cells["statusID"].Value.ToString();
             FStatusEdit f = new FStatusEdit(equipmentid, statusid, "Edit");
             f.refresh += new FStatusEdit.refreshData(ShowStatus);
-            f.ShowDialog();
+            f.Show();
         }
 
         private void btnDel_Click(object sender, EventArgs e)

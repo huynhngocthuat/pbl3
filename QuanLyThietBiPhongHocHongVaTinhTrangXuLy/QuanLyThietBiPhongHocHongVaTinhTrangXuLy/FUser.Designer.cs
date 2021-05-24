@@ -160,13 +160,12 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // cbb_Zone
             // 
             this.cbb_Zone.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cbb_Zone.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.2F);
             this.cbb_Zone.FormattingEnabled = true;
             this.cbb_Zone.IntegralHeight = false;
-            this.cbb_Zone.ItemHeight = 22;
+            this.cbb_Zone.ItemHeight = 16;
             this.cbb_Zone.Location = new System.Drawing.Point(228, 14);
             this.cbb_Zone.Name = "cbb_Zone";
-            this.cbb_Zone.Size = new System.Drawing.Size(227, 30);
+            this.cbb_Zone.Size = new System.Drawing.Size(227, 24);
             this.cbb_Zone.TabIndex = 0;
             // 
             // lb_GiangDuong
@@ -182,11 +181,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // cbb_Time
             // 
             this.cbb_Time.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cbb_Time.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.2F);
             this.cbb_Time.FormattingEnabled = true;
             this.cbb_Time.Location = new System.Drawing.Point(855, 15);
             this.cbb_Time.Name = "cbb_Time";
-            this.cbb_Time.Size = new System.Drawing.Size(188, 30);
+            this.cbb_Time.Size = new System.Drawing.Size(188, 24);
             this.cbb_Time.TabIndex = 3;
             // 
             // dataGridView_UserData
@@ -270,7 +268,6 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.pndesktop.Controls.Add(this.btnTaobaocao);
             this.pndesktop.Controls.Add(this.label2);
             this.pndesktop.Controls.Add(this.btn_EditReport);
-            this.pndesktop.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
             this.pndesktop.Location = new System.Drawing.Point(12, 27);
             this.pndesktop.Name = "pndesktop";
             this.pndesktop.Size = new System.Drawing.Size(1463, 744);
@@ -326,9 +323,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pndesktop);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimizeBox = false;
             this.Name = "FUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FUeser";

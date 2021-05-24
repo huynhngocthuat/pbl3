@@ -36,7 +36,6 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                     "zoneId",
                     "roomFunction"
                 });
-            cbbSort.SelectedIndex = 0;
         }
         private void setCBBSearch()
         {
@@ -60,7 +59,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         {
             FRoomEdit f = new FRoomEdit("","Add");
             f.refresh += new FRoomEdit.refreshData(ShowSearch);
-            f.ShowDialog();
+            f.Show();
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -68,7 +67,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             string roomid = dataGridView_RoomShow.CurrentRow.Cells["roomID"].Value.ToString();
             FRoomEdit f = new FRoomEdit(roomid, "Edit");
             f.refresh += new FRoomEdit.refreshData(ShowSearch);
-            f.ShowDialog();
+            f.Show();
         }
 
         private void btnDel_Click(object sender, EventArgs e)
@@ -94,7 +93,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             {
                 string roomId = dataGridView_RoomShow.CurrentRow.Cells["roomID"].Value.ToString();
                 FEquipment f = new FEquipment(roomId);
-                f.ShowDialog();
+                f.Show();
             }
             else
             {

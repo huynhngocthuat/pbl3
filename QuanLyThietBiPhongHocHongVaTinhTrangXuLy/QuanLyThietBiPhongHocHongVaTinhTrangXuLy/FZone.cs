@@ -32,7 +32,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         {
             FZoneEdit f = new FZoneEdit("", "Add");
             f.refresh += new FZoneEdit.refreshData(ShowZone);
-            f.ShowDialog();
+            f.Show();
 
         }
 
@@ -58,7 +58,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                 string zoneid = dataGridView_ShowZone.CurrentRow.Cells["zoneID"].Value.ToString();
                 FZoneEdit f = new FZoneEdit(zoneid, "Edit");
                 f.refresh += new FZoneEdit.refreshData(ShowZone);
-                f.ShowDialog();
+                f.Show();
             }
             else
             {
@@ -68,12 +68,12 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
 
         public void setCbbSort()
         {
+            cbbSort.Text = "Chọn thuộc tính";
             cbbSort.Items.AddRange(new string[]
             {
                 "Mã khu",
                 "Tên khu"
             });
-            cbbSort.SelectedIndex = 0;
         }
 
         private void btnSapXep_Click(object sender, EventArgs e)
@@ -87,7 +87,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             {
                 string zoneId = dataGridView_ShowZone.CurrentRow.Cells["zoneID"].Value.ToString();
                 FRoom f = new FRoom(zoneId);
-                f.ShowDialog();
+                f.Show();
             }
             else
             {
