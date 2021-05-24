@@ -80,9 +80,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.ForeColor = System.Drawing.Color.Transparent;
-            this.btnBack.Location = new System.Drawing.Point(954, 69);
+            this.btnBack.Location = new System.Drawing.Point(954, 67);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(107, 35);
+            this.btnBack.Size = new System.Drawing.Size(107, 37);
             this.btnBack.TabIndex = 3;
             this.btnBack.Text = "Trở về";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -121,9 +121,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnXemtinhtrang.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXemtinhtrang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXemtinhtrang.ForeColor = System.Drawing.Color.Transparent;
-            this.btnXemtinhtrang.Location = new System.Drawing.Point(777, 69);
+            this.btnXemtinhtrang.Location = new System.Drawing.Point(777, 67);
             this.btnXemtinhtrang.Name = "btnXemtinhtrang";
-            this.btnXemtinhtrang.Size = new System.Drawing.Size(170, 35);
+            this.btnXemtinhtrang.Size = new System.Drawing.Size(170, 37);
             this.btnXemtinhtrang.TabIndex = 2;
             this.btnXemtinhtrang.Text = "Xem tình trạng";
             this.btnXemtinhtrang.UseVisualStyleBackColor = false;
@@ -232,7 +232,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1246, 580);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FEquipment";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FEquipment";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

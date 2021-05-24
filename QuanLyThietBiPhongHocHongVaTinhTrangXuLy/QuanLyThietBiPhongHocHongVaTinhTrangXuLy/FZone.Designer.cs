@@ -206,7 +206,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1246, 580);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FZone";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FZone";
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_ShowZone)).EndInit();
