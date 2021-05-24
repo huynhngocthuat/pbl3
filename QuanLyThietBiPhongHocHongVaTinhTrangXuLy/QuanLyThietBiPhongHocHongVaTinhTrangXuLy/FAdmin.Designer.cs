@@ -36,6 +36,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnRoomManage = new System.Windows.Forms.Button();
             this.btnZoneManage = new System.Windows.Forms.Button();
             this.pnbutton = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bttHome = new System.Windows.Forms.Button();
             this.pnDesktop = new System.Windows.Forms.Panel();
             this.grbAdmin = new System.Windows.Forms.GroupBox();
@@ -49,12 +50,11 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.cbbReportTime = new System.Windows.Forms.ComboBox();
             this.lbZone = new System.Windows.Forms.Label();
             this.cbbZone = new System.Windows.Forms.ComboBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnbutton.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnDesktop.SuspendLayout();
             this.grbAdmin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReport)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Account
@@ -64,7 +64,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btn_Account.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Account.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
             this.btn_Account.ForeColor = System.Drawing.Color.White;
-            this.btn_Account.Location = new System.Drawing.Point(0, 427);
+            this.btn_Account.Location = new System.Drawing.Point(0, 437);
             this.btn_Account.Name = "btn_Account";
             this.btn_Account.Size = new System.Drawing.Size(221, 75);
             this.btn_Account.TabIndex = 9;
@@ -80,7 +80,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnEditProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditProfile.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
             this.btnEditProfile.ForeColor = System.Drawing.Color.White;
-            this.btnEditProfile.Location = new System.Drawing.Point(0, 508);
+            this.btnEditProfile.Location = new System.Drawing.Point(0, 518);
             this.btnEditProfile.Name = "btnEditProfile";
             this.btnEditProfile.Size = new System.Drawing.Size(221, 75);
             this.btnEditProfile.TabIndex = 11;
@@ -96,7 +96,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnEquipmentManage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEquipmentManage.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
             this.btnEquipmentManage.ForeColor = System.Drawing.Color.White;
-            this.btnEquipmentManage.Location = new System.Drawing.Point(0, 347);
+            this.btnEquipmentManage.Location = new System.Drawing.Point(0, 357);
             this.btnEquipmentManage.Name = "btnEquipmentManage";
             this.btnEquipmentManage.Size = new System.Drawing.Size(221, 75);
             this.btnEquipmentManage.TabIndex = 8;
@@ -112,7 +112,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnRoomManage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRoomManage.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
             this.btnRoomManage.ForeColor = System.Drawing.Color.White;
-            this.btnRoomManage.Location = new System.Drawing.Point(0, 263);
+            this.btnRoomManage.Location = new System.Drawing.Point(0, 273);
             this.btnRoomManage.Name = "btnRoomManage";
             this.btnRoomManage.Size = new System.Drawing.Size(221, 75);
             this.btnRoomManage.TabIndex = 7;
@@ -129,7 +129,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnZoneManage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnZoneManage.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
             this.btnZoneManage.ForeColor = System.Drawing.Color.White;
-            this.btnZoneManage.Location = new System.Drawing.Point(0, 182);
+            this.btnZoneManage.Location = new System.Drawing.Point(0, 192);
             this.btnZoneManage.Name = "btnZoneManage";
             this.btnZoneManage.Size = new System.Drawing.Size(221, 75);
             this.btnZoneManage.TabIndex = 6;
@@ -156,6 +156,16 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.pnbutton.Size = new System.Drawing.Size(221, 595);
             this.pnbutton.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(191, 126);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            // 
             // bttHome
             // 
             this.bttHome.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -163,7 +173,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.bttHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttHome.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
             this.bttHome.ForeColor = System.Drawing.Color.White;
-            this.bttHome.Location = new System.Drawing.Point(0, 135);
+            this.bttHome.Location = new System.Drawing.Point(0, 130);
             this.bttHome.Name = "bttHome";
             this.bttHome.Size = new System.Drawing.Size(221, 56);
             this.bttHome.TabIndex = 12;
@@ -332,16 +342,6 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.cbbZone.Size = new System.Drawing.Size(187, 30);
             this.cbbZone.TabIndex = 0;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(191, 126);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
-            // 
             // FAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -356,11 +356,11 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FAdmin";
             this.pnbutton.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnDesktop.ResumeLayout(false);
             this.grbAdmin.ResumeLayout(false);
             this.grbAdmin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReport)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

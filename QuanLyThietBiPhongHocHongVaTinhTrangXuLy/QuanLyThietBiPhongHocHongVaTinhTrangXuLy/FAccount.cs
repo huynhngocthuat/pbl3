@@ -46,6 +46,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                             a2.fullName = txbFullname.Text;
                             a2.faculty = txtkhoa.Text;
                             a2.@class = txtlop.Text;
+                            a2.role = a.role;
                             a2.password = BUS_MainData.Instance.BUS_Encrypt(txtmkm2.Text);
                             BUS_MainData.Instance.BUS_UPDATEACC(a2);
                             MessageBox.Show("Cập nhật thành công!");

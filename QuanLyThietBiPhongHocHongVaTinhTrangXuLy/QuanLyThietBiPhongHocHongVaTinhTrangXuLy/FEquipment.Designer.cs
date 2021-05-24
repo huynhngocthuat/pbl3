@@ -65,7 +65,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.groupBox1.Controls.Add(this.btnAdd);
             this.groupBox1.Controls.Add(this.btnShow);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.groupBox1.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
@@ -94,7 +94,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(150, 127);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 18);
+            this.label1.Size = new System.Drawing.Size(141, 25);
             this.label1.TabIndex = 28;
             this.label1.Text = "Chọn thuộc tính:";
             // 
@@ -104,7 +104,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.lb_search.BackColor = System.Drawing.Color.Transparent;
             this.lb_search.Location = new System.Drawing.Point(150, 74);
             this.lb_search.Name = "lb_search";
-            this.lb_search.Size = new System.Drawing.Size(117, 18);
+            this.lb_search.Size = new System.Drawing.Size(141, 25);
             this.lb_search.TabIndex = 27;
             this.lb_search.Text = "Nhập mã phòng:";
             // 
@@ -153,7 +153,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.cbbSort.FormattingEnabled = true;
             this.cbbSort.Location = new System.Drawing.Point(331, 124);
             this.cbbSort.Name = "cbbSort";
-            this.cbbSort.Size = new System.Drawing.Size(169, 26);
+            this.cbbSort.Size = new System.Drawing.Size(169, 33);
             this.cbbSort.TabIndex = 4;
             // 
             // btnSort
@@ -233,6 +233,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1246, 580);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FEquipment";
             this.Text = "FEquipment";
             this.groupBox1.ResumeLayout(false);

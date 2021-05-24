@@ -62,7 +62,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.groupBox1.Controls.Add(this.btnAdd);
             this.groupBox1.Controls.Add(this.btnShow);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.groupBox1.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 9F);
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
@@ -102,11 +102,11 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // cbbTimkiem
             // 
             this.cbbTimkiem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cbbTimkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.2F);
+            this.cbbTimkiem.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.2F);
             this.cbbTimkiem.FormattingEnabled = true;
-            this.cbbTimkiem.Location = new System.Drawing.Point(506, 99);
+            this.cbbTimkiem.Location = new System.Drawing.Point(506, 95);
             this.cbbTimkiem.Name = "cbbTimkiem";
-            this.cbbTimkiem.Size = new System.Drawing.Size(183, 25);
+            this.cbbTimkiem.Size = new System.Drawing.Size(183, 30);
             this.cbbTimkiem.TabIndex = 2;
             // 
             // btnTimKiem
@@ -142,11 +142,11 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // cbbSort
             // 
             this.cbbSort.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cbbSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.2F);
+            this.cbbSort.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.2F);
             this.cbbSort.FormattingEnabled = true;
             this.cbbSort.Location = new System.Drawing.Point(57, 72);
             this.cbbSort.Name = "cbbSort";
-            this.cbbSort.Size = new System.Drawing.Size(233, 25);
+            this.cbbSort.Size = new System.Drawing.Size(233, 30);
             this.cbbSort.TabIndex = 0;
             // 
             // btnSort

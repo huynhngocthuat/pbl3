@@ -51,7 +51,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.btnCancel.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8F);
             this.btnCancel.ForeColor = System.Drawing.Color.White;
             this.btnCancel.Location = new System.Drawing.Point(564, 263);
             this.btnCancel.Name = "btnCancel";
@@ -66,7 +66,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnOK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btnOK.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.btnOK.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8F);
             this.btnOK.ForeColor = System.Drawing.Color.White;
             this.btnOK.Location = new System.Drawing.Point(397, 263);
             this.btnOK.Name = "btnOK";
@@ -81,54 +81,54 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.dateTimePicker_Ngaydat.CalendarForeColor = System.Drawing.Color.Black;
             this.dateTimePicker_Ngaydat.CalendarTitleForeColor = System.Drawing.Color.Black;
             this.dateTimePicker_Ngaydat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dateTimePicker_Ngaydat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.dateTimePicker_Ngaydat.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8F);
             this.dateTimePicker_Ngaydat.Location = new System.Drawing.Point(460, 204);
             this.dateTimePicker_Ngaydat.Name = "dateTimePicker_Ngaydat";
-            this.dateTimePicker_Ngaydat.Size = new System.Drawing.Size(245, 23);
+            this.dateTimePicker_Ngaydat.Size = new System.Drawing.Size(245, 28);
             this.dateTimePicker_Ngaydat.TabIndex = 4;
             // 
             // cbbPhongHoc
             // 
             this.cbbPhongHoc.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cbbPhongHoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.cbbPhongHoc.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8F);
             this.cbbPhongHoc.FormattingEnabled = true;
             this.cbbPhongHoc.Location = new System.Drawing.Point(460, 114);
             this.cbbPhongHoc.Name = "cbbPhongHoc";
-            this.cbbPhongHoc.Size = new System.Drawing.Size(245, 24);
+            this.cbbPhongHoc.Size = new System.Drawing.Size(245, 29);
             this.cbbPhongHoc.TabIndex = 2;
             // 
             // txtCongTy
             // 
-            this.txtCongTy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.txtCongTy.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8F);
             this.txtCongTy.Location = new System.Drawing.Point(460, 158);
             this.txtCongTy.Name = "txtCongTy";
-            this.txtCongTy.Size = new System.Drawing.Size(245, 23);
+            this.txtCongTy.Size = new System.Drawing.Size(245, 28);
             this.txtCongTy.TabIndex = 3;
             // 
             // txtMaThietBi
             // 
-            this.txtMaThietBi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.txtMaThietBi.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8F);
             this.txtMaThietBi.Location = new System.Drawing.Point(460, 27);
             this.txtMaThietBi.Name = "txtMaThietBi";
-            this.txtMaThietBi.Size = new System.Drawing.Size(245, 23);
+            this.txtMaThietBi.Size = new System.Drawing.Size(245, 28);
             this.txtMaThietBi.TabIndex = 0;
             // 
             // txtTenThietBi
             // 
-            this.txtTenThietBi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.txtTenThietBi.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8F);
             this.txtTenThietBi.Location = new System.Drawing.Point(460, 70);
             this.txtTenThietBi.Name = "txtTenThietBi";
-            this.txtTenThietBi.Size = new System.Drawing.Size(245, 23);
+            this.txtTenThietBi.Size = new System.Drawing.Size(245, 28);
             this.txtTenThietBi.TabIndex = 1;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.label5.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8F);
             this.label5.Location = new System.Drawing.Point(342, 161);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 17);
+            this.label5.Size = new System.Drawing.Size(70, 22);
             this.label5.TabIndex = 28;
             this.label5.Text = "Công ty:";
             // 
@@ -136,10 +136,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.label4.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8F);
             this.label4.Location = new System.Drawing.Point(342, 209);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 17);
+            this.label4.Size = new System.Drawing.Size(107, 22);
             this.label4.TabIndex = 27;
             this.label4.Text = "Ngày lắp đặt:";
             // 
@@ -147,10 +147,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.label3.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8F);
             this.label3.Location = new System.Drawing.Point(342, 30);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 17);
+            this.label3.Size = new System.Drawing.Size(93, 22);
             this.label3.TabIndex = 26;
             this.label3.Text = "Mã thiết bị:";
             // 
@@ -158,10 +158,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.label2.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8F);
             this.label2.Location = new System.Drawing.Point(342, 117);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 17);
+            this.label2.Size = new System.Drawing.Size(60, 22);
             this.label2.TabIndex = 25;
             this.label2.Text = "Phòng:";
             // 
@@ -169,10 +169,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.label1.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8F);
             this.label1.Location = new System.Drawing.Point(342, 73);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 17);
+            this.label1.Size = new System.Drawing.Size(98, 22);
             this.label1.TabIndex = 24;
             this.label1.Text = "Tên thiết bị:";
             // 
