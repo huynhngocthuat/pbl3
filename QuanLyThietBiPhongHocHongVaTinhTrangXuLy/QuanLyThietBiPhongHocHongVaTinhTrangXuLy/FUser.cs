@@ -67,6 +67,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         {
             FAccount f = new FAccount(ac);
             f.GUI(ac);
+            f.updateData += new FAccount.UpdateData(setNameLabel);
             f.ShowDialog();
         }
         public void Show(string zoneId, int check, int indexDate)

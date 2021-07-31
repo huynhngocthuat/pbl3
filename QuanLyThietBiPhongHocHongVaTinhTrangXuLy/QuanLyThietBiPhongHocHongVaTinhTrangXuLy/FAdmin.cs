@@ -134,6 +134,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         {
             FAccount fAccount = new FAccount(ac);
             fAccount.GUI(ac);
+            fAccount.updateData += new FAccount.UpdateData(setLbFullName);
             fAccount.ShowDialog();
         }
         public void show(string zoneId, int check, int indexDate)

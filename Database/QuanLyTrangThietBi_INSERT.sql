@@ -7,7 +7,7 @@ insert into ACCOUNT values ('lequochuy', '123456', 0, N'Lê Quốc Huy', '19TCLC
 insert into ACCOUNT values ('vuducphuong', '123456', 0, N'Vũ Đức Phương', '19TCLC_DT1', 'Công Nghệ Thông Tin')
 insert into ACCOUNT values ('maivanha', '123456', 0, N'Mai Văn Hà', '', '')
 
-insert into ZONE values ('A', 'Khu A')
+insert into zone values ('A', 'Khu A')
 insert into ZONE values ('AVL', 'Phòng TN Động cơ & ô tô')
 insert into ZONE values ('B', 'Khu B')
 insert into ZONE values ('C', 'Khu C')

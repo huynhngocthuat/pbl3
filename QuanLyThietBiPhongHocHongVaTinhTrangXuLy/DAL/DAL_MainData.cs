@@ -195,6 +195,47 @@ namespace DAL
             }
             return listReportShow;
         }
+        // Cach 2
+        //public List<ReportShow> DAL_ReportShow()
+        //{
+        //    List<ReportShow> listReportShow = new List<ReportShow>();
+        //    foreach (var item in db.REPORTs)
+        //    {
+        //        if (item.RESPONSEs.Count > 0)
+        //        {
+        //            ReportShow rp = new ReportShow();
+        //            rp.STT = item.reportId;
+        //            rp.setAccountId(item.accountId);
+        //            rp.roomID = item.roomId;
+        //            rp.responsedDate = Convert.ToDateTime(item.RESPONSEs.OrderByDescending(p => p.responseType).Select(o => o.responsedDate).First());
+        //            rp.setResponseType(item.RESPONSEs.OrderByDescending(p => p.responseType).Select(o => o.responseId).First());
+        //            rp.responseMessage = item.RESPONSEs.OrderByDescending(p => p.responseType).Select(o => o.message).First().ToString();
+        //            rp.equipmentName = item.EQUIPMENT.equipmentName;
+        //            rp.equipmentStatus = item.STATUS.equipmentStatus;
+        //            rp.reportMessage = item.note;
+        //            rp.reportedDate = Convert.ToDateTime(item.reportedDate);
+        //            rp.setIsEdit(Convert.ToBoolean(item.isEdit));
+        //            listReportShow.Add(rp);
+        //        }
+        //        else
+        //        {
+        //            ReportShow rp = new ReportShow();
+        //            rp.STT = item.reportId;
+        //            rp.setAccountId(item.accountId);
+        //            rp.roomID = item.roomId;
+        //            //rp.responsedDate = null;
+        //            rp.setResponseType(0);
+        //            rp.responseMessage = null;
+        //            rp.equipmentName = item.EQUIPMENT.equipmentName;
+        //            rp.equipmentStatus = item.STATUS.equipmentStatus;
+        //            rp.reportMessage = item.note;
+        //            rp.reportedDate = Convert.ToDateTime(item.reportedDate);
+        //            rp.setIsEdit(Convert.ToBoolean(item.isEdit));
+        //            listReportShow.Add(rp);
+        //        }
+        //    }
+        //    return listReportShow;
+        //}
         public List<int> listReportIDByZone(string zoneId)
         {
             List<REPORT> list = new List<REPORT>();

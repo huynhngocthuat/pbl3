@@ -14,6 +14,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
 {
     public partial class FAccount : Form
     {
+        public delegate void UpdateData();
+        public UpdateData updateData;
+
         private ACCOUNT a = new ACCOUNT();
         public FAccount(ACCOUNT ac)
         {
@@ -50,6 +53,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                             a2.password = BUS_MainData.Instance.BUS_Encrypt(txtmkm2.Text);
                             BUS_MainData.Instance.BUS_UPDATEACC(a2);
                             MessageBox.Show("Cập nhật thành công!");
+                            updateData();
                             this.Close();
                         }
                         else { MessageBox.Show("Xác nhận sai mật khẩu"); }                       

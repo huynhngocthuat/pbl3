@@ -70,5 +70,6 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         {
             this.Close();
         }
+
     }
 }

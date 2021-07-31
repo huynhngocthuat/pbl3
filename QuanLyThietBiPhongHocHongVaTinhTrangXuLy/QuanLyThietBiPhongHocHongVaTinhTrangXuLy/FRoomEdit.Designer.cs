@@ -38,6 +38,8 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCancel
@@ -47,7 +49,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8F);
             this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(464, 202);
+            this.btnCancel.Location = new System.Drawing.Point(524, 207);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(96, 32);
             this.btnCancel.TabIndex = 4;
@@ -62,7 +64,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOK.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8F);
             this.btnOK.ForeColor = System.Drawing.Color.White;
-            this.btnOK.Location = new System.Drawing.Point(356, 202);
+            this.btnOK.Location = new System.Drawing.Point(416, 207);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(87, 32);
             this.btnOK.TabIndex = 3;
@@ -75,7 +77,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.cbbKhuphong.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbbKhuphong.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8F);
             this.cbbKhuphong.FormattingEnabled = true;
-            this.cbbKhuphong.Location = new System.Drawing.Point(419, 37);
+            this.cbbKhuphong.Location = new System.Drawing.Point(479, 42);
             this.cbbKhuphong.Name = "cbbKhuphong";
             this.cbbKhuphong.Size = new System.Drawing.Size(150, 29);
             this.cbbKhuphong.TabIndex = 2;
@@ -83,7 +85,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // txbMaphong
             // 
             this.txbMaphong.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8F);
-            this.txbMaphong.Location = new System.Drawing.Point(419, 88);
+            this.txbMaphong.Location = new System.Drawing.Point(479, 93);
             this.txbMaphong.Name = "txbMaphong";
             this.txbMaphong.Size = new System.Drawing.Size(150, 28);
             this.txbMaphong.TabIndex = 0;
@@ -91,7 +93,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // txbTenphong
             // 
             this.txbTenphong.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8F);
-            this.txbTenphong.Location = new System.Drawing.Point(419, 144);
+            this.txbTenphong.Location = new System.Drawing.Point(479, 149);
             this.txbTenphong.Name = "txbTenphong";
             this.txbTenphong.Size = new System.Drawing.Size(150, 28);
             this.txbTenphong.TabIndex = 1;
@@ -101,7 +103,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8F);
-            this.label3.Location = new System.Drawing.Point(306, 42);
+            this.label3.Location = new System.Drawing.Point(366, 47);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 22);
             this.label3.TabIndex = 16;
@@ -112,7 +114,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8F);
-            this.label2.Location = new System.Drawing.Point(306, 91);
+            this.label2.Location = new System.Drawing.Point(366, 96);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 22);
             this.label2.TabIndex = 15;
@@ -123,11 +125,21 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8F);
-            this.label1.Location = new System.Drawing.Point(306, 144);
+            this.label1.Location = new System.Drawing.Point(366, 149);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(91, 22);
             this.label1.TabIndex = 14;
             this.label1.Text = "Chức năng";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::QuanLyThietBiPhongHocHongVaTinhTrangXuLy.Properties.Resources.itf;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(74, 47);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(204, 197);
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
             // 
             // FRoomEdit
             // 
@@ -135,7 +147,8 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::QuanLyThietBiPhongHocHongVaTinhTrangXuLy.Properties.Resources.nền;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(614, 281);
+            this.ClientSize = new System.Drawing.Size(689, 301);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.cbbKhuphong);
@@ -148,6 +161,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.Name = "FRoomEdit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm phòng";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,5 +177,6 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
