@@ -70,11 +70,13 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             f.updateData += new FAccount.UpdateData(setNameLabel);
             f.ShowDialog();
         }
-        public void Show(string zoneId, int check, int indexDate)
+        public void Show(string zoneId, int check)
         {
-            dataGridView_AllData.DataSource = BUS_MainData.Instance.BUS_ReportShow(zoneId, check, indexDate);
-            // thiet lap lai so thu tu
-            List<ReportShow> list = BUS_MainData.Instance.BUS_ReportShowByAccount(userName);
+            dataGridView_AllData.DataSource = BUS_MainData.Instance.BUS_ReportShow(zoneId, check, dateStart.Value, dateEnd.Value);         
+        }
+        public void ShowDataUser(int indexDate)
+        {      
+            List<ReportShow> list = BUS_MainData.Instance.BUS_ReportShowByAccount(userName, indexDate);
             for (int i = 0; i < list.Count(); i++)
             {
                 list[i].STT = i + 1;
@@ -84,7 +86,6 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         private void btnDulieu_Click(object sender, EventArgs e)
         {
             int check = 1;
-            int indexDate = 0;
             string zoneId = BUS_MainData.Instance.getZoneIdByName(cbb_Zone.Text);
             if (ckb_ChuaXuLy.Checked == true && ckb_DaXuLy.Checked == false)
             {
@@ -94,8 +95,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             {
                 check = 3;
             }
-            indexDate = cbb_Time.SelectedIndex;
-            Show(zoneId, check, indexDate);
+            Show(zoneId, check);
         }
 
         private void btnDangxuat_Click(object sender, EventArgs e)
@@ -104,26 +104,30 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         }
         private void btnTaobaocao_Click(object sender, EventArgs e)
         {
-            FReport f = new FReport(userName, -1, "Add");
+            FReport f = new FReport(userName, cbb_Time.SelectedIndex, -1, "Add");
             f.d += new FReport.Mydel(Show);
+            f.load += new FReport.reloadDataUser(ShowDataUser);
             f.ShowDialog();
         }
         #endregion
 
         private void btn_EditReport_Click(object sender, EventArgs e)
         {
+            int indexDate = 0;
+            indexDate = cbb_Time.SelectedIndex;
             if(dataGridView_UserData.SelectedRows.Count == 1)
             {
                 int STT = Convert.ToInt32(dataGridView_UserData.CurrentRow.Cells["STT"].Value);
-                bool isEdit = Convert.ToBoolean(BUS_MainData.Instance.getReportBySTT(STT, userName).isEdit);
+                bool isEdit = Convert.ToBoolean(BUS_MainData.Instance.getReportBySTT(STT, userName, indexDate).isEdit);
                 if (isEdit==false)
                 {
                     MessageBox.Show("Không được chỉnh sửa :>");
                 }
                 else
                 {
-                    FReport f = new FReport(userName, STT, "Edit");
+                    FReport f = new FReport(userName, cbb_Time.SelectedIndex, STT, "Edit");
                     f.d += new FReport.Mydel(Show);
+                    f.load += new FReport.reloadDataUser(ShowDataUser);
                     f.ShowDialog();
                 }
             }
@@ -138,6 +142,11 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
 
         }
 
-
+        private void btnDulieuUser_Click(object sender, EventArgs e)
+        {
+            int indexDate = 0;
+            indexDate = cbb_Time.SelectedIndex;
+            ShowDataUser(indexDate);
+        }
     }
 }

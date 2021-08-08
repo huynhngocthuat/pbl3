@@ -13,15 +13,19 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
 {
     public partial class FReport : Form
     {
-        public delegate void Mydel(string zoneId, int check, int indexDate);
+        public delegate void Mydel(string zoneId, int check);
+        public delegate void reloadDataUser(int index);
         public Mydel d { get; set; }
+        public reloadDataUser load { get; set; }
         private string userName;
+        private int indexDate;
         private int STT;
         private string option;
         private int reportId;
-        public FReport(string userName, int STT, string option)
+        public FReport(string userName,int indexDate, int STT, string option)
         {
             this.userName = userName;
+            this.indexDate = indexDate;
             this.STT = STT;
             this.option = option;
             InitializeComponent();
@@ -56,7 +60,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
 
         public void setDataEdit()
         {
-            List<int> listReportId = BUS_MainData.Instance.getListReportId(userName);
+            List<int> listReportId = BUS_MainData.Instance.getListReportId(userName, indexDate);
             reportId = listReportId[STT - 1];
             foreach (var report in BUS_MainData.Instance.BUS_REPORT())
             {
@@ -171,7 +175,8 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             }
             if (check == 1)
             {
-                d("", 1, 5);
+                d("", 1);
+                load(5);
                 this.Dispose();
             }
             //this.Close();

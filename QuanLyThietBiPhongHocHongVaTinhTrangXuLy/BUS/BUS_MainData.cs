@@ -190,11 +190,11 @@ namespace BUS
         #region FMain Huỳnh Ngọc Thuật
         // lay danh sach report theo Khu, Da Xu Ly?, Ngay
         //BUS_MainData.Instance.BUS_ReportShow("",1,5)
-        public List<ReportShow> BUS_ReportShow(string zoneId, int check, int date)
+        public List<ReportShow> BUS_ReportShow(string zoneId, int check, DateTime timeStart, DateTime timeEnd)
         {
             // zoneId -> "A",......
             // check -> 1: All, 2: Chua, 3: Roi  
-            // date -> 0: Bao cach day 15 ngay,.....
+            
             
             List<ReportShow> list1 = new List<ReportShow>();
             List<ReportShow> list2 = new List<ReportShow>();
@@ -245,47 +245,12 @@ namespace BUS
                 list2 = list1;
             }
             // loc theo ngay
-            switch (date)
+            foreach(ReportShow item in list2)
             {
-                case 0:
-                    foreach (ReportShow item in list2)
-                    {
-                        if((DateTime.Now - item.reportedDate).TotalDays < 15)
-                        {
-                            list3.Add(item);
-                        }
-                    }
-                    break;
-                case 1:
-                    foreach (ReportShow item in list2)
-                    {
-                        if ((DateTime.Now - item.reportedDate).TotalDays < 30)
-                        {
-                            list3.Add(item);
-                        }
-                    }
-                    break;
-                case 2:
-                    foreach (ReportShow item in list2)
-                    {
-                        if ((DateTime.Now - item.reportedDate).TotalDays < 60)
-                        {
-                            list3.Add(item);
-                        }
-                    }
-                    break;
-                case 3:
-                    foreach (ReportShow item in list2)
-                    {
-                        if ((DateTime.Now - item.reportedDate).TotalDays < 365)
-                        {
-                            list3.Add(item);
-                        }
-                    }
-                    break;
-                default:
-                    list3 = list2;
-                    break;
+                if(item.reportedDate <= timeEnd.AddDays(1) && item.reportedDate > timeStart)
+                {
+                    list3.Add(item);
+                }
             }
             //Thiet lap lai stt
             for (int i = 0; i < list3.Count(); i++)
@@ -298,9 +263,11 @@ namespace BUS
 
         #region FUser Lê Quốc Huy
         // lay danh sach bao cao cua mot user
-        public List<ReportShow> BUS_ReportShowByAccount(string userName)
+        public List<ReportShow> BUS_ReportShowByAccount(string userName, int indexDate)
         {
-            List<ReportShow> list = new List<ReportShow>();
+            // date -> 0: Bao cach day 15 ngay,.....
+            List<ReportShow> list1 = new List<ReportShow>();
+            List<ReportShow> list2 = new List<ReportShow>();
             int accountId = 0;
             // lay accountId bang username
             foreach (var item in BUS_ACCOUNT())
@@ -315,14 +282,57 @@ namespace BUS
             {
                 if (item.getAccountId() == accountId)
                 {
-                    list.Add(item);
+                    list1.Add(item);
                 }
             }
-            return list;
+            //loc danh sach theo ngay
+            switch (indexDate)
+            {
+                case 0:
+                    foreach (ReportShow item in list1)
+                    {
+                        if ((DateTime.Now - item.reportedDate).TotalDays < 15)
+                        {
+                            list2.Add(item);
+                        }
+                    }
+                    break;
+                case 1:
+                    foreach (ReportShow item in list1)
+                    {
+                        if ((DateTime.Now - item.reportedDate).TotalDays < 30)
+                        {
+                            list2.Add(item);
+                        }
+                    }
+                    break;
+                case 2:
+                    foreach (ReportShow item in list1)
+                    {
+                        if ((DateTime.Now - item.reportedDate).TotalDays < 60)
+                        {
+                            list2.Add(item);
+                        }
+                    }
+                    break;
+                case 3:
+                    foreach (ReportShow item in list1)
+                    {
+                        if ((DateTime.Now - item.reportedDate).TotalDays < 365)
+                        {
+                            list2.Add(item);
+                        }
+                    }
+                    break;
+                default:
+                    list2 = list1;
+                    break;
+            }
+            return list2;
         }
-        public REPORT getReportBySTT(int STT, string userName)
+        public REPORT getReportBySTT(int STT, string userName, int indexDate)
         {
-            int reportId = BUS_MainData.Instance.getListReportId(userName)[STT - 1];
+            int reportId = BUS_MainData.Instance.getListReportId(userName, indexDate)[STT - 1];
             foreach (REPORT item in BUS_REPORT())
             {
                 if (item.reportId == reportId)
@@ -334,10 +344,10 @@ namespace BUS
         }
         #endregion
         #region FReport Huỳnh Ngọc Thuật
-        public List<int> getListReportId(string userName)
+        public List<int> getListReportId(string userName, int indexDate)
         {
             List<int> list = new List<int>();
-            foreach (var item in BUS_ReportShowByAccount(userName))
+            foreach (var item in BUS_ReportShowByAccount(userName, indexDate))
             {
                 list.Add(item.STT);
             }
