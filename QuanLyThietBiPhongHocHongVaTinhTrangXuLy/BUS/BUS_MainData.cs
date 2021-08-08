@@ -54,7 +54,7 @@ namespace BUS
             return DAL_MainData.Instance.DAL_getReport();
         }
         #endregion
-        #region FLogin
+        #region FLogin Lê Quốc Huy
         public int BUS_Checkaccount(string user, string passwword)
         {
             ac = DAL_MainData.Instance.DAL_CheckAccount(user, passwword);
@@ -187,7 +187,7 @@ namespace BUS
             return "";
         }
         
-        #region FMain
+        #region FMain Huỳnh Ngọc Thuật
         // lay danh sach report theo Khu, Da Xu Ly?, Ngay
         //BUS_MainData.Instance.BUS_ReportShow("",1,5)
         public List<ReportShow> BUS_ReportShow(string zoneId, int check, int date)
@@ -296,7 +296,7 @@ namespace BUS
         }
         #endregion
 
-        #region FUser
+        #region FUser Lê Quốc Huy
         // lay danh sach bao cao cua mot user
         public List<ReportShow> BUS_ReportShowByAccount(string userName)
         {
@@ -333,7 +333,7 @@ namespace BUS
             return null;
         }
         #endregion
-        #region FReport
+        #region FReport Huỳnh Ngọc Thuật
         public List<int> getListReportId(string userName)
         {
             List<int> list = new List<int>();

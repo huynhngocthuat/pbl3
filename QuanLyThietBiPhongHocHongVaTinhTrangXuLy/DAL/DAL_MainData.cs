@@ -62,7 +62,7 @@ namespace DAL
             return result.ToList<ACCOUNT>();
         }
         #endregion
-        #region Flogin
+        #region Flogin Lê Quốc Huy
         public void DAL_SETACCOUNT(ACCOUNT ac)
         {
             db.ACCOUNTs.Add(ac);
@@ -122,7 +122,7 @@ namespace DAL
         //}
         #endregion
 
-        #region FMain
+        #region FMain Huỳnh Ngọc Thuật
         //SELECT REPORT.reportId, REPORT.roomId, MAX(RESPONSE.responseType) as 'responseType', responsedDate, MIN(CAST(message AS NVARCHAR(100))) as message, equipmentName, equipmentStatus, CAST(note AS NVARCHAR(100))[note], reportedDate
         //FROM REPORT
         //LEFT JOIN RESPONSE ON RESPONSE.reportId = REPORT.reportId
@@ -252,7 +252,7 @@ namespace DAL
             return listID;
         }
         #endregion
-        #region FReport
+        #region FReport Huỳnh Ngọc Thuật
         public void DAL_AddReport(int newAccountId, string newRoomId, string newEquimentId, string newStatusId, string newNote)
         {
             //lay maxId

@@ -82,7 +82,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnBack.ForeColor = System.Drawing.Color.Transparent;
             this.btnBack.Location = new System.Drawing.Point(1004, 69);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(136, 35);
+            this.btnBack.Size = new System.Drawing.Size(144, 35);
             this.btnBack.TabIndex = 3;
             this.btnBack.Text = "Trở về";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -122,9 +122,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnXemtinhtrang.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXemtinhtrang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXemtinhtrang.ForeColor = System.Drawing.Color.Transparent;
-            this.btnXemtinhtrang.Location = new System.Drawing.Point(777, 69);
+            this.btnXemtinhtrang.Location = new System.Drawing.Point(767, 69);
             this.btnXemtinhtrang.Name = "btnXemtinhtrang";
-            this.btnXemtinhtrang.Size = new System.Drawing.Size(183, 35);
+            this.btnXemtinhtrang.Size = new System.Drawing.Size(231, 35);
             this.btnXemtinhtrang.TabIndex = 2;
             this.btnXemtinhtrang.Text = "Xem các tình trạng";
             this.btnXemtinhtrang.UseVisualStyleBackColor = false;
@@ -179,7 +179,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnDel.ForeColor = System.Drawing.Color.Transparent;
             this.btnDel.Location = new System.Drawing.Point(1037, 122);
             this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(103, 35);
+            this.btnDel.Size = new System.Drawing.Size(111, 35);
             this.btnDel.TabIndex = 8;
             this.btnDel.Text = "Xóa";
             this.btnDel.UseVisualStyleBackColor = false;
@@ -191,9 +191,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.ForeColor = System.Drawing.Color.Transparent;
-            this.btnEdit.Location = new System.Drawing.Point(908, 122);
+            this.btnEdit.Location = new System.Drawing.Point(902, 122);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(106, 35);
+            this.btnEdit.Size = new System.Drawing.Size(118, 35);
             this.btnEdit.TabIndex = 7;
             this.btnEdit.Text = "Sửa";
             this.btnEdit.UseVisualStyleBackColor = false;
@@ -205,9 +205,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.ForeColor = System.Drawing.Color.Transparent;
-            this.btnAdd.Location = new System.Drawing.Point(777, 122);
+            this.btnAdd.Location = new System.Drawing.Point(767, 122);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(110, 35);
+            this.btnAdd.Size = new System.Drawing.Size(120, 35);
             this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = false;

@@ -326,7 +326,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FUeser";
+            this.Text = "FUser";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_AllData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_UserData)).EndInit();
             this.pndesktop.ResumeLayout(false);

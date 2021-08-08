@@ -12,7 +12,6 @@ C:\Users\Asus\Desktop\New folder (3)\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXu
 C:\Users\Asus\Desktop\New folder (3)\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\obj\Debug\DTL.pdb
 C:\Users\Admin\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\bin\Debug\DTL.dll
 C:\Users\Admin\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\bin\Debug\DTL.pdb
-C:\Users\Admin\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\obj\Debug\DTL.csprojAssemblyReference.cache
 C:\Users\Admin\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\obj\Debug\DTL.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\obj\Debug\DTL.dll
 C:\Users\Admin\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\obj\Debug\DTL.pdb

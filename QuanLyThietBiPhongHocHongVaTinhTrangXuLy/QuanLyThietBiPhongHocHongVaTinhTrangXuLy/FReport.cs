@@ -130,9 +130,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         {
             // kiem tra xem report do da ton tai hay chua
             int checkReport = -1;
-            foreach (var item in BUS_MainData.Instance.BUS_ReportShow("", 2, 5)) // xem trong nhung report chua duoc response
+            foreach (var item in BUS_AdminData.Instance.BUS_ShowReportList("", 3, 5)) // xem trong nhung report chua duoc response
             {
-                if (item.equipmentName == cbbThietbi.Text && item.responseMessage == null && item.roomID == cbbPhonghoc.Text)
+                if (item.equipmentName == cbbThietbi.Text && item.roomID == cbbPhonghoc.Text)
                 {
                     checkReport = 1;
                 }
