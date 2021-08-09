@@ -80,9 +80,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.ForeColor = System.Drawing.Color.Transparent;
-            this.btnBack.Location = new System.Drawing.Point(1004, 69);
+            this.btnBack.Location = new System.Drawing.Point(1004, 64);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(144, 35);
+            this.btnBack.Size = new System.Drawing.Size(144, 40);
             this.btnBack.TabIndex = 3;
             this.btnBack.Text = "Trở về";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -122,9 +122,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnXemtinhtrang.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXemtinhtrang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXemtinhtrang.ForeColor = System.Drawing.Color.Transparent;
-            this.btnXemtinhtrang.Location = new System.Drawing.Point(767, 69);
+            this.btnXemtinhtrang.Location = new System.Drawing.Point(767, 64);
             this.btnXemtinhtrang.Name = "btnXemtinhtrang";
-            this.btnXemtinhtrang.Size = new System.Drawing.Size(231, 35);
+            this.btnXemtinhtrang.Size = new System.Drawing.Size(231, 40);
             this.btnXemtinhtrang.TabIndex = 2;
             this.btnXemtinhtrang.Text = "Xem các tình trạng";
             this.btnXemtinhtrang.UseVisualStyleBackColor = false;

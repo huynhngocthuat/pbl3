@@ -114,7 +114,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         }
         private void btn_Account_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FAccountManagement());
+            OpenChildForm(new FAccountManagement(ac));
         }
         private void btnEditProfile_Click(object sender, EventArgs e)
         {

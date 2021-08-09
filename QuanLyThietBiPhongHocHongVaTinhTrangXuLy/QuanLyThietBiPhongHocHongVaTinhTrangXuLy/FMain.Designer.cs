@@ -38,10 +38,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnDangNhap = new System.Windows.Forms.Button();
             this.lb_GiangDuong = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.dateStart = new System.Windows.Forms.DateTimePicker();
             this.dateEnd = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_showReport)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -52,7 +52,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.ckb_ChuaXuLy.BackColor = System.Drawing.Color.Transparent;
             this.ckb_ChuaXuLy.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ckb_ChuaXuLy.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.ckb_ChuaXuLy.Location = new System.Drawing.Point(415, 44);
+            this.ckb_ChuaXuLy.Location = new System.Drawing.Point(819, 43);
             this.ckb_ChuaXuLy.Name = "ckb_ChuaXuLy";
             this.ckb_ChuaXuLy.Size = new System.Drawing.Size(134, 26);
             this.ckb_ChuaXuLy.TabIndex = 1;
@@ -65,7 +65,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.ckb_DaXuLy.BackColor = System.Drawing.Color.Transparent;
             this.ckb_DaXuLy.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ckb_DaXuLy.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.ckb_DaXuLy.Location = new System.Drawing.Point(415, 79);
+            this.ckb_DaXuLy.Location = new System.Drawing.Point(819, 78);
             this.ckb_DaXuLy.Name = "ckb_DaXuLy";
             this.ckb_DaXuLy.Size = new System.Drawing.Size(116, 26);
             this.ckb_DaXuLy.TabIndex = 2;
@@ -161,9 +161,31 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách lượt báo thiết bị hỏng";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
+            this.label2.Location = new System.Drawing.Point(428, 74);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(43, 22);
+            this.label2.TabIndex = 54;
+            this.label2.Text = "Đến:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
+            this.label1.Location = new System.Drawing.Point(428, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(32, 22);
+            this.label1.TabIndex = 53;
+            this.label1.Text = "Từ:";
+            // 
             // dateStart
             // 
-            this.dateStart.Location = new System.Drawing.Point(686, 40);
+            this.dateStart.Location = new System.Drawing.Point(502, 35);
             this.dateStart.Name = "dateStart";
             this.dateStart.Size = new System.Drawing.Size(271, 29);
             this.dateStart.TabIndex = 52;
@@ -171,33 +193,11 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // dateEnd
             // 
-            this.dateEnd.Location = new System.Drawing.Point(686, 79);
+            this.dateEnd.Location = new System.Drawing.Point(502, 74);
             this.dateEnd.Name = "dateEnd";
             this.dateEnd.Size = new System.Drawing.Size(271, 29);
             this.dateEnd.TabIndex = 51;
             this.dateEnd.Value = new System.DateTime(2021, 8, 8, 21, 13, 0, 0);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.label1.Location = new System.Drawing.Point(612, 45);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 22);
-            this.label1.TabIndex = 53;
-            this.label1.Text = "Từ:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.label2.Location = new System.Drawing.Point(612, 79);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 22);
-            this.label2.TabIndex = 54;
-            this.label2.Text = "Đến:";
             // 
             // FMain
             // 

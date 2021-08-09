@@ -165,7 +165,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btn_XacNhan.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btn_XacNhan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_XacNhan.Font = new System.Drawing.Font("#9Slide03 AllRoundGothic", 12F);
-            this.btn_XacNhan.Location = new System.Drawing.Point(275, 451);
+            this.btn_XacNhan.Location = new System.Drawing.Point(155, 431);
             this.btn_XacNhan.Name = "btn_XacNhan";
             this.btn_XacNhan.Size = new System.Drawing.Size(166, 39);
             this.btn_XacNhan.TabIndex = 6;
@@ -178,7 +178,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btn_HuyBaoCao.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btn_HuyBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_HuyBaoCao.Font = new System.Drawing.Font("#9Slide03 AllRoundGothic", 12F);
-            this.btn_HuyBaoCao.Location = new System.Drawing.Point(275, 396);
+            this.btn_HuyBaoCao.Location = new System.Drawing.Point(426, 431);
             this.btn_HuyBaoCao.Name = "btn_HuyBaoCao";
             this.btn_HuyBaoCao.Size = new System.Drawing.Size(166, 39);
             this.btn_HuyBaoCao.TabIndex = 25;

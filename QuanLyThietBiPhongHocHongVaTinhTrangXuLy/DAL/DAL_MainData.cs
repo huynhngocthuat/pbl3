@@ -83,10 +83,9 @@ namespace DAL
         }
         public ACCOUNT DAL_CheckAccount(string user, string password)
         {
-            //var result = from c in db.ACCOUNTs where c.username == user && c.password == password select c;
-
             //Phan biet chu hoa và thường (COLLATE SQL_Latin1_General_CP1_CS_AS)
-            var result = new ACCOUNT();
+
+            /*var result = new ACCOUNT();
             var query = "Select * from ACCOUNT where username COLLATE SQL_Latin1_General_CP1_CS_AS like @user AND password COLLATE SQL_Latin1_General_CP1_CS_AS like @password ";
             var query1 = "Select * from ACCOUNT where username COLLATE SQL_Latin1_General_CP1_CS_AS like @user";
             if (password == "")
@@ -96,7 +95,17 @@ namespace DAL
             else
             {  
                 return result = db.ACCOUNTs.SqlQuery(query, new SqlParameter("@user", user), new SqlParameter("@password", password)).SingleOrDefault(); 
-            }            
+            }        */
+
+            var result = new ACCOUNT();
+            if (password == "")
+            {
+                return result = db.ACCOUNTs.Where(c => c.username == user).FirstOrDefault();
+            }
+            else
+            {
+                return result = db.ACCOUNTs.Where(c => c.username == user && c.password == password).FirstOrDefault();
+            }
         }
         public void DAL_UPDATEACC(ACCOUNT a2)
         {

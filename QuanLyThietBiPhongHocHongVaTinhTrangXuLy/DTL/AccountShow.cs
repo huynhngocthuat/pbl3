@@ -21,6 +21,15 @@ namespace DTL
                 accountId = value;
             }
         }
+        [System.ComponentModel.DisplayName("Họ và tên")]
+        public string fullName { get; set; }
+
+        [System.ComponentModel.DisplayName("Khoa")]
+        public string faculty { get; set; }
+
+        [System.ComponentModel.DisplayName("Lớp")]
+        public string @class { get; set; }
+
         [System.ComponentModel.DisplayName("Tên đăng nhập")]
         public string username { get; set; }
         //private string password { get; set; }
@@ -38,12 +47,6 @@ namespace DTL
                 }    
             } 
         }
-        [System.ComponentModel.DisplayName("Họ và tên")]
-        public string fullName { get; set; }
-        [System.ComponentModel.DisplayName("Khoa")]
-        public string faculty { get; set; }
-        [System.ComponentModel.DisplayName("Lớp")]
-        public string @class { get; set; }
 
         public int getaccountID()
         {

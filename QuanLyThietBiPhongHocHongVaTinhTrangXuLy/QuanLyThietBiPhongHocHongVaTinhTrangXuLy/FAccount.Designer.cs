@@ -46,12 +46,14 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.check_change_pass = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.check_change_pass);
             this.groupBox1.Controls.Add(this.btnCancel);
             this.groupBox1.Controls.Add(this.btnDangNhap);
             this.groupBox1.Controls.Add(this.pictureBox1);
@@ -70,7 +72,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.groupBox1.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(336, 703);
+            this.groupBox1.Size = new System.Drawing.Size(336, 740);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin chi tiết tài khoản";
@@ -81,7 +83,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("#9Slide03 AllRoundGothic", 12F);
             this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(58, 629);
+            this.btnCancel.Location = new System.Drawing.Point(58, 681);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(80, 38);
             this.btnCancel.TabIndex = 7;
@@ -95,7 +97,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDangNhap.Font = new System.Drawing.Font("#9Slide03 AllRoundGothic", 12F);
             this.btnDangNhap.ForeColor = System.Drawing.Color.White;
-            this.btnDangNhap.Location = new System.Drawing.Point(159, 629);
+            this.btnDangNhap.Location = new System.Drawing.Point(159, 681);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(130, 38);
             this.btnDangNhap.TabIndex = 8;
@@ -116,39 +118,36 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // txtmkm2
             // 
             this.txtmkm2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.txtmkm2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtmkm2.Font = new System.Drawing.Font("#9Slide03 Maven Pro Medium", 12F);
-            this.txtmkm2.Location = new System.Drawing.Point(25, 574);
+            this.txtmkm2.Location = new System.Drawing.Point(25, 626);
             this.txtmkm2.MaxLength = 20;
             this.txtmkm2.Name = "txtmkm2";
             this.txtmkm2.PasswordChar = '•';
-            this.txtmkm2.Size = new System.Drawing.Size(289, 26);
+            this.txtmkm2.Size = new System.Drawing.Size(289, 33);
             this.txtmkm2.TabIndex = 6;
             this.txtmkm2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtmkcu_KeyPress);
             // 
             // txtmkmoi1
             // 
             this.txtmkmoi1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.txtmkmoi1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtmkmoi1.Font = new System.Drawing.Font("#9Slide03 Maven Pro Medium", 12F);
-            this.txtmkmoi1.Location = new System.Drawing.Point(25, 508);
+            this.txtmkmoi1.Location = new System.Drawing.Point(25, 560);
             this.txtmkmoi1.MaxLength = 20;
             this.txtmkmoi1.Name = "txtmkmoi1";
             this.txtmkmoi1.PasswordChar = '•';
-            this.txtmkmoi1.Size = new System.Drawing.Size(289, 26);
+            this.txtmkmoi1.Size = new System.Drawing.Size(289, 33);
             this.txtmkmoi1.TabIndex = 5;
             this.txtmkmoi1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtmkcu_KeyPress);
             // 
             // txtmkcu
             // 
             this.txtmkcu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.txtmkcu.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtmkcu.Font = new System.Drawing.Font("#9Slide03 Maven Pro Medium", 12F);
-            this.txtmkcu.Location = new System.Drawing.Point(25, 440);
+            this.txtmkcu.Location = new System.Drawing.Point(25, 492);
             this.txtmkcu.MaxLength = 20;
             this.txtmkcu.Name = "txtmkcu";
             this.txtmkcu.PasswordChar = '•';
-            this.txtmkcu.Size = new System.Drawing.Size(289, 26);
+            this.txtmkcu.Size = new System.Drawing.Size(289, 33);
             this.txtmkcu.TabIndex = 4;
             this.txtmkcu.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtmkcu_KeyPress);
             // 
@@ -157,7 +156,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("#9Slide03 Kaleko 105 Round Bold", 10.2F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label8.Location = new System.Drawing.Point(21, 551);
+            this.label8.Location = new System.Drawing.Point(21, 603);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(218, 20);
             this.label8.TabIndex = 3;
@@ -166,11 +165,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // txtlop
             // 
             this.txtlop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.txtlop.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtlop.Font = new System.Drawing.Font("#9Slide03 Maven Pro Medium", 12F);
             this.txtlop.Location = new System.Drawing.Point(25, 370);
             this.txtlop.Name = "txtlop";
-            this.txtlop.Size = new System.Drawing.Size(289, 26);
+            this.txtlop.Size = new System.Drawing.Size(289, 33);
             this.txtlop.TabIndex = 3;
             // 
             // label6
@@ -178,7 +176,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("#9Slide03 Kaleko 105 Round Bold", 10.2F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(21, 485);
+            this.label6.Location = new System.Drawing.Point(21, 537);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(128, 20);
             this.label6.TabIndex = 3;
@@ -187,11 +185,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // txtkhoa
             // 
             this.txtkhoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.txtkhoa.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtkhoa.Font = new System.Drawing.Font("#9Slide03 Maven Pro Medium", 12F);
             this.txtkhoa.Location = new System.Drawing.Point(25, 304);
             this.txtkhoa.Name = "txtkhoa";
-            this.txtkhoa.Size = new System.Drawing.Size(289, 26);
+            this.txtkhoa.Size = new System.Drawing.Size(289, 33);
             this.txtkhoa.TabIndex = 2;
             // 
             // label5
@@ -199,7 +196,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("#9Slide03 Kaleko 105 Round Bold", 10.2F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(21, 417);
+            this.label5.Location = new System.Drawing.Point(21, 469);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(117, 20);
             this.label5.TabIndex = 2;
@@ -208,11 +205,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // txbFullname
             // 
             this.txbFullname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.txbFullname.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbFullname.Font = new System.Drawing.Font("#9Slide03 Maven Pro Medium", 12F);
             this.txbFullname.Location = new System.Drawing.Point(25, 238);
             this.txbFullname.Name = "txbFullname";
-            this.txbFullname.Size = new System.Drawing.Size(289, 26);
+            this.txbFullname.Size = new System.Drawing.Size(289, 33);
             this.txbFullname.TabIndex = 1;
             // 
             // label3
@@ -248,12 +244,23 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.label1.TabIndex = 0;
             this.label1.Text = "Họ và tên";
             // 
+            // check_change_pass
+            // 
+            this.check_change_pass.AutoSize = true;
+            this.check_change_pass.Location = new System.Drawing.Point(58, 429);
+            this.check_change_pass.Name = "check_change_pass";
+            this.check_change_pass.Size = new System.Drawing.Size(228, 26);
+            this.check_change_pass.TabIndex = 12;
+            this.check_change_pass.Text = "Bạn có muốn đổi mật khẩu";
+            this.check_change_pass.UseVisualStyleBackColor = true;
+            this.check_change_pass.CheckedChanged += new System.EventHandler(this.check_change_pass_CheckedChanged);
+            // 
             // FAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(366, 722);
+            this.ClientSize = new System.Drawing.Size(366, 764);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FAccount";
@@ -284,5 +291,6 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnDangNhap;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.CheckBox check_change_pass;
     }
 }

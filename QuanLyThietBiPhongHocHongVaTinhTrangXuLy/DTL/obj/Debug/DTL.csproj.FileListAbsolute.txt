@@ -15,3 +15,9 @@ C:\Users\Admin\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\bin\Deb
 C:\Users\Admin\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\obj\Debug\DTL.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\obj\Debug\DTL.dll
 C:\Users\Admin\Desktop\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\obj\Debug\DTL.pdb
+C:\Users\Asus\Desktop\PBL-9\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\bin\Debug\DTL.dll
+C:\Users\Asus\Desktop\PBL-9\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\bin\Debug\DTL.pdb
+C:\Users\Asus\Desktop\PBL-9\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\obj\Debug\DTL.csprojAssemblyReference.cache
+C:\Users\Asus\Desktop\PBL-9\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\obj\Debug\DTL.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\PBL-9\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\obj\Debug\DTL.dll
+C:\Users\Asus\Desktop\PBL-9\pbl3\QuanLyThietBiPhongHocHongVaTinhTrangXuLy\DTL\obj\Debug\DTL.pdb

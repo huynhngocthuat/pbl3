@@ -15,12 +15,14 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
 {
     public partial class FAccountManagement : Form
     {
-        public FAccountManagement()
+        private ACCOUNT MainAc = new ACCOUNT();
+        public FAccountManagement(ACCOUNT ac)
         {
             InitializeComponent();
             SetDgv();
             SetCbbRole();
             SetcbbSort();
+            MainAc = ac;
             txtmk1.Enabled = false;
             txtmk2.Enabled = false;
             txtusername.Enabled = false;
@@ -70,12 +72,12 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
             int vt = dataGridView1.CurrentCell.RowIndex;
-            txtusername.Text = dataGridView1.Rows[vt].Cells[0].Value.ToString();
-            cbbrole.Text = dataGridView1.Rows[vt].Cells[1].Value?.ToString();
-            txtfullname.Text = dataGridView1.Rows[vt].Cells[2].Value.ToString();     
-            txtKhoa.Text = dataGridView1.Rows[vt].Cells[3].Value.ToString();
-            txtLop.Text = dataGridView1.Rows[vt].Cells[4].Value.ToString();
-           
+            txtfullname.Text = dataGridView1.Rows[vt].Cells[0].Value.ToString();
+            txtKhoa.Text = dataGridView1.Rows[vt].Cells[1].Value.ToString();
+            txtLop.Text = dataGridView1.Rows[vt].Cells[2].Value.ToString();
+            txtusername.Text = dataGridView1.Rows[vt].Cells[3].Value.ToString();
+            cbbrole.Text = dataGridView1.Rows[vt].Cells[4].Value?.ToString();
+
         }
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
@@ -115,11 +117,24 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                             {
                                 if (String.Compare(txtmk1.Text, txtmk2.Text, false) == 0)
                                 {
+
                                     newac.password = BUS_MainData.Instance.BUS_Encrypt(txtmk2.Text);
-                                    BUS_MainData.Instance.BUS_UPDATEACC(newac);
-                                    MessageBox.Show("Cập nhật thành công!");
-                                    SetDgv();
-                                    checkBox1.Checked = false;
+                                    if (MainAc.username == txtusername.Text)
+                                    {
+                                        DialogResult dlr = MessageBox.Show("Bạn đang thay đổi thông tin chính mình, việc này buộc bạn phải đăng xuất, bạn có muốn tiếp tục?", "Cảnh báo", MessageBoxButtons.YesNo);
+                                        if (dlr == DialogResult.Yes)
+                                        {
+                                            BUS_MainData.Instance.BUS_UPDATEACC(newac);
+                                            Application.Restart();
+                                        }
+                                    }
+                                    else
+                                    {
+                                        BUS_MainData.Instance.BUS_UPDATEACC(newac);
+                                        MessageBox.Show("Cập nhật thành công!");
+                                        SetDgv();
+                                        checkBox1.Checked = false;
+                                    }
                                 }
                                 else { MessageBox.Show("Xác nhận sai mật khẩu!"); }
                             }
@@ -129,17 +144,29 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                         {
                             if (newac.accountId == a.accountId && newac.username == a.username
                                 && newac.fullName == a.fullName && newac.faculty == newac.faculty
-                                && newac.password == a.password && a.@class == newac.@class
+                                && a.@class == newac.@class
                                 && newac.role == a.role)
                             {
                                 MessageBox.Show("Bạn chưa sửa thông tin gì!");
                             }
                             else
                             {
-                                BUS_MainData.Instance.BUS_UPDATEACC(newac);
-                                MessageBox.Show("Cập nhật thành công!");
-                                SetDgv();
-                                checkBox1.Checked = false;
+                                if (MainAc.username == txtusername.Text)
+                                {
+                                    DialogResult dlr = MessageBox.Show("Bạn đang thay đổi thông tin chính mình, việc này buộc bạn phải đăng xuất, bạn có muốn tiếp tục?", "Cảnh báo", MessageBoxButtons.YesNo);
+                                    if (dlr == DialogResult.Yes)
+                                    {
+                                        BUS_MainData.Instance.BUS_UPDATEACC(newac);
+                                        Application.Restart();
+                                    }
+                                }
+                                else
+                                {
+                                    BUS_MainData.Instance.BUS_UPDATEACC(newac);
+                                    MessageBox.Show("Cập nhật thành công!");
+                                    SetDgv();
+                                    checkBox1.Checked = false;
+                                }
                             }
                         }
                     }
@@ -147,10 +174,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                     {
                         MessageBox.Show("Nhập thiếu thông tin");
                     }
-                    break;       
-                }     
-            }              
-         }
+                    break;
+                }
+            }
+        }
 
         private void txtmk1_KeyPress(object sender, KeyPressEventArgs e)
         {

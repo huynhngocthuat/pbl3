@@ -40,6 +40,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.bttHome = new System.Windows.Forms.Button();
             this.pnDesktop = new System.Windows.Forms.Panel();
             this.grbAdmin = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dateStart = new System.Windows.Forms.DateTimePicker();
+            this.dateEnd = new System.Windows.Forms.DateTimePicker();
             this.btnShowData = new System.Windows.Forms.Button();
             this.btnCreateResponse = new System.Windows.Forms.Button();
             this.btnSignOut = new System.Windows.Forms.Button();
@@ -49,10 +53,6 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.dgvReport = new System.Windows.Forms.DataGridView();
             this.lbZone = new System.Windows.Forms.Label();
             this.cbbZone = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dateStart = new System.Windows.Forms.DateTimePicker();
-            this.dateEnd = new System.Windows.Forms.DateTimePicker();
             this.pnbutton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnDesktop.SuspendLayout();
@@ -222,13 +222,51 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.grbAdmin.TabStop = false;
             this.grbAdmin.Text = "Thông tin báo hỏng trang thiết bị phòng học";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
+            this.label2.Location = new System.Drawing.Point(379, 102);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(43, 22);
+            this.label2.TabIndex = 58;
+            this.label2.Text = "Đến:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
+            this.label1.Location = new System.Drawing.Point(379, 68);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(32, 22);
+            this.label1.TabIndex = 57;
+            this.label1.Text = "Từ:";
+            // 
+            // dateStart
+            // 
+            this.dateStart.Location = new System.Drawing.Point(440, 63);
+            this.dateStart.Name = "dateStart";
+            this.dateStart.Size = new System.Drawing.Size(284, 31);
+            this.dateStart.TabIndex = 56;
+            this.dateStart.Value = new System.DateTime(2020, 8, 8, 21, 13, 0, 0);
+            // 
+            // dateEnd
+            // 
+            this.dateEnd.Location = new System.Drawing.Point(440, 102);
+            this.dateEnd.Name = "dateEnd";
+            this.dateEnd.Size = new System.Drawing.Size(284, 31);
+            this.dateEnd.TabIndex = 55;
+            this.dateEnd.Value = new System.DateTime(2021, 8, 8, 21, 13, 0, 0);
+            // 
             // btnShowData
             // 
             this.btnShowData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.btnShowData.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnShowData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnShowData.ForeColor = System.Drawing.Color.White;
-            this.btnShowData.Location = new System.Drawing.Point(887, 77);
+            this.btnShowData.Location = new System.Drawing.Point(927, 84);
             this.btnShowData.Name = "btnShowData";
             this.btnShowData.Size = new System.Drawing.Size(99, 40);
             this.btnShowData.TabIndex = 4;
@@ -242,7 +280,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnCreateResponse.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCreateResponse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCreateResponse.ForeColor = System.Drawing.Color.White;
-            this.btnCreateResponse.Location = new System.Drawing.Point(1017, 77);
+            this.btnCreateResponse.Location = new System.Drawing.Point(1054, 84);
             this.btnCreateResponse.Name = "btnCreateResponse";
             this.btnCreateResponse.Size = new System.Drawing.Size(151, 40);
             this.btnCreateResponse.TabIndex = 10;
@@ -269,7 +307,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.lbFullName.AutoSize = true;
             this.lbFullName.BackColor = System.Drawing.Color.Transparent;
             this.lbFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFullName.Location = new System.Drawing.Point(865, 19);
+            this.lbFullName.Location = new System.Drawing.Point(842, 27);
             this.lbFullName.Name = "lbFullName";
             this.lbFullName.Size = new System.Drawing.Size(90, 20);
             this.lbFullName.TabIndex = 11;
@@ -281,7 +319,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.ckbResolved.AutoSize = true;
             this.ckbResolved.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ckbResolved.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.ckbResolved.Location = new System.Drawing.Point(380, 93);
+            this.ckbResolved.Location = new System.Drawing.Point(756, 107);
             this.ckbResolved.Name = "ckbResolved";
             this.ckbResolved.Size = new System.Drawing.Size(132, 30);
             this.ckbResolved.TabIndex = 2;
@@ -293,7 +331,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.ckbNotResolvedYet.AutoSize = true;
             this.ckbNotResolvedYet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ckbNotResolvedYet.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.ckbNotResolvedYet.Location = new System.Drawing.Point(380, 61);
+            this.ckbNotResolvedYet.Location = new System.Drawing.Point(756, 68);
             this.ckbNotResolvedYet.Name = "ckbNotResolvedYet";
             this.ckbNotResolvedYet.Size = new System.Drawing.Size(150, 30);
             this.ckbNotResolvedYet.TabIndex = 1;
@@ -306,7 +344,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.dgvReport.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvReport.BackgroundColor = System.Drawing.Color.White;
             this.dgvReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvReport.Location = new System.Drawing.Point(20, 144);
+            this.dgvReport.Location = new System.Drawing.Point(20, 159);
             this.dgvReport.Name = "dgvReport";
             this.dgvReport.ReadOnly = true;
             this.dgvReport.RowHeadersVisible = false;
@@ -322,7 +360,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.lbZone.BackColor = System.Drawing.Color.Transparent;
             this.lbZone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbZone.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 10F);
-            this.lbZone.Location = new System.Drawing.Point(25, 82);
+            this.lbZone.Location = new System.Drawing.Point(18, 83);
             this.lbZone.Name = "lbZone";
             this.lbZone.Size = new System.Drawing.Size(130, 27);
             this.lbZone.TabIndex = 3;
@@ -333,48 +371,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.cbbZone.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbbZone.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.2F);
             this.cbbZone.FormattingEnabled = true;
-            this.cbbZone.Location = new System.Drawing.Point(174, 83);
+            this.cbbZone.Location = new System.Drawing.Point(167, 84);
             this.cbbZone.Name = "cbbZone";
             this.cbbZone.Size = new System.Drawing.Size(187, 30);
             this.cbbZone.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.label2.Location = new System.Drawing.Point(536, 93);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 22);
-            this.label2.TabIndex = 58;
-            this.label2.Text = "Đến:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.label1.Location = new System.Drawing.Point(536, 59);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 22);
-            this.label1.TabIndex = 57;
-            this.label1.Text = "Từ:";
-            // 
-            // dateStart
-            // 
-            this.dateStart.Location = new System.Drawing.Point(597, 54);
-            this.dateStart.Name = "dateStart";
-            this.dateStart.Size = new System.Drawing.Size(284, 31);
-            this.dateStart.TabIndex = 56;
-            this.dateStart.Value = new System.DateTime(2020, 8, 8, 21, 13, 0, 0);
-            // 
-            // dateEnd
-            // 
-            this.dateEnd.Location = new System.Drawing.Point(597, 93);
-            this.dateEnd.Name = "dateEnd";
-            this.dateEnd.Size = new System.Drawing.Size(284, 31);
-            this.dateEnd.TabIndex = 55;
-            this.dateEnd.Value = new System.DateTime(2021, 8, 8, 21, 13, 0, 0);
             // 
             // FAdmin
             // 

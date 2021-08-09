@@ -50,7 +50,6 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.dateStart = new System.Windows.Forms.DateTimePicker();
             this.dateEnd = new System.Windows.Forms.DateTimePicker();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.cbb_Time = new System.Windows.Forms.ComboBox();
@@ -68,14 +67,14 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.dataGridView_AllData.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView_AllData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_AllData.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.dataGridView_AllData.Location = new System.Drawing.Point(8, 466);
+            this.dataGridView_AllData.Location = new System.Drawing.Point(8, 522);
             this.dataGridView_AllData.Name = "dataGridView_AllData";
             this.dataGridView_AllData.ReadOnly = true;
             this.dataGridView_AllData.RowHeadersVisible = false;
             this.dataGridView_AllData.RowHeadersWidth = 51;
             this.dataGridView_AllData.RowTemplate.Height = 24;
             this.dataGridView_AllData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView_AllData.Size = new System.Drawing.Size(1438, 265);
+            this.dataGridView_AllData.Size = new System.Drawing.Size(1438, 300);
             this.dataGridView_AllData.TabIndex = 0;
             // 
             // btnTaobaocao
@@ -85,7 +84,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnTaobaocao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTaobaocao.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
             this.btnTaobaocao.ForeColor = System.Drawing.Color.White;
-            this.btnTaobaocao.Location = new System.Drawing.Point(910, 11);
+            this.btnTaobaocao.Location = new System.Drawing.Point(783, 9);
             this.btnTaobaocao.Name = "btnTaobaocao";
             this.btnTaobaocao.Size = new System.Drawing.Size(222, 35);
             this.btnTaobaocao.TabIndex = 8;
@@ -100,7 +99,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnDulieuAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDulieuAll.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
             this.btnDulieuAll.ForeColor = System.Drawing.Color.White;
-            this.btnDulieuAll.Location = new System.Drawing.Point(1215, 410);
+            this.btnDulieuAll.Location = new System.Drawing.Point(1282, 452);
             this.btnDulieuAll.Name = "btnDulieuAll";
             this.btnDulieuAll.Size = new System.Drawing.Size(89, 35);
             this.btnDulieuAll.TabIndex = 4;
@@ -141,26 +140,28 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // ckb_ChuaXuLy
             // 
             this.ckb_ChuaXuLy.AutoSize = true;
+            this.ckb_ChuaXuLy.BackColor = System.Drawing.Color.Transparent;
             this.ckb_ChuaXuLy.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ckb_ChuaXuLy.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.ckb_ChuaXuLy.Location = new System.Drawing.Point(476, 434);
+            this.ckb_ChuaXuLy.Location = new System.Drawing.Point(1125, 471);
             this.ckb_ChuaXuLy.Name = "ckb_ChuaXuLy";
             this.ckb_ChuaXuLy.Size = new System.Drawing.Size(134, 26);
             this.ckb_ChuaXuLy.TabIndex = 1;
             this.ckb_ChuaXuLy.Text = "Tin chưa xử lý";
-            this.ckb_ChuaXuLy.UseVisualStyleBackColor = true;
+            this.ckb_ChuaXuLy.UseVisualStyleBackColor = false;
             // 
             // ckb_DaXuLy
             // 
             this.ckb_DaXuLy.AutoSize = true;
+            this.ckb_DaXuLy.BackColor = System.Drawing.Color.Transparent;
             this.ckb_DaXuLy.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ckb_DaXuLy.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.ckb_DaXuLy.Location = new System.Drawing.Point(476, 402);
+            this.ckb_DaXuLy.Location = new System.Drawing.Point(1125, 439);
             this.ckb_DaXuLy.Name = "ckb_DaXuLy";
             this.ckb_DaXuLy.Size = new System.Drawing.Size(116, 26);
             this.ckb_DaXuLy.TabIndex = 2;
             this.ckb_DaXuLy.Text = "Tin đã xử lý";
-            this.ckb_DaXuLy.UseVisualStyleBackColor = true;
+            this.ckb_DaXuLy.UseVisualStyleBackColor = false;
             // 
             // cbb_Zone
             // 
@@ -168,16 +169,17 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.cbb_Zone.FormattingEnabled = true;
             this.cbb_Zone.IntegralHeight = false;
             this.cbb_Zone.ItemHeight = 16;
-            this.cbb_Zone.Location = new System.Drawing.Point(233, 421);
+            this.cbb_Zone.Location = new System.Drawing.Point(156, 455);
             this.cbb_Zone.Name = "cbb_Zone";
-            this.cbb_Zone.Size = new System.Drawing.Size(227, 24);
+            this.cbb_Zone.Size = new System.Drawing.Size(208, 24);
             this.cbb_Zone.TabIndex = 0;
             // 
             // lb_GiangDuong
             // 
             this.lb_GiangDuong.AutoSize = true;
+            this.lb_GiangDuong.BackColor = System.Drawing.Color.Transparent;
             this.lb_GiangDuong.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.lb_GiangDuong.Location = new System.Drawing.Point(119, 423);
+            this.lb_GiangDuong.Location = new System.Drawing.Point(42, 457);
             this.lb_GiangDuong.Name = "lb_GiangDuong";
             this.lb_GiangDuong.Size = new System.Drawing.Size(108, 22);
             this.lb_GiangDuong.TabIndex = 19;
@@ -190,14 +192,14 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.dataGridView_UserData.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView_UserData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_UserData.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.dataGridView_UserData.Location = new System.Drawing.Point(8, 131);
+            this.dataGridView_UserData.Location = new System.Drawing.Point(8, 103);
             this.dataGridView_UserData.Name = "dataGridView_UserData";
             this.dataGridView_UserData.ReadOnly = true;
             this.dataGridView_UserData.RowHeadersVisible = false;
             this.dataGridView_UserData.RowHeadersWidth = 51;
             this.dataGridView_UserData.RowTemplate.Height = 24;
             this.dataGridView_UserData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView_UserData.Size = new System.Drawing.Size(1438, 265);
+            this.dataGridView_UserData.Size = new System.Drawing.Size(1438, 293);
             this.dataGridView_UserData.TabIndex = 0;
             // 
             // btn_EditReport
@@ -207,7 +209,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btn_EditReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_EditReport.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
             this.btn_EditReport.ForeColor = System.Drawing.Color.White;
-            this.btn_EditReport.Location = new System.Drawing.Point(648, 12);
+            this.btn_EditReport.Location = new System.Drawing.Point(538, 9);
             this.btn_EditReport.Name = "btn_EditReport";
             this.btn_EditReport.Size = new System.Drawing.Size(222, 35);
             this.btn_EditReport.TabIndex = 7;
@@ -221,7 +223,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.label2.Location = new System.Drawing.Point(590, 107);
+            this.label2.Location = new System.Drawing.Point(590, 80);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(233, 24);
             this.label2.TabIndex = 23;
@@ -233,7 +235,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.label3.Location = new System.Drawing.Point(635, 421);
+            this.label3.Location = new System.Drawing.Point(635, 498);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(148, 24);
             this.label3.TabIndex = 24;
@@ -261,7 +263,6 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.pndesktop.Controls.Add(this.dateStart);
             this.pndesktop.Controls.Add(this.dateEnd);
             this.pndesktop.Controls.Add(this.panel5);
-            this.pndesktop.Controls.Add(this.panel4);
             this.pndesktop.Controls.Add(this.ckb_ChuaXuLy);
             this.pndesktop.Controls.Add(this.ckb_DaXuLy);
             this.pndesktop.Controls.Add(this.panel3);
@@ -273,7 +274,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.pndesktop.Controls.Add(this.label2);
             this.pndesktop.Location = new System.Drawing.Point(12, 27);
             this.pndesktop.Name = "pndesktop";
-            this.pndesktop.Size = new System.Drawing.Size(1463, 744);
+            this.pndesktop.Size = new System.Drawing.Size(1463, 861);
             this.pndesktop.TabIndex = 27;
             // 
             // label1
@@ -281,7 +282,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.label1.Location = new System.Drawing.Point(800, 441);
+            this.label1.Location = new System.Drawing.Point(764, 458);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 22);
             this.label1.TabIndex = 58;
@@ -292,7 +293,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
-            this.label5.Location = new System.Drawing.Point(800, 407);
+            this.label5.Location = new System.Drawing.Point(417, 458);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(32, 22);
             this.label5.TabIndex = 57;
@@ -300,17 +301,19 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             // dateStart
             // 
-            this.dateStart.Location = new System.Drawing.Point(874, 402);
+            this.dateStart.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
+            this.dateStart.Location = new System.Drawing.Point(455, 452);
             this.dateStart.Name = "dateStart";
-            this.dateStart.Size = new System.Drawing.Size(280, 22);
+            this.dateStart.Size = new System.Drawing.Size(273, 29);
             this.dateStart.TabIndex = 56;
             this.dateStart.Value = new System.DateTime(2020, 8, 8, 21, 13, 0, 0);
             // 
             // dateEnd
             // 
-            this.dateEnd.Location = new System.Drawing.Point(874, 441);
+            this.dateEnd.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
+            this.dateEnd.Location = new System.Drawing.Point(813, 453);
             this.dateEnd.Name = "dateEnd";
-            this.dateEnd.Size = new System.Drawing.Size(280, 22);
+            this.dateEnd.Size = new System.Drawing.Size(269, 29);
             this.dateEnd.TabIndex = 55;
             this.dateEnd.Value = new System.DateTime(2021, 8, 8, 21, 13, 0, 0);
             // 
@@ -322,20 +325,13 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.panel5.Size = new System.Drawing.Size(1463, 3);
             this.panel5.TabIndex = 28;
             // 
-            // panel4
-            // 
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Location = new System.Drawing.Point(1336, 394);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1, 53);
-            this.panel4.TabIndex = 27;
-            // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(254)))));
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Location = new System.Drawing.Point(115, 395);
+            this.panel3.Location = new System.Drawing.Point(-1, 411);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1, 53);
+            this.panel3.Size = new System.Drawing.Size(1463, 10);
             this.panel3.TabIndex = 26;
             // 
             // panel2
@@ -358,9 +354,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.cbb_Time.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbb_Time.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.2F);
             this.cbb_Time.FormattingEnabled = true;
-            this.cbb_Time.Location = new System.Drawing.Point(157, 12);
+            this.cbb_Time.Location = new System.Drawing.Point(70, 12);
             this.cbb_Time.Name = "cbb_Time";
-            this.cbb_Time.Size = new System.Drawing.Size(191, 30);
+            this.cbb_Time.Size = new System.Drawing.Size(251, 30);
             this.cbb_Time.TabIndex = 60;
             // 
             // btnDulieuUser
@@ -370,7 +366,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnDulieuUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDulieuUser.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
             this.btnDulieuUser.ForeColor = System.Drawing.Color.White;
-            this.btnDulieuUser.Location = new System.Drawing.Point(401, 11);
+            this.btnDulieuUser.Location = new System.Drawing.Point(354, 9);
             this.btnDulieuUser.Name = "btnDulieuUser";
             this.btnDulieuUser.Size = new System.Drawing.Size(89, 35);
             this.btnDulieuUser.TabIndex = 59;
@@ -383,7 +379,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1487, 783);
+            this.ClientSize = new System.Drawing.Size(1487, 900);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pndesktop);
@@ -418,7 +414,6 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel pndesktop;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label1;
