@@ -42,7 +42,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
 
         public void setCbbZone()
         {
-            foreach (var item in BUS_MainData.Instance.BUS_ZONE())
+            foreach (var item in BUS_MainData.Instance.BUS_ZONE().OrderBy(o => o.zoneName).ToList())
             {
                 cbbKhu.Items.Add(item.zoneName.ToString());
             }

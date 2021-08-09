@@ -175,6 +175,8 @@ namespace BUS
             }
         }
         #endregion
+
+        #region FMain Huỳnh Ngọc Thuật
         public string getZoneIdByName(string zoneName)
         {
             foreach (ZONE item in BUS_ZONE())
@@ -186,8 +188,7 @@ namespace BUS
             }
             return "";
         }
-        
-        #region FMain Huỳnh Ngọc Thuật
+
         // lay danh sach report theo Khu, Da Xu Ly?, Ngay
         //BUS_MainData.Instance.BUS_ReportShow("",1,5)
         public List<ReportShow> BUS_ReportShow(string zoneId, int check, DateTime timeStart, DateTime timeEnd)
@@ -361,7 +362,7 @@ namespace BUS
             {
                 if (item.zoneName == zoneName)
                 {
-                    return item.ROOMs.ToList<ROOM>();
+                    return item.ROOMs.OrderBy(o => o.roomId).ToList<ROOM>();
                 }
             }
             return null;
@@ -374,7 +375,7 @@ namespace BUS
             {
                 if (item.roomId == roomId)
                 {
-                    return item.EQUIPMENTs.ToList<EQUIPMENT>();
+                    return item.EQUIPMENTs.OrderBy(o => o.equipmentName).ToList<EQUIPMENT>();
                 }
             }
             return null;
@@ -387,7 +388,7 @@ namespace BUS
             {
                 if (item.equipmentName == equipmentName)
                 {
-                    return item.STATUS.ToList<STATUS>();
+                    return item.STATUS.OrderBy(o => o.equipmentStatus).ToList<STATUS>();
                 }
             }
             return null;
