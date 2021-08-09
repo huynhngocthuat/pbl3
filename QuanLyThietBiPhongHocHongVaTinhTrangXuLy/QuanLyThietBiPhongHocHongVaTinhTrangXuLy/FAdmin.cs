@@ -20,7 +20,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         {
             InitializeComponent();
             setCbbZone();
-            setCbbTime();
+            dateEnd.Value = DateTime.Now;
         }
         public void SetACFormADMIN(ACCOUNT a)
         {
@@ -38,18 +38,6 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             }
         }
 
-        public void setCbbTime()
-        {
-            cbbReportTime.Text = "Chọn ngày báo cáo";
-            cbbReportTime.Items.AddRange(new string[]
-            {
-                "Báo cách đây 15 ngày",
-                "Báo cách đây 30 ngày",
-                "Báo cách đây 60 ngày",
-                "Báo cách đây 1 năm"
-            });
-        }
-
         public void setLbFullName()
         {
             lbFullName.Text = ac.fullName;
@@ -62,7 +50,6 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                 DataGridViewRow dataGridViewRow = dgvReport.CurrentRow;
 
                 int check = 1;
-                int indexDate = 0;
                 string zoneId = BUS_AdminData.Instance.BUS_GetZoneIdByZoneName(cbbZone.Text);
                 if (ckbNotResolvedYet.Checked == true && ckbResolved.Checked == false)
                 {
@@ -72,8 +59,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                 {
                     check = 2;
                 }
-                indexDate = cbbReportTime.SelectedIndex;
-                List<int> reportIdList = BUS_AdminData.Instance.BUS_GetReportIdList(zoneId, check, indexDate);
+                List<int> reportIdList = BUS_AdminData.Instance.BUS_GetReportIdList(zoneId, check, dateStart.Value, dateEnd.Value);
                 int reportId = reportIdList[Convert.ToInt32(dataGridViewRow.Cells["STT"].Value) - 1];
 
                 string roomId = dataGridViewRow.Cells["roomId"].Value.ToString();
@@ -88,7 +74,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                 if (!isDenied)
                 {
                     FResponse form = new FResponse(ac, reportId, roomId, equipmentName, equipmentStatus,
-                        note, reportDate, zoneId, check, indexDate);
+                        note, reportDate, zoneId, check, dateStart.Value, dateEnd.Value);
                     form.del = new FResponse.MyDel(show);
                     OpenChildForm(form);
                 }
@@ -137,15 +123,14 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             fAccount.updateData += new FAccount.UpdateData(setLbFullName);
             fAccount.ShowDialog();
         }
-        public void show(string zoneId, int check, int indexDate)
+        public void show(string zoneId, int check, DateTime dateStart, DateTime dateEnd)
         {
-            dgvReport.DataSource = BUS_AdminData.Instance.BUS_ShowReportList(zoneId, check, indexDate);
+            dgvReport.DataSource = BUS_AdminData.Instance.BUS_ShowReportList(zoneId, check, dateStart, dateEnd);
         }
         private void btnShowData_Click(object sender, EventArgs e)
         {
             dgvReport.DataSource = BUS_AdminData.Instance.BUS_ShowAllReports();
             int check = 1;
-            int indexDate = 0;
             string zoneId = BUS_AdminData.Instance.BUS_GetZoneIdByZoneName(cbbZone.Text);
             if (ckbNotResolvedYet.Checked == true && ckbResolved.Checked == false)
             {
@@ -155,8 +140,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             {
                 check = 2;
             }
-            indexDate = cbbReportTime.SelectedIndex;
-            show(zoneId, check, indexDate);
+            show(zoneId, check, dateStart.Value, dateEnd.Value);
         }
 
         private void OpenChildForm(Form ChildForm)

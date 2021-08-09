@@ -1,5 +1,6 @@
 ﻿using BUS;
 using DAL;
+using DTL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,9 +25,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
 
         private string zoneId;
         private int check;
-        private int indexDate;
+        private DateTime dateStart;
+        private DateTime dateEnd;
 
-        public delegate void MyDel(string zoneId, int check, int indexDate);
+        public delegate void MyDel(string zoneId, int check, DateTime dateStart, DateTime dateEnd);
         public MyDel del;
         
         public FResponse(ACCOUNT ac)
@@ -36,7 +38,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             setCbbResponseType();
         }
         public FResponse(ACCOUNT ac, int reportId, string roomId, string equipmentName, string equipmentStatus,
-                        string note, string reportDate, string zoneId, int check, int indexDate)
+                        string note, string reportDate, string zoneId, int check, DateTime dateStart, DateTime dateEnd)
         {
             a = ac;
             InitializeComponent();
@@ -49,12 +51,16 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.reportDate = reportDate;
             this.zoneId = zoneId;
             this.check = check;
-            this.indexDate = indexDate;
+            this.dateStart = dateStart;
+            this.dateEnd = dateEnd;
             LoadResponseForm();
         }
         public void LoadResponseForm()
         {
-            txbReportId.Text = reportId.ToString();
+            ReportShow rp = BUS_AdminData.Instance.BUS_GetReportByReportId(reportId);
+            AccountShow ac = BUS_AdminData.Instance.BUS_GetAccountByAccountId(rp.getAccountId());
+            txb_classSV.Text = ac.@class;
+            txb_nameSV.Text = ac.fullName;
             txbRoomId.Text = roomId.ToString();
             txbEquipmentName.Text = equipmentName;
             txbEquipmentStatus.Text = equipmentStatus;
@@ -87,7 +93,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                 response.responsedDate = DateTime.Now;
                 BUS_AdminData.Instance.BUS_SetResponse(response);
                 MessageBox.Show("Tạo phản hồi thành công!");
-                del(zoneId, check, indexDate);
+                del(zoneId, check, dateStart, dateEnd);
                 this.Close();
             }
         }

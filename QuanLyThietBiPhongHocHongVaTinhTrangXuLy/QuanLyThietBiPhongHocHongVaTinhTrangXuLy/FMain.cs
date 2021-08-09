@@ -19,6 +19,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             
             InitializeComponent();
             setCbbZone();
+            dateEnd.Value = DateTime.Now;
         }
         public void setCbbZone()
         {

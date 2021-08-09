@@ -90,9 +90,9 @@ namespace DAL
             db.EQUIPMENTs.Remove(eq);
             db.SaveChanges();
         }
-        public void DAL_UpdateEquipment(EQUIPMENT eq2, string equipmentid)
+        public void DAL_UpdateEquipment(EQUIPMENT eq2)
         {
-            var sup = db.EQUIPMENTs.Where(p => p.equipmentId == equipmentid).SingleOrDefault();
+            var sup = db.EQUIPMENTs.Where(p => p.equipmentId == eq2.equipmentId).SingleOrDefault();
             sup.roomId = eq2.roomId;
             sup.equipmentId = eq2.equipmentId;
             sup.equipmentName = eq2.equipmentName;

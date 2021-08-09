@@ -44,15 +44,15 @@ namespace DTL
         public string faculty { get; set; }
         [System.ComponentModel.DisplayName("Lớp")]
         public string @class { get; set; }
-       
-        //public int getaccountID()
-        //{
-        //    return accountId;
-        //}
-        //public void setaccountID(int i)
-        //{
-        //    accountId = i;
-        //}
+
+        public int getaccountID()
+        {
+            return accountId;
+        }
+        public void setaccountID(int i)
+        {
+            accountId = i;
+        }
         //public void setpass(string a)
         //{
         //    password = a;

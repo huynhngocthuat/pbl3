@@ -261,7 +261,7 @@ namespace BUS
         }
         #endregion
 
-        #region FUser Lê Quốc Huy
+        #region FUser Huynh Ngoc Thuat
         // lay danh sach bao cao cua mot user
         public List<ReportShow> BUS_ReportShowByAccount(string userName, int indexDate)
         {

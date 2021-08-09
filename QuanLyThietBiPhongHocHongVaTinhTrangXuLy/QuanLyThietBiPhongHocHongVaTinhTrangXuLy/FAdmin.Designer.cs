@@ -47,9 +47,12 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.ckbResolved = new System.Windows.Forms.CheckBox();
             this.ckbNotResolvedYet = new System.Windows.Forms.CheckBox();
             this.dgvReport = new System.Windows.Forms.DataGridView();
-            this.cbbReportTime = new System.Windows.Forms.ComboBox();
             this.lbZone = new System.Windows.Forms.Label();
             this.cbbZone = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dateStart = new System.Windows.Forms.DateTimePicker();
+            this.dateEnd = new System.Windows.Forms.DateTimePicker();
             this.pnbutton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnDesktop.SuspendLayout();
@@ -197,6 +200,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.grbAdmin.BackColor = System.Drawing.Color.White;
             this.grbAdmin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("grbAdmin.BackgroundImage")));
             this.grbAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.grbAdmin.Controls.Add(this.label2);
+            this.grbAdmin.Controls.Add(this.label1);
+            this.grbAdmin.Controls.Add(this.dateStart);
+            this.grbAdmin.Controls.Add(this.dateEnd);
             this.grbAdmin.Controls.Add(this.btnShowData);
             this.grbAdmin.Controls.Add(this.btnCreateResponse);
             this.grbAdmin.Controls.Add(this.btnSignOut);
@@ -204,7 +211,6 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.grbAdmin.Controls.Add(this.ckbResolved);
             this.grbAdmin.Controls.Add(this.ckbNotResolvedYet);
             this.grbAdmin.Controls.Add(this.dgvReport);
-            this.grbAdmin.Controls.Add(this.cbbReportTime);
             this.grbAdmin.Controls.Add(this.lbZone);
             this.grbAdmin.Controls.Add(this.cbbZone);
             this.grbAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -222,7 +228,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnShowData.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnShowData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnShowData.ForeColor = System.Drawing.Color.White;
-            this.btnShowData.Location = new System.Drawing.Point(832, 77);
+            this.btnShowData.Location = new System.Drawing.Point(887, 77);
             this.btnShowData.Name = "btnShowData";
             this.btnShowData.Size = new System.Drawing.Size(99, 40);
             this.btnShowData.TabIndex = 4;
@@ -236,7 +242,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnCreateResponse.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCreateResponse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCreateResponse.ForeColor = System.Drawing.Color.White;
-            this.btnCreateResponse.Location = new System.Drawing.Point(966, 77);
+            this.btnCreateResponse.Location = new System.Drawing.Point(1017, 77);
             this.btnCreateResponse.Name = "btnCreateResponse";
             this.btnCreateResponse.Size = new System.Drawing.Size(151, 40);
             this.btnCreateResponse.TabIndex = 10;
@@ -263,7 +269,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.lbFullName.AutoSize = true;
             this.lbFullName.BackColor = System.Drawing.Color.Transparent;
             this.lbFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFullName.Location = new System.Drawing.Point(869, 31);
+            this.lbFullName.Location = new System.Drawing.Point(865, 19);
             this.lbFullName.Name = "lbFullName";
             this.lbFullName.Size = new System.Drawing.Size(90, 20);
             this.lbFullName.TabIndex = 11;
@@ -275,7 +281,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.ckbResolved.AutoSize = true;
             this.ckbResolved.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ckbResolved.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.ckbResolved.Location = new System.Drawing.Point(411, 97);
+            this.ckbResolved.Location = new System.Drawing.Point(380, 93);
             this.ckbResolved.Name = "ckbResolved";
             this.ckbResolved.Size = new System.Drawing.Size(132, 30);
             this.ckbResolved.TabIndex = 2;
@@ -287,7 +293,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.ckbNotResolvedYet.AutoSize = true;
             this.ckbNotResolvedYet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ckbNotResolvedYet.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.ckbNotResolvedYet.Location = new System.Drawing.Point(411, 65);
+            this.ckbNotResolvedYet.Location = new System.Drawing.Point(380, 61);
             this.ckbNotResolvedYet.Name = "ckbNotResolvedYet";
             this.ckbNotResolvedYet.Size = new System.Drawing.Size(150, 30);
             this.ckbNotResolvedYet.TabIndex = 1;
@@ -310,23 +316,13 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.dgvReport.Size = new System.Drawing.Size(1200, 424);
             this.dgvReport.TabIndex = 50;
             // 
-            // cbbReportTime
-            // 
-            this.cbbReportTime.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cbbReportTime.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.2F);
-            this.cbbReportTime.FormattingEnabled = true;
-            this.cbbReportTime.Location = new System.Drawing.Point(617, 80);
-            this.cbbReportTime.Name = "cbbReportTime";
-            this.cbbReportTime.Size = new System.Drawing.Size(191, 30);
-            this.cbbReportTime.TabIndex = 3;
-            // 
             // lbZone
             // 
             this.lbZone.AutoSize = true;
             this.lbZone.BackColor = System.Drawing.Color.Transparent;
             this.lbZone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbZone.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 10F);
-            this.lbZone.Location = new System.Drawing.Point(52, 83);
+            this.lbZone.Location = new System.Drawing.Point(25, 82);
             this.lbZone.Name = "lbZone";
             this.lbZone.Size = new System.Drawing.Size(130, 27);
             this.lbZone.TabIndex = 3;
@@ -337,10 +333,48 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.cbbZone.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbbZone.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.2F);
             this.cbbZone.FormattingEnabled = true;
-            this.cbbZone.Location = new System.Drawing.Point(205, 80);
+            this.cbbZone.Location = new System.Drawing.Point(174, 83);
             this.cbbZone.Name = "cbbZone";
             this.cbbZone.Size = new System.Drawing.Size(187, 30);
             this.cbbZone.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
+            this.label2.Location = new System.Drawing.Point(536, 93);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(43, 22);
+            this.label2.TabIndex = 58;
+            this.label2.Text = "Đến:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("#9Slide03 Comfortaa Bold", 8.25F);
+            this.label1.Location = new System.Drawing.Point(536, 59);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(32, 22);
+            this.label1.TabIndex = 57;
+            this.label1.Text = "Từ:";
+            // 
+            // dateStart
+            // 
+            this.dateStart.Location = new System.Drawing.Point(597, 54);
+            this.dateStart.Name = "dateStart";
+            this.dateStart.Size = new System.Drawing.Size(284, 31);
+            this.dateStart.TabIndex = 56;
+            this.dateStart.Value = new System.DateTime(2020, 8, 8, 21, 13, 0, 0);
+            // 
+            // dateEnd
+            // 
+            this.dateEnd.Location = new System.Drawing.Point(597, 93);
+            this.dateEnd.Name = "dateEnd";
+            this.dateEnd.Size = new System.Drawing.Size(284, 31);
+            this.dateEnd.TabIndex = 55;
+            this.dateEnd.Value = new System.DateTime(2021, 8, 8, 21, 13, 0, 0);
             // 
             // FAdmin
             // 
@@ -369,7 +403,6 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
 
         private System.Windows.Forms.GroupBox grbAdmin;
         private System.Windows.Forms.ComboBox cbbZone;
-        private System.Windows.Forms.ComboBox cbbReportTime;
         private System.Windows.Forms.Label lbZone;
         private System.Windows.Forms.DataGridView dgvReport;
         private System.Windows.Forms.CheckBox ckbResolved;
@@ -387,6 +420,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         private System.Windows.Forms.Panel pnDesktop;
         private System.Windows.Forms.Button bttHome;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker dateStart;
+        private System.Windows.Forms.DateTimePicker dateEnd;
     }
 }
 

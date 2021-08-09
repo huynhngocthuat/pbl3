@@ -24,6 +24,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             setCbbTime();
             setCbbZone();
             setNameLabel();
+            dateEnd.Value = DateTime.Now;
         }
         #region mapping data 
         public void setCbbZone()

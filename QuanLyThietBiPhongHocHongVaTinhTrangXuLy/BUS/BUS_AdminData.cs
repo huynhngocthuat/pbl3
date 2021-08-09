@@ -51,7 +51,7 @@ namespace BUS
         {
             return DAL_AdminData.Instance.DAL_ShowAllReports();
         }
-        public List<ReportShow> BUS_ShowReportList(string zoneId, int check, int date)
+        public List<ReportShow> BUS_ShowReportList(string zoneId, int check, DateTime startDate, DateTime endDate)
         {
             // zoneId -> "A",......
             // check -> 1: All, 2: Chua, 3: Roi  
@@ -106,47 +106,12 @@ namespace BUS
                 list2 = list1;
             }
             // loc theo ngay
-            switch (date)
+            foreach (ReportShow item in list2)
             {
-                case 0:
-                    foreach (ReportShow item in list2)
-                    {
-                        if ((DateTime.Now - item.reportedDate).TotalDays < 15)
-                        {
-                            list3.Add(item);
-                        }
-                    }
-                    break;
-                case 1:
-                    foreach (ReportShow item in list2)
-                    {
-                        if ((DateTime.Now - item.reportedDate).TotalDays < 30)
-                        {
-                            list3.Add(item);
-                        }
-                    }
-                    break;
-                case 2:
-                    foreach (ReportShow item in list2)
-                    {
-                        if ((DateTime.Now - item.reportedDate).TotalDays < 60)
-                        {
-                            list3.Add(item);
-                        }
-                    }
-                    break;
-                case 3:
-                    foreach (ReportShow item in list2)
-                    {
-                        if ((DateTime.Now - item.reportedDate).TotalDays < 365)
-                        {
-                            list3.Add(item);
-                        }
-                    }
-                    break;
-                default:
-                    list3 = list2;
-                    break;
+                if (item.reportedDate <= endDate.AddDays(1) && item.reportedDate > startDate)
+                {
+                    list3.Add(item);
+                }
             }
             // Thiet lap lai stt
             for (int i = 0; i < list3.Count(); i++)
@@ -167,7 +132,31 @@ namespace BUS
         {
             return DAL_AdminData.Instance.DAL_GetReportStatusByReportId(reportId);
         }
-        public List<int> BUS_GetReportIdList(string zoneId, int check, int date)
+        public ReportShow BUS_GetReportByReportId(int reportId)
+        {
+            foreach (ReportShow item in DAL_AdminData.Instance.DAL_ShowAllReports())
+            {
+                if(item.STT == reportId)
+                {
+                    return item;
+                }
+            }
+            return null;
+        }
+
+
+        public AccountShow BUS_GetAccountByAccountId(int accountId)
+        {
+            foreach (AccountShow item in DAL_MainData.Instance.DAL_GetAccountShow())
+            {
+                if(item.getaccountID() == accountId)
+                {
+                    return item;
+                }
+            }
+            return null;
+        }
+        public List<int> BUS_GetReportIdList(string zoneId, int check, DateTime startDate, DateTime endDate)
         {
             // zoneId -> "A",......
             // check -> 1: All, 2: Chua, 3: Roi  
@@ -222,47 +211,12 @@ namespace BUS
                 list2 = list1;
             }
             // loc theo ngay
-            switch (date)
+            foreach (ReportShow item in list2)
             {
-                case 0:
-                    foreach (ReportShow item in list2)
-                    {
-                        if ((DateTime.Now - item.reportedDate).TotalDays < 15)
-                        {
-                            list3.Add(item);
-                        }
-                    }
-                    break;
-                case 1:
-                    foreach (ReportShow item in list2)
-                    {
-                        if ((DateTime.Now - item.reportedDate).TotalDays < 30)
-                        {
-                            list3.Add(item);
-                        }
-                    }
-                    break;
-                case 2:
-                    foreach (ReportShow item in list2)
-                    {
-                        if ((DateTime.Now - item.reportedDate).TotalDays < 60)
-                        {
-                            list3.Add(item);
-                        }
-                    }
-                    break;
-                case 3:
-                    foreach (ReportShow item in list2)
-                    {
-                        if ((DateTime.Now - item.reportedDate).TotalDays < 365)
-                        {
-                            list3.Add(item);
-                        }
-                    }
-                    break;
-                default:
-                    list3 = list2;
-                    break;
+                if (item.reportedDate <= endDate.AddDays(1) && item.reportedDate > startDate)
+                {
+                    list3.Add(item);
+                }
             }
             List<int> resultList = new List<int>();
             for (int i = 0; i < list3.Count(); i++)

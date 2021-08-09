@@ -76,9 +76,9 @@ namespace BUS
         {
             DAL_EquipmentData.Instance.DAL_DeleteEquipment(equipmentid);
         }
-        public void BUS_UPDATEEQUIPMENT(EQUIPMENT eq2, string equipmentid)
+        public void BUS_UPDATEEQUIPMENT(EQUIPMENT eq2)
         {
-            DAL_EquipmentData.Instance.DAL_UpdateEquipment(eq2, equipmentid);
+            DAL_EquipmentData.Instance.DAL_UpdateEquipment(eq2);
         }
         public EquipmentShow BUS_getEquipmentByIDEquipment(string equipmentid)
         {

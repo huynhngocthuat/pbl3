@@ -42,12 +42,14 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.btnCreate = new System.Windows.Forms.Button();
             this.cbbResponseType = new System.Windows.Forms.ComboBox();
             this.dtpReportedDate = new System.Windows.Forms.DateTimePicker();
-            this.txbReportId = new System.Windows.Forms.TextBox();
+            this.txb_classSV = new System.Windows.Forms.TextBox();
             this.rtbResponseMessage = new System.Windows.Forms.RichTextBox();
             this.lbResponseMessage = new System.Windows.Forms.Label();
             this.lbReportedDate = new System.Windows.Forms.Label();
             this.lbResponseType = new System.Windows.Forms.Label();
             this.lbReportId = new System.Windows.Forms.Label();
+            this.txb_nameSV = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.grbCreateResponse.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,6 +57,8 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             // 
             this.grbCreateResponse.BackgroundImage = global::QuanLyThietBiPhongHocHongVaTinhTrangXuLy.Properties.Resources.nền;
             this.grbCreateResponse.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.grbCreateResponse.Controls.Add(this.label1);
+            this.grbCreateResponse.Controls.Add(this.txb_nameSV);
             this.grbCreateResponse.Controls.Add(this.btnCancel);
             this.grbCreateResponse.Controls.Add(this.rtbNote);
             this.grbCreateResponse.Controls.Add(this.lbNote);
@@ -67,7 +71,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.grbCreateResponse.Controls.Add(this.btnCreate);
             this.grbCreateResponse.Controls.Add(this.cbbResponseType);
             this.grbCreateResponse.Controls.Add(this.dtpReportedDate);
-            this.grbCreateResponse.Controls.Add(this.txbReportId);
+            this.grbCreateResponse.Controls.Add(this.txb_classSV);
             this.grbCreateResponse.Controls.Add(this.rtbResponseMessage);
             this.grbCreateResponse.Controls.Add(this.lbResponseMessage);
             this.grbCreateResponse.Controls.Add(this.lbReportedDate);
@@ -203,13 +207,13 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.dtpReportedDate.Size = new System.Drawing.Size(312, 31);
             this.dtpReportedDate.TabIndex = 50;
             // 
-            // txbReportId
+            // txb_classSV
             // 
-            this.txbReportId.Enabled = false;
-            this.txbReportId.Location = new System.Drawing.Point(238, 76);
-            this.txbReportId.Name = "txbReportId";
-            this.txbReportId.Size = new System.Drawing.Size(312, 31);
-            this.txbReportId.TabIndex = 50;
+            this.txb_classSV.Enabled = false;
+            this.txb_classSV.Location = new System.Drawing.Point(238, 76);
+            this.txb_classSV.Name = "txb_classSV";
+            this.txb_classSV.Size = new System.Drawing.Size(312, 31);
+            this.txb_classSV.TabIndex = 50;
             // 
             // rtbResponseMessage
             // 
@@ -255,9 +259,27 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.lbReportId.BackColor = System.Drawing.Color.Transparent;
             this.lbReportId.Location = new System.Drawing.Point(102, 79);
             this.lbReportId.Name = "lbReportId";
-            this.lbReportId.Size = new System.Drawing.Size(108, 25);
+            this.lbReportId.Size = new System.Drawing.Size(46, 25);
             this.lbReportId.TabIndex = 2;
-            this.lbReportId.Text = "Mã báo cáo:";
+            this.lbReportId.Text = "Lớp:";
+            // 
+            // txb_nameSV
+            // 
+            this.txb_nameSV.Enabled = false;
+            this.txb_nameSV.Location = new System.Drawing.Point(238, 30);
+            this.txb_nameSV.Name = "txb_nameSV";
+            this.txb_nameSV.Size = new System.Drawing.Size(312, 31);
+            this.txb_nameSV.TabIndex = 51;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(102, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(117, 25);
+            this.label1.TabIndex = 52;
+            this.label1.Text = "Tên sinh viên:";
             // 
             // FResponse
             // 
@@ -278,7 +300,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         private System.Windows.Forms.GroupBox grbCreateResponse;
         private System.Windows.Forms.ComboBox cbbResponseType;
         private System.Windows.Forms.DateTimePicker dtpReportedDate;
-        private System.Windows.Forms.TextBox txbReportId;
+        private System.Windows.Forms.TextBox txb_classSV;
         private System.Windows.Forms.RichTextBox rtbResponseMessage;
         private System.Windows.Forms.Label lbResponseMessage;
         private System.Windows.Forms.Label lbReportedDate;
@@ -294,5 +316,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         private System.Windows.Forms.TextBox txbRoomId;
         private System.Windows.Forms.Label lbRoomId;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txb_nameSV;
     }
 }

@@ -85,7 +85,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                 rm2.dateOfInstallation = dateTimePicker_Ngaydat.Value;
                 rm2.equipmentId = txtMaThietBi.Text;
                 rm2.equipmentName = txtTenThietBi.Text;
-                BUS_EquipmentData.Instance.BUS_UPDATEEQUIPMENT(rm2, equipmentid);
+                BUS_EquipmentData.Instance.BUS_UPDATEEQUIPMENT(rm2);
                 MessageBox.Show("Cập nhập thành công!");
             }
             this.Dispose();
