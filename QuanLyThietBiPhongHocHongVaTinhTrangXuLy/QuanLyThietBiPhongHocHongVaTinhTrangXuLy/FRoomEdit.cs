@@ -26,6 +26,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             this.option = option;
             InitializeComponent();
             setROOM();
+            setCbbZone();
         }
         private void setROOM()
         {
@@ -45,7 +46,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
 
         public void setCbbZone()
         {
-
+            foreach (var item in BUS_MainData.Instance.BUS_ZONE())
+            {
+                cbbKhuphong.Items.Add(item.zoneId.ToString());
+            }
         }
 
         private void btnOK_Click(object sender, EventArgs e)
