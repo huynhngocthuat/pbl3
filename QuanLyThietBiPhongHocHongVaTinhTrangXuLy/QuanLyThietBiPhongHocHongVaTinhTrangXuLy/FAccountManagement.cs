@@ -15,6 +15,9 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
 {
     public partial class FAccountManagement : Form
     {
+        public delegate void ExitFormDele();
+        public static event ExitFormDele exitForm;
+        public static event ExitFormDele setFullNameAdmin;
         private ACCOUNT MainAc = new ACCOUNT();
         public FAccountManagement(ACCOUNT ac)
         {
@@ -119,13 +122,13 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                                 {
 
                                     newac.password = BUS_MainData.Instance.BUS_Encrypt(txtmk2.Text);
-                                    if (MainAc.username == txtusername.Text)
+                                    if (MainAc.role != cbbrole.SelectedIndex)
                                     {
                                         DialogResult dlr = MessageBox.Show("Bạn đang thay đổi thông tin chính mình, việc này buộc bạn phải đăng xuất, bạn có muốn tiếp tục?", "Cảnh báo", MessageBoxButtons.YesNo);
                                         if (dlr == DialogResult.Yes)
                                         {
                                             BUS_MainData.Instance.BUS_UPDATEACC(newac);
-                                            Application.Restart();
+                                            exitForm(); // đăng ký sự kiện bên nút đăng xuất ở FAdmin
                                         }
                                     }
                                     else
@@ -134,6 +137,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                                         MessageBox.Show("Cập nhật thành công!");
                                         SetDgv();
                                         checkBox1.Checked = false;
+                                        setFullNameAdmin();
                                     }
                                 }
                                 else { MessageBox.Show("Xác nhận sai mật khẩu!"); }
@@ -143,7 +147,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                         else
                         {
                             if (newac.accountId == a.accountId && newac.username == a.username
-                                && newac.fullName == a.fullName && newac.faculty == newac.faculty
+                                && newac.fullName == a.fullName && newac.faculty == a.faculty
                                 && a.@class == newac.@class
                                 && newac.role == a.role)
                             {
@@ -151,13 +155,13 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                             }
                             else
                             {
-                                if (MainAc.username == txtusername.Text)
+                                if (MainAc.role != cbbrole.SelectedIndex)
                                 {
                                     DialogResult dlr = MessageBox.Show("Bạn đang thay đổi thông tin chính mình, việc này buộc bạn phải đăng xuất, bạn có muốn tiếp tục?", "Cảnh báo", MessageBoxButtons.YesNo);
                                     if (dlr == DialogResult.Yes)
                                     {
                                         BUS_MainData.Instance.BUS_UPDATEACC(newac);
-                                        Application.Restart();
+                                        exitForm(); //đăng ký sự kiện bên nút đăng xuất ở FAdmin
                                     }
                                 }
                                 else
@@ -166,6 +170,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                                     MessageBox.Show("Cập nhật thành công!");
                                     SetDgv();
                                     checkBox1.Checked = false;
+                                    setFullNameAdmin();
                                 }
                             }
                         }

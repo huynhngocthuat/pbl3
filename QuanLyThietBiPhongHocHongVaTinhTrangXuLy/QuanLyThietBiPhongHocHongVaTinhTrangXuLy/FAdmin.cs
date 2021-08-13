@@ -91,11 +91,14 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             }
         }
 
+        private void ExitForm()
+        {
+            this.Close();
+        }
+
         private void btnSignOut_Click(object sender, EventArgs e)
         {
             this.Close();
-            //FMain fMain = new FMain();
-            //fMain.ShowDialog();
         }
 
         private void btnManageZone_Click(object sender, EventArgs e)
@@ -113,8 +116,10 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             OpenChildForm(new FEquipment());
         }
         private void btn_Account_Click(object sender, EventArgs e)
-        {
+        { 
             OpenChildForm(new FAccountManagement(ac));
+            FAccountManagement.exitForm += ExitForm;
+            FAccountManagement.setFullNameAdmin += setLbFullName;
         }
         private void btnEditProfile_Click(object sender, EventArgs e)
         {
