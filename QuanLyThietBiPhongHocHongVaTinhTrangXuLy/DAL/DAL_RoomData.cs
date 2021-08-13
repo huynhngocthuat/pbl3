@@ -82,9 +82,9 @@ namespace DAL
             db.ROOMs.Remove(rm);
             db.SaveChanges();
         }
-        public void DAL_UpdateRoom(ROOM rm2, string roomid)
+        public void DAL_UpdateRoom(ROOM rm2)
         {
-            var sup = db.ROOMs.Where(p => p.roomId == roomid).SingleOrDefault();
+            var sup = db.ROOMs.Where(p => p.roomId == rm2.roomId).SingleOrDefault();
             sup.roomId = rm2.roomId;
             sup.zoneId = rm2.zoneId;
             sup.roomFunction = rm2.roomFunction;

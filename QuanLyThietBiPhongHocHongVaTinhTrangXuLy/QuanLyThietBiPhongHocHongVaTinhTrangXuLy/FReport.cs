@@ -159,7 +159,21 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
         }
         public void editReport()
         {
-            BUS_MainData.Instance.BUS_EditReport(reportId, cbbPhonghoc.Text, cbbThietbi.Text, cbbTinhtrang.Text, txbGhichu.Text);
+            int checkReport = -1;
+            foreach (var item in BUS_AdminData.Instance.BUS_ShowReportList("", 3, DateTime.Now.AddYears(-1), DateTime.Now.AddDays(1))) // xem trong nhung report chua duoc response
+            {
+                if (item.equipmentName == cbbThietbi.Text && item.roomID == cbbPhonghoc.Text)
+                {
+                    checkReport = 1;
+                }
+            }
+            if (checkReport == 1) {
+                MessageBox.Show("Thiết bị bạn chọn đã được báo cáo");
+            }
+            else
+            {
+                BUS_MainData.Instance.BUS_EditReport(reportId, cbbPhonghoc.Text, cbbThietbi.Text, cbbTinhtrang.Text, txbGhichu.Text);
+            }
         }
         private void btn_XacNhan_Click(object sender, EventArgs e)
         {

@@ -70,9 +70,9 @@ namespace DAL
             db.ZONEs.Remove(zn);
             db.SaveChanges();
         }
-        public void DAL_UpdateZone(ZONE zn2, string zoneid)
+        public void DAL_UpdateZone(ZONE zn2)
         {
-            var sup = db.ZONEs.Where(p => p.zoneId == zoneid).SingleOrDefault();
+            var sup = db.ZONEs.Where(p => p.zoneId == zn2.zoneId).SingleOrDefault();
             sup.zoneId = zn2.zoneId;
             sup.zoneName = zn2.zoneName;
             db.SaveChanges();

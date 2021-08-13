@@ -32,9 +32,9 @@ namespace BUS
         {
             DAL_ZoneData.Instance.DAL_DeleleZone(zoneid);
         }
-        public void BUS_UPDATEZONE(ZONE zn2, string zoneid)
+        public void BUS_UPDATEZONE(ZONE zn2)
         {
-            DAL_ZoneData.Instance.DAL_UpdateZone(zn2, zoneid);
+            DAL_ZoneData.Instance.DAL_UpdateZone(zn2);
         }
         public int BUS_CHECKZONE(ZONE zn)
         {

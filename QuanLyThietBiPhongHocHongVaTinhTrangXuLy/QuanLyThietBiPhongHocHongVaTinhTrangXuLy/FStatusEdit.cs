@@ -68,7 +68,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                 rm2.equipmentId = txb_MathietBi.Text;
                 rm2.equipmentStatus = txtTinhTrang.Text;
                 rm2.statusId = txtMaTinhTrang.Text;
-                BUS_StatusData.Instance.BUS_UPDATESTATUS(rm2, statusid);
+                BUS_StatusData.Instance.BUS_UPDATESTATUS(rm2);
                 MessageBox.Show("Cập nhập thành công!");
             }
             refresh();

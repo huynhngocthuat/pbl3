@@ -59,7 +59,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                 ZONE rm2 = new ZONE();
                 rm2.zoneId = txtMakhu.Text;
                 rm2.zoneName = txtTenkhu.Text;
-                BUS_ZoneData.Instance.BUS_UPDATEZONE(rm2, zoneid);
+                BUS_ZoneData.Instance.BUS_UPDATEZONE(rm2);
                 MessageBox.Show("Cập nhập thành công!");
             }
             refresh();

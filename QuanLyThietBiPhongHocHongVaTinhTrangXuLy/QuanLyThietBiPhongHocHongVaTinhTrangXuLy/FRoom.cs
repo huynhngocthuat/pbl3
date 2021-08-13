@@ -93,7 +93,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             {
                 string roomId = dataGridView_RoomShow.CurrentRow.Cells["roomID"].Value.ToString();
                 FEquipment f = new FEquipment(roomId);
-                f.Show();
+                f.ShowDialog();
             }
             else
             {

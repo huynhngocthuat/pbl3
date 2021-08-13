@@ -72,9 +72,9 @@ namespace DAL
             db.STATUS.Remove(rm);
             db.SaveChanges();
         }
-        public void DAL_UpdateStatus(STATUS rm2, string statusid)
+        public void DAL_UpdateStatus(STATUS rm2)
         {
-            var sup = db.STATUS.Where(p => p.statusId == statusid).SingleOrDefault();
+            var sup = db.STATUS.Where(p => p.statusId == rm2.statusId).SingleOrDefault();
             sup.statusId = rm2.statusId;
             sup.equipmentId = rm2.equipmentId;
             sup.equipmentStatus = rm2.equipmentStatus;

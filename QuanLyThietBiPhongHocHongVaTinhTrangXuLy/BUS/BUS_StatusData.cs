@@ -32,9 +32,9 @@ namespace BUS
         {
             DAL_StatusData.Instance.DAL_DeleteStatus(statusid);
         }
-        public void BUS_UPDATESTATUS(STATUS rm2, string statusid)
+        public void BUS_UPDATESTATUS(STATUS rm2)
         {
-            DAL_StatusData.Instance.DAL_UpdateStatus(rm2, statusid);
+            DAL_StatusData.Instance.DAL_UpdateStatus(rm2);
         }
         public STATUS BUS_getStatusByIDStatus(string statusid)
         {

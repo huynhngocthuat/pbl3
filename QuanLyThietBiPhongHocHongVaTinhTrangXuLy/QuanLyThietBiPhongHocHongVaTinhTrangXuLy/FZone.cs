@@ -71,7 +71,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             {
                 string zoneId = dataGridView_ShowZone.CurrentRow.Cells["zoneID"].Value.ToString();
                 FRoom f = new FRoom(zoneId);
-                f.Show();
+                f.ShowDialog();
             }
             else
             {

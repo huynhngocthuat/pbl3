@@ -73,7 +73,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
                 rm2.roomId = txbMaphong.Text;
                 rm2.roomFunction = txbTenphong.Text;
                 rm2.zoneId = cbbKhuphong.Text;
-                BUS_RoomData.Instance.BUS_UPDATEROOM(rm2, roomid);
+                BUS_RoomData.Instance.BUS_UPDATEROOM(rm2);
                 MessageBox.Show("Cập nhập thành công!");
             }
             refresh(zoneid);

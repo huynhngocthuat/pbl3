@@ -87,7 +87,7 @@ namespace QuanLyThietBiPhongHocHongVaTinhTrangXuLy
             {
                 string equipmentid = dataGridView_Equipment.CurrentRow.Cells["equipmentID"].Value.ToString();
                 FStatus f = new FStatus(equipmentid);
-                f.Show();
+                f.ShowDialog();
             }
             else
             {

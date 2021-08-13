@@ -50,9 +50,9 @@ namespace BUS
         {
             DAL_RoomData.Instance.DAL_DeleteRoom(roomid);
         }
-        public void BUS_UPDATEROOM(ROOM rm2, string roomid)
+        public void BUS_UPDATEROOM(ROOM rm2)
         {
-            DAL_RoomData.Instance.DAL_UpdateRoom(rm2, roomid);
+            DAL_RoomData.Instance.DAL_UpdateRoom(rm2);
         }
         public ROOM BUS_getRoomByIDRoom(string roomid)
         {
